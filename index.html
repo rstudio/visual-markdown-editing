@@ -10,16 +10,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="J.J. Allaire" />
 
 
-<title>My Website</title>
+<title>Visual Markdown Editing</title>
 
 <script src="index_files/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="index_files/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="index_files/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="index_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="index_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="index_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="index_files/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="index_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="index_files/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="index_files/navigation-1.1/tabsets.js"></script>
 <link href="index_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="index_files/highlightjs-9.12.0/highlight.js"></script>
@@ -161,6 +165,75 @@ summary {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+
 
 </head>
 
@@ -170,23 +243,252 @@ summary {
 <div class="container-fluid main-container">
 
 
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore">My Website</h1>
+<h1 class="title toc-ignore">Visual Markdown Editing</h1>
+<h4 class="author">J.J. Allaire</h4>
+<h4 class="date">April 2020</h4>
 
 </div>
 
 
-<p>Hello, Website!</p>
-<p>For more information about simple R Markdown websites, please read the documentation at <a href="https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html" class="uri">https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html</a>.</p>
-<p>Please also note that simple R Markdown sites are <em>not</em> based on <strong>blogdown</strong>. They are probably good for websites with only a few Rmd documents. For larger-scale and more sophisticated websites (such as blogs), you may want to use <strong>blogdown</strong> instead: <a href="https://github.com/rstudio/blogdown" class="uri">https://github.com/rstudio/blogdown</a>.</p>
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or sometimes even Google Docs) for composition. Visual editing mode provides an alternative that is tightly integrated with RStudio and which natively reads and writes Pandoc markdown.</p>
+<p><img src="images/visual-editing.png" width="700" /></p>
+<p>You can easily switch between source and visual editing modes, using whichever mode works best for the different stages of work on an R Markdown document.</p>
+<p>This mode is currently only useful for composition (code chunks are not executable). We expect this to change in future versions of RStudio.</p>
+</div>
+<div id="getting-started" class="section level2">
+<h2>Getting Started</h2>
+<p>Visual markdown editing is currently only available in the daily build of RStudio v1.4. You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
+<p>Visual markdown editing is not available by default. To enable it, use the <strong>R Markdown</strong> tab of RStudio preferences:</p>
+<p><img src="images/visual-editing-pref.png" style="border: 1px solid rgb(230, 230, 230)" width="588" /></p>
+<p>Once you’ve enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar:</p>
+<p><img src="images/visual-editing-toggle.png" width="700" /></p>
+<p>Once you’ve done this, the editor will switch to visual mode and an editing toolbar with various formatting commands will appear. There is also a keyboard shortcut (<strong>Ctrl+Shift+F8</strong>) that can be used to switch modes.</p>
+</div>
+<div id="editing-commands" class="section level2">
+<h2>Editing Commands</h2>
+<p>Visual editing mode includes conventional word-processor style gestures for headings, formatting, etc. on the editing toolbar:</p>
+<p><img src="images/visual-editing-toolbar.png" width="700" /></p>
+<p>In addition to using the editing toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting. Note that if you didn’t intend this, you can use backspace to revert the applied formatting.</p>
+<div id="shortcuts" class="section level3">
+<h3>Shortcuts</h3>
+<p>There are also keyboard shortcuts available for several commands. Here are the markdown and keyboard shortcuts currently supported (note that you should substitute Cmd for Ctrl on Mac systems):</p>
+<table>
+<thead>
+<tr class="header">
+<th>Formatting</th>
+<th>Markdown Shortcut</th>
+<th>Keyboard Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bold</td>
+<td>**bold**</td>
+<td>Ctrl+B</td>
+</tr>
+<tr class="even">
+<td>Italic</td>
+<td>*italic*</td>
+<td>Ctrl+I</td>
+</tr>
+<tr class="odd">
+<td>Code</td>
+<td>`code`</td>
+<td>Ctrl+D</td>
+</tr>
+<tr class="even">
+<td>Strikeout</td>
+<td>~~strike~~</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Subscript</td>
+<td>~sub~</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Superscript</td>
+<td><sup>super</sup></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Heading</td>
+<td>##</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Blockquote</td>
+<td>&gt;</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Code Block</td>
+<td>```</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Horizontal Rule</td>
+<td>***</td>
+<td>Ctrl+_</td>
+</tr>
+<tr class="odd">
+<td>Footnote</td>
+<td></td>
+<td>Ctrl+^</td>
+</tr>
+<tr class="even">
+<td>Bullet List</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ordered List</td>
+<td>1.</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>List Check</td>
+<td>[x]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Definition Term</td>
+<td>:</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Link</td>
+<td></td>
+<td>Ctrl+K</td>
+</tr>
+<tr class="odd">
+<td>Image</td>
+<td></td>
+<td>Ctrl+Shift+I</td>
+</tr>
+<tr class="even">
+<td>R Code Chunk</td>
+<td></td>
+<td>Ctrl+Shift+U</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="typography" class="section level3">
+<h3>Typography</h3>
+<p>Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, – as en-dashes, — as em-dashes, and … as ellipses. Visual mode supports these same transformations (so when you type — it becomes an em-dash). If you didn’t intend for this transformation to occur just hit backspace and it will be reverted.</p>
+</div>
+</div>
+<div id="math-and-citations" class="section level2">
+<h2>Math and Citations</h2>
+<p>TeX math and citations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and create the appropriate constructs). For example, here’s some inline and display math:</p>
+<p><img src="images/visual-editing-math.png" width="700" /></p>
+<p>Here are some citations:</p>
+<p><img src="images/visual-editing-citations.png" width="700" /></p>
+<p>You can also insert math, citations, and footnotes using commands on the <strong>Insert</strong> menu.</p>
+</div>
+<div id="raw-markup" class="section level2">
+<h2>Raw Markup</h2>
+<p>You can include raw TeX when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:</p>
+<p><img src="images/visual-editing-raw.png" width="700" /></p>
+<p>You can also include inline and block raw content of any output format supported by Pandoc (e.g. html, rtf or openxml) using the commands on the <strong>Format -&gt; Raw</strong> menu.</p>
+</div>
+<div id="markdown-conversion" class="section level2">
+<h2>Markdown Conversion</h2>
+<p>Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be <em>rewritten</em> to conform to standard Pandoc idioms. For example, Pandoc writes 3 spaces after list bullets, and automatically escapes characters that might be used for markdown syntax.</p>
+<p>While this might be bothersome at first, if you decide that visual editing mode is useful for your workflow it’s probably best to just adapt to writing your own markdown the same way that Pandoc does. If any of Pandoc’s idioms are particularly troublesome, <a href="https://github.com/rstudio/rstudio/issues/new">let us know</a> and we’ll see if we can add an option to override the default behavior.</p>
+<div id="markdown-variants" class="section level3">
+<h3>Markdown Variants</h3>
+<p>Visual editing mode can author all of the markdown variants supported by Pandoc. By default, features associated with standard Pandoc markdown are enabled. You can change this behavior by including an Emacs-style magic comment in your markdown document. For example, to specify that you’d like to create GitHub Flavored Markdown (Pandoc’s “gfm” variant), add this comment:</p>
+<pre><code>&lt;!-- -*- mode: gfm -*- --&gt; </code></pre>
+<p>Note that for R Markdown (Rmd) files this comment should be located immediately after the YAML metadata block at the top of the document.</p>
+<p>You can also specify that particular extensions be enabled or disabled. For example, to specify GitHub Flavored Markdown with additional support for TeX math and raw Tex, you would use this comment:</p>
+<pre><code>&lt;!-- -*- mode: gfm; extensions: +tex_math_dollars+raw_tex -*- --&gt; </code></pre>
+<p>Alternatively, to specify standard Pandoc markdown <em>without</em> TeX math and raw TeX, you would use this comment (note the minus sign before the disabled extensions):</p>
+<pre><code>&lt;!-- -*- mode: markdown; extensions: -tex_math_dollars-raw_tex -*- --&gt; </code></pre>
+<p>You can read more about Pandoc variants and extensions in the <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc Markdown</a> documentation.</p>
+</div>
+</div>
+<div id="navigation" class="section level2">
+<h2>Navigation</h2>
+<div id="document-outline" class="section level3">
+<h3>Document Outline</h3>
+<p>The document outline enables you to quickly navigate between sections of larger documents. An outline item is included for each heading within the document. You can make the outline visible using the outline button next to the visual mode button:</p>
+<p><img src="images/visual-editing-outline.png" width="700" /></p>
+</div>
+<div id="findreplace" class="section level3">
+<h3>Find/Replace</h3>
+<p>You can find and replace text within visual mode using the Find button located at the far right of the visual editing toolbar:</p>
+<p><img src="images/visual-editing-find.png" width="700" /></p>
+<p>Note that Find/Replace will only locate matches within normal text (code blocks are not searched).</p>
+</div>
+</div>
+<div id="line-wrapping" class="section level2">
+<h2>Line Wrapping</h2>
+<p>By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.</p>
+<p>If however you prefer to have paragraphs wrapped at a particular column (e.g. 72 or 80). you can set an option to this effect within the <strong>R Markdown</strong> preferences pane where visual mode is enabled. You can also set this behavior on a per-document basis by including a <code>fill-column</code> variable within an Emacs-style magic comment. For example:</p>
+<pre><code>&lt;!-- -*- mode: markdown; fill-column: 72 -*- --&gt; </code></pre>
+<p>Note that there are some disadvantages to setting a <code>fill-column.</code> First, editing paragraphs in source mode will be less convenient (because line wrapping will need to done manually). Second, tables with many explicitly sized columns (more than 10 or so) may be written by Pandoc as HTML rather than markdown.</p>
+</div>
+<div id="known-limitations" class="section level2">
+<h2>Known Limitations</h2>
+<p>There are a handful of Pandoc markdown extensions not currently supported by visual editing. These are infrequently used extensions so in all likelihood won’t affect documents you edit, but are still worth noting.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Extension</th>
+<th>Example</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Example lists</td>
+<td>(@) First example</td>
+<td>Read/written as ordinary numbered lists.</td>
+</tr>
+<tr class="even">
+<td>Auto-list numbers</td>
+<td>#. First item</td>
+<td>Read/written as ordinary numbered lists.</td>
+</tr>
+<tr class="odd">
+<td>Reference links</td>
+<td>This is a [link]</td>
+<td>Converted to ordinary links.</td>
+</tr>
+<tr class="even">
+<td>Pandoc title block</td>
+<td>% My Title</td>
+<td>Ignored (and dropped from document).</td>
+</tr>
+</tbody>
+</table>
+<p>In addition, the various MultiMarkdown extensions to Pandoc are not supported (note that these extensions are disabled by default in Pandoc markdown). MultiMarkdown title blocks are ignored and dropped, and MultiMarkdown link attributes and header identifiers are read and converted to Pandoc markdown equivalents.</p>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -219,6 +521,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
