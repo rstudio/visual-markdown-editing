@@ -1,5 +1,8 @@
 ---
 title: "My Website"
+output:
+   html_document:
+      self_contained: false
 ---
 
 Hello, Website!
