@@ -65,8 +65,9 @@ There are also keyboard shortcuts available for several commands. Here are the m
 | List Check      | [x]               |                   |
 | Definition Term | :                 |                   |
 | Link            |                   | Ctrl+K            |
-| Image           |                   | Ctrl+Shift+I      |
-| R Code Chunk    |                   | Alt+Shift+I       |
+| Image           |                   | Shift+Ctrl+I      |
+| R Code Chunk    |                   | Alt+Ctrl+I        |
+| Table           |                   | Alt+Ctrl+T        |
 | Edit Attributes |                   | F4                |
 
 ### Typography
