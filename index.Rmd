@@ -70,7 +70,7 @@ There are also keyboard shortcuts available for several commands. Here are the m
 
 ### Typography
 
-Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, -- as en-dashes, --- as em-dashes, and ... as ellipses. Visual mode supports these same transformations (so when you type --- it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
+Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, -- as en-dashes, --- as em-dashes, and ... as ellipses. Visual mode supports these same transformations (so when you type --- it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
 
 ## Math and Citations
 
@@ -90,7 +90,7 @@ You can include raw TeX when authoring in visual mode. The raw markup will be au
 
 ![](images/visual-editing-raw.png){width="700"}
 
-You can also include inline and block raw content of any output format supported by Pandoc (e.g. html, rtf or openxml) using the commands on the **Format -\> Raw** menu.
+You can also include inline and block raw content of any output format supported by Pandoc (e.g. html, rtf or openxml) using the commands on the **Format -\> Raw** menu.
 
 ## Markdown Conversion
 
@@ -136,7 +136,7 @@ Note that Find/Replace will only locate matches within normal text (code blocks 
 
 By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.
 
-If however you prefer to have paragraphs wrapped at a particular column (e.g. 72 or 80). you can set an option to this effect within the **R Markdown** preferences pane where visual mode is enabled. You can also set this behavior on a per-document basis by including a `fill-column` variable within an Emacs-style magic comment. For example:
+If however you prefer to have paragraphs wrapped at a particular column (e.g. 72 or 80). You can set an option to this effect within the **R Markdown** preferences pane where visual mode is enabled. You can also set this behavior on a per-document basis by including a `fill-column` variable within an Emacs-style magic comment. For example:
 
     <!-- -*- mode: markdown; fill-column: 72 -*- --> 
 
