@@ -59,7 +59,7 @@ There are also keyboard shortcuts available for several commands. Here are the m
 | Blockquote      | \>                                  |                   |
 | Code Block      | \`\`\`                              |                   |
 | Horizontal Rule | \*\*\*                              | Ctrl+\_           |
-| Footnote        |                                     | Ctrl+\^           |
+| Footnote        |                                     | Shift+Ctrl+F7     |
 | Bullet List     | \-                                  |                   |
 | Ordered List    | 1\.                                 |                   |
 | List Check      | [x]                                 |                   |
