@@ -11,6 +11,15 @@ output:
       collapsed: false
 ---
 
+```{=html}
+<style>
+  .inherit-text {
+     font-family: inherit;
+     font-size: inherit;
+     background-color: inherit;
+  }
+</style>
+```
 ## Overview
 
 RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or sometimes even Google Docs) for composition. Visual editing mode provides an alternative that is tightly integrated with RStudio and which natively reads and writes Pandoc markdown.
@@ -47,28 +56,28 @@ In addition to using the editing toolbar, you can also use markdown syntax direc
 
 There are also keyboard shortcuts available for several commands. Here are the markdown and keyboard shortcuts currently supported (note that you should substitute Cmd for Ctrl on Mac systems):
 
-| Formatting      | Markdown Shortcut                   | Keyboard Shortcut |
-|-----------------|-------------------------------------|-------------------|
-| Bold            | \*\*bold\*\*                        | Ctrl+B            |
-| Italic          | \*italic\*                          | Ctrl+I            |
-| Code            | \`code\`                            | Ctrl+D            |
-| Strikeout       | \~\~strike\~\~                      |                   |
-| Subscript       | \~sub\~                             |                   |
-| Superscript     | \^super\^                           |                   |
-| Heading         | \#\#                                |                   |
-| Blockquote      | \>                                  |                   |
-| Code Block      | \`\`\`                              |                   |
-| Horizontal Rule | \*\*\*                              | Ctrl+\_           |
-| Footnote        |                                     | Shift+Ctrl+F7     |
-| Bullet List     | \-                                  |                   |
-| Ordered List    | 1\.                                 |                   |
-| List Check      | [x]                                 |                   |
-| Definition Term | :                                   |                   |
-| Link            | `[text](href)`{=html} *or* \<href\> | Ctrl+K            |
-| Image           |                                     | Shift+Ctrl+I      |
-| R Code Chunk    |                                     | Alt+Ctrl+I        |
-| Table           |                                     | Alt+Ctrl+T        |
-| Edit Attributes |                                     | F4                |
+| Formatting      | Markdown Shortcut                                          | Keyboard Shortcut |
+|-----------------|------------------------------------------------------------|-------------------|
+| Bold            | \*\*bold\*\*                                               | Ctrl+B            |
+| Italic          | \*italic\*                                                 | Ctrl+I            |
+| Code            | \`code\`                                                   | Ctrl+D            |
+| Strikeout       | \~\~strike\~\~                                             |                   |
+| Subscript       | \~sub\~                                                    |                   |
+| Superscript     | \^super\^                                                  |                   |
+| Heading         | \#\#                                                       |                   |
+| Blockquote      | \>                                                         |                   |
+| Code Block      | \`\`\`                                                     |                   |
+| Horizontal Rule | \*\*\*                                                     | Ctrl+\_           |
+| Footnote        |                                                            | Shift+Ctrl+F7     |
+| Bullet List     | \-                                                         |                   |
+| Ordered List    | 1\.                                                        |                   |
+| List Check      | [x]                                                        |                   |
+| Definition Term | :                                                          |                   |
+| Link            | `[text](href)`{.inherit-text} *or* `<href>`{.inherit-text} | Ctrl+K            |
+| Image           |                                                            | Shift+Ctrl+I      |
+| R Code Chunk    |                                                            | Alt+Ctrl+I        |
+| Table           |                                                            | Alt+Ctrl+T        |
+| Edit Attributes |                                                            | F4                |
 
 ### Typography
 

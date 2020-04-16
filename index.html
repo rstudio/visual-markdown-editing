@@ -266,6 +266,13 @@ div.tocify {
 </div>
 
 
+<style>
+  .inherit-text {
+     font-family: inherit;
+     font-size: inherit;
+     background-color: inherit;
+  }
+</style>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 <p>RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or sometimes even Google Docs) for composition. Visual editing mode provides an alternative that is tightly integrated with RStudio and which natively reads and writes Pandoc markdown.</p>
@@ -376,7 +383,7 @@ div.tocify {
 </tr>
 <tr class="even">
 <td>Link</td>
-<td>[text](href) <em>or</em> &lt;href&gt;</td>
+<td><code class="inherit-text">[text](href)</code> <em>or</em> <code class="inherit-text">&lt;href&gt;</code></td>
 <td>Ctrl+K</td>
 </tr>
 <tr class="odd">
