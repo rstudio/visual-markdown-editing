@@ -2,24 +2,8 @@
 title: "Visual Markdown Editing"
 author: "J.J. Allaire"
 date: "`r format(Sys.time(), '%B %Y')`"
-output:
-  html_document:
-    theme: cosmo
-    self_contained: false
-    toc: true
-    toc_float:
-      collapsed: false
 ---
 
-```{=html}
-<style>
-  .inherit-text {
-     font-family: inherit;
-     font-size: inherit;
-     background-color: inherit;
-  }
-</style>
-```
 ## Overview
 
 RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or sometimes even Google Docs) for composition. Visual editing mode provides an alternative that is tightly integrated with RStudio and which natively reads and writes Pandoc markdown.
