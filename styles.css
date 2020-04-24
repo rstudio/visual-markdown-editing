@@ -4,3 +4,7 @@
   background-color: inherit;
 }
 
+p > img:only-child {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}

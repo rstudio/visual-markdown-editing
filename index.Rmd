@@ -67,25 +67,47 @@ There are also keyboard shortcuts available for several commands. Here are the m
 
 Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, -- as en-dashes, --- as em-dashes, and ... as ellipses. Visual mode supports these same transformations (so when you type --- it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
 
-## Math and Citations
+## Citations & Footnotes
 
-TeX math and citations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and create the appropriate constructs). For example, here's some inline and display math:
-
-![](images/visual-editing-math.png){width="700"}
-
-Here are some citations:
+You can include citations using the standard Pandoc syntax for citations:
 
 ![](images/visual-editing-citations.png){width="700"}
 
-You can also insert math, citations, and footnotes using commands on the **Insert** menu.
+You can include footnotes using the **Insert -\> Footnote** command. Footnote editing occurs in a pane immediately below the main document:
 
-## Raw Markup
+![](images/visual-editing.png)
 
-You can include raw TeX when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:
+## TeX Math & Commands
+
+TeX math is authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and create the appropriate constructs). For example, here's some inline and display math:
+
+![](images/visual-editing-math.png){width="700"}
+
+You can include raw TeX commands when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:
 
 ![](images/visual-editing-raw.png){width="700"}
 
-You can also include inline and block raw content of any output format supported by Pandoc (e.g. html, rtf or openxml) using the commands on the **Format -\> Raw** menu.
+You can also include inline and block raw content of any output format supported by Pandoc (e.g. html, rtf or openxml) using the commands on the **Format -\> Raw** menu
+
+## Document Navigation
+
+### Editor Outline
+
+The editor outline enables you to quickly navigate between sections of larger documents. An outline item is included for each heading within the document. You can make the outline visible using the outline button next to the visual mode button:
+
+![](images/visual-editing-outline.png){width="700"}
+
+### Find/Replace
+
+You can find and replace text within visual mode using the Find button located at the far right of the visual editing toolbar:
+
+![](images/visual-editing-find.png){width="700"}
+
+Note that Find/Replace will only locate matches within normal text (code blocks are not searched).
+
+### Display Options
+
+By default, visual mode uses a content width and font size generally comfortable for writing (similar to that used in Google Docs). You can adjust the maximum content width (by default it's 700 pixels) as well as the font size (by default the same as the IDE) within the **R Markdown -\> Advanced** preferences.
 
 ## Markdown Conversion
 
@@ -111,23 +133,7 @@ Alternatively, to specify standard Pandoc markdown *without* TeX math and raw Te
 
 You can read more about Pandoc variants and extensions in the [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) documentation.
 
-## Navigation
-
-### Document Outline
-
-The document outline enables you to quickly navigate between sections of larger documents. An outline item is included for each heading within the document. You can make the outline visible using the outline button next to the visual mode button:
-
-![](images/visual-editing-outline.png){width="700"}
-
-### Find/Replace
-
-You can find and replace text within visual mode using the Find button located at the far right of the visual editing toolbar:
-
-![](images/visual-editing-find.png){width="700"}
-
-Note that Find/Replace will only locate matches within normal text (code blocks are not searched).
-
-## Line Wrapping
+### Line Wrapping
 
 By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.
 

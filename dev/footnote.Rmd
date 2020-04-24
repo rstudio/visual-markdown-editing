@@ -1,0 +1,5 @@
+## Editing Commands {.}
+
+Visual editing mode includes conventional word-processor style gestures for headings, formatting, etc. on the editing toolbar. In addition, the editor supports all of Pandoc markdown, including tables, footnotes, citations, defnition lists, divs & spans, inline LaTeX/HTML, etc.[^1]
+
+[^1]: The editor also implements a number of commonly used extensions to Pandoc markdown, including Bookdown cross-references and Blogdown shortcodes.
