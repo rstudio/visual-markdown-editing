@@ -1,0 +1,6 @@
+<!-- -*- mode: gfm -*- -->
+
+### Code Attributes
+
+    def function()
+      return 1 + 1

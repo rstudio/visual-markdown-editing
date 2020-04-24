@@ -1,0 +1,11 @@
+### Inline Math
+
+The solution to $\sqrt{x}=5$ is $x=25$.
+
+This formula $f(x) = x^2$ is another example.
+
+### Display Math
+
+$$
+P(E) = {n \choose k} p^k (1-p)^{n-k}
+$$

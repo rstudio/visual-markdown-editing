@@ -1,0 +1,7 @@
+<!-- -*- mode: markdown_strict -*- -->
+
+\@ref(asfsad)
+
+\@ref(asdfsd)
+
+\@ref(foo)
