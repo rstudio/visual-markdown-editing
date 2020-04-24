@@ -18,7 +18,7 @@ This mode is currently only useful for composition (code chunks are not executab
 
 Visual markdown editing is currently only available in the daily build of RStudio v1.4. You can download the most recent daily build here: <https://dailies.rstudio.com>.
 
-Visual markdown editing is not available by default. To enable it, use the **R Markdown** tab of RStudio preferences:
+Visual markdown editing is not available by default. To enable it, use the **R Markdown** tab of RStudio Preferences:
 
 ![](images/visual-editing-pref.png){style="border: 1px solid rgb(230, 230, 230)" width="588"}
 
