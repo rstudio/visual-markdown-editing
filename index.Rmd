@@ -40,30 +40,31 @@ In addition to using the editing toolbar, you can also use markdown syntax direc
 
 ### Shortcuts
 
-There are also keyboard shortcuts available for several commands. Here are the markdown and keyboard shortcuts currently supported (note that you should substitute Cmd for Ctrl on Mac systems):
+There are also keyboard shortcuts available for several commands. Here are the keyboard and markdown shortcuts currently supported (note that you should substitute Cmd for Ctrl on Mac systems):
 
-| Formatting      | Markdown Shortcut                                          | Keyboard Shortcut |
-|-----------------|------------------------------------------------------------|-------------------|
-| Bold            | \*\*bold\*\*                                               | Ctrl+B            |
-| Italic          | \*italic\*                                                 | Ctrl+I            |
-| Code            | \`code\`                                                   | Ctrl+D            |
-| Strikeout       | \~\~strike\~\~                                             |                   |
-| Subscript       | \~sub\~                                                    |                   |
-| Superscript     | \^super\^                                                  |                   |
-| Heading         | \#\#                                                       |                   |
-| Blockquote      | \>                                                         |                   |
-| Code Block      | \`\`\`                                                     |                   |
-| Horizontal Rule | \*\*\*                                                     | Ctrl+\_           |
-| Footnote        |                                                            | Shift+Ctrl+F7     |
-| Bullet List     | \-                                                         |                   |
-| Ordered List    | 1\.                                                        |                   |
-| List Check      | [x]                                                        |                   |
-| Definition Term | :                                                          |                   |
-| Link            | `[text](href)`{.inherit-text} *or* `<href>`{.inherit-text} | Ctrl+K            |
-| Image           |                                                            | Shift+Ctrl+I      |
-| R Code Chunk    |                                                            | Alt+Ctrl+I        |
-| Table           |                                                            | Alt+Ctrl+T        |
-| Edit Attributes |                                                            | F4                |
+| Formatting       | Keyboard Shortcut | Markdown Shortcut                                          |
+|------------------|-------------------|------------------------------------------------------------|
+| Bold             | Ctrl+B            | \*\*bold\*\*                                               |
+| Italic           | Ctrl+I            | \*italic\*                                                 |
+| Code             | Ctrl+D            | \`code\`                                                   |
+| Strikeout        |                   | \~\~strike\~\~                                             |
+| Subscript        |                   | \~sub\~                                                    |
+| Superscript      |                   | \^super\^                                                  |
+| Heading          |                   | \#\#                                                       |
+| Blockquote       |                   | \>                                                         |
+| Code Block       |                   | \`\`\`                                                     |
+| Horizontal Rule  | Ctrl+\_           | \*\*\*                                                     |
+| Bullet List      |                   | \-                                                         |
+| Ordered List     |                   | 1\.                                                        |
+| List Check       |                   | [x]                                                        |
+| Definition       |                   | :                                                          |
+| Link             | Ctrl+K            | `[text](href)`{.inherit-text} *or* `<href>`{.inherit-text} |
+| Image            | Shift+Ctrl+I      |                                                            |
+| Footnote         | Shift+Ctrl+F7     |                                                            |
+| R Code Chunk     | Alt+Ctrl+I        |                                                            |
+| Table            | Alt+Ctrl+T        |                                                            |
+| Edit Attributes  | F4                |                                                            |
+| Clear Formatting | Ctrl+\\           |                                                            |
 
 ### Typography
 
