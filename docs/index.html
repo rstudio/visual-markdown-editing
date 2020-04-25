@@ -264,7 +264,7 @@ div.tocify {
 
 <div id="overview" class="section level2">
 <h2>Overview</h2>
-<p>RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or sometimes even Google Docs) for composition. Visual editing mode provides an alternative that is tightly integrated with RStudio and which natively reads and writes Pandoc markdown.</p>
+<p>RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or sometimes even Google Docs) for composition. Visual editing mode provides an alternative that is tightly integrated with RStudio and which naively reads and writes Pandoc markdown.</p>
 <p><img src="images/visual-editing.png" width="700" /></p>
 <p>You can easily switch between source and visual editing modes, using whichever mode works best for the different stages of work on an R Markdown document.</p>
 <p>This mode is currently only useful for composition (code chunks are not executable). We expect this to change in future versions of RStudio.</p>
@@ -408,7 +408,7 @@ div.tocify {
 <p>You can include citations using the standard Pandoc syntax for citations:</p>
 <p><img src="images/visual-editing-citations.png" width="700" /></p>
 <p>You can include footnotes using the <strong>Insert -&gt; Footnote</strong> command. Footnote editing occurs in a pane immediately below the main document:</p>
-<p><img src="images/visual-editing.png" /></p>
+<p><img src="images/visual-editing.png" width="700" /></p>
 </div>
 <div id="tex-math-commands" class="section level2">
 <h2>TeX Math &amp; Commands</h2>
@@ -436,20 +436,28 @@ div.tocify {
 <p>By default, visual mode uses a content width and font size generally comfortable for writing (similar to that used in Google Docs). You can adjust the maximum content width (by default it’s 700 pixels) as well as the font size (by default the same as the IDE) within the <strong>R Markdown -&gt; Advanced</strong> preferences.</p>
 </div>
 </div>
-<div id="markdown-conversion" class="section level2">
-<h2>Markdown Conversion</h2>
+<div id="markdown-formats" class="section level2">
+<h2>Markdown Formats</h2>
 <p>Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be <em>rewritten</em> to conform to standard Pandoc idioms. For example, Pandoc writes 3 spaces after list bullets, and automatically escapes characters that might be used for markdown syntax.</p>
 <p>While this might be bothersome at first, if you decide that visual editing mode is useful for your workflow it’s probably best to just adapt to writing your own markdown the same way that Pandoc does. If any of Pandoc’s idioms are particularly troublesome, <a href="https://github.com/rstudio/rstudio/issues/new">let us know</a> and we’ll see if we can add an option to override the default behavior.</p>
-<div id="markdown-variants" class="section level3">
-<h3>Markdown Variants</h3>
+<div id="modes-extensions" class="section level3">
+<h3>Modes &amp; Extensions</h3>
 <p>Visual editing mode can author all of the markdown variants supported by Pandoc. By default, features associated with standard Pandoc markdown are enabled. You can change this behavior by including an Emacs-style magic comment in your markdown document. For example, to specify that you’d like to create GitHub Flavored Markdown (Pandoc’s “gfm” variant), add this comment:</p>
 <pre><code>&lt;!-- -*- mode: gfm -*- --&gt; </code></pre>
-<p>Note that for R Markdown (Rmd) files this comment should be located immediately after the YAML metadata block at the top of the document.</p>
+<p>Add the comment while in source mode (it will be hidden while editing in visual mode). Note that for R Markdown (Rmd) files this comment should be located immediately after the YAML metadata block at the top of the document.</p>
+<p>Markdown variants supported by the editor include <code>markdown</code>, <code>markdown_strict</code>, <code>markdown_phpextra</code>, <code>gfm</code>, <code>commonmark</code>, and <code>blackfriday</code>.</p>
 <p>You can also specify that particular extensions be enabled or disabled. For example, to specify GitHub Flavored Markdown with additional support for TeX math and raw Tex, you would use this comment:</p>
 <pre><code>&lt;!-- -*- mode: gfm; extensions: +tex_math_dollars+raw_tex -*- --&gt; </code></pre>
 <p>Alternatively, to specify standard Pandoc markdown <em>without</em> TeX math and raw TeX, you would use this comment (note the minus sign before the disabled extensions):</p>
 <pre><code>&lt;!-- -*- mode: markdown; extensions: -tex_math_dollars-raw_tex -*- --&gt; </code></pre>
 <p>You can read more about Pandoc variants and extensions in the <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc Markdown</a> documentation.</p>
+</div>
+<div id="document-types" class="section level3">
+<h3>Document Types</h3>
+<p>The R Markdown ecosystem has a wide variety of document formats, most of which rely on the core set of Pandoc markdown extensions. However, there are a number of formats that include additional markdown extensions (for example, the cross-reference extension introduced by the <a href="https://bookdown.org">bookdown</a> package is also supported by the <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://rstudio.github.io/distill">distll</a> packages).</p>
+<p>RStudio can generally detect which type of document is being edited and enable the requisite extensions. In the case that this doesn’t work as expected, you can specify a <code>doctype</code> in the format comment to make it explicit. For example:</p>
+<pre><code>&lt;!-- -*- doctype: blogdown -*- --&gt;</code></pre>
+<p>Available doctypes include <code>xref</code>, <code>bookdown</code>, <code>blogdown</code>, and <code>hugo</code> (you can specify more than one doctype by separating them with commas). The <code>xref</code> doctype specifies any document that supports bookdown cross-references (e.g. distill) and is implied by the <code>bookdown</code> and <code>blogdown</code> doctypes. The <code>hugo</code> doctype indicates a document that supports Hugo shortcodes, and is also implied by the <code>blogdown</code> doctype.</p>
 </div>
 <div id="line-wrapping" class="section level3">
 <h3>Line Wrapping</h3>
@@ -472,7 +480,7 @@ div.tocify {
 </thead>
 <tbody>
 <tr class="odd">
-<td>Inlne footnotes</td>
+<td>Inline footnotes</td>
 <td>^[inline footnote]</td>
 <td>Converted to numeric footnote.</td>
 </tr>
