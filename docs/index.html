@@ -264,10 +264,13 @@ div.tocify {
 
 <div id="overview" class="section level2">
 <h2>Overview</h2>
-<p>RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or sometimes even Google Docs) for composition. Visual editing mode provides an alternative that is tightly integrated with RStudio and which naively reads and writes Pandoc markdown.</p>
-<p><img src="images/visual-editing.png" width="700" /></p>
-<p>You can easily switch between source and visual editing modes, using whichever mode works best for the different stages of work on an R Markdown document.</p>
-<p>This mode is currently only useful for composition (code chunks are not executable). We expect this to change in future versions of RStudio.</p>
+<p>RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or even Google Docs) for composition. Visual editing mode provides an alternative that is seamlessly integrated with RStudio. Features of visual mode include:</p>
+<ul>
+<li><p>Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, defintiton lists, id/class attributes, LaTeX math, and inilne TeX/HTML.</p></li>
+<li><p>Markdown expressions (e.g. <code>##</code>, <code>**bold**,</code> etc.) can be used within the visual editor for formatting.</p></li>
+<li><p>Tight integration with source editing (when you switch between modes your editing location is preserved).</p></li>
+</ul>
+<p>Visual mode is currently only useful for composition (code chunks are not executable). We plan on adding support for code execution in future versions of RStudio.</p>
 </div>
 <div id="getting-started" class="section level2">
 <h2>Getting Started</h2>
@@ -433,7 +436,7 @@ div.tocify {
 </div>
 <div id="display-options" class="section level3">
 <h3>Display Options</h3>
-<p>By default, visual mode uses a content width and font size generally comfortable for writing (similar to that used in Google Docs). You can adjust the maximum content width (by default it’s 700 pixels) as well as the font size (by default the same as the IDE) within the <strong>R Markdown -&gt; Advanced</strong> preferences.</p>
+<p>Visual mode uses a content width and font size generally comfortable for writing (similar to that of Google Docs). You can adjust the maximum content width (by default it’s 700 pixels) as well as the font size (by default the same as the IDE) within the <strong>R Markdown -&gt; Advanced</strong> preferences.</p>
 </div>
 </div>
 <div id="markdown-formats" class="section level2">
