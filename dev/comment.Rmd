@@ -1,0 +1,18 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+<!-- here is a comment -->
+
+are we <!--# a comment --> getting it right? <!-- a comment -->
+
+<!-- here is another comment -->
+
+<!--@ This is what we do -->
+
+<!--# I don’t think so -->
+
+<!--# here is an editing comment -->
+
+This paragarph has a bit of everything. First an <!--# editing comment -->. Then a <!-- Non editing comment -->. Finally, another <!--# editing comment -->.
