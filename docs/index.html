@@ -270,24 +270,20 @@ div.tocify {
 <li><p>Markdown expressions (e.g. <code>##</code>, <code>**bold**,</code> etc.) can be used within the visual editor for formatting.</p></li>
 <li><p>Tight integration with source editing (when you switch between modes your editing location is preserved).</p></li>
 </ul>
-<p>Visual mode is currently only useful for composition (code chunks are not executable). We plan on adding support for code execution in future versions of RStudio.</p>
+<p>Visual mode is currently only useful for composition (code chunks are not executable). As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. We plan on adding support for code execution in a future version of RStudio.</p>
 </div>
 <div id="getting-started" class="section level2">
 <h2>Getting Started</h2>
 <p>Visual markdown editing is currently only available in the daily build of RStudio v1.4. You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
 <p>Visual markdown editing is not available by default. To enable it, use the <strong>R Markdown</strong> tab of RStudio Preferences:</p>
-<p><img src="images/visual-editing-pref.png" style="border: 1px solid rgb(230, 230, 230)" width="588" /></p>
-<p>Once you’ve enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar:</p>
-<p><img src="images/visual-editing-toggle.png" width="700" /></p>
-<p>Once you’ve done this, the editor will switch to visual mode and an editing toolbar with various formatting commands will appear. There is also a keyboard shortcut (<strong>Ctrl+Shift+F8</strong>) that can be used to switch modes.</p>
+<p><img src="images/visual-editing-pref.png" style="border: 1px solid rgb(230, 230, 230);" width="588" /></p>
+<p>Once you’ve enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar. There is also a keyboard shortcut (<strong>Ctrl+Shift+F8</strong>) that can be used to switch modes:</p>
+<p><img src="images/visual-editing.png" width="700" /></p>
+<p>The visual editor includes it’s own toolbar with markdown editing commands. Check out the <strong>Format</strong>, <strong>Insert</strong>, and <strong>Table</strong> menus to see the various supported commands.</p>
 </div>
-<div id="editing-commands" class="section level2">
-<h2>Editing Commands</h2>
-<p>Visual editing mode includes conventional word-processor style gestures for headings, formatting, etc. on the editing toolbar:</p>
-<p><img src="images/visual-editing-toolbar.png" width="700" /></p>
+<div id="markdown-shortcuts" class="section level2">
+<h2>Markdown Shortcuts</h2>
 <p>In addition to using the editing toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting. Note that if you didn’t intend this, you can use backspace to revert the applied formatting.</p>
-<div id="shortcuts" class="section level3">
-<h3>Shortcuts</h3>
 <p>There are also keyboard shortcuts available for several commands. Here are the keyboard and markdown shortcuts currently supported (note that you should substitute Cmd for Ctrl on Mac systems):</p>
 <table>
 <thead>
@@ -364,7 +360,7 @@ div.tocify {
 <td>[x]</td>
 </tr>
 <tr class="even">
-<td>Definition Term</td>
+<td>Definition</td>
 <td></td>
 <td>:</td>
 </tr>
@@ -405,26 +401,40 @@ div.tocify {
 </tr>
 </tbody>
 </table>
-</div>
 <div id="typography" class="section level3">
 <h3>Typography</h3>
 <p>Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, – as en-dashes, — as em-dashes, and … as ellipses. Visual mode supports these same transformations (so when you type — it becomes an em-dash). If you didn’t intend for this transformation to occur just hit backspace and it will be reverted.</p>
 </div>
 </div>
-<div id="citations-footnotes" class="section level2">
-<h2>Citations &amp; Footnotes</h2>
+<div id="markdown-editing" class="section level2">
+<h2>Markdown Editing</h2>
+<p>Visual mode has direct editing support for all of Pandoc markdown. Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor. This section covers how to include more advanced Pandoc markdown constructs.</p>
+<div id="table-editor" class="section level3">
+<h3>Table Editor</h3>
+<!--# TODO: create a table section -->
+</div>
+<div id="citations-footnotes" class="section level3">
+<h3>Citations &amp; Footnotes</h3>
 <p>You can include citations using the standard Pandoc syntax for citations:</p>
 <p><img src="images/visual-editing-citations.png" width="700" /></p>
-<p>You can include footnotes using the <strong>Insert -&gt; Footnote</strong> command. Footnote editing occurs in a pane immediately below the main document:</p>
-<p><img src="images/visual-editing.png" width="700" /></p>
+<p>You can include footnotes using the <strong>Insert -&gt; Footnote</strong> command. Footnote editing occurs in a pane immediately below the main document.</p>
 </div>
-<div id="tex-math-commands" class="section level2">
-<h2>TeX Math &amp; Commands</h2>
+<div id="tex-math-commands" class="section level3">
+<h3>TeX Math &amp; Commands</h3>
 <p>TeX math is authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and create the appropriate constructs). For example, here’s some inline and display math:</p>
 <p><img src="images/visual-editing-math.png" width="700" /></p>
-<p>You can include raw TeX commands when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:</p>
+<p>You can also include raw TeX commands when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:</p>
 <p><img src="images/visual-editing-raw.png" width="700" /></p>
 <p>You can also include inline and block raw content of any output format supported by Pandoc (e.g. html, rtf or openxml) using the commands on the <strong>Format -&gt; Raw</strong> menu</p>
+</div>
+<div id="comments" class="section level3">
+<h3>Comments</h3>
+<!--# TODO: create a comments section -->
+</div>
+</div>
+<div id="bookdown-blogdown" class="section level2">
+<h2>Bookdown &amp; Blogdown</h2>
+<!--# TODO: bookdown and blogdown section -->
 </div>
 <div id="document-navigation" class="section level2">
 <h2>Document Navigation</h2>
@@ -475,8 +485,8 @@ div.tocify {
 <p>Note that there are some disadvantages to setting a <code>fill-column.</code> First, editing paragraphs in source mode will be less convenient (because line wrapping will need to done manually). Second, tables with many explicitly sized columns (more than 10 or so) may be written by Pandoc as HTML rather than markdown.</p>
 </div>
 </div>
-<div id="known-limitations" class="section level2">
-<h2>Known Limitations</h2>
+<div id="limitations" class="section level2">
+<h2>Limitations</h2>
 <p>There are a handful of Pandoc markdown extensions not currently supported by visual editing. These are infrequently used extensions so in all likelihood won’t affect documents you edit, but are still worth noting.</p>
 <table>
 <thead>

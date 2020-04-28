@@ -14,7 +14,7 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Users of R M
 
 -   Tight integration with source editing (when you switch between modes your editing location is preserved).
 
-Visual mode is currently only useful for composition (code chunks are not executable). We plan on adding support for code execution in future versions of RStudio.
+Visual mode is currently only useful for composition (code chunks are not executable). As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. We plan on adding support for code execution in a future version of RStudio.
 
 ## Getting Started
 
@@ -22,23 +22,17 @@ Visual markdown editing is currently only available in the daily build of RStudi
 
 Visual markdown editing is not available by default. To enable it, use the **R Markdown** tab of RStudio Preferences:
 
-![](images/visual-editing-pref.png){style="border: 1px solid rgb(230, 230, 230)" width="588"}
+![](images/visual-editing-pref.png){style="border: 1px solid rgb(230, 230, 230);" width="588"}
 
-Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar:
+Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, **Ctrl+Shift+F8**, that can be used to switch modes):
 
-![](images/visual-editing-toggle.png){width="700"}
+![](images/visual-editing.png){width="700"}
 
-Once you've done this, the editor will switch to visual mode and an editing toolbar with various formatting commands will appear. There is also a keyboard shortcut (**Ctrl+Shift+F8**) that can be used to switch modes.
+The visual editor includes it's own toolbar with markdown editing commands. Check out the **Format**, **Insert**, and **Table** menus to see the various supported commands.
 
-## Editing Commands
+## Markdown Shortcuts
 
-Visual editing mode includes conventional word-processor style gestures for headings, formatting, etc. on the editing toolbar:
-
-![](images/visual-editing-toolbar.png){width="700"}
-
-In addition to using the editing toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting. Note that if you didn't intend this, you can use backspace to revert the applied formatting.
-
-### Shortcuts
+In addition to using the toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting. For example, enclose `**bold**`text in asterisks or type `##` and press enter to create a second level heading. Note that if you didn't intend this, you can use backspace to revert the applied formatting.
 
 There are also keyboard shortcuts available for several commands. Here are the keyboard and markdown shortcuts currently supported (note that you should substitute Cmd for Ctrl on Mac systems):
 
@@ -70,27 +64,45 @@ There are also keyboard shortcuts available for several commands. Here are the k
 
 Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, -- as en-dashes, --- as em-dashes, and ... as ellipses. Visual mode supports these same transformations (so when you type --- it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
 
-## Citations & Footnotes
+## Markdown Editing
+
+Visual mode has direct editing support for all of Pandoc markdown. Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor. This section covers how to work with more advanced Pandoc markdown constructs.
+
+### Table Editor
+
+<!--# TODO: create a table section -->
+
+### Citations & Footnotes
 
 You can include citations using the standard Pandoc syntax for citations:
 
 ![](images/visual-editing-citations.png){width="700"}
 
-You can include footnotes using the **Insert -\> Footnote** command. Footnote editing occurs in a pane immediately below the main document:
+You can include footnotes using the **Insert -\> Footnote** command. Footnote editing occurs in a pane immediately below the main document.
 
-![](images/visual-editing.png){width="700"}
-
-## TeX Math & Commands
+### TeX Math & Commands
 
 TeX math is authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and create the appropriate constructs). For example, here's some inline and display math:
 
 ![](images/visual-editing-math.png){width="700"}
 
-You can include raw TeX commands when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:
+You can also include raw TeX commands when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:
 
 ![](images/visual-editing-raw.png){width="700"}
 
 You can also include inline and block raw content of any output format supported by Pandoc (e.g. html, rtf or openxml) using the commands on the **Format -\> Raw** menu
+
+### Pandoc Attributes
+
+<!--# TODO: create a pandoc attributes section -->
+
+### Comments
+
+<!--# TODO: create a comments section -->
+
+## Bookdown & Blogdown
+
+<!--# TODO: bookdown and blogdown section -->
 
 ## Document Navigation
 
