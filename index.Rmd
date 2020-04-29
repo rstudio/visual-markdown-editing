@@ -102,8 +102,19 @@ You can also include inline and block raw content of any output format supported
 
 ## Bookdown & Blogdown
 
-<!--# TODO: bookdown and blogdown section -->
+The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also suports markdown cross-references along with Hugo shortcodes. It's also possible to use blogdown with an [alternate](https://bookdown.org/yihui/blogdown/output-format.html) markdown engine (as opposed to using Pandoc). This section describes visual mode
 
+```{=html}
+<!--
+Bookdown & Blogdown docs:
+  - Math in code
+  - @ref has no \
+  - Hugo shortcodes
+  - Heading parts (need to explicitly use .unnumbered and don't use the \* escape)
+  - Using blackfriday explicitly
+  - Setting the doctype(s) explicitly (should xref be a doctype or should it be distill)
+-->
+```
 ## Document Navigation
 
 ### Editor Outline
