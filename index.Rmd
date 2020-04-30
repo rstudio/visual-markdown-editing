@@ -114,6 +114,8 @@ When reviewing an R Markdown document you often want to provide inline comments 
 
 ![](images/visual-editing-comment.png){width="700"}
 
+Note that the \# prefix used in the comment is what triggers the special background highlighting. If you remove the `#` it will still be a valid HTML comment, but just won't be highlighted as shown above.
+
 You can insert an HTML comment using the Comment button on the toolbar or via the **Ctrl+Shift+C** keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
 
 ## Bookdown & Blogdown

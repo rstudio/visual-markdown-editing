@@ -461,6 +461,7 @@ div.tocify {
 <h3>Review &amp; Commenting</h3>
 <p>When reviewing an R Markdown document you often want to provide inline comments with suggested revisions. This is possible in R Markdown using HTML comments (which are ignored by all output formats). Visual mode includes a command for inserting HTML comments as well as special highlighting treatment to easily parse out editing comments from surrounding text.</p>
 <p><img src="images/visual-editing-comment.png" width="700" /></p>
+<p>Note that the # prefix used in the comment is what triggers the special background highlighting. If you remove the <code>#</code> it will still be a valid HTML comment, but just won’t be highlighted as shown above.</p>
 <p>You can insert an HTML comment using the Comment button on the toolbar or via the <strong>Ctrl+Shift+C</strong> keyboard shortcut. Remember, HTML comments won’t show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.</p>
 </div>
 </div>
