@@ -272,7 +272,7 @@ div.tocify {
 <h2>Overview</h2>
 <p>RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or even Google Docs) for composition. Visual editing mode provides an alternative that is seamlessly integrated with RStudio. Features of visual mode include:</p>
 <ul>
-<li><p>Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, defintiton lists, id/class attributes, LaTeX math, and inilne TeX/HTML.</p></li>
+<li><p>Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, LaTeX math, and inline TeX/HTML.</p></li>
 <li><p>Markdown expressions (e.g. <code>##</code>, <code>**bold**,</code> etc.) can be used within the visual editor for formatting.</p></li>
 <li><p>Tight integration with source editing (when you switch between modes your editing location is preserved).</p></li>
 </ul>
@@ -466,7 +466,7 @@ div.tocify {
 </div>
 <div id="bookdown-blogdown" class="section level2">
 <h2>Bookdown &amp; Blogdown</h2>
-<p>The <a href="https://bookdown.org">bookdown</a> package includes markdown extensions for cross-references and part headers. The <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> package also suports cross-references as well as inline Hugo shortcodes. It’s also possible to use blogdown with an <a href="https://bookdown.org/yihui/blogdown/output-format.html">alternate</a> markdown engine (as opposed to using Pandoc). All of these extensions and alternate configurations are supported by visual mode.</p>
+<p>The <a href="https://bookdown.org">bookdown</a> package includes markdown extensions for cross-references and part headers. The <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> package also supports cross-references as well as inline Hugo shortcodes. It’s also possible to use blogdown with an <a href="https://bookdown.org/yihui/blogdown/output-format.html">alternate</a> markdown engine (as opposed to using Pandoc). All of these extensions and alternate configurations are supported by visual mode.</p>
 <div id="cross-references" class="section level3">
 <h3>Cross References</h3>
 <p>Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document. In raw markdown, you would for example write a cross-reference to a figure like this: <code>\@ref(fig:label)</code>. Cross-references are largely the same in visual mode, but you don’t need the leading <code>\</code> (which in raw markdown is used to escape the <code>@</code> character). For example:</p>
@@ -475,7 +475,7 @@ div.tocify {
 </div>
 <div id="part-headers" class="section level3">
 <h3>Part Headers</h3>
-<p>Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analagous to the LaTeX <code>\part{}</code> command). These work the same in visual mode, but if you use the special extension for unnumered part headers (written in raw markdown as <code>(PART\*)</code>, you don’t need to include the escape character for the asterisk. You also should use the explicit <code>{.unnumbered}</code> class as opposed to the shorthand <code>{-}.</code> For example:</p>
+<p>Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX <code>\part{}</code> command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as <code>(PART\*)</code>, you don’t need to include the escape character for the asterisk. You also should use the explicit <code>{.unnumbered}</code> class as opposed to the shorthand <code>{-}</code>. For example:</p>
 <p><img src="images/visual-editing-part.png" width="700" /></p>
 <p>See the bookdown documentation for more information on <a href="https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#special-headers">part headers</a>.</p>
 </div>

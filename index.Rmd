@@ -8,7 +8,7 @@ date: "`r format(Sys.time(), '%B %Y')`"
 
 RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or even Google Docs) for composition. Visual editing mode provides an alternative that is seamlessly integrated with RStudio. Features of visual mode include:
 
--   Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, defintiton lists, id/class attributes, LaTeX math, and inilne TeX/HTML.
+-   Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, LaTeX math, and inline TeX/HTML.
 
 -   Markdown expressions (e.g. `##`, `**bold**,` etc.) can be used within the visual editor for formatting.
 
@@ -118,9 +118,9 @@ You can insert an HTML comment using the Comment button on the toolbar or via th
 
 ## Bookdown & Blogdown
 
-The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also suports cross-references as well as inline Hugo shortcodes. It's also possible to use blogdown with an [alternate](https://bookdown.org/yihui/blogdown/output-format.html) markdown engine (as opposed to using Pandoc). All of these extensions and alternate configurations are supported by visual mode.
+The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also supports cross-references as well as inline Hugo shortcodes. It's also possible to use blogdown with an [alternate](https://bookdown.org/yihui/blogdown/output-format.html) markdown engine (as opposed to using Pandoc). All of these extensions and alternate configurations are supported by visual mode.
 
-### Cross References 
+### Cross References
 
 Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document. In raw markdown, you would for example write a cross-reference to a figure like this: `\@ref(fig:label)`. Cross-references are largely the same in visual mode, but you don't need the leading `\` (which in raw markdown is used to escape the `@` character). For example:
 
@@ -130,7 +130,7 @@ The leading `\` will be automatically written into the markdown source by the vi
 
 ### Part Headers
 
-Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analagous to the LaTeX `\part{}` command). These work the same in visual mode, but if you use the special extension for unnumered part headers (written in raw markdown as `(PART\*)`, you don't need to include the escape character for the asterisk. You also should use the explicit `{.unnumbered}` class as opposed to the shorthand `{-}.` For example:
+Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX `\part{}` command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as `(PART\*)`, you don't need to include the escape character for the asterisk. You also should use the explicit `{.unnumbered}` class as opposed to the shorthand `{-}`. For example:
 
 ![](images/visual-editing-part.png){width="700"}
 
