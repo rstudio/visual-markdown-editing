@@ -7,5 +7,5 @@ output:
     highlight: textmate
     toc: true
     toc_float:
-      collapsed: true
+      collapsed: false
     css: styles.css

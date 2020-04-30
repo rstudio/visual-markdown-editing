@@ -8,3 +8,7 @@ p > img:only-child {
   margin-top: 8px;
   margin-bottom: 8px;
 }
+
+.illustration {
+  border: 1px solid rgb(230, 230, 230);
+}

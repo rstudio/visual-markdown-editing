@@ -22,19 +22,35 @@ Visual markdown editing is currently only available in the daily build of RStudi
 
 Visual markdown editing is not available by default. To enable it, use the **R Markdown** tab of RStudio Preferences:
 
-![](images/visual-editing-pref.png){style="border: 1px solid rgb(230, 230, 230);" width="588"}
+![](images/visual-editing-pref.png){.illustration width="588"}
 
 Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, **Ctrl+Shift+F8**, that can be used to switch modes):
 
 ![](images/visual-editing.png){width="700"}
 
-The visual editor includes it's own toolbar with markdown editing commands. Check out the **Format**, **Insert**, and **Table** menus to see the various supported commands.
+## Editing Basics
 
-## Markdown Shortcuts
+Visual mode has direct editing support for all of Pandoc markdown. Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor. You can access editing commands using either the toolbar or via shortcuts.
 
-In addition to using the toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting. For example, enclose `**bold**`text in asterisks or type `##` and press enter to create a second level heading. Note that if you didn't intend this, you can use backspace to revert the applied formatting.
+### Editor Toolbar
 
-There are also keyboard shortcuts available for several commands. Here are the keyboard and markdown shortcuts currently supported (note that you should substitute Cmd for Ctrl on Mac systems):
+The editor toolbar includes buttons for the most commonly used formatting commands:
+
+![](images/visual-editing-toolbar.png){width="700"}
+
+Additional commands are available on the Format, Insert, and Table menus:
+
+| Format                                                  | Insert                                                  | Table                                                  |
+|---------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
+| ![](images/visual-editing-format-menu.png){width="217"} | ![](images/visual-editing-insert-menu.png){width="217"} | ![](images/visual-editing-table-menu.png){width="217"} |
+
+### Editor Shortcuts
+
+In addition to using the toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting.
+
+For example, enclose `**bold**`text in asterisks or type `##` and press enter to create a second level heading. Note that if you didn't intend this, you can use backspace to revert the applied formatting.
+
+There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts (note that you should substitute Cmd for Ctrl on Mac systems):
 
 | Formatting       | Keyboard Shortcut | Markdown Shortcut                                          |
 |------------------|-------------------|------------------------------------------------------------|
@@ -64,14 +80,6 @@ There are also keyboard shortcuts available for several commands. Here are the k
 
 Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, -- as en-dashes, --- as em-dashes, and ... as ellipses. Visual mode supports these same transformations (so when you type --- it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
 
-## Markdown Editing
-
-Visual mode has direct editing support for all of Pandoc markdown. Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor. This section covers how to work with more advanced Pandoc markdown constructs.
-
-### Table Editor
-
-<!--# TODO: create a table section -->
-
 ### Citations & Footnotes
 
 You can include citations using the standard Pandoc syntax for citations:
@@ -94,18 +102,26 @@ You can also include inline and block raw content of any output format supported
 
 ### Pandoc Attributes
 
-<!--# TODO: create a pandoc attributes section -->
+Several of Pandoc's block types (e.g. headings, code blocks, and divs) enable you to specify a set of [custom attributes](https://pandoc.org/MANUAL.html#heading-identifiers). Attributes include IDs, class names, as well as arbitrary key-value pairs that are passed through to output formats (e.g. as attributes for HTML tags). For these block types, an edit button will appear at the the top right when your cursor is within the block:
 
-### Comments
+![](images/visual-editing-attributes.png){width="700"}
 
-<!--# TODO: create a comments section -->
+Note that any ID as well as the first class specified within the attributes are also displayed. Click the edit button or use the **F4** keyboard shortcut to edit the attributes.
 
+### Review & Commenting
+
+When reviewing an R Markdown document you often want to provide inline comments with suggested revisions. This is possible in R Markdown using HTML comments (which are ignored by all output formats). Visual mode includes a command for inserting HTML comments as well as special highlighting treatment to easily parse out editing comments from surrounding text.
+
+![](images/visual-editing-comment.png){width="700"}
+
+You can insert an HTML comment using the Comment button on the toolbar or via the **Ctrl+Shift+C** keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
+
+```{=html}
+<!--
 ## Bookdown & Blogdown
 
 The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also suports markdown cross-references along with Hugo shortcodes. It's also possible to use blogdown with an [alternate](https://bookdown.org/yihui/blogdown/output-format.html) markdown engine (as opposed to using Pandoc). This section describes visual mode
 
-```{=html}
-<!--
 Bookdown & Blogdown docs:
   - Math in code
   - @ref has no \
@@ -135,9 +151,9 @@ Note that Find/Replace will only locate matches within normal text (code blocks 
 
 Visual mode uses a content width and font size generally comfortable for writing (similar to that of Google Docs). You can adjust the maximum content width (by default it's 700 pixels) as well as the font size (by default the same as the IDE) within the **R Markdown -\> Advanced** preferences.
 
-## Markdown Formats
+## Markdown Conversion
 
-Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc writes 3 spaces after list bullets, and automatically escapes characters that might be used for markdown syntax.
+Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc writes footnotes at the end of the document, inserts 3 spaces after list bullets, and automatically escapes characters that might be used for markdown syntax.
 
 While this might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. If any of Pandoc's idioms are particularly troublesome, [let us know](https://github.com/rstudio/rstudio/issues/new) and we'll see if we can add an option to override the default behavior.
 
@@ -170,6 +186,8 @@ RStudio can generally detect which type of document is being edited and enable t
     <!-- -*- doctype: blogdown -*- -->
 
 Available doctypes include `xref`, `bookdown`, `blogdown`, and `hugo` (you can specify more than one doctype by separating them with commas). The `xref` doctype specifies any document that supports bookdown cross-references (e.g. distill) and is implied by the `bookdown` and `blogdown` doctypes. The `hugo` doctype indicates a document that supports Hugo shortcodes, and is also implied by the `blogdown` doctype.
+
+Again, you typically don't need to use an explicit `doctype`, since RStudio can generally automatically detect this based on the type of your current project.
 
 ### Line Wrapping
 
