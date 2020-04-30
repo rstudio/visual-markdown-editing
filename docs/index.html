@@ -280,7 +280,7 @@ div.tocify {
 </div>
 <div id="getting-started" class="section level2">
 <h2>Getting Started</h2>
-<p>Visual markdown editing is currently only available in the daily build of RStudio v1.4. You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
+<p>Visual markdown editing is currently only available in the daily build of RStudio (version 1.4.286 or later). You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
 <p>Visual markdown editing is not available by default. To enable it, use the <strong>R Markdown</strong> tab of RStudio Preferences:</p>
 <p><img src="images/visual-editing-pref.png" class="illustration" width="588" /></p>
 <p>Once you’ve enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, <strong>Ctrl+Shift+F8</strong>, that can be used to switch modes):</p>
@@ -462,19 +462,40 @@ div.tocify {
 <p>When reviewing an R Markdown document you often want to provide inline comments with suggested revisions. This is possible in R Markdown using HTML comments (which are ignored by all output formats). Visual mode includes a command for inserting HTML comments as well as special highlighting treatment to easily parse out editing comments from surrounding text.</p>
 <p><img src="images/visual-editing-comment.png" width="700" /></p>
 <p>You can insert an HTML comment using the Comment button on the toolbar or via the <strong>Ctrl+Shift+C</strong> keyboard shortcut. Remember, HTML comments won’t show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.</p>
-<!--
-## Bookdown & Blogdown
-
-The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also suports markdown cross-references along with Hugo shortcodes. It's also possible to use blogdown with an [alternate](https://bookdown.org/yihui/blogdown/output-format.html) markdown engine (as opposed to using Pandoc). This section describes visual mode
-
-Bookdown & Blogdown docs:
-  - Math in code
-  - @ref has no \
-  - Hugo shortcodes
-  - Heading parts (need to explicitly use .unnumbered and don't use the \* escape)
-  - Using blackfriday explicitly
-  - Setting the doctype(s) explicitly (should xref be a doctype or should it be distill)
--->
+</div>
+</div>
+<div id="bookdown-blogdown" class="section level2">
+<h2>Bookdown &amp; Blogdown</h2>
+<p>The <a href="https://bookdown.org">bookdown</a> package includes markdown extensions for cross-references and part headers. The <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> package also suports cross-references as well as inline Hugo shortcodes. It’s also possible to use blogdown with an <a href="https://bookdown.org/yihui/blogdown/output-format.html">alternate</a> markdown engine (as opposed to using Pandoc). All of these extensions and alternate configurations are supported by visual mode.</p>
+<div id="cross-references" class="section level3">
+<h3>Cross References</h3>
+<p>Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document. In raw markdown, you would for example write a cross-reference to a figure like this: <code>\@ref(fig:label)</code>. Cross-references are largely the same in visual mode, but you don’t need the leading <code>\</code> (which in raw markdown is used to escape the <code>@</code> character). For example:</p>
+<p><img src="images/visual-editing-xref.png" width="700" /></p>
+<p>The leading <code>\</code> will be automatically written into the markdown source by the visual editor. See the bookdown documentation for more information on <a href="https://bookdown.org/yihui/bookdown/cross-references.html">cross-references</a>.</p>
+</div>
+<div id="part-headers" class="section level3">
+<h3>Part Headers</h3>
+<p>Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analagous to the LaTeX <code>\part{}</code> command). These work the same in visual mode, but if you use the special extension for unnumered part headers (written in raw markdown as <code>(PART\*)</code>, you don’t need to include the escape character for the asterisk. You also should use the explicit <code>{.unnumbered}</code> class as opposed to the shorthand <code>{-}.</code> For example:</p>
+<p><img src="images/visual-editing-part.png" width="700" /></p>
+<p>See the bookdown documentation for more information on <a href="https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#special-headers">part headers</a>.</p>
+</div>
+<div id="hugo-markdown" class="section level3">
+<h3>Hugo Markdown</h3>
+<p>Under the hood, Blogdown makes use of the <a href="https://gohugo.io/">Hugo</a> static site generation framework. This introduces a couple of special considerations for visual mode described below.</p>
+<div id="shortcodes" class="section level4">
+<h4>Shortcodes</h4>
+<p>Hugo includes support for <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a>, which are special macros generally used to render more complex objects (e.g. tweets or videos). You can include shortcodes in visual mode by just typing them with the normal Hugo syntax:</p>
+<p><img src="images/visual-editing-shortcodes.png" width="700" /></p>
+<p>See the blogdown documentation for more information on <a href="https://bookdown.org/yihui/blogdown/content.html#shortcode">using shortcodes</a>.</p>
+</div>
+<div id="markdown-processing" class="section level4">
+<h4>Markdown Processing</h4>
+<p>If you use normal R Markdown files (<code>.Rmd</code>) within a blogdown website, their markdown is processed by Pandoc. However, if you use a plain markdown file (<code>.md</code>) or an R Markdown file with a special extension (<code>.Rmarkdown</code>), then markdown is processed by Hugo rather than pandoc.</p>
+<p>In this case, RStudio will recognize that you aren’t using Pandoc, and adapt the editor’s markdown features accordingly (providing only the features supported by the current Hugo markdown engine, e.g. <code>blackfriday</code>). The editor will also automatically enclose LaTeX math in backticks (required by blogdown when Pandoc isn’t rendering markdown).</p>
+<p>Note that if RStudio doesn’t correctly detect the use of Hugo’s markdown processor, you can explicitly enable this for an individual document using a special format comment. For example:</p>
+<pre><code>&lt;!-- -*- mode: blackfriday; doctype: blogdown -*- --&gt;</code></pre>
+<p>You can learn more about format comments in the <a href="#markdown-conversion">Markdown Conversion</a> section below.</p>
+</div>
 </div>
 </div>
 <div id="document-navigation" class="section level2">
@@ -504,7 +525,15 @@ Bookdown & Blogdown docs:
 <p>Visual editing mode can author all of the markdown variants supported by Pandoc. By default, features associated with standard Pandoc markdown are enabled. You can change this behavior by including an Emacs-style magic comment in your markdown document. For example, to specify that you’d like to create GitHub Flavored Markdown (Pandoc’s “gfm” variant), add this comment:</p>
 <pre><code>&lt;!-- -*- mode: gfm -*- --&gt; </code></pre>
 <p>Add the comment while in source mode (it will be hidden while editing in visual mode). Note that for R Markdown (Rmd) files this comment should be located immediately after the YAML metadata block at the top of the document.</p>
-<p>Markdown variants supported by the editor include <code>markdown</code>, <code>markdown_strict</code>, <code>markdown_phpextra</code>, <code>gfm</code>, <code>commonmark</code>, and <code>blackfriday</code>.</p>
+<p>Markdown variants supported by the editor include:</p>
+<ul>
+<li>markdown</li>
+<li>markdown_strict</li>
+<li>markdown_phpextra</li>
+<li>commonmark</li>
+<li>gfm</li>
+<li>blackfriday</li>
+</ul>
 <p>You can also specify that particular extensions be enabled or disabled. For example, to specify GitHub Flavored Markdown with additional support for TeX math and raw Tex, you would use this comment:</p>
 <pre><code>&lt;!-- -*- mode: gfm; extensions: +tex_math_dollars+raw_tex -*- --&gt; </code></pre>
 <p>Alternatively, to specify standard Pandoc markdown <em>without</em> TeX math and raw TeX, you would use this comment (note the minus sign before the disabled extensions):</p>
