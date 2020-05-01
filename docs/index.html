@@ -263,7 +263,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Visual Markdown Editing</h1>
 <h4 class="author">J.J. Allaire</h4>
-<h4 class="date">April 2020</h4>
+<h4 class="date">May 2020</h4>
 
 </div>
 
@@ -495,10 +495,6 @@ div.tocify {
 <p>In this case, RStudio will recognize that you aren’t using Pandoc, and adapt the editor’s markdown features accordingly (providing only the features supported by <a href="https://gohugo.io/getting-started/configuration-markup/#goldmark">goldmark</a>, the default Hugo markdown engine). The editor will also automatically enclose LaTeX math in backticks (required by blogdown when Pandoc isn’t rendering markdown).</p>
 <p>Note that if RStudio doesn’t correctly detect the use of Hugo’s markdown processor, you can explicitly enable this for an individual document using a special format comment. For example:</p>
 <pre><code>&lt;!-- -*- mode: goldmark; doctype: blogdown -*- --&gt;</code></pre>
-<p>If you have set the <code>unsafe</code> option in your Hugo <code>config.toml</code> to allow inclusion of raw html, you’ll want to let the visual editor know that this is a supported extension:</p>
-<pre><code>&lt;!-- -*- mode: goldmark; extensions: +raw_html; doctype: blogdown -*- --&gt;</code></pre>
-<p>If you are using a version of Hugo earlier than v0.60, then the default markdown engine is <code>blackfriday</code>, so you’ll need to use this format comment:</p>
-<pre><code>&lt;!-- -*- mode: blackfriday; doctype: blogdown -*- --&gt;</code></pre>
 <p>You can learn more about format comments in the <a href="#markdown-conversion">Markdown Conversion</a> section below.</p>
 </div>
 </div>

@@ -160,14 +160,6 @@ Note that if RStudio doesn't correctly detect the use of Hugo's markdown process
 
     <!-- -*- mode: goldmark; doctype: blogdown -*- -->
 
-If you have set the `unsafe` option in your Hugo `config.toml` to allow inclusion of raw html, you'll want to let the visual editor know that this is a supported extension:
-
-    <!-- -*- mode: goldmark; extensions: +raw_html; doctype: blogdown -*- -->
-
-If you are using a version of Hugo earlier than v0.60, then the default markdown engine is `blackfriday`, so you'll need to use this format comment:
-
-    <!-- -*- mode: blackfriday; doctype: blogdown -*- -->
-
 You can learn more about format comments in the [Markdown Conversion] section below.
 
 ## Document Navigation
