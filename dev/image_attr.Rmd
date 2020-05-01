@@ -4,13 +4,8 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-
+knitr::opts_chunk$set(echo = TRUE)
 ```
-
--   [x] asfdasdfsad
--   [x] asdfasdfads
--   [x] asdfasdfsa
--   [ ] asdfasdf
 
 ## R Markdown
 

@@ -1,9 +1,8 @@
----
-title: "Untitled"
-output: html_document
----
+------------------------------------------------------------------------
 
-<!-- -*- mode: markdown; extensions: +yaml_metadata_block -*- -->
+title: "Untitled" output: html\_document ---
+
+<!-- -*- mode: gfm; extensions: -pipe_tables -*- -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
