@@ -583,7 +583,7 @@ div.tocify {
 <p>By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.</p>
 <p>If however you prefer to have paragraphs wrapped at a particular column (e.g. 72 or 80). You can set an option to this effect within the <strong>R Markdown</strong> preferences pane where visual mode is enabled. You can also set this behavior on a per-document basis by including a <code>fill-column</code> variable within an Emacs-style magic comment. For example:</p>
 <pre><code>&lt;!-- -*- mode: markdown; fill-column: 72 -*- --&gt; </code></pre>
-<p>Note that there are some disadvantages to setting a <code>fill-column.</code> First, editing paragraphs in source mode will be less convenient (because line wrapping will need to done manually). Second, tables with many explicitly sized columns (more than 10 or so) may be written by Pandoc as HTML rather than markdown.</p>
+<p>Note that there are some disadvantages to setting a <code>fill-column.</code> First, editing paragraphs in source mode will be less convenient (because line wrapping will need to done manually). Second, tables with many explicitly sized columns (more than 10 or so) may be written by Pandoc as HTML rather than markdown, which in turn will prevent you from using the visual table editing features.</p>
 </div>
 </div>
 <div id="known-limitations" class="section level2">

@@ -251,7 +251,7 @@ If however you prefer to have paragraphs wrapped at a particular column (e.g. 72
 
     <!-- -*- mode: markdown; fill-column: 72 -*- --> 
 
-Note that there are some disadvantages to setting a `fill-column.` First, editing paragraphs in source mode will be less convenient (because line wrapping will need to done manually). Second, tables with many explicitly sized columns (more than 10 or so) may be written by Pandoc as HTML rather than markdown.
+Note that there are some disadvantages to setting a `fill-column.` First, editing paragraphs in source mode will be less convenient (because line wrapping will need to done manually). Second, tables with many explicitly sized columns (more than 10 or so) may be written by Pandoc as HTML rather than markdown, which in turn will prevent you from using the visual table editing features.
 
 ## Known Limitations
 
