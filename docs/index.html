@@ -367,7 +367,7 @@ div.tocify {
 </tr>
 <tr class="odd">
 <td>Code Block</td>
-<td></td>
+<td>Ctrl+Shift+\</td>
 <td>```</td>
 </tr>
 <tr class="even">
@@ -463,6 +463,34 @@ div.tocify {
 <p><img src="images/visual-editing-comment.png" width="700" /></p>
 <p>Note that the # prefix used in the comment is what triggers the special background highlighting. If you remove the <code>#</code> it will still be a valid HTML comment, but just won’t be highlighted as shown above.</p>
 <p>You can insert an HTML comment using the Comment button on the toolbar or via the <strong>Ctrl+Shift+C</strong> keyboard shortcut. Remember, HTML comments won’t show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.</p>
+</div>
+<div id="editing-lists" class="section level3">
+<h3>Editing Lists</h3>
+<p>As described above, you can create a new list by just typing “<code>- "</code> or”<code>1.</code>" at the beginning of an empty paragraph. To add items to the list, just press <strong>Enter</strong> within a list item. To exit the list, press <strong>Enter</strong> within an empty list item.</p>
+<p>While this covers many simple list editing talks, there are a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item. From an empty list item (pictured at left), the following keyboard gestures can be used to do this:</p>
+<table>
+<colgroup>
+<col width="32%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Empty Item<br />
+</strong><em>enter to exit list</em></td>
+<td><strong>Tab</strong><br />
+<em>add sublist to previous item</em></td>
+<td><strong>Backspace</strong><br />
+<em>add block to previous item</em></td>
+</tr>
+<tr class="even">
+<td><img src="images/visual-editing-list-item.png" class="illustration list-illustration" width="211" /></td>
+<td><img src="images/visual-editing-list-sublist.png" class="illustration list-illustration" width="211" /></td>
+<td><img src="images/visual-editing-list-block.png" class="illustration list-illustration" width="211" /></td>
+</tr>
+</tbody>
+</table>
+<p>You can also use <strong>Shift+Tab</strong> to lift a list item into the previous level.</p>
 </div>
 </div>
 <div id="bookdown-blogdown" class="section level2">

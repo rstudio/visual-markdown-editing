@@ -62,7 +62,7 @@ There are also keyboard shortcuts available for several commands. Here are the c
 | Superscript      |                   | \^super\^                                                  |
 | Heading          |                   | \#\#                                                       |
 | Blockquote       |                   | \>                                                         |
-| Code Block       |                   | \`\`\`                                                     |
+| Code Block       | Ctrl+Shift+\\     | \`\`\`                                                     |
 | Horizontal Rule  | Ctrl+\_           | \*\*\*                                                     |
 | Bullet List      |                   | \-                                                         |
 | Ordered List     |                   | 1\.                                                        |
@@ -117,6 +117,21 @@ When reviewing an R Markdown document you often want to provide inline comments 
 Note that the \# prefix used in the comment is what triggers the special background highlighting. If you remove the `#` it will still be a valid HTML comment, but just won't be highlighted as shown above.
 
 You can insert an HTML comment using the Comment button on the toolbar or via the **Ctrl+Shift+C** keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
+
+### Editing Lists
+
+As described above, you can create a new list by just typing "`- "` or"`1.`\" at the beginning of an empty paragraph. To add items to the list, just press **Enter** within a list item. To exit the list, press **Enter** within an empty list item.
+
+While this covers many simple list editing talks, there are a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item. From an empty list item (pictured at left), the following keyboard gestures can be used to do this:
+
++----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| **Empty Item\                                                                          | **Tab**\                                                                                  | **Backspace**\                                                                          |
+| ***enter to exit list*                                                                 | *add sublist to previous item*                                                            | *add block to previous item*                                                            |
++----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+| ![](images/visual-editing-list-item.png){.illustration .list-illustration width="211"} | ![](images/visual-editing-list-sublist.png){.illustration .list-illustration width="211"} | ![](images/visual-editing-list-block.png){.illustration .list-illustration width="211"} |
++----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+
+You can also use **Shift+Tab** to lift a list item into the previous level.
 
 ## Bookdown & Blogdown
 

@@ -12,3 +12,10 @@ p > img:only-child {
 .illustration {
   border: 1px solid rgb(230, 230, 230);
 }
+
+.list-illustration {
+  margin-top: 10px;
+  margin-bottom: 1em;
+  margin-right: 30px;
+}
+
