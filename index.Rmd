@@ -107,7 +107,7 @@ Several of Pandoc's block types (e.g. headings, code blocks, and divs) enable yo
 
 Note that any ID as well as the first class specified within the attributes are also displayed. Click the edit button or use the **F4** keyboard shortcut to edit the attributes.
 
-### Review & Commenting
+### Commenting
 
 When reviewing an R Markdown document you often want to provide inline comments with suggested revisions. This is possible in R Markdown using HTML comments (which are ignored by all output formats). Visual mode includes a command for inserting HTML comments as well as special highlighting treatment to easily parse out editing comments from surrounding text.
 
@@ -116,6 +116,14 @@ When reviewing an R Markdown document you often want to provide inline comments 
 Note that the \# prefix used in the comment is what triggers the special background highlighting. If you remove the `#` it will still be a valid HTML comment, but just won't be highlighted as shown above.
 
 You can insert an HTML comment using the Comment button on the toolbar or via the **Ctrl+Shift+C** keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
+
+### Editing Tables
+
+You can insert a table using the **Table** menu. You can then use the either the main menu or a context menu to insert and delete table rows and columns:
+
+![](images/visual-editing-table-context.png){width="700"}
+
+Note that if you select multiple rows or columns the insert or delete command will behave accordingly. For example, to insert 2 rows first select 2 rows then use the insert command.
 
 ### Editing Lists
 
@@ -233,12 +241,6 @@ You can read more about Pandoc variants and extensions in the [Pandoc Markdown](
 ### Document Types
 
 The R Markdown ecosystem has a wide variety of document formats, most of which rely on the core set of Pandoc markdown extensions. However, there are a number of formats that include additional markdown extensions (for example, the cross-reference extension introduced by the [bookdown](https://bookdown.org) package is also supported by the [blogdown](https://bookdown.org/yihui/blogdown/) and [distll](https://rstudio.github.io/distill) packages).
-
--   adfasdf
-
-    -   asdfasdf
-    -   asdfasdf
-    -   
 
 RStudio can generally detect which type of document is being edited and enable the requisite extensions. In the case that this doesn't work as expected, you can specify a `doctype` in the format comment to make it explicit. For example:
 

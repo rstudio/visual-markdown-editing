@@ -452,12 +452,18 @@ div.tocify {
 <p><img src="images/visual-editing-attributes.png" width="700" /></p>
 <p>Note that any ID as well as the first class specified within the attributes are also displayed. Click the edit button or use the <strong>F4</strong> keyboard shortcut to edit the attributes.</p>
 </div>
-<div id="review-commenting" class="section level3">
-<h3>Review &amp; Commenting</h3>
+<div id="commenting" class="section level3">
+<h3>Commenting</h3>
 <p>When reviewing an R Markdown document you often want to provide inline comments with suggested revisions. This is possible in R Markdown using HTML comments (which are ignored by all output formats). Visual mode includes a command for inserting HTML comments as well as special highlighting treatment to easily parse out editing comments from surrounding text.</p>
 <p><img src="images/visual-editing-comment.png" width="700" /></p>
 <p>Note that the # prefix used in the comment is what triggers the special background highlighting. If you remove the <code>#</code> it will still be a valid HTML comment, but just won’t be highlighted as shown above.</p>
 <p>You can insert an HTML comment using the Comment button on the toolbar or via the <strong>Ctrl+Shift+C</strong> keyboard shortcut. Remember, HTML comments won’t show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.</p>
+</div>
+<div id="editing-tables" class="section level3">
+<h3>Editing Tables</h3>
+<p>You can insert a table using the <strong>Table</strong> menu. You can then use the either the main menu or a context menu to insert and delete table rows and columns:</p>
+<p><img src="images/visual-editing-table-context.png" width="700" /></p>
+<p>Note that if you select multiple rows or columns the insert or delete command will behave accordingly. For example, to insert 2 rows first select 2 rows then use the insert command.</p>
 </div>
 <div id="editing-lists" class="section level3">
 <h3>Editing Lists</h3>
@@ -568,14 +574,6 @@ div.tocify {
 <div id="document-types" class="section level3">
 <h3>Document Types</h3>
 <p>The R Markdown ecosystem has a wide variety of document formats, most of which rely on the core set of Pandoc markdown extensions. However, there are a number of formats that include additional markdown extensions (for example, the cross-reference extension introduced by the <a href="https://bookdown.org">bookdown</a> package is also supported by the <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://rstudio.github.io/distill">distll</a> packages).</p>
-<ul>
-<li><p>adfasdf</p>
-<ul>
-<li>asdfasdf</li>
-<li>asdfasdf</li>
-<li></li>
-</ul></li>
-</ul>
 <p>RStudio can generally detect which type of document is being edited and enable the requisite extensions. In the case that this doesn’t work as expected, you can specify a <code>doctype</code> in the format comment to make it explicit. For example:</p>
 <pre><code>&lt;!-- -*- doctype: blogdown -*- --&gt;</code></pre>
 <p>Available doctypes include <code>xref</code>, <code>bookdown</code>, <code>blogdown</code>, and <code>hugo</code> (you can specify more than one doctype by separating them with commas). The <code>xref</code> doctype specifies any document that supports bookdown cross-references (e.g. distill) and is implied by the <code>bookdown</code> and <code>blogdown</code> doctypes. The <code>hugo</code> doctype indicates a document that supports Hugo shortcodes, and is also implied by the <code>blogdown</code> doctype.</p>
