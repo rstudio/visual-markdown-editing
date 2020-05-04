@@ -280,7 +280,7 @@ div.tocify {
 </div>
 <div id="getting-started" class="section level2">
 <h2>Getting Started</h2>
-<p>Visual markdown editing is currently only available in the daily build of RStudio (v1.4.291 or later). You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
+<p>Visual markdown editing is currently only available in the daily build of RStudio (v1.4.297 or later). You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
 <p>Visual markdown editing is not available by default. To enable it, use the <strong>R Markdown</strong> tab of RStudio Preferences:</p>
 <p><img src="images/visual-editing-pref.png" class="illustration" width="588" /></p>
 <p>Once you’ve enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, <strong>Ctrl+Shift+F8</strong>, that can be used to switch modes):</p>
@@ -366,14 +366,14 @@ div.tocify {
 <td>&gt;</td>
 </tr>
 <tr class="odd">
+<td>Paragraph</td>
+<td>Ctrl+\</td>
+<td></td>
+</tr>
+<tr class="even">
 <td>Code Block</td>
 <td>Ctrl+Shift+\</td>
 <td>```</td>
-</tr>
-<tr class="even">
-<td>Horizontal Rule</td>
-<td>Ctrl+_</td>
-<td>***</td>
 </tr>
 <tr class="odd">
 <td>Bullet List</td>
@@ -423,11 +423,6 @@ div.tocify {
 <tr class="even">
 <td>Edit Attributes</td>
 <td>F4</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Clear Formatting</td>
-<td>Ctrl+\</td>
 <td></td>
 </tr>
 </tbody>
@@ -573,6 +568,14 @@ div.tocify {
 <div id="document-types" class="section level3">
 <h3>Document Types</h3>
 <p>The R Markdown ecosystem has a wide variety of document formats, most of which rely on the core set of Pandoc markdown extensions. However, there are a number of formats that include additional markdown extensions (for example, the cross-reference extension introduced by the <a href="https://bookdown.org">bookdown</a> package is also supported by the <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://rstudio.github.io/distill">distll</a> packages).</p>
+<ul>
+<li><p>adfasdf</p>
+<ul>
+<li>asdfasdf</li>
+<li>asdfasdf</li>
+<li></li>
+</ul></li>
+</ul>
 <p>RStudio can generally detect which type of document is being edited and enable the requisite extensions. In the case that this doesn’t work as expected, you can specify a <code>doctype</code> in the format comment to make it explicit. For example:</p>
 <pre><code>&lt;!-- -*- doctype: blogdown -*- --&gt;</code></pre>
 <p>Available doctypes include <code>xref</code>, <code>bookdown</code>, <code>blogdown</code>, and <code>hugo</code> (you can specify more than one doctype by separating them with commas). The <code>xref</code> doctype specifies any document that supports bookdown cross-references (e.g. distill) and is implied by the <code>bookdown</code> and <code>blogdown</code> doctypes. The <code>hugo</code> doctype indicates a document that supports Hugo shortcodes, and is also implied by the <code>blogdown</code> doctype.</p>

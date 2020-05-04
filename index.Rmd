@@ -52,29 +52,28 @@ For example, enclose `**bold**`text in asterisks or type `##` and press enter to
 
 There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts (note that you should substitute Cmd for Ctrl on Mac systems):
 
-| Formatting       | Keyboard Shortcut | Markdown Shortcut                                          |
-|------------------|-------------------|------------------------------------------------------------|
-| Bold             | Ctrl+B            | \*\*bold\*\*                                               |
-| Italic           | Ctrl+I            | \*italic\*                                                 |
-| Code             | Ctrl+D            | \`code\`                                                   |
-| Strikeout        |                   | \~\~strike\~\~                                             |
-| Subscript        |                   | \~sub\~                                                    |
-| Superscript      |                   | \^super\^                                                  |
-| Heading          |                   | \#\#                                                       |
-| Blockquote       |                   | \>                                                         |
-| Code Block       | Ctrl+Shift+\\     | \`\`\`                                                     |
-| Horizontal Rule  | Ctrl+\_           | \*\*\*                                                     |
-| Bullet List      |                   | \-                                                         |
-| Ordered List     |                   | 1\.                                                        |
-| List Check       |                   | [x]                                                        |
-| Definition       |                   | :                                                          |
-| Link             | Ctrl+K            | `[text](href)`{.inherit-text} *or* `<href>`{.inherit-text} |
-| Image            | Shift+Ctrl+I      |                                                            |
-| Footnote         | Shift+Ctrl+F7     |                                                            |
-| R Code Chunk     | Alt+Ctrl+I        |                                                            |
-| Table            | Alt+Ctrl+T        |                                                            |
-| Edit Attributes  | F4                |                                                            |
-| Clear Formatting | Ctrl+\\           |                                                            |
+| Formatting      | Keyboard Shortcut | Markdown Shortcut                                          |
+|-----------------|-------------------|------------------------------------------------------------|
+| Bold            | Ctrl+B            | \*\*bold\*\*                                               |
+| Italic          | Ctrl+I            | \*italic\*                                                 |
+| Code            | Ctrl+D            | \`code\`                                                   |
+| Strikeout       |                   | \~\~strike\~\~                                             |
+| Subscript       |                   | \~sub\~                                                    |
+| Superscript     |                   | \^super\^                                                  |
+| Heading         |                   | \#\#                                                       |
+| Blockquote      |                   | \>                                                         |
+| Paragraph       | Ctrl+\\           |                                                            |
+| Code Block      | Ctrl+Shift+\\     | \`\`\`                                                     |
+| Bullet List     |                   | \-                                                         |
+| Ordered List    |                   | 1\.                                                        |
+| List Check      |                   | [x]                                                        |
+| Definition      |                   | :                                                          |
+| Link            | Ctrl+K            | `[text](href)`{.inherit-text} *or* `<href>`{.inherit-text} |
+| Image           | Shift+Ctrl+I      |                                                            |
+| Footnote        | Shift+Ctrl+F7     |                                                            |
+| R Code Chunk    | Alt+Ctrl+I        |                                                            |
+| Table           | Alt+Ctrl+T        |                                                            |
+| Edit Attributes | F4                |                                                            |
 
 ### Typography
 
@@ -234,6 +233,12 @@ You can read more about Pandoc variants and extensions in the [Pandoc Markdown](
 ### Document Types
 
 The R Markdown ecosystem has a wide variety of document formats, most of which rely on the core set of Pandoc markdown extensions. However, there are a number of formats that include additional markdown extensions (for example, the cross-reference extension introduced by the [bookdown](https://bookdown.org) package is also supported by the [blogdown](https://bookdown.org/yihui/blogdown/) and [distll](https://rstudio.github.io/distill) packages).
+
+-   adfasdf
+
+    -   asdfasdf
+    -   asdfasdf
+    -   
 
 RStudio can generally detect which type of document is being edited and enable the requisite extensions. In the case that this doesn't work as expected, you can specify a `doctype` in the format comment to make it explicit. For example:
 
