@@ -14,11 +14,11 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Users of R M
 
 -   Tight integration with source editing (when you switch between modes your editing location is preserved).
 
-Visual mode is currently only useful for composition (code chunks are not executable). As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. We plan on adding support for code execution in a future version of RStudio.
+Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide R code intelligence (e.g. code completion) or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Additional code editing features will be added in subsequent releases.
 
 ## Getting Started
 
-Visual markdown editing is currently only available in the daily build of RStudio (v1.4.297 or later). You can download the most recent daily build here: <https://dailies.rstudio.com>.
+Visual markdown editing is currently only available in the daily build of RStudio (v1.4.314 or later). You can download the most recent daily build here: <https://dailies.rstudio.com>.
 
 Visual markdown editing is not available by default. To enable it, use the **R Markdown** tab of RStudio Preferences:
 
@@ -139,6 +139,16 @@ While this covers many simple list editing talks, there are a variety of other a
 +----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
 You can also use **Shift+Tab** to lift a list item into the previous level.
+
+### Executing Code
+
+You can execute the currently selected R or Python code chunk using either the run button at the top right of the code chunk or using the **Ctrl+Shift+Enter** keyboard shortcut:
+
+![](images/visual-editing-execute-code.png){width="700"}
+
+You can execute code chunks up to the current one using the toolbar button or using the **Ctrl+Alt+P** keyboard shortcut.
+
+You may note that code chunk editing and execution in visual mode is not as full featured as in source mode (e.g. syntax highlighting but no code completion, executing entire chunks but not individual lines, etc.). Additional code chunk features are under development and will be added in subsequent releases.
 
 ## Bookdown & Blogdown
 
