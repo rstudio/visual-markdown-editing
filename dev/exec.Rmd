@@ -3,30 +3,11 @@ title: "Untitled"
 output: html_document
 ---
 
-```{r setup, include=FALSE asf sad adsf adsf adsf adsf asdfadsf asdf dsafdsf asdf asdf }
-knitr::opts_chunk$set(echo = TRUE)
+````md
+```{r}`r ''`
+x <- 5  # radius of a circle
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{bash}
-echo "foo"
-```
-
-```{r cars}
-summary(cars)
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(cars)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+For a circle with the radius `r knitr::inline_expr('x')`,
+its area is `r knitr::inline_expr('pi * x^2')`.
+````
