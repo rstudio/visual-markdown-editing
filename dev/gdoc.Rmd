@@ -1,0 +1,164 @@
+## Panmirror Planning
+
+J.J. Allaire --- May 2020
+
+### Overview
+
+\
+
+The Panmirror project has several goals, including the creation of a new set of tools for scientific writing and communication, improving the RStudio toolchain, and making a contribution to the Python data science ecosystem.
+
+\
+
+These goals and the tactics required to achieve them have significant overlap. This document is an attempt to clearly enumerate all of the goals (and their implied tactics) with an eye towards prioritizing short and intermediate term work.
+
+### Improve scientific writing and communication
+
+#### Goals
+
+\
+
+1.  Evolve the standard publishing toolchain from print-first to multi-medium.
+
+    -   Interoperate with existing print-dominated publishing ecosystem.
+    -   Leverage the strengths of the web as a connected, interactive platform for communications.
+
+2.  Make reproducible research and publications the norm rather than the exception.
+
+3.  Facilitate fluid, open collaboration around scientific and technical manuscripts.
+
+4.  Reduce the cost of peer review and publication, so that [Platinum Open Access](https://ask-open-science.org/1013/what-is-platinum-open-access) becomes the norm.
+
+5.  Provide an open-source toolchain for scientific communication (broad accessibility and guarantee that it won\'t be hijacked by a narrow commercial interest).
+
+#### 
+
+#### Strategy
+
+\
+
+1.  Replace LaTeX and MS Word as the preferred toolchain(s) for technical writing:
+
+    -   Technical writing capabilities of LaTeX
+    -   Ease of use and collaborative features of MS Word
+
+2.  Provide a best-in-class (by a wide margin) scientific writing tool.
+
+3.  Provide flexible collaboration tools:
+
+    -   Google Docs style editing experience for technical manuscripts.
+    -   API for custom review and publication workflows
+    -   Global account system for cross-institution collaboration (a la GitHub)
+
+4.  All of the above as the basis for an extensible platform upon which the goals above can be achieved (by a combination of us and third parties)
+
+#### Tactics
+
+\
+
+1.  Create a visual editor for Pandoc
+
+-   Deliver as VS Code add-in (early adopters)
+-   Deliver as a standalone tool (via Theia) which is also a front-end for panmirror command line tools.
+
+2.  Create a pandoc wrapper (panmirror command line tools) that provide:
+
+-   Custom formats
+-   Build/project system
+-   Package management (including LaTeX packages)
+
+3.  Create an Overleaf-style service for collaborative visual editing of Pandoc markdown
+
+### 
+
+### Improve the RStudio Toolchain
+
+#### Goals
+
+\
+
+1.  More accessible and easy to use R Markdown editing & computation experience.
+
+2.  Facilitate collaboration with non-technical users on R Markdown documents.
+
+#### Tactics
+
+1.  Create a new R Markdown/Notebook user experience based on panmirror
+
+2.  Collaboration server for R Markdown docs
+
+    -   Public service
+    -   RStudio Team
+
+### Improve the Python Notebook Experience
+
+#### Goals
+
+1.  Make a distinctive contribution to Python data science tools
+
+2.  Have a more direct relationship with Python data science users
+
+#### Tactics
+
+1.  Create a new Jupyter front-end based on panmirror (and related collaborative tools)
+
+-   Initially deployed as a VSCode add-in
+-   Subsequently deployed as part of a new Theia-based IDE
+
+2.  Python oriented extensions to panmirror command line tools (e.g. rendering .ipynb, using .ipynb or .py as a source of reproducible computational artifacts). Effectively \"R Markdown for Python\".
+
+3.  Collaborative service / server for new Jupyter front-end and \"R Markdown\" equivalent.
+
+### 
+
+### Project Planning
+
+\
+
+This table summarizes the various tactics discussed above along with which group of users they are compelling to (where \"Pandoc\" users are just technical writers w/ no particular relation to data science). This in turn should help us prioritize short and intermediate term work.
+
+\
+
+Work with a check mark is already committed to / underway. Generally speaking the features listed higher are dependencies for those listed lower (but some skipping around is possible e.g the RStudio embedding work already underway).
+
+\
+
++-------------------------------------------+--------+---------+--------+
+| \                                         | Pandoc | RStudio | Python |
++-------------------------------------------+--------+---------+--------+
+| **Panmirror visual editor**               | \      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| VS code add-in                            | •      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| RStudio embedding                         | \      | ✓       | \      |
++-------------------------------------------+--------+---------+--------+
+| Theia-based technical writing IDE         | •      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| **Panmirror command line tools**          | \      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| Pandoc project / packaging custom formats | •      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| R extensions for command line tools       | \      | •       | \      |
++-------------------------------------------+--------+---------+--------+
+| Python extensions for command line tools  | \      | \       | •      |
++-------------------------------------------+--------+---------+--------+
+| **Panmirror notebook**                    | \      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| RStudio embedding                         | \      | ✓       | \      |
++-------------------------------------------+--------+---------+--------+
+| VS code add-in (Jupyter front-end)        | \      | \       | •      |
++-------------------------------------------+--------+---------+--------+
+| Theia-based data science IDE              | \      | \       | •      |
++-------------------------------------------+--------+---------+--------+
+| **Panmirror collaboration server**        | \      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| Public hosted service                     | •      | •       | •      |
++-------------------------------------------+--------+---------+--------+
+| On-Prem / VPC server                      | •      | \       | \      |
++-------------------------------------------+--------+---------+--------+
+| Integrate into RStudio Team               | \      | •       | •      |
++-------------------------------------------+--------+---------+--------+
+
+\
+\
+\

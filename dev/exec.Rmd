@@ -3,7 +3,7 @@ title: "Untitled"
 output: html_document
 ---
 
-````md
+```` {.md}
 ```{r}`r ''`
 x <- 5  # radius of a circle
 ```
@@ -11,3 +11,7 @@ x <- 5  # radius of a circle
 For a circle with the radius `r knitr::inline_expr('x')`,
 its area is `r knitr::inline_expr('pi * x^2')`.
 ````
+
+### Busting a cap with `foo`
+
+asdfasdfsadfafasfsd asfasd
