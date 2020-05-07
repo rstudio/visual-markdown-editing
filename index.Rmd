@@ -10,7 +10,7 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Users of R M
 
 -   Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, LaTeX math, and inline TeX/HTML.
 
--   Markdown expressions (e.g. `##`, `**bold**,` etc.) can be used within the visual editor for formatting.
+-   Markdown expressions (e.g. `##`, `**bold**`, etc.) can be used within the visual editor for formatting.
 
 -   Tight integration with source editing (when you switch between modes your editing location is preserved).
 
