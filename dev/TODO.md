@@ -15,9 +15,11 @@ gocs style delete handling in lists: first delete = continuing paragraph of bull
 
 ## TODO
 
-Treat YAML as we treat knitr (allow leading whitespace and allow blockquotes)
-Might require some different prefix/suffix handling. Need to try MANUAL.Rmd once we have this working.
-Also need to update the docs if we get it working.
+Should we display the document outline by default? (make it a pref)
+
+Provide Visual Mode with it's own preferences pane
+
+Show Rmd code chunks and labels within outline
 
 Fix \W\w* regex with suggestion from Joe.
 
@@ -61,6 +63,11 @@ escaping of $ in math as this mode will clearly not be "source mode" style latex
 - Possibly have a special editing mode for thereoms? Or just make sure they work.
 
 ## Future
+
+Replace CodeMirror w/ Ace:
+  - Resolve selection issues (not visible when selecting over)
+  - Enable find/replace within code blocks
+  - Make it a peerDependency
 
 Customizable footnote location: --reference-location = block|section|document
 
