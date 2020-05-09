@@ -1,0 +1,7 @@
+```{r echo = FALSE, comment = NA}
+cat("````
+```
+
+`` {r, eval=TRUE}`r ''` 1 + 1 ``\n\``")`
+
+Why four backticks? That is because you have to use at least N+1 backticks to wrap up N backticks.
