@@ -37,11 +37,13 @@ Here it is:
 [`"y] then type "
 
 You can't toggle 2 marks off (subsequent typing clears both). Note that this doesn't occur
-in prosemirror-schema-basic (perhaps a bug that's been fixed?)
+in prosemirror-schema-basic (perhaps a bug that's been fixed?). Try narrowing down
+our schema to the basics to see if it repros.
 
 When 2 markdown input rules fire consectively marks are not cleared for subsequent typing.
 The problem is that the delete in the second markInputRule to fire is wiping out the other mark?
 Seems to work fine with quote though, the issue may be the stickiness of the mark indicator.
+
 
 Try pasting from Excel. Try pasting tables from GDocs.
 
