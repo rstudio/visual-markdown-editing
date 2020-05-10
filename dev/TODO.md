@@ -15,13 +15,11 @@ gocs style delete handling in lists: first delete = continuing paragraph of bull
 
 ## TODO
 
-Should we display the document outline by default? (make it a pref)
+Spacing after list but before paragraph is too much (see discussion w/ Hadley)
 
 Provide Visual Mode with it's own preferences pane
 
 Show Rmd code chunks and labels within outline
-
-Fix \W\w* regex with suggestion from Joe.
 
 There is a scenario where we have pending edits but the dirty state is still false (seems like on 
 full reload of the IDE in a new session?). Probably still related to editing outside of the IDE (crosstalk)
@@ -35,6 +33,14 @@ Here it is:
 [`x_y` `y]  then type _, and it maches the previous _
 
 [`"y] then type "
+
+Padding for span similar to code. Narrow vertical padding for both (above/below issue)
+
+HTML input rules / paste recognition (consider filtering based on all known HTML tags)
+
+editor_settings yaml as alternative to magic format comment
+
+detect edits to editor_settings yaml or magic format comment and prompt to reload
 
 You can't toggle 2 marks off (subsequent typing clears both). Note that this doesn't occur
 in prosemirror-schema-basic (perhaps a bug that's been fixed?). Try narrowing down
