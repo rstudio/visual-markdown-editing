@@ -4,22 +4,14 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## Feedback
 
-### Hadley
+### TODO
 
-Hadley: also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
+Hadley: 
+  - also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
 it only seems to happen the first time I switch to visual view after opening rstudio
+  - ok, that was another instance where switching back and forth from the visual editor lost my scroll position. Interestingly however, it preserved the cursor position so just pushing an arrow key scrolled me back to the right place
 
-ok, that was another instance where switching back and forth from the visual editor lost my scroll position. Interestingly however, it preserved the cursor position so just pushing an arrow key scrolled me back to the right place
-
-gocs style delete handling in lists: first delete = continuing paragraph of bullet; second delete = new paragraph; third delete = back into previous bullet (currently our second delete goes back into previous bullet)
-
-## TODO
-
-Spacing after list but before paragraph is too much (see discussion w/ Hadley)
-
-Provide Visual Mode with it's own preferences pane
-
-Show Rmd code chunks and labels within outline
+- gocs style delete handling in lists: first delete = continuing paragraph of bullet; second delete = new paragraph; third delete = back into previous bullet (currently our second delete goes back into previous bullet)
 
 There is a scenario where we have pending edits but the dirty state is still false (seems like on 
 full reload of the IDE in a new session?). Probably still related to editing outside of the IDE (crosstalk)
@@ -33,8 +25,6 @@ Here it is:
 [`x_y` `y]  then type _, and it maches the previous _
 
 [`"y] then type "
-
-Padding for span similar to code. Narrow vertical padding for both (above/below issue)
 
 HTML input rules / paste recognition (consider filtering based on all known HTML tags)
 
@@ -61,18 +51,14 @@ https://github.com/jjallaire/rmarkdown-cookbook/compare/master...panmirror-impor
 Only surprise to me was that you don't need :::: if you have a distinct set of attributes
 Also, code chunks without attributes are written as indented
 
-Handling unrecognized pandoc tokens.
-
-Math:
+## Future
 
 - MathJax preview. When containing the selection, the math will show both the code and the preview. When not containing the selection will show the preview. (so probably require a node view for this). Consider a “done” gesture for display math. May need to bring back
 escaping of $ in math as this mode will clearly not be "source mode" style latex equation editing
 
 - Possibly have a special editing mode for thereoms? Or just make sure they work.
 
-## Future
-
-Replace CodeMirror w/ Ace:
+- Replace CodeMirror w/ Ace:
   - Resolve selection issues (not visible when selecting over)
   - Enable find/replace within code blocks
   - Make it a peerDependency
@@ -99,10 +85,7 @@ Evaluate markdown for link text
 
 Consider attempting to update dependencies now?
 
-
-
-rstudioapi function for saveCannonical
-rstudioapi hook for saveCannonical (user processing) to keep linebreaks consistent.
+Option to always save cannonical for docs w/ visual mode active
 
 Async dialogs won't work with collab (b/c they could use an old state).
 
