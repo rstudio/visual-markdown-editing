@@ -197,7 +197,7 @@ Panmirror presents two parallel opportunities to contribute to PyData:
 1.  Create an \"R Markdown for Python' by adding comprehensive PyData features to panmirror command line tools. This work is essentially already committed to as reproducible computational documents are a core goal of panmirror command line tools.
 2.  Create a next generation Jupyter front-end based on Panmirror and the work we do on R Notebooks in the IDE.
 
-The work targeted at Panmirror and RStudio users described above is essentially already committed to. On the other hand, the idea of a next-generation Jupyter front-end is opportunistic and can be dialed up or back as necessary. You can imagine this work along a continuum:
+The idea of a next-generation Jupyter front-end is opportunistic and can be dialed up or back as necessary. You can imagine this work along a continuum:
 
 -   Create a new Juypter front-end as an extension to VS Code
 -   Create a new Jupyter front-end as an extension to JupyterLab
