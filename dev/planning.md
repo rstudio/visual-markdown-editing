@@ -110,29 +110,29 @@ These goals and the tactics required to achieve them have significant overlap. T
 
 ## Project Planning
 
-This table summarizes the various tactics discussed above along with which group of users they are compelling to (where \"Pandoc\" users are just technical writers w/ no particular relation to data science). This in turn should help us prioritize short and intermediate term work.
+This table summarizes the various tactics discussed above along with which group of users they are compelling to. This in turn should help us prioritize short and intermediate term work.
 
 ### Roadmap
 
-|                                           |         |        |        |
-|-------------------------------------------|:-------:|:------:|:------:|
-|                                           | RStudio | Python | Pandoc |
-| **Visual Editor**                         |         |        |        |
-| RStudio embedding                         |    •    |        |        |
-| VS code add-in                            |         |        |    •   |
-| Theia-based technical writing IDE         |         |        |    •   |
-| **Command Line Tools**                    |         |        |        |
-| Pandoc project / packaging custom formats |         |        |    •   |
-| R extensions for command line tools       |    •    |        |        |
-| Python extensions for command line tools  |         |    •   |        |
-| **Notebook**                              |         |        |        |
-| RStudio embedding                         |    •    |        |        |
-| VS code add-in (Jupyter front-end)        |         |    •   |        |
-| Theia-based data science IDE              |         |    •   |        |
-| **Collaboration server**                  |         |        |        |
-| Public hosted service                     |    •    |    •   |    •   |
-| On-Prem / VPC server                      |         |        |    •   |
-| Integrate into RStudio Team               |    •    |    •   |        |
+|                                           |     |        |        |              |
+|-------------------------------------------|:---:|:------:|:------:|:------------:|
+|                                           |  R  | Python | Author | Collaborator |
+| **Visual Editor**                         |     |        |        |              |
+| RStudio embedding                         |  •  |        |        |              |
+| VS code add-in                            |     |    •   |        |              |
+| Theia-based technical writing IDE         |     |        |    •   |              |
+| **Command Line Tools**                    |     |        |        |              |
+| Pandoc project / packaging custom formats |     |        |    •   |              |
+| R extensions for command line tools       |  •  |        |        |              |
+| Python extensions for command line tools  |     |    •   |        |              |
+| **Notebook**                              |     |        |        |              |
+| RStudio embedding                         |  •  |        |        |              |
+| VS code add-in (Jupyter front-end)        |     |    •   |        |              |
+| Theia-based data science IDE              |     |    •   |        |              |
+| **Collaboration server**                  |     |        |        |              |
+| Public hosted service                     |  •  |    •   |    •   |       •      |
+| On-Prem / VPC server                      |     |        |    •   |       •      |
+| Integrate into RStudio Team               |  •  |    •   |        |       •      |
 
 ### Work Underway
 
