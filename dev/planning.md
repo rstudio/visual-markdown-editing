@@ -165,7 +165,7 @@ Here are the individual features along with several coherent subsets of users th
 | Collaboration server (on-prem) |                |                 |       •       |
 | Standalone writing tool        |                |        •        |       •       |
 
-Here we want to consider what is the set of features to target for an initial release. Note that if wanted to go extremely minimal you could even release any one of the visual editor, command line tools, or collaboration service to the existing early adopters (all have their individual utility).
+Here we want to consider what is the set of features to target for an initial release. Note that if we wanted to go extremely minimal we could even release any one of the visual editor, command line tools, or collaboration service to the existing early adopters (all have their individual utility).
 
 My current disposition is to target an initial release at the academic market and deliver a combination of the core command line tools along with a standalone writing tool that provides the visual editor + a wrapper for the command line tools, all well integrated with a public collaboration service. This clearly positions panmirror as a next generation LaTeX that fully replaces tools like LyX or Overleaf.
 
