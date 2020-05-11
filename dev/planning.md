@@ -150,7 +150,7 @@ One important distinction for this discussion is between supporting documents wi
 
 #### Technical Authors
 
-Technical authors consist of users LaTeX editors (LyX, Overleaf, etc.) as well as users of scholarly markdown derivatives like Pandoc. They also consist of users currently using MS Word for writing that would be better handled by a text-based format (but they are have too much affinity for Word's usabiilty and/or collaborative capabilities.
+Technical authors consist of users of LaTeX editors (LyX, Overleaf, etc.) as well as users of scholarly markdown derivatives like Pandoc. They also consist of users currently using MS Word for writing that would be better handled by a text-based format (but they are have too much affinity for Word's usabiilty and/or collaborative capabilities.
 
 It's also important to note that the "whole product" for technical authors doesn't necessarily involve *embedded* computations (notebooks) but rather looks more like a traditional technical writing tool (LyX, Overleaf, Authorea, etc.) that supports *external* computations.
 
