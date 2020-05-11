@@ -159,7 +159,7 @@ Here are the individual features along with several coherent subsets of users th
 
 | Features                       | Early Adopters | Academic Market | Entire Market |
 |--------------------------------|:--------------:|:---------------:|:-------------:|
-| Visual editor (VS code add-in) |        •       |                 |       •       |
+| Visual editor (VS code add-in) |        •       |                 |               |
 | Command line tools             |        •       |        •        |       •       |
 | Collaboration service (public) |                |        •        |       •       |
 | Collaboration server (on-prem) |                |                 |       •       |
