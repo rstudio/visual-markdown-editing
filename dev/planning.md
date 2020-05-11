@@ -114,9 +114,8 @@ This table summarizes the various tactics discussed above along with which group
 
 ### Roadmap
 
-|                                           |           |        |        |              |
-|-------------------------------------------|:---------:|:------:|:------:|:------------:|
 |                                           | R/RStudio | Python | Author | Collaborator |
+|-------------------------------------------|:---------:|:------:|:------:|:------------:|
 | **Visual Editor**                         |           |        |        |              |
 | RStudio embedding                         |     •     |        |        |              |
 | VS code add-in                            |           |    •   |        |              |
