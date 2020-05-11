@@ -12,10 +12,7 @@ it only seems to happen the first time I switch to visual view after opening rst
 - gocs style delete handling in lists: first delete = continuing paragraph of bullet; second delete = new paragraph; third delete = back into previous bullet (currently our second delete goes back into previous bullet)
 
 In search we don't scroll to single hit in the search (e.g. MIME in action-graphics.Rmd)
-
-Footnote area should be bigger
-
-Footnote area gets scrolling forced when link popup is displayed
+In search if the target is at the bottom the cursor navigates but not the view!
 
 Code block input rule should encompass Enter and support e.g. ```, ```r, ```{r} (w/ brace autocomplete)
 
@@ -24,11 +21,6 @@ HTML input rules / paste recognition (consider filtering based on all known HTML
 editor_settings yaml as alternative to magic format comment
 
 detect edits to editor_settings yaml or magic format comment and prompt to reload
-
-try: ___foo___ or *__foo__*
-When 2 markdown input rules fire consectively marks are not cleared for subsequent typing.
-The problem is that the delete in the second markInputRule to fire is wiping out the other mark?
-Seems to work fine with quote though, the issue may be the stickiness of the mark indicator.
 
 Try pasting from Excel. Try pasting tables from GDocs.
 
