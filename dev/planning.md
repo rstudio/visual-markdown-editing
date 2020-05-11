@@ -133,6 +133,8 @@ This table summarizes the various tactics discussed above along with which group
 | On-Prem / VPC server                      |           |        |    •   |       •      |
 | Integrate into RStudio Team               |     •     |    •   |        |       •      |
 
+Note that the **Collaborator** user category is not one that we will explicitly target with product offerings but are a critical constituency nonetheless. They will typically make small changes to text (not code) and ask questions about the content. They'll generally already be familiar with track changes / commenting in traditional editors, and want to use these with technical content.
+
 ### Work Underway
 
 There are two committed work items (both for RStudio v1.4) from the roadmap above:
