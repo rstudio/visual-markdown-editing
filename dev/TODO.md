@@ -2,9 +2,7 @@
 
 pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Definition.hs#L94>
 
-## Feedback
-
-### TODO
+## TODO
 
 Hadley: 
   - also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
@@ -13,18 +11,13 @@ it only seems to happen the first time I switch to visual view after opening rst
 
 - gocs style delete handling in lists: first delete = continuing paragraph of bullet; second delete = new paragraph; third delete = back into previous bullet (currently our second delete goes back into previous bullet)
 
-There is a scenario where we have pending edits but the dirty state is still false (seems like on 
-full reload of the IDE in a new session?). Probably still related to editing outside of the IDE (crosstalk)
-Had the repro in foo.Rmd w/ block capsule. The issue was a dirty file (unsaved transform) that didn't 
-show up as dirty on startup.
-Here it is:
-    - Open an Rmd from source that has "cannonical" transformations (note it's marked dirty)
-    - Switch to another tab
-    - Reload the browser (note it's no longer dirty)
+In search we don't scroll to single hit in the search (e.g. MIME in action-graphics.Rmd)
 
-[`x_y` `y]  then type _, and it maches the previous _
+Footnote area should be bigger
 
-[`"y] then type "
+Footnote area gets scrolling forced when link popup is displayed
+
+Code block input rule should encompass Enter and support e.g. ```, ```r, ```{r} (w/ brace autocomplete)
 
 HTML input rules / paste recognition (consider filtering based on all known HTML tags)
 
@@ -32,18 +25,14 @@ editor_settings yaml as alternative to magic format comment
 
 detect edits to editor_settings yaml or magic format comment and prompt to reload
 
-You can't toggle 2 marks off (subsequent typing clears both). Note that this doesn't occur
-in prosemirror-schema-basic (perhaps a bug that's been fixed?). Try narrowing down
-our schema to the basics to see if it repros.
-
+try: ___foo___ or *__foo__*
 When 2 markdown input rules fire consectively marks are not cleared for subsequent typing.
 The problem is that the delete in the second markInputRule to fire is wiping out the other mark?
 Seems to work fine with quote though, the issue may be the stickiness of the mark indicator.
 
-
 Try pasting from Excel. Try pasting tables from GDocs.
 
-Do we need to fixup non-rectangualar tables before sending to pandoc.
+Do we need to fixup non-rectangualar tables before sending to pandoc?
 
 
 Demo for Yihui
