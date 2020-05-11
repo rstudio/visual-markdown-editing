@@ -148,11 +148,11 @@ For the purposes of planning future work, we'll look at how we can deliver vario
 
 One important distinction for this discussion is between supporting documents with *embedded* computations (Notebooks) and documents with *external* computations (incorporating existing computations into a long form document). Embedded computations are generally a feature of interactive data analysis tools, whereas external computations are generally a feature of writing tools (e.g. embedding a spreadsheet table inside a Word or Google doc). It's important to recognize that even though they sit on the same technical foundation these are different use cases with different optimal delivery vehicles (data analysis tool vs. writing tool).
 
-#### Pandoc Users
+#### Technical Authors
 
-We can more constructively think of Pandoc users as not the *current* base of users (which is relatively small outside of R Markdown users given the technical demands of using Pandoc for real work), but more the *potential* base of users once it looks like like a publishing system that can replace LaTex. For example, Overleaf currently has 5 million users---if panmirror does a great job as a next-generation LaTeX it should be able to covert many of these users.
+Technical authors consist of users LaTeX editors (LyX, Overleaf, etc.) as well as users of scholarly markdown derivatives like Pandoc. They also consist of users currently using MS Word for writing that would be better handled by a text-based format (but they are have too much affinity for Word's usabiilty and/or collaborative capabilities.
 
-It's also important to note that the "whole product" for Pandoc users doesn't necessarily involve *embedded* computations (notebooks) but rather looks more like a traditional technical writing tool (LyX, Overleaf, Authorea, etc.) that supports *external* computations.
+It's also important to note that the "whole product" for technical authors doesn't necessarily involve *embedded* computations (notebooks) but rather looks more like a traditional technical writing tool (LyX, Overleaf, Authorea, etc.) that supports *external* computations.
 
 Here are the individual features along with several coherent subsets of users that grouping of them could address:
 
