@@ -4,6 +4,18 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
+Cmd+Click for links.
+
+Updated docs on Embedded Code
+
+- Static
+- Rmd Chunks
+   - Execution
+- Inline
+
+Defintion list should not use text_focus (elimiante text_focus)
+Inserting a DL or a term should just insert "term" highlighted
+
 Hadley: 
   - also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
 it only seems to happen the first time I switch to visual view after opening rstudio
@@ -14,16 +26,12 @@ it only seems to happen the first time I switch to visual view after opening rst
 In search we don't scroll to single hit in the search (e.g. MIME in action-graphics.Rmd)
 In search if the target is at the bottom the cursor navigates but not the view!
 
-Code block input rule should encompass Enter and support e.g. ```, ```r, ```{r} (w/ brace autocomplete)
-
 HTML input rules / paste recognition (consider filtering based on all known HTML tags)
 
 editor_settings yaml as alternative to magic format comment
-
 detect edits to editor_settings yaml or magic format comment and prompt to reload
 
 Try pasting from Excel. Try pasting tables from GDocs.
-
 Do we need to fixup non-rectangualar tables before sending to pandoc?
 
 Consider Hugo shortcode blocks
@@ -65,8 +73,6 @@ Reveal codes / typora behavior
 Breadcrump for current nodes / marks
 
 Evaluate markdown for link text
-
-Consider attempting to update dependencies now?
 
 Option to always save cannonical for docs w/ visual mode active
 
