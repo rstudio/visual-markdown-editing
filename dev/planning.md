@@ -2,6 +2,9 @@
 title: "Panmirror Planning"
 author: "J.J. Allaire"
 date: "May 2020"
+output:
+  word_document: default
+  pdf_document: default
 ---
 
 ## Overview

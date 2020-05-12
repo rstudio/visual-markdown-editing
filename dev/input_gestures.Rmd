@@ -1,0 +1,64 @@
+---
+title: "Input Gestures"
+---
+
+### Explicit Commands
+
+Inserting content requires an explicit command invocation (menu or keyboard shortcut). This is generally done when there isn't a convenient text/markdown expression of the content. Examples of this include:
+
+-   Tables
+-   Footnotes
+
+Note there are a number of things in the editor that curently require explict gestures which we could easily create markdown shortcuts for, including:
+
+-   Divs
+-   Spans
+-   Line Blocks
+-   Raw Blocks
+-   Images
+
+### Input Filters
+
+Input filters are reversable transformations to (usually markdown-like) input. If the user doesn't like the tranformation they need to know to hit backspace to reverse it. There is therefore a minor usability cost to input filters (user has to know to hit backspace) but at the same time a huge usability gain in keyboard expressiveness. Example of input filters include:
+
+\#\#
+
+\*italic
+
+\*\*bold
+
+\@ref
+
+tex:
+
+### Automatic Transformations
+
+There are a small number of automatic tranformations that we currently do. These actions are not reversible via backspace and so carry the penalty that there is no way (short of a fairly complex workaround) to express the text sequences that trigger them in the editor. We do these because we think the usability payoff is very high and the odds of actually wanting to express that text sequence vanishingly low. Example of this include:
+
+<!-- html comment -->
+
+<!--# editing comment -->
+
+{{< hugo shortcode >}}
+
+\`\`\`
+
+\`\`\`r
+
+\`\`\`{r}
+
+Note that the first 3 could probably be re-implemented as input rules (it's a bit more work and I feel like the odds of that text literally appearing in a documetn is close to zero).
+
+The code chunk shortcuts are automatic transformations because ProseMirror doesn't currently allow enter to trigger an input rule.
+
+### Handling HTML
+
+Initially I implemented HTML tags, TeX macros, and cross-references as automatic tranformations. This was in some ways quite elegant, but it created the need for escape sequences (e.g. `\\`, `\@`, `\<`). This ended up making a number of things quite a bit more complicated and of course would have necessitated users having to learn about escaping.
+
+TeX and cross-references were then re-implemented as (fairly complex) input filters, and HTML was changed to require an explicit gesture (save for HTML comments).
+
+We could do a few things with HTML:
+
+1.  Leave it as-is on the theory that directly inserting HTML in visual mode is an advanced operation (and you can always directly insert it in source code mode).
+2.  Build an input filter that handles most cases (moderately complex, probably would only take a few hours). Note that this *would not* handle paste operations with HTML.
+3.  Make tranformation to HTML tags fully automatic (would handle paste), with a further constraint that the automatic transformation requires that tags are of a known HTML5 type. In this scenario the only way to include a literal tag text sequence would be to enclose it in code backticks.
