@@ -4,6 +4,12 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
+expel enclosing whitespace with multiple overlapping marks not handled correctly:
+<p class="">Th is <strong>    <em>   </em>  d   </strong>course is</p>
+Or as markdown just make a large bold region, with a chracter, and then put an empty italic region inside.
+Also, a large emtpy bold or italic region doesn't get fully purged.
+
+
 Hadley: 
   - also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
 it only seems to happen the first time I switch to visual view after opening rstudio
