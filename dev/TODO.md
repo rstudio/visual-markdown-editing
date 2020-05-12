@@ -4,17 +4,6 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Cmd+Click for links.
-
-Updated docs on Embedded Code
-
-- Static
-- Rmd Chunks
-   - Execution
-- Inline
-
-Defintion list should not use text_focus (elimiante text_focus)
-Inserting a DL or a term should just insert "term" highlighted
 
 Hadley: 
   - also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
