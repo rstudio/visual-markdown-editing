@@ -493,8 +493,28 @@ div.tocify {
 </table>
 <p>You can also use <strong>Shift+Tab</strong> to lift a list item into the previous level.</p>
 </div>
+</div>
+<div id="embedded-code" class="section level2">
+<h2>Embedded Code</h2>
+<p>Source code which you include in an R Markdown document can either by for display only or can be executed by knitr as part of rendering. Code can furthermore be either inline or block (e.g. an Rmd code chunk).</p>
+<div id="displaying-code" class="section level3">
+<h3>Displaying Code</h3>
+<p>To display but not execute code, either use the <strong>Insert -&gt; Code Block</strong> menu item, or start a new line and type either:</p>
+<ol style="list-style-type: decimal">
+<li><code>```</code> (for a plain code block); or</li>
+<li><code>```&lt;lang&gt;</code> (where &lt;lang&gt; is a language) for a code block with syntax highlighting.</li>
+</ol>
+<p>Then press the <strong>Enter</strong> key. To display code inline, simply surround text with backticks (<code>`code`</code>), or use the <strong>Format -&gt; Code</strong> menu item.</p>
+</div>
 <div id="executing-code" class="section level3">
 <h3>Executing Code</h3>
+<p>To insert an executable code chunk, use the <strong>Insert -&gt; Rmd Chunk</strong> menu item, or start a new line and type:</p>
+<p><code>```{r}</code></p>
+<p>Then press the <strong>Enter</strong> key. Note that <code>r</code> could be another language supported by knitr (e.g. <code>python</code> or <code>sql</code>) and you can also include a chunk label and other chunk options.</p>
+<p>To include inline R code, you just create normal inline code (as described above) but preface it with <code>r</code>. For example, this inline code will be executed by knitr: <span class="fake-code">r Sys.Date()</span>. Note that when the code displays in the visual editor it won’t have the backticks (but they will still appear in source mode).</p>
+</div>
+<div id="running-chunks" class="section level3">
+<h3>Running Chunks</h3>
 <p>You can execute the currently selected R or Python code chunk using either the run button at the top right of the code chunk or using the <strong>Ctrl+Shift+Enter</strong> keyboard shortcut:</p>
 <p><img src="images/visual-editing-execute-code.png" width="700" /></p>
 <p>You can execute code chunks up to the current one using the toolbar button or using the <strong>Ctrl+Alt+P</strong> keyboard shortcut.</p>
