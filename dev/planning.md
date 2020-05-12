@@ -160,7 +160,7 @@ Here are the individual features along with several coherent subsets of users th
 
 | Features                       | Early Adopters | Academic Market | Entire Market |
 |--------------------------------|:--------------:|:---------------:|:-------------:|
-| Visual editor (VS code add-in) |        •       |                 |               |
+| Visual editor (VS code add-in) |        •       |        •        |       •       |
 | Command line tools             |        •       |        •        |       •       |
 | Collaboration service (public) |                |        •        |       •       |
 | Collaboration server (on-prem) |                |                 |       •       |
@@ -168,11 +168,15 @@ Here are the individual features along with several coherent subsets of users th
 
 Here we want to consider what is the set of features to target for an initial release. Note that if we wanted to go extremely minimal we could even release any one of the visual editor, command line tools, or collaboration service to the existing early adopters (all have their individual utility).
 
-My current disposition is to target an initial release at the academic market and deliver a combination of the core command line tools along with a standalone writing tool that provides the visual editor + a wrapper for the command line tools, all well integrated with a public collaboration service. This clearly positions panmirror as a next generation LaTeX that fully replaces tools like LyX or Overleaf.
+I think that going after the entire market for the first release is unnecessary, so that leaves two paths:
 
-Note that if we weren't already delivering incrementally to the RStudio user community, I'd think differently and target something at early adopters (just to get some miles under our code before a bigger release).
+1.  Target early adopters with core command line tools and a VS code add-in for the visual editor. This would provide Pandoc users with roughly the equivalent capabilities of RStudio / R Markdown. If support for Python computations was included in the command line tools it could also get a lot of adoption among Python users looking for better tools for reproducible documents / research.
 
-This work will be undertaken by the Panmirror team --- JJ, Charles, and (temporarily) Joe.
+2.  Target the academic market more broadly by creating a full standalone writing tool and collaboration service (thus clearly positioning panmirror as a next generation LaTeX that can fully replace the LaTeX / LyX / Overleaf toolchain).
+
+The first path is a full subset of the second path so could also be viewed as an intermediate ship vehicle. It also has the benefit of not requiring deliver of a full end-to-end writing application (at the cost of only being attractive to users willing to install/manage VS Code).
+
+This work will be undertaken by the Panmirror team --- JJ, Charles, and (for the time being) Joe.
 
 #### RStudio Users
 
@@ -195,7 +199,7 @@ For \#2, our current approach is to rely on existing tools (currently JupyterLab
 
 Panmirror presents two parallel opportunities to contribute to PyData:
 
-1.  Create an \"R Markdown for Python' by adding comprehensive PyData features to panmirror command line tools. This work is essentially already committed to as reproducible computational documents are a core goal of panmirror command line tools.
+1.  Create an \"R Markdown for Python\" by adding comprehensive PyData features to panmirror command line tools. This work is essentially already committed to as reproducible computational documents are a core goal of panmirror command line tools.
 2.  Create a next generation Jupyter front-end based on Panmirror and the work we do on R Notebooks in the IDE.
 
 The idea of a next-generation Jupyter front-end is opportunistic and can be dialed up or back as necessary. You can imagine this work along a continuum:
