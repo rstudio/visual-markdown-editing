@@ -4,9 +4,6 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Dynamic content inside pipe tables doesn't work. We may need to only write a pipe table when there are multiple paragraphs.
-Actively prevent grid_tables (-grid_tables) when they aren't needed
-
 Hadley: 
   - also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
 it only seems to happen the first time I switch to visual view after opening rstudio
@@ -14,9 +11,6 @@ it only seems to happen the first time I switch to visual view after opening rst
 
 Some of the above may be explainable by the failure to navigate to list items?
 
-HTML input rules / paste recognition (consider filtering based on all known HTML tags):
- - <> input rule for entering HTML tags (then never break the tags)
- - Make sure that we never transform code inside backticks (also allow applying backticks to tranformed code)
 
 editor_settings yaml as alternative to magic format comment
 customizable footnote writing
@@ -129,8 +123,14 @@ Notes on preformance implications of scanning the entire document + some discuss
 
 ## Known issues:
 
+
+
 - If you have 2 marks active and you toggle both of them off (either by explicit toggle or via Clear Formatting)
   then both of the marks dissapear.
+
+- If you have a table with multiple blocks in cells then grid_tables are used. This in turn will result in 
+  broken tables if there are inline r expressions within the table (b/c this will throw off the columns,
+  and grid tables require precise alignment of columns)
 
 - Can only preview images in the first listed hugo static dir
 
