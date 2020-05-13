@@ -29,23 +29,42 @@ Input filters are reversable transformations to (usually markdown-like) input. I
 
 \@ref
 
-tex:
+tex: \\
 
 ### Automatic Transformations
 
-There are a small number of automatic tranformations that we currently do. These actions are not reversible via backspace and so carry the penalty that there is no way (short of a fairly complex workaround) to express the text sequences that trigger them in the editor. We do these because we think the usability payoff is very high and the odds of actually wanting to express that text sequence vanishingly low. Example of this include:
+\<\>
+
+There are a small number of automatic tranformations that we currently do. These actions are not reversible via backspace and so carry the penalty that there is no way (short of a fairly complex workaround) to express the text <!--# hey this is unclear -->sequences that trigger them in the editor. We do these because we think the usability payoff is very high and the odds of actually wanting to express that text sequence vanishingly low. Example of this include:
+
+TODO: \<\>. input rule to enter HTML tag
+
+TODO:
+
+-   Make sure that we never auto-transform text inside backtick code. Allow Cmd+D to eject from an automatic transformation.
+-   Consider whether this should be just a fancy input rule
 
 <!-- html comment -->
 
 <!--# editing comment -->
 
-{{< hugo shortcode >}}
+{{< >}}
 
-\`\`\`
+\<strong\>
 
-\`\`\`r
+<details>
 
-\`\`\`{r}
+More details here
+
+### Heading
+
+</details>
+
+using the <strong> tag.
+
+\command{asdfsd}
+
+\asdfsdf
 
 Note that the first 3 could probably be re-implemented as input rules (it's a bit more work and I feel like the odds of that text literally appearing in a documetn is close to zero).
 

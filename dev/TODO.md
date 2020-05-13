@@ -4,31 +4,22 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Cmd+Click for links.
-
-Updated docs on Embedded Code
-
-- Static
-- Rmd Chunks
-   - Execution
-- Inline
-
-Defintion list should not use text_focus (elimiante text_focus)
-Inserting a DL or a term should just insert "term" highlighted
+Dynamic content inside pipe tables doesn't work. We may need to only write a pipe table when there are multiple paragraphs.
+Actively prevent grid_tables (-grid_tables) when they aren't needed
 
 Hadley: 
   - also if I switch to raw view, close RStudio, reopen, and then switch to visual view, I don't seem to be reliably navigated to the right place
 it only seems to happen the first time I switch to visual view after opening rstudio
   - ok, that was another instance where switching back and forth from the visual editor lost my scroll position. Interestingly however, it preserved the cursor position so just pushing an arrow key scrolled me back to the right place
 
-- gocs style delete handling in lists: first delete = continuing paragraph of bullet; second delete = new paragraph; third delete = back into previous bullet (currently our second delete goes back into previous bullet)
+Some of the above may be explainable by the failure to navigate to list items?
 
-In search we don't scroll to single hit in the search (e.g. MIME in action-graphics.Rmd)
-In search if the target is at the bottom the cursor navigates but not the view!
-
-HTML input rules / paste recognition (consider filtering based on all known HTML tags)
+HTML input rules / paste recognition (consider filtering based on all known HTML tags):
+ - <> input rule for entering HTML tags (then never break the tags)
+ - Make sure that we never transform code inside backticks (also allow applying backticks to tranformed code)
 
 editor_settings yaml as alternative to magic format comment
+customizable footnote writing
 detect edits to editor_settings yaml or magic format comment and prompt to reload
 
 Try pasting from Excel. Try pasting tables from GDocs.
@@ -36,11 +27,7 @@ Do we need to fixup non-rectangualar tables before sending to pandoc?
 
 Consider Hugo shortcode blocks
 
-
-Demo for Yihui
 https://github.com/jjallaire/rmarkdown-cookbook/compare/master...panmirror-import
-Only surprise to me was that you don't need :::: if you have a distinct set of attributes
-Also, code chunks without attributes are written as indented
 
 ## Future
 
@@ -88,6 +75,8 @@ Also backspace handler for paragraph just after an image (currently deletes imag
 
 You can arrow horizontally into figure captions within tables (e.g. put 3
 images in cells of the same row)
+
+gocs style delete handling in lists: first delete = continuing paragraph of bullet; second delete = new paragraph; third delete = back into previous bullet (currently our second delete goes back into previous bullet)
 
 Tab key handling for image shelf
 
