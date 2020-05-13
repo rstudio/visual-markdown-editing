@@ -52,49 +52,28 @@ For example, enclose `**bold**`text in asterisks or type `##` and press enter to
 
 There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts (note that you should substitute Cmd for Ctrl on Mac systems):
 
-+----------------------+-------------------+------------------------------------------------------------+
-| Command              | Keyboard Shortcut | Markdown Shortcut                                          |
-+======================+===================+============================================================+
-| Bold                 | Ctrl+B            | \*\*bold\*\*                                               |
-+----------------------+-------------------+------------------------------------------------------------+
-| Italic               | Ctrl+I            | \*italic\*                                                 |
-+----------------------+-------------------+------------------------------------------------------------+
-| Code                 | Ctrl+D            | \`code\`                                                   |
-+----------------------+-------------------+------------------------------------------------------------+
-| Strikeout            |                   | \~\~strike\~\~                                             |
-+----------------------+-------------------+------------------------------------------------------------+
-| Subscript            |                   | \~sub\~                                                    |
-+----------------------+-------------------+------------------------------------------------------------+
-| Superscript          |                   | \^super\^                                                  |
-+----------------------+-------------------+------------------------------------------------------------+
-| Heading              |                   | \#\#                                                       |
-+----------------------+-------------------+------------------------------------------------------------+
-| Blockquote           |                   | \>                                                         |
-+----------------------+-------------------+------------------------------------------------------------+
-| Code Block           | Ctrl+Shift+\\     | \`\`\`                                                     |
-+----------------------+-------------------+------------------------------------------------------------+
-| R Code Chunk         | Alt+Ctrl+I        | \`\`\`{r}                                                  |
-+----------------------+-------------------+------------------------------------------------------------+
-| Bullet List          |                   | \-                                                         |
-+----------------------+-------------------+------------------------------------------------------------+
-| Ordered List         |                   | 1\.                                                        |
-+----------------------+-------------------+------------------------------------------------------------+
-| List Check           |                   | [x]                                                        |
-+----------------------+-------------------+------------------------------------------------------------+
-| Definition           |                   | :                                                          |
-+----------------------+-------------------+------------------------------------------------------------+
-| Link                 | Ctrl+K            | `[text](href)`{.inherit-text} *or* `<href>`{.inherit-text} |
-+----------------------+-------------------+------------------------------------------------------------+
-| Image                | Shift+Ctrl+I      |                                                            |
-+----------------------+-------------------+------------------------------------------------------------+
-| Footnote             | Shift+Ctrl+F7     |                                                            |
-+----------------------+-------------------+------------------------------------------------------------+
-| Table                | Alt+Ctrl+T        |                                                            |
-+----------------------+-------------------+------------------------------------------------------------+
-| Clear Formatting     | Ctrl+\\           |                                                            |
-+----------------------+-------------------+------------------------------------------------------------+
-| Edit Attributes      | F4                |                                                            |
-+----------------------+-------------------+------------------------------------------------------------+
+| Command          | Keyboard Shortcut | Markdown Shortcut                                          |
+|------------------|-------------------|------------------------------------------------------------|
+| Bold             | Ctrl+B            | \*\*bold\*\*                                               |
+| Italic           | Ctrl+I            | \*italic\*                                                 |
+| Code             | Ctrl+D            | \`code\`                                                   |
+| Strikeout        |                   | \~\~strike\~\~                                             |
+| Subscript        |                   | \~sub\~                                                    |
+| Superscript      |                   | \^super\^                                                  |
+| Heading          |                   | \#\#                                                       |
+| Blockquote       |                   | \>                                                         |
+| Code Block       | Ctrl+Shift+\\     | \`\`\`                                                     |
+| R Code Chunk     | Alt+Ctrl+I        | \`\`\`{r}                                                  |
+| Bullet List      |                   | \-                                                         |
+| Ordered List     |                   | 1\.                                                        |
+| List Check       |                   | [x]                                                        |
+| Definition       |                   | :                                                          |
+| Link             | Ctrl+K            | `[text](href)`{.inherit-text} *or* `<href>`{.inherit-text} |
+| Image            | Shift+Ctrl+I      |                                                            |
+| Footnote         | Shift+Ctrl+F7     |                                                            |
+| Table            | Alt+Ctrl+T        |                                                            |
+| Clear Formatting | Ctrl+\\           |                                                            |
+| Edit Attributes  | F4                |                                                            |
 
 ### Typography
 
@@ -152,12 +131,10 @@ As described above, you can create a new list by just typing "`- "` or"`1.`\" at
 
 While this covers many simple list editing talks, there are a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item. From an empty list item (pictured at left), the following keyboard gestures can be used to do this:
 
-+----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| **Empty Item\                                                                          | **Tab**\                                                                                  | **Backspace**\                                                                          |
-| ***enter to exit list*                                                                 | *add sublist to previous item*                                                            | *add block to previous item*                                                            |
-+----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
-| ![](images/visual-editing-list-item.png){.illustration .list-illustration width="211"} | ![](images/visual-editing-list-sublist.png){.illustration .list-illustration width="211"} | ![](images/visual-editing-list-block.png){.illustration .list-illustration width="211"} |
-+----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+<table><tbody><tr class="odd"><td><p><strong>Empty Item<br />
+</strong><em>enter to exit list</em></p></td><td><p><strong>Tab</strong><br />
+<em>add sublist to previous item</em></p></td><td><p><strong>Backspace</strong><br />
+<em>add block to previous item</em></p></td></tr><tr class="even"><td><p><img src="images/visual-editing-list-item.png" class="illustration list-illustration" width="211" /></p></td><td><p><img src="images/visual-editing-list-sublist.png" class="illustration list-illustration" width="211" /></p></td><td><p><img src="images/visual-editing-list-block.png" class="illustration list-illustration" width="211" /></p></td></tr></tbody></table>
 
 You can also use **Shift+Tab** to lift a list item into the previous level.
 
