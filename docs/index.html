@@ -280,7 +280,7 @@ div.tocify {
 </div>
 <div id="getting-started" class="section level2">
 <h2>Getting Started</h2>
-<p>Visual markdown editing is currently only available in the daily build of RStudio (v1.4.314 or later). You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
+<p>Visual markdown editing is currently only available in the daily build of RStudio (v1.4.327 or later). You can download the most recent daily build here: <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.</p>
 <p>Visual markdown editing is not available by default. To enable it, use the <strong>R Markdown</strong> tab of RStudio Preferences:</p>
 <p><img src="images/visual-editing-pref.png" class="illustration" width="588" /></p>
 <p>Once you’ve enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, <strong>Ctrl+Shift+F8</strong>, that can be used to switch modes):</p>
@@ -317,6 +317,11 @@ div.tocify {
 <p>For example, enclose <code>**bold**</code>text in asterisks or type <code>##</code> and press enter to create a second level heading. Note that if you didn’t intend this, you can use backspace to revert the applied formatting.</p>
 <p>There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts (note that you should substitute Cmd for Ctrl on Mac systems):</p>
 <table>
+<colgroup>
+<col width="19%" />
+<col width="20%" />
+<col width="61%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Command</th>
@@ -371,34 +376,34 @@ div.tocify {
 <td>```</td>
 </tr>
 <tr class="even">
+<td>R Code Chunk</td>
+<td>Alt+Ctrl+I</td>
+<td>```{r}</td>
+</tr>
+<tr class="odd">
 <td>Bullet List</td>
 <td></td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ordered List</td>
 <td></td>
 <td>1.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>List Check</td>
 <td></td>
 <td>[x]</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Definition</td>
 <td></td>
 <td>:</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Link</td>
 <td>Ctrl+K</td>
 <td><code class="inherit-text">[text](href)</code> <em>or</em> <code class="inherit-text">&lt;href&gt;</code></td>
-</tr>
-<tr class="odd">
-<td>Clear Formatting</td>
-<td>Ctrl+\</td>
-<td></td>
 </tr>
 <tr class="even">
 <td>Image</td>
@@ -411,13 +416,13 @@ div.tocify {
 <td></td>
 </tr>
 <tr class="even">
-<td>R Code Chunk</td>
-<td>Alt+Ctrl+I</td>
+<td>Table</td>
+<td>Alt+Ctrl+T</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Table</td>
-<td>Alt+Ctrl+T</td>
+<td>Clear Formatting</td>
+<td>Ctrl+\</td>
 <td></td>
 </tr>
 <tr class="even">
