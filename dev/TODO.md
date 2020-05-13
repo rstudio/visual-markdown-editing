@@ -12,13 +12,14 @@ Hadley:
 it only seems to happen the first time I switch to visual view after opening rstudio
   - ok, that was another instance where switching back and forth from the visual editor lost my scroll position. Interestingly however, it preserved the cursor position so just pushing an arrow key scrolled me back to the right place
 
+Some of the above may be explainable by the failure to navigate to list items?
+
 HTML input rules / paste recognition (consider filtering based on all known HTML tags):
  - <> input rule for entering HTML tags (then never break the tags)
  - Make sure that we never transform code inside backticks (also allow applying backticks to tranformed code)
- 
-Plain triple-backtick input handler doesn't currently work
 
 editor_settings yaml as alternative to magic format comment
+customizable footnote writing
 detect edits to editor_settings yaml or magic format comment and prompt to reload
 
 Try pasting from Excel. Try pasting tables from GDocs.
