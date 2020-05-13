@@ -2,6 +2,61 @@
 title: "Input Gestures"
 ---
 
+<!-- -*- extensions:-raw_attribute -*- -->
+
+`<!-- adsfasdf -->`
+
+````` sadfasdf ```` asfdasdfs `````
+
++---------+------+------+
+| Col1    | Col2 | Col3 |
++=========+======+======+
+| sadfasd |      |      |
+|         |      |      |
+| asfdsd  |      |      |
++---------+------+------+
+|         |      |      |
++---------+------+------+
+|         |      |      |
++---------+------+------+
+
+asdfasdfd
+
+afasdfsa asdfasdf
+
+<style type="text/css">
+body {
+  color: red;
+}
+</style>
+
+\command{param}
+\command{param}
+
+```````` {.python}
+asdfasdf
+fdasdf
+```````
+asdfasdfasdfds
+````````
+
+```{r}
+```
+
+`<!-- adfasdf -->`
+
+`$math$`
+
+\<img \>
+
+inserting matching end tag
+
+details\>asdfasdfds
+
+</details>
+
+\<<https://www.gogole.com>
+
 ### Explicit Commands
 
 Inserting content requires an explicit command invocation (menu or keyboard shortcut). This is generally done when there isn't a convenient text/markdown expression of the content. Examples of this include:
@@ -9,25 +64,82 @@ Inserting content requires an explicit command invocation (menu or keyboard shor
 -   Tables
 -   Footnotes
 
+<strong></strong>sss
+
+ddd
+
 Note there are a number of things in the editor that curently require explict gestures which we could easily create markdown shortcuts for, including:
 
 -   Divs
+
 -   Spans
+
 -   Line Blocks
+
 -   Raw Blocks
+
 -   Images
+
+-   <details>
+
+    sfdasfasd
+
+    </details>
+
+-   \\asfasdfd
 
 ### Input Filters
 
 Input filters are reversable transformations to (usually markdown-like) input. If the user doesn't like the tranformation they need to know to hit backspace to reverse it. There is therefore a minor usability cost to input filters (user has to know to hit backspace) but at the same time a huge usability gain in keyboard expressiveness. Example of input filters include:
 
+\<strong\>
+
+<details>
+
+asdfasdfasdf
+
+</details>
+
+\<meta\>
+
+\<img src="asdfasd"\>
+
+\<img src=\"\"\>
+
+<strong>asfasfdas\</strong\>
+
+$$ sdfsd dsf dsf ds. afds sd$$
+
+\`$$ sfasfdsa $$
+
+this is "good stuff"
+
+<div>
+
+asdfsadf
+
+`$asfdasdfds$`
+
+afasfsdaf math\$
+
+asfasfds
+
 \#\#
 
 \*italic
 
+<strong>asdfasdf</strong>asdfasdf
+
+::: {.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.>}}}}}}}}}}}}}}}}}}}}}}}}
+:::
+
+dfasfdasdf
+
+</div>
+
 \*\*bold
 
-\@ref
+$$@ref$$
 
 tex: \\
 
@@ -35,24 +147,40 @@ tex: \\
 
 \<\>
 
+::: {.foobar} :::
+
 There are a small number of automatic tranformations that we currently do. These actions are not reversible via backspace and so carry the penalty that there is no way (short of a fairly complex workaround) to express the text <!--# hey this is unclear -->sequences that trigger them in the editor. We do these because we think the usability payoff is very high and the odds of actually wanting to express that text sequence vanishingly low. Example of this include:
 
 TODO: \<\>. input rule to enter HTML tag
 
 TODO:
 
+`<!-- html comment -->`
+
 -   Make sure that we never auto-transform text inside backtick code. Allow Cmd+D to eject from an automatic transformation.
 -   Consider whether this should be just a fancy input rule
 
-<!-- html comment -->
+`<strong>`
+
+`<!-- html comment -->`
+
+`{{< >}}`
+
+`<!-- html comment -->`
 
 <!--# editing comment -->
 
 {{< >}}
 
+`{{< >}}`
+
+[@ref](asfasdf)
+
 \<strong\>
 
-<details>
+`<details>`
+
+`@ref(foobar)`
 
 More details here
 
@@ -62,9 +190,9 @@ More details here
 
 using the <strong> tag.
 
-\command{asdfsd}
+\\command{asdfsd}
 
-\asdfsdf
+\\asdfsdf
 
 Note that the first 3 could probably be re-implemented as input rules (it's a bit more work and I feel like the odds of that text literally appearing in a documetn is close to zero).
 

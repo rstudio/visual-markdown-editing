@@ -14,8 +14,8 @@ fsp_ytd_old <- 100
 oem_tm_ytd <- 100
 ```
 
-| Objective ..........................................................................................| Q1 Target | Q1 Actual | 2020 Target | Annual Growth Target |
-|------|-----|---------|------|-------|
-| _New FSP:_ Expand FSP network to new countries, regions and verticals | $50K |  `r k_dollar(fsp_ytd_new)` | $500K | 270% |
-| _Existing FSP:_ Grow existing FSP contributions towards revenue and strengthen their capabilities | $320K | `r k_dollar(fsp_ytd_old)` | $1,600K |  51% |
-| _OEM & Trademark:_ Establish RStudio Team as a required OEM component of bespoke data science platform offerings | $225K | `r k_dollar(oem_tm_ytd)` | $1,500K  |  26%  |
+| Objective ..........................................................................................             | Q1 Target | Q1 Actuals                | 2020 Target | Annual Growth Target |
+|------------------------------------------------------------------------------------------------------------------|-----------|---------------------------|-------------|----------------------|
+| *New FSP:* Expand FSP network to new countries, regions and verticals                                            | \$50K     | `r k_dollar(fsp_ytd_new)` | \$500K      | 270%                 |
+| *Existing FSP:* Grow existing FSP contributions towards revenue and strengthen their capabilities                | \$320K    | `r k_dollar(fsp_ytd_old)` | \$1,600K    | 51%                  |
+| *OEM & Trademark:* Establish RStudio Team as a required OEM component of bespoke data science platform offerings | \$225K    | `r k_dollar(oem_tm_ytd)`  | \$1,500K    | 26%                  |
