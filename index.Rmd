@@ -127,7 +127,7 @@ Note that if you select multiple rows or columns the insert or delete command wi
 
 ### Editing Lists
 
-As described above, you can create a new list by just typing "`- "` or"`1.`\" at the beginning of an empty paragraph. To add items to the list, just press **Enter** within a list item. To exit the list, press **Enter** within an empty list item.
+As described above, you can create a new list by just typing `- ` or `1. ` at the beginning of an empty paragraph. To add items to the list, just press **Enter** within a list item. To exit the list, press **Enter** within an empty list item.
 
 While this covers many simple list editing talks, there are a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item. From an empty list item (pictured at left), the following keyboard gestures can be used to do this:
 
