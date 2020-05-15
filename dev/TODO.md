@@ -4,17 +4,7 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-When calling getMarkdown, always need to read the live format options
-from either the source editor buffer or from the code within the visual 
-editor (that allows save behavior to always trigger the correct options,
-rather than waiting for a reload). Generally, handling of writer options
-seems awkward, work out a clearer scheme.
-
-Scroll position is off after save from source (try different call)
-
-footnote setting (global)
-
-CommandPaletteEntry for visual editor commands
+Asterisks for multiplication inside backticks over matched. Perhaps use whitepsace indicator?
 
 input rule for raw code blocks
 
@@ -22,7 +12,7 @@ Try pasting from Excel. Try pasting tables from GDocs. Do we need to fixup non-r
 
 Parse pandoc-written html tables?
 
-Consider Hugo shortcode blocks
+Consider Hugo shortcode blocks. Do we need capsules for all hugo shortcode text?
 
 <https://github.com/jjallaire/rmarkdown-cookbook/compare/master>...panmirror-import
 
@@ -36,16 +26,13 @@ Consider Hugo shortcode blocks
 
     -   Resolve selection issues (not visible when selecting over)\
     -   Enable find/replace within code blocks
-
--   
-
     -   Make it a peerDependency
 
-Customizable footnote location: --reference-location = bloc\k|sectio\n\|document
+Interactive spelling / Inline spelling
 
-Interactive spellin Inline spelling [] [@r]]ef link treatme [t @r]ef hot-linking / dialog / +invalid link detection
+[@ref] work: link treatment, hot-linking / dialog, invalid link detection
 
-Consider portin\<g <https://gitlab.com/mpapp-public/manuscripts-symbol-pick>\>er
+Consider porting <https://gitlab.com/mpapp-public/manuscripts-symbol-picker>
 
 Citation handling
 
