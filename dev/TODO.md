@@ -4,10 +4,6 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Asterisks for multiplication inside backticks over matched. Perhaps use whitepsace indicator?
-
-input rule for raw code blocks
-
 Try pasting from Excel. Try pasting tables from GDocs. Do we need to fixup non-rectangualar tables before sending to pandoc?
 
 Parse pandoc-written html tables?
