@@ -4,20 +4,27 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Parse pandoc-written html tables:
- Discussion: https://github.com/jgm/pandoc/issues/3734
- Workarounds are to set wrap_column VERY wide or to write with -raw_html
- Can repro by using multiple blocks and then adding inline R (so -grid_tables)
- 
- We will need to create a source-capsule (that does prefix matching to handle 
- lists and blockquotes) which matches on a single line that starts with <table>
- and ends with </table>. We will call window.DOMParser.parseFromString on that
- code and create a table node from it.
- 
- fix the tables in knitr and then always allow grid tables
- 
-Table context menu command multi-row/column selections don't persist
-Either need to fix this or disable the context menu or make it mono-only
+Consider stripping style from table columns on paste
+
+Do we need to expel enclosing whitespace on inline code (pandoc seems to). Yes we do! Also for input rule
+
+Check other mark types
+
+Parse pandoc-written html tables: Discussion: <https://github.com/jgm/pandoc/issues/3734> Workarounds are to set wrap\_column VERY wide or to write with -raw\_html Can repro by using multiple blocks and then adding inline R (so -grid\_tables)
+
+We will need to create a source-capsule (that does prefix matching to handle lists and blockquotes) which matches on a single line that starts with
+
+<table>
+
+and ends with
+
+</table>
+
+. We will call window.DOMParser.parseFromString on that code and create a table node from it.
+
+fix the tables in knitr and then always allow grid tables
+
+Table context menu command multi-row/column selections don't persist Either need to fix this or disable the context menu or make it mono-only
 
 Consider Hugo shortcode blocks. Do we need capsules for all hugo shortcode text?
 
@@ -25,8 +32,9 @@ Consider Hugo shortcode blocks. Do we need capsules for all hugo shortcode text?
 
 ## Future
 
--   MathJax preview. When containing the selection, the math will show both the code and the preview. When not containing the selection will show the preview. (so probably require a node view for this). Consider a "done"\" gesture for display math. May need to bring bac escaping of \$ in math as this mode will clearly not be "source mode" style latex equation editing
-- Consider MathLive and MathQuill
+-   MathJax preview. When containing the selection, the math will show both the code and the preview. When not containing the selection will show the preview. (so probably require a node view for this). Consider a "done" gesture for display math. May need to bring bac escaping of \$ in math as this mode will clearly not be "source mode" style latex equation editing
+
+-   Consider MathLive and MathQuill
 
 -   Possibly have a special editing mode for thereoms? Or just make sure they work.
 
