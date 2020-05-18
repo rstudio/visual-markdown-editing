@@ -4,7 +4,18 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Consider Hugo shortcode blocks. Do we need capsules for all hugo shortcode text?
+Cursor placement for insert yaml at bottom
+
+Switching from source to Exercises at bottom, scroll position not restored
+
+Mastering Shiny: advanced-ui.Rmd switching to visual mode gives InvalidCharacterError
+
+In charles demo grid tables were created not pipe -- possibly b/c of table width
+
+See if we can improve on the selection behavior / ability to deal with em/en dashes
+for the reverseSmartQuotesExtension
+
+Consider Hugo *shortcode* blocks. Do we need capsules for all hugo shortcode text?
 
 Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
 MkDocs, Readthedocs, etc. for visual mode documentation.
@@ -20,22 +31,28 @@ MkDocs, Readthedocs, etc. for visual mode documentation.
 -   Possibly have a special editing mode for thereoms? Or just make sure they work.
 
 -   Replace CodeMirror w/ Ace:
-
     -   Resolve selection issues (not visible when selecting over)\
     -   Enable find/replace within code blocks
     -   Make it a peerDependency
 
 Interactive spelling / Inline spelling
 
-[@ref] work: link treatment, hot-linking / dialog, invalid link detection
-
 Consider porting <https://gitlab.com/mpapp-public/manuscripts-symbol-picker>
 
+
 Citation handling
+[@ref] work: link treatment, hot-linking / dialog, invalid link detection
+
+
 
 Copy/paste of markdown source
 
 Slack style handling of mark ? Reveal codes / typora behavi r Breadcrump for current nodes / marks
+
+
+-------------------------------
+
+
 
 Evaluate markdown for link text
 
