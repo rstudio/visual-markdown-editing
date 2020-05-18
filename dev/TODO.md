@@ -4,31 +4,12 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Consider stripping style from table columns on paste
-
-Do we need to expel enclosing whitespace on inline code (pandoc seems to). Yes we do! Also for input rule
-
-Check other mark types
-
-Parse pandoc-written html tables: Discussion: <https://github.com/jgm/pandoc/issues/3734> Workarounds are to set wrap\_column VERY wide or to write with -raw\_html Can repro by using multiple blocks and then adding inline R (so -grid\_tables)
-
-We will need to create a source-capsule (that does prefix matching to handle lists and blockquotes) which matches on a single line that starts with
-
-<table>
-
-and ends with
-
-</table>
-
-. We will call window.DOMParser.parseFromString on that code and create a table node from it.
-
-fix the tables in knitr and then always allow grid tables
-
-Table context menu command multi-row/column selections don't persist Either need to fix this or disable the context menu or make it mono-only
-
 Consider Hugo shortcode blocks. Do we need capsules for all hugo shortcode text?
 
-<https://github.com/jjallaire/rmarkdown-cookbook/compare/master>...panmirror-import
+Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
+MkDocs, Readthedocs, etc. for visual mode documentation.
+
+<https://github.com/jjallaire/rmarkdown-cookbook/compare/master...panmirror-import>
 
 ## Future
 
@@ -67,6 +48,8 @@ Revisit doing smart patches of Prosemirror doc\<: <https://github.com/rstudio/rs
 Fixed size tables (with last column resized) overflow-x when editi g container is made very small.
 
 Keyboard selection of image node (arrow handler ) Also backspace handler for paragraph just after an image (currently deletes image)
+
+fix the tables in knitr and then always allow grid tables
 
 You can arrow horizontally into figure captions within tables (e.g. put 3 images in cells of the same row)
 
