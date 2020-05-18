@@ -1,5 +1,21 @@
-```{r}
-plot(cars)
-```
+`afasdfasf`
 
-![](outline.png)
+Woozy^superscriptsss^
+
+Woozyssd~sssubscript~
+
+asfasdf^asfasfs^
+
+asdfasdfsad
+
+afasfasdf
+
+asfasdfas
+
+asfasfd
+
+*asdfasdf*
+
+[Smallcaps]{.smallcaps}
+
+asdfasd ~~asfasfsad~~
