@@ -4,9 +4,9 @@ title: "Input Gestures"
 
 <!-- -*- extensions:-raw_attribute -*- -->
 
-`<!-- adsfasdf -->`
-
-````` sadfasdf ```` asfdasdfs `````
+```{r}
+plot(cars)
+```
 
 +---------+------+------+
 | Col1    | Col2 | Col3 |
@@ -130,7 +130,7 @@ asfasfds
 
 <strong>asdfasdf</strong>asdfasdf
 
-::: {.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.>}}}}}}}}}}}}}}}}}}}}}}}}
+::: {.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.{.>}}}}}}}}}}}}}}}}}}}}}}}}}}
 :::
 
 dfasfdasdf
