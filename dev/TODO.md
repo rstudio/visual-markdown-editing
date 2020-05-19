@@ -4,18 +4,16 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Cursor placement for insert yaml at bottom
-
-Switching from source to Exercises at bottom, scroll position not restored
-
-Mastering Shiny: advanced-ui.Rmd switching to visual mode gives InvalidCharacterError
-
-In charles demo grid tables were created not pipe -- possibly b/c of table width
+In charles demo grid tables were created not pipe -- possibly b/c of table width exceeding viewport
 
 See if we can improve on the selection behavior / ability to deal with em/en dashes
 for the reverseSmartQuotesExtension
 
 Consider Hugo *shortcode* blocks. Do we need capsules for all hugo shortcode text?
+
+See if we can get the find button to do double-duty.
+
+Consider a lightweight text align feature (perhaps even just an example)
 
 Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
 MkDocs, Readthedocs, etc. for visual mode documentation.
@@ -52,7 +50,7 @@ Slack style handling of mark ? Reveal codes / typora behavi r Breadcrump for cur
 
 -------------------------------
 
-
+Image alignment (note HTML/CSS only)
 
 Evaluate markdown for link text
 
