@@ -1,0 +1,13 @@
+---
+title: "Foo"
+---
+
+Can we center![](images/outline.png){width="60" height="25"} this image?
+
+asdfasdfads q asdfds
+
+```{r, out.width=550px, fig.align='center'}
+knitr::include_graphics("images/outline.png")
+```
+
+sssss

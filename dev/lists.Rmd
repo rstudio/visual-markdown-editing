@@ -3,21 +3,19 @@
 -   asdfasdf. here is some more
 
     ```{r}
-
     ```
+
+(don't miss her [\#TidyTuesday](https://juliasilge.com/category/tidymodels/) posts with video screencasts!).
 
 ### asdfasdfdas
 
 ```{r}
-
 ```
 
 ```{r}
-
 ```
 
 ```{r}
-
 ```
 
 *`a`*
