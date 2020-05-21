@@ -4,14 +4,6 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-various feedback from tareef
-
-try out hugodown
-
-style hoisting for centered images
-
-consider authoring stylesheet
-
 Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
 MkDocs, Readthedocs, etc. for visual mode documentation.
 
@@ -47,6 +39,8 @@ Slack style handling of mark ? Reveal codes / typora behavior
 Breadcrumb for current nodes / marks
 
 -------------------------------
+
+Authoring stylesheet
 
 Image alignment (note HTML/CSS only)
 
