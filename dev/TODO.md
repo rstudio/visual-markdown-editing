@@ -4,16 +4,13 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-In charles demo grid tables were created not pipe -- possibly b/c of table width exceeding viewport
+various feedback from tareef
 
-See if we can improve on the selection behavior / ability to deal with em/en dashes
-for the reverseSmartQuotesExtension
+try out hugodown
 
-Consider Hugo *shortcode* blocks. Do we need capsules for all hugo shortcode text?
+style hoisting for centered images
 
-See if we can get the find button to do double-duty.
-
-Consider a lightweight text align feature (perhaps even just an example)
+consider authoring stylesheet
 
 Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
 MkDocs, Readthedocs, etc. for visual mode documentation.
@@ -35,18 +32,19 @@ MkDocs, Readthedocs, etc. for visual mode documentation.
 
 Interactive spelling / Inline spelling
 
-Consider porting <https://gitlab.com/mpapp-public/manuscripts-symbol-picker>
-
+Insert special character
 
 Citation handling
+
 [@ref] work: link treatment, hot-linking / dialog, invalid link detection
 
-
-
 Copy/paste of markdown source
+  Copy as Plain Text, Copy as Markdown, Copy as HTML
+  Paste prompt for what looks like markdown paste
 
-Slack style handling of mark ? Reveal codes / typora behavi r Breadcrump for current nodes / marks
+Slack style handling of mark ? Reveal codes / typora behavior
 
+Breadcrumb for current nodes / marks
 
 -------------------------------
 
