@@ -315,8 +315,13 @@ div.tocify {
 <h3>Editor Shortcuts</h3>
 <p>In addition to using the toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting.</p>
 <p>For example, enclose <code>**bold**</code>text in asterisks or type <code>##</code> and press enter to create a second level heading. Note that if you didn’t intend this, you can use backspace to revert the applied formatting.</p>
-<p>There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts (note that you should substitute Cmd for Ctrl on Mac systems):</p>
+<p>There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts (note that you should substitute Ctrl for Cmd on Windows and Linux systems):</p>
 <table>
+<colgroup>
+<col width="21%" />
+<col width="22%" />
+<col width="56%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th>Command</th>
@@ -327,17 +332,17 @@ div.tocify {
 <tbody>
 <tr class="odd">
 <td>Bold</td>
-<td>Ctrl+B</td>
+<td>Cmd+B</td>
 <td>**bold**</td>
 </tr>
 <tr class="even">
 <td>Italic</td>
-<td>Ctrl+I</td>
+<td>Cmd+I</td>
 <td>*italic*</td>
 </tr>
 <tr class="odd">
 <td>Code</td>
-<td>Ctrl+D</td>
+<td>Cmd+D</td>
 <td>`code`</td>
 </tr>
 <tr class="even">
@@ -356,9 +361,19 @@ div.tocify {
 <td>^super^</td>
 </tr>
 <tr class="odd">
-<td>Heading</td>
-<td></td>
+<td>Heading 1</td>
+<td>Cmd+Alt+1</td>
+<td>#</td>
+</tr>
+<tr class="even">
+<td>Heading 2</td>
+<td>Cmd+Alt+2</td>
 <td>##</td>
+</tr>
+<tr class="odd">
+<td>Heading 3</td>
+<td>Cmd+Alt+3</td>
+<td>###</td>
 </tr>
 <tr class="even">
 <td>Blockquote</td>
@@ -367,12 +382,12 @@ div.tocify {
 </tr>
 <tr class="odd">
 <td>Code Block</td>
-<td>Ctrl+Shift+\</td>
+<td>Cmd+Shift+\</td>
 <td>```</td>
 </tr>
 <tr class="even">
 <td>R Code Chunk</td>
-<td>Alt+Ctrl+I</td>
+<td>Cmd+Alt+I</td>
 <td>```{r}</td>
 </tr>
 <tr class="odd">
@@ -397,30 +412,45 @@ div.tocify {
 </tr>
 <tr class="odd">
 <td>Link</td>
-<td>Ctrl+K</td>
+<td>Cmd+K</td>
 <td><code class="inherit-text">[text](href)</code> <em>or</em> <code class="inherit-text">&lt;href&gt;</code></td>
 </tr>
 <tr class="even">
+<td>Paragraph</td>
+<td>Cmd+Alt+0</td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>Image</td>
-<td>Shift+Ctrl+I</td>
+<td>Cmd+Shift+I</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Footnote</td>
-<td>Shift+Ctrl+F7</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Table</td>
-<td>Alt+Ctrl+T</td>
+<td>Cmd+Shift+F7</td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Clear Formatting</td>
-<td>Ctrl+\</td>
+<td>Table</td>
+<td>Cmd+Alt+T</td>
 <td></td>
 </tr>
 <tr class="even">
+<td>Editing Comment</td>
+<td>Cmd+Shift+C</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Select All</td>
+<td>Cmd+A</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Clear Formatting</td>
+<td>Cmd+\</td>
+<td></td>
+</tr>
+<tr class="odd">
 <td>Edit Attributes</td>
 <td>F4</td>
 <td></td>
