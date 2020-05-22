@@ -5,4 +5,10 @@ editor_options:
       extensions: +emoji
 ---
 
-a🖐️b
+a:raised_hand_with_fingers_splayed:b
+
+:kosovo:
+
+:raised_hand_with_fingers_splayed:
+
+:kenya:
