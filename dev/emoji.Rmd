@@ -1,0 +1,8 @@
+---
+editor_options:
+   markdown: 
+      mode: markdown
+      extensions: +emoji
+---
+
+a🖐️b
