@@ -20,7 +20,7 @@ Visual markdown editing is not available by default. To enable it, use the **R M
 
 <img src="images/visual-editing-pref.png" class="illustration" width="588"/>
 
-Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, **Ctrl+Shift+F8**, that can be used to switch modes):
+Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, <kbd>⌃⇧F8</kbd>, that can be used to switch modes):
 
 <img src="images/visual-editing.png" width="700"/>
 
@@ -50,32 +50,32 @@ There are also keyboard shortcuts available for several commands. Here are the c
 
 | Command          | Keyboard Shortcut | Markdown Shortcut |
 |------------------|-------------------|-------------------|
-| Bold             | Cmd+B             | \*\*bold\*\*      |
-| Italic           | Cmd+I             | \*italic\*        |
-| Code             | Cmd+D             | \`code\`          |
+| Bold             | <kbd>⌘B</kbd>     | \*\*bold\*\*      |
+| Italic           | <kbd>⌘I</kbd>     | \*italic\*        |
+| Code             | <kbd>⌘D</kbd>     | \`code\`          |
 | Strikeout        |                   | \~\~strike\~\~    |
 | Subscript        |                   | \~sub\~           |
 | Superscript      |                   | ^super^           |
-| Heading 1        | Cmd+Alt+1         | \#                |
-| Heading 2        | Cmd+Alt+2         | \#\#              |
-| Heading 3        | Cmd+Alt+3         | \#\#\#            |
+| Heading 1        | <kbd>⌥⌘1</kbd>    | \#                |
+| Heading 2        | <kbd>⌥⌘2</kbd>    | \#\#              |
+| Heading 3        | <kbd>⌥⌘3</kbd>    | \#\#\#            |
 | Blockquote       |                   | \>                |
-| Code Block       | Cmd+Shift+\\      | \`\`\`            |
-| R Code Chunk     | Cmd+Alt+I         | \`\`\`{r}         |
+| Code Block       | <kbd>⇧⌘\\</kbd>   | \`\`\`            |
+| R Code Chunk     | <kbd>⌥⌘I</kbd>    | \`\`\`{r}         |
 | Raw Block        |                   | \`\`\`{=html}     |
 | Bullet List      |                   | \-                |
 | Ordered List     |                   | 1\.               |
 | List Check       |                   | [x]               |
 | Definition       |                   | :                 |
-| Link             | Cmd+K             | \<href\>          |
-| Paragraph        | Cmd+Alt+0         |                   |
-| Image            | Cmd+Shift+I       |                   |
-| Footnote         | Cmd+Shift+F7      |                   |
-| Table            | Cmd+Alt+T         |                   |
-| Editing Comment  | Cmd+Shift+C       |                   |
-| Select All       | Cmd+A             |                   |
-| Clear Formatting | Cmd+\\            |                   |
-| Edit Attributes  | F4                |                   |
+| Link             | <kbd>⌘K</kbd>     | \<href\>          |
+| Paragraph        | <kbd>⌥⌘0</kbd>    |                   |
+| Image            | <kbd>⇧⌘I</kbd>    |                   |
+| Footnote         | <kbd>⇧⌘F7</kbd>   |                   |
+| Table            | <kbd>⌥⌘T</kbd>    |                   |
+| Editing Comment  | <kbd>⇧⌘C</kbd>    |                   |
+| Select All       | <kbd>⌘A</kbd>     |                   |
+| Clear Formatting | <kbd>⌘\\</kbd>    |                   |
+| Edit Attributes  | <kbd>F4</kbd>     |                   |
 
 ### Typography
 

@@ -1,16 +1,26 @@
 
-p > img:only-child {
+
+:root {
+  --code-inline-background: rgba(0, 0, 0, 0.04)
+}
+
+.markdown-section td > kbd {
+  min-width: 66px;
+}
+
+.markdown-section p > img:only-child {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.illustration {
+.markdown-section .illustration {
   border: 1px solid rgb(230, 230, 230);
 }
 
-.list-illustration {
+.markdown-section .list-illustration {
   margin-top: 10px;
   margin-bottom: 1em;
   margin-right: 30px;
 }
+
 
