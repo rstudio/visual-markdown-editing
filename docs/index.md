@@ -14,7 +14,7 @@ Visual mode currently supports executing R and Python code chunks in the console
 
 ## Getting Started
 
-Visual markdown editing is currently only available in the daily build of RStudio (v1.4.327 or later). You can download the most recent daily build here: <https://dailies.rstudio.com>.
+Visual markdown editing is currently only available in the daily build of RStudio (v1.4.376 or later). You can download the most recent daily build here: <https://dailies.rstudio.com>.
 
 Visual markdown editing is not available by default. To enable it, use the **R Markdown** tab of RStudio Preferences:
 
