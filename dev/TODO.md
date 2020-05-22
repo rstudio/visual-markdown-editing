@@ -4,6 +4,15 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
+Emojis in gfm? (don't escape :)
+
+Last row of table. Insert Row above. Then undo (JS Exception)
+
+</kbd> in a table cell mauls the table
+Markdown expressions (e.g. <, **bold**, etc.) can be used within the visual editor for formatting.
+<kbd> at the < also messes things up
+even manages to mess thins up in a vanilla paragraph!
+
 Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
 MkDocs, Readthedocs, etc. for visual mode documentation.
 

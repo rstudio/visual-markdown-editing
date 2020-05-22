@@ -1,29 +1,33 @@
-.inherit-text {
-  font-family: inherit;
-  font-size: inherit;
-  background-color: inherit;
+
+
+:root {
+  
+  --code-inline-background      : rgba(0, 0, 0, 0.04);
+  
+  --kbd-margin                  : 0 0;
+  --kbd-padding                 : 0.3em 0.3em;
+  
+  --table-row-even-background   : var(--mono-tint3);
+  --table-row-odd-background    : ;
 }
 
-p > img:only-child {
+.markdown-section td > kbd {
+  min-width: 60px;
+}
+
+.markdown-section p > img:only-child {
   margin-top: 8px;
   margin-bottom: 8px;
 }
 
-.illustration {
+.markdown-section .illustration {
   border: 1px solid rgb(230, 230, 230);
 }
 
-.list-illustration {
+.markdown-section .list-illustration {
   margin-top: 10px;
   margin-bottom: 1em;
   margin-right: 30px;
 }
 
-.fake-code {
-  padding: 2px 4px;
-  font-size: 90%;
-  font-family: monospace;
-  background-color: rgba(0, 0, 0, 0.04);
-  border-radius: 0;
-}
 
