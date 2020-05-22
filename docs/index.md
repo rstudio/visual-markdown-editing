@@ -1,6 +1,6 @@
 <!-- -*- mode: gfm -*- -->
 
-## Overview
+<h2>R Markdown Visual Mode</h2>
 
 RStudio v1.4 includes an experimental visual markdown editing mode. Users of R Markdown that write longer-form documents often use tools like Typora (or even Google Docs) for composition. Visual editing mode provides an alternative that is seamlessly integrated with RStudio. Features of visual mode include:
 

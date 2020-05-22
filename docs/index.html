@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>visual-markdown-editing</title>
+  <title>Rmd Visual Mode</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -13,13 +13,15 @@
   <div id="app"></div>
   
   <script src="plugins.js"></script>
+  
   <script>
     window.$docsify = {
+      
       // site title
       name: 'Rmd Visual Mode',
       
       // core options
-      relativePath: true,
+      homepage: 'index.md',
       auto2top: true,
       maxLevel: 4,
       topMargin: 15,
@@ -30,16 +32,12 @@
       },
       
       // markdown (https://docsify.js.org/#/markdown?id=markdown-configuration)
-      markdown: {
-        
-      },
+      markdown: {},
       
       // themable (https://jhildenbiddle.github.io/docsify-themeable/#/options)
-      themeable: {
-        
-      },
+      themeable: {},
       
-      // some custom plugins
+      // custom plugins
       plugins: [
         cmdToCtrlPlugin
       ],
