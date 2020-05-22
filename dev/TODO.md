@@ -4,7 +4,7 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Emojis in gfm? (don't escape :)
+Deleting empty definition description created editing loop
 
 Last row of table. Insert Row above. Then undo (JS Exception)
 
@@ -13,8 +13,7 @@ Markdown expressions (e.g. <, **bold**, etc.) can be used within the visual edit
 <kbd> at the < also messes things up
 even manages to mess thins up in a vanilla paragraph!
 
-Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
-MkDocs, Readthedocs, etc. for visual mode documentation.
+Improve/expand docs
 
 <https://github.com/jjallaire/rmarkdown-cookbook/compare/master...panmirror-import>
 
