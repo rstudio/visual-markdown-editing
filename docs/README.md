@@ -20,7 +20,7 @@ Visual markdown editing is not available by default. To enable it, use the **R M
 
 <img src="images/visual-editing-pref.png" class="illustration" width="588"/>
 
-Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, <kbd>⌃⇧F8</kbd>, that can be used to switch modes):
+Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, <kbd>⌃⇧ F8</kbd>, that can be used to switch modes):
 
 <img src="images/visual-editing.png" width="700"/>
 
@@ -44,42 +44,44 @@ Additional commands are available on the Format, Insert, and Table menus:
 
 In addition to using the toolbar, you can also use markdown syntax directly. When the editor sees markdown shortcuts it automatically applies the associated formatting.
 
-For example, enclose `**bold**`text in asterisks or type `##` and press enter to create a second level heading. Note that if you didn't intend this, you can use backspace to revert the applied formatting.
+For example, enclose `**bold**` text in asterisks or type `##` and press enter to create a second level heading. Note that if you didn't intend this, you can use backspace to revert the applied formatting.
 
-There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts (note that you should substitute Ctrl for Cmd on Windows and Linux systems):
+There are also keyboard shortcuts available for several commands. Here are the currently supported shortcuts:
 
-| Command          | Keyboard Shortcut | Markdown Shortcut |
-|------------------|-------------------|-------------------|
-| Bold             | <kbd>⌘B</kbd>     | \*\*bold\*\*      |
-| Italic           | <kbd>⌘I</kbd>     | \*italic\*        |
-| Code             | <kbd>⌘D</kbd>     | \`code\`          |
-| Strikeout        |                   | \~\~strike\~\~    |
-| Subscript        |                   | \~sub\~           |
-| Superscript      |                   | ^super^           |
-| Heading 1        | <kbd>⌥⌘1</kbd>    | \#                |
-| Heading 2        | <kbd>⌥⌘2</kbd>    | \#\#              |
-| Heading 3        | <kbd>⌥⌘3</kbd>    | \#\#\#            |
-| Blockquote       |                   | \>                |
-| Code Block       | <kbd>⇧⌘\\</kbd>   | \`\`\`            |
-| R Code Chunk     | <kbd>⌥⌘I</kbd>    | \`\`\`{r}         |
-| Raw Block        |                   | \`\`\`{=html}     |
-| Bullet List      |                   | \-                |
-| Ordered List     |                   | 1\.               |
-| List Check       |                   | [x]               |
-| Definition       |                   | :                 |
-| Link             | <kbd>⌘K</kbd>     | \<href\>          |
-| Paragraph        | <kbd>⌥⌘0</kbd>    |                   |
-| Image            | <kbd>⇧⌘I</kbd>    |                   |
-| Footnote         | <kbd>⇧⌘F7</kbd>   |                   |
-| Table            | <kbd>⌥⌘T</kbd>    |                   |
-| Editing Comment  | <kbd>⇧⌘C</kbd>    |                   |
-| Select All       | <kbd>⌘A</kbd>     |                   |
-| Clear Formatting | <kbd>⌘\\</kbd>    |                   |
-| Edit Attributes  | <kbd>F4</kbd>     |                   |
+| Command             |  Keyboard Shortcut  | Markdown Shortcut |
+|---------------------|:-------------------:|:-----------------:|
+| Bold                |    <kbd>⌘ B</kbd>   |    \*\*bold\*\*   |
+| Italic              |    <kbd>⌘ I</kbd>   |     \*italic\*    |
+| Code                |    <kbd>⌘ D</kbd>   |      \`code\`     |
+| Strikeout           |                     |   \~\~strike\~\~  |
+| Subscript           |                     |      \~sub\~      |
+| Superscript         |                     |      ^super^      |
+| Heading 1           |   <kbd>⌥⌘ 1</kbd>   |         \#        |
+| Heading 2           |   <kbd>⌥⌘ 2</kbd>   |        \#\#       |
+| Heading 3           |   <kbd>⌥⌘ 3</kbd>   |       \#\#\#      |
+| Blockquote          |                     |         \>        |
+| Code Block          |   <kbd>⇧⌘ \\</kbd>  |       \`\`\`      |
+| R Code Chunk        |   <kbd>⌥⌘ I</kbd>   |     \`\`\`{r}     |
+| Raw Block           |                     |   \`\`\`{=html}   |
+| Bullet List         |                     |         \-        |
+| Ordered List        |                     |        1\.        |
+| List Check          |                     |        [x]        |
+| Definition          |                     |         :         |
+| Link                |    <kbd>⌘ K</kbd>   |      \<href\>     |
+| Paragraph           |   <kbd>⌥⌘ 0</kbd>   |                   |
+| Image               |   <kbd>⇧⌘ I</kbd>   |                   |
+| Footnote            |   <kbd>⇧⌘ F7</kbd>  |                   |
+| Table               |   <kbd>⌥⌘ T</kbd>   |                   |
+| Editing Comment     |   <kbd>⇧⌘ C</kbd>   |                   |
+| Select All          |    <kbd>⌘ A</kbd>   |                   |
+| Clear Formatting    |   <kbd>⌘ \\</kbd>   |                   |
+| Edit Attributes     |    <kbd>F4</kbd>    |                   |
+| Run Code Chunk      | <kbd>⇧⌘ Enter</kbd> |                   |
+| Run Previous Chunks |   <kbd>⌥⌘ P</kbd>   |                   |
 
 ### Typography
 
-Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, -- as en-dashes, --- as em-dashes, and ... as ellipses. Visual mode supports these same transformations (so when you type --- it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
+Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, `--` as en-dashes, `---` as em-dashes, and `...` as ellipses. Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
 
 ### Citations & Footnotes
 
@@ -107,7 +109,7 @@ Several of Pandoc's block types (e.g. headings, code blocks, and divs) enable yo
 
 <img src="images/visual-editing-attributes.png" width="700"/>
 
-Note that any ID as well as the first class specified within the attributes are also displayed. Click the edit button or use the **F4** keyboard shortcut to edit the attributes.
+Note that any ID as well as the first class specified within the attributes are also displayed. Click the edit button or use the <kbd>F4</kbd> keyboard shortcut to edit the attributes.
 
 ### Commenting
 
@@ -117,7 +119,7 @@ When reviewing an R Markdown document you often want to provide inline comments 
 
 Note that the \# prefix used in the comment is what triggers the special background highlighting. If you remove the `#` it will still be a valid HTML comment, but just won't be highlighted as shown above.
 
-You can insert an HTML comment using the Comment button on the toolbar or via the **Ctrl+Shift+C** keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
+You can insert an HTML comment using the Comment button on the toolbar or via the <kbd>⇧⌘ C</kbd> keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
 
 ### Editing Tables
 
@@ -164,11 +166,11 @@ To include inline R code, you just create normal inline code (as described above
 
 ### Running Chunks
 
-You can execute the currently selected R or Python code chunk using either the run button at the top right of the code chunk or using the **Ctrl+Shift+Enter** keyboard shortcut:
+You can execute the currently selected R or Python code chunk using either the run button at the top right of the code chunk or using the <kbd>⇧⌘ Enter</kbd> keyboard shortcut:
 
 <img src="images/visual-editing-execute-code.png" width="700"/>
 
-You can execute code chunks up to the current one using the toolbar button or using the **Ctrl+Alt+P** keyboard shortcut.
+You can execute code chunks up to the current one using the toolbar button or using the <kbd>⌥⌘ P</kbd> keyboard shortcut.
 
 You may note that code chunk editing and execution in visual mode is not as full featured as in source mode (e.g. syntax highlighting but no code completion, executing entire chunks but not individual lines, etc.). Additional code chunk features are under development and will be added in subsequent releases.
 
