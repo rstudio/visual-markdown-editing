@@ -1,9 +1,14 @@
 
 
 :root {
-  --code-inline-background: rgba(0, 0, 0, 0.04);
-  --kbd-margin                        : 0 0;
-  --kbd-padding                       : 0.3em 0.3em;
+  
+  --code-inline-background      : rgba(0, 0, 0, 0.04);
+  
+  --kbd-margin                  : 0 0;
+  --kbd-padding                 : 0.3em 0.3em;
+  
+  --table-row-even-background   : var(--mono-tint3);
+  --table-row-odd-background    : ;
 }
 
 .markdown-section td > kbd {

@@ -135,9 +135,9 @@ As described above, you can create a new list by just typing `-` or `1.` at the 
 
 While this covers many simple list editing talks, there are a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item. From an empty list item (pictured at left), the following keyboard gestures can be used to do this:
 
-| **Empty Item** (*enter to exit list*)                                                  | **Tab** (*add sublist*)                                                                   | **Backspace** (*add block*)                                                             |
-|----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| <img src="images/visual-editing-list-item.png" class="list-illustration" width="217"/> | <img src="images/visual-editing-list-sublist.png" class="list-illustration" width="217"/> | <img src="images/visual-editing-list-block.png" class="list-illustration" width="217"/> |
+| **Empty Item** (*enter to exit list*)                                                               | **Tab** (*add sublist*)                                                                                | **Backspace** (*add block*)                                                                          |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| <img src="images/visual-editing-list-item.png" class="illustration list-illustration" width="217"/> | <img src="images/visual-editing-list-sublist.png" class="illustration list-illustration" width="217"/> | <img src="images/visual-editing-list-block.png" class="illustration list-illustration" width="217"/> |
 
 You can also use **Shift+Tab** to lift a list item into the previous level.
 
