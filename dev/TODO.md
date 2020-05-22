@@ -4,10 +4,6 @@ pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Defi
 
 ## TODO
 
-Perhaps insert an inline image not figure if we are in a list bullet
-
-Table keeps flipping between grid and pipe mode in index.Rmd
-
 Evaluate docup (https://docup.now.sh/#guide), docsify (https://docsify.js.org/#/) 
 MkDocs, Readthedocs, etc. for visual mode documentation.
 
