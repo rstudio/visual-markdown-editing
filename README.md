@@ -7,7 +7,7 @@ Edit the docs at:
     docs/index.md
     docs/styles.css
 
-To preview the docs:
+To preview locally:
 
 ``` {.bash}
 $ npm install
