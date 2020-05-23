@@ -2,8 +2,6 @@
 
 <https://rstudio.github.io/visual-markdown-editing>
 
-Created with [docsify](https://docsify.js.org/). 
-
 Edit the docs at:
 
     docs/index.md
@@ -16,4 +14,5 @@ $ npm install
 $ npm run serve
 ```
 
+Created with [docsify](https://docsify.js.org/). 
 
