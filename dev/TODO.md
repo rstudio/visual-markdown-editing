@@ -13,7 +13,12 @@ Markdown expressions (e.g. <, **bold**, etc.) can be used within the visual edit
 <kbd> at the < also messes things up
 even manages to mess thins up in a vanilla paragraph!
 
-Improve/expand docs
+Improve/expand docs:
+
+ - editor_options / canonical
+ - hugo
+ - emojis
+ - centering images
 
 <https://github.com/jjallaire/rmarkdown-cookbook/compare/master...panmirror-import>
 
