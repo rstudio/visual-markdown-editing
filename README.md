@@ -1,6 +1,10 @@
 ## Docs for Visual Editing Mode
 
-Documentation is created using [docsify](https://docsify.js.org/). You can edit the documentation  and assocated styles in:
+<https://rstudio.github.io/visual-markdown-editing>
+
+Documentation is created using [docsify](https://docsify.js.org/). 
+
+Edit the docs at:
 
     docs/index.md
     docs/styles.css
