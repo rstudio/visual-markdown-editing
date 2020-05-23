@@ -1,0 +1,11 @@
+The quick brown <kbd>asfasdf</kbd> fox jumped over the lazy dog.
+
+-   asdfasdfasd
+-   asdfasdfads <kbd>asdfasdfasdf</kbd>
+-   asdfasdfsda \<span class="foo"\>asfasdf</span>
+
+| Col1   | Col2                         | Col3     |
+|--------|------------------------------|----------|
+| asdfas | asdfasd                      | asdfads  |
+| asfasd | asdfasdf <kbd>asdfasdf</kbd> | asdfasdf |
+|        |                              |          |
