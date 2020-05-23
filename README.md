@@ -1,4 +1,4 @@
-## Docs for Visual Editing Mode
+## Visual Markdown Editing Docs
 
 <https://rstudio.github.io/visual-markdown-editing>
 
