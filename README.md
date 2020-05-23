@@ -14,5 +14,5 @@ $ npm install
 $ npm run serve
 ```
 
-Created with [docsify](https://docsify.js.org/). 
+Created with [docsify](https://docsify.js.org/#/?id=docsify). 
 
