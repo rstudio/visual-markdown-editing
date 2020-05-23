@@ -1,20 +1,24 @@
+---
+output:
+  word_document: default
+  html_document: default
+---
 ## Info
 
 pandoc schema: <https://github.com/jgm/pandoc-types/blob/master/Text/Pandoc/Definition.hs#L94>
 
 ## TODO
 
+Deleting empty definition description created editing loop
+
+Last row of table. Insert Row above. Then undo (JS Exception)
+
+</kbd> in a table cell mauls the table
+Markdown expressions (e.g. <, **bold**, etc.) can be used within the visual editor for formatting.
+<kbd> at the < also messes things up
+even manages to mess thins up in a vanilla paragraph!
+
 Improve/expand docs:
-
-GA plugin
-Emoji plugin
-
-Take another run at search: 
-
-- https://github.com/kiwicom/docsify-lunr-search/blob/master/search.js
-- https://www.npmjs.com/package/docsify-algolia-search-plugin
-- https://stackoverflow.com/questions/59704801/docsify-search-plugin-not-working-always-return-no-reulst
-
 
  - editor_options / canonical
  - hugo
