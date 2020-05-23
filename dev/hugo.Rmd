@@ -1,3 +1,0 @@
-The new release of Hugo generated a lot of excitement:
-
-{{< tweet 877500564405444608 >}}

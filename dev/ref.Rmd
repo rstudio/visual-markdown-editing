@@ -1,3 +1,0 @@
-<!-- -*- mode: blackfriday -*- -->
-
-@ref(woozy)

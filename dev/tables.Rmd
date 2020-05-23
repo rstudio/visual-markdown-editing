@@ -1,9 +1,0 @@
-``` {.tex}
-\boo
-```
-
-| Col1         |                                           Col2| Col3                                                  |
-|--------------|----------------------------------------------:|-------------------------------------------------------|
-| fasfasfdasdf |  asdfsdf a sdfdsaf dasf dsf dsf adsf adfsf fds| asf asdfds asdfas fsad fadsf asdf asdfasdfadsfadsfdsa |
-|              |                                 `r plot(cars)`|                                                       |
-|              |                                               |                                                       |

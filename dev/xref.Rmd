@@ -1,8 +1,0 @@
-### Pressure Analysis
-
-```{r pressure}
-par(mar = c(4, 4, 0.1, 0.1))
-plot(pressure, pch = 19, type = "b")
-```
-
-As demonstrated in \@ref(fig:pressure), pressure rises with temperature.

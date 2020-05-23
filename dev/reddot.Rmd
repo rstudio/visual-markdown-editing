@@ -1,3 +1,0 @@
-(e.g. html, rtf or openxml)
-
-![](images/outline.png)
