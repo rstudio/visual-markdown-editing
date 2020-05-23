@@ -4,7 +4,7 @@
 
 RStudio v1.4 includes an experimental visual markdown editing mode. R Markdown users that write longer-form documents often use tools like Typora (or even Google Docs) for composition. Visual editing mode provides an alternative that is seamlessly integrated with RStudio. Features of visual mode include:
 
--   Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, LaTeX math, and inline TeX/HTML.
+-   Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, equations, TeX, and HTML.
 
 -   Markdown expressions (e.g. `##`, `**bold**`, etc.) can be used within the visual editor for formatting.
 
