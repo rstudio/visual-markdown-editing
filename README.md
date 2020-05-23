@@ -2,7 +2,7 @@
 
 <https://rstudio.github.io/visual-markdown-editing>
 
-Documentation is created using [docsify](https://docsify.js.org/). 
+Created with [docsify](https://docsify.js.org/). 
 
 Edit the docs at:
 
