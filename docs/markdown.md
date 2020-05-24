@@ -6,7 +6,7 @@ Visual editing mode generates markdown using Pandoc. This means that in some cas
 
 While this might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. If any of Pandoc's idioms are particularly troublesome, [let us know](https://github.com/rstudio/rstudio/issues/new) and we'll see if we can add an option to override the default behavior.
 
-## Bookdown & Blogdown
+## Bookdown & Hugo
 
 The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also supports cross-references as well as inline Hugo shortcodes. It's also possible to use blogdown with an [alternate](https://bookdown.org/yihui/blogdown/output-format.html) markdown engine (as opposed to using Pandoc). All of these extensions and alternate configurations are supported by visual mode.
 
@@ -100,7 +100,6 @@ If however you prefer to have paragraphs wrapped at a particular column (e.g. 72
 
 Note that there are some disadvantages to setting a `fill-column.` First, editing paragraphs in source mode will be less convenient (because line wrapping will need to done manually). Second, tables with many explicitly sized columns (more than 10 or so) may be written by Pandoc as HTML rather than markdown, which in turn will prevent you from using the visual table editing features.
 
-
 ## Known Limitations
 
 There are a handful of Pandoc markdown extensions not currently supported by visual editing. These are infrequently used extensions so in all likelihood won't affect documents you edit, but are still worth noting.
@@ -115,4 +114,3 @@ There are a handful of Pandoc markdown extensions not currently supported by vis
 | Pandoc title block   | % My Title          | Ignored (and dropped from document).     |
 
 In addition, the various MultiMarkdown extensions to Pandoc are not supported (note that these extensions are disabled by default in Pandoc markdown). MultiMarkdown title blocks are ignored and dropped, and MultiMarkdown link attributes and header identifiers are read and converted to Pandoc markdown equivalents.
-

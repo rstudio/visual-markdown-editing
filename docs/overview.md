@@ -36,3 +36,16 @@ Additional commands are available on the Format, Insert, and Table menus:
 |--------------------------------------------|--------------------------------------------|-------------------------------------------|
 | ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
 
+## Learning More
+
+Check out the following aritlces to learn more about visual markdown editing:
+
+-   [Editing](editing) goes into more depth on visual editor support for tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
+
+-   [Markdown](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown and Hugo](markdown#bookdown-amp-hugo).
+
+-   [Shortcuts](shortcuts) documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts.
+
+-   [Options](options) enumerates the various ways you can configure the behavior of the editor (font size, display width, markdown writing, etc.).
+
+Thanks for trying out the visual editor! If you encounter problems or want to suggest features, please let us know at <https://github.com/rstudio/rstudio/issues/new/choose>.
