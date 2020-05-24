@@ -38,7 +38,7 @@ Additional commands are available on the Format, Insert, and Table menus:
 
 ## Learning More
 
-Check out the following aritlces to learn more about visual markdown editing:
+Check out the following articles to learn more about visual markdown editing:
 
 -   [Editing](editing) goes into more depth on visual editor support for tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
 

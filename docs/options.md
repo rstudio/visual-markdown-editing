@@ -13,7 +13,7 @@ You can customize visual editing options within the **R Markdown -\> Advanced** 
 | Show document outline by default | Show the navigational outline when opening documents in visual mode (default: show outline).                                       |
 | Editor content width             | Maximum width for editing content. This is intended to keep editing similar to the width that users will see (default: 700px).     |
 | Editor font size                 | Base font size for editor content (default: inherit from IDE settings).                                                            |
-| Auto-wrap text                   | When writing markdown paragarphs, automatically break lines at a specified column (default: flow text; no auto-wrapping).          |
+| Auto-wrap text                   | When writing markdown paragraphs, automatically break lines at a specified column (default: flow text; no auto-wrapping).          |
 | Write references at end of       | Write references (footnotes) at the end of the block or section where they appear, or at the end of the document (default: block). |
 
 ## File Options
