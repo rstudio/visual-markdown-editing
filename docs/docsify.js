@@ -15,6 +15,7 @@ window.$docsify = {
    // navbar/sidebar/toc
    loadSidebar: '_sidebar.md',
    loadNavbar: '_navbar.md',
+   autoHeader: true,
    mergeNavbar: true,
    maxLevel: 2,
    subMaxLevel: 2,
@@ -46,9 +47,10 @@ window.$docsify = {
 };
 
 
-// naviate to #/overview on load
+// fixups to navigation
 function introNavigatePlugin(hook, vm) {
   hook.ready(function() {
+    // expand intro on navigation to route
     if (window.location.hash === "#/")
       window.location.hash = "#/intro";
   });

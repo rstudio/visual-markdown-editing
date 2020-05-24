@@ -11,6 +11,10 @@
   --table-row-odd-background    : ;
 }
 
+a[data-id='introduction'] {
+  display: none;
+}
+
 .markdown-section td > kbd {
   min-width: 60px;
 }

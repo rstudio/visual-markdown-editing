@@ -1,7 +1,5 @@
 <!-- -*- mode: gfm -*- -->
 
-# Editing Shortcuts {docsify-ignore}
-
 Visual mode supports both traditional keyboard shortcuts (e.g. <kbd>⌘ B</kbd> for bold) as well as markdown shortcuts (using markdown syntax directly). For example, enclose `**bold**` text in asterisks or type `##` and press space to create a second level heading.
 
 Here are the available keyboard and markdown shortcuts:

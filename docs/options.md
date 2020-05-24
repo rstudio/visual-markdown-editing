@@ -1,7 +1,5 @@
 <!-- -*- mode: gfm -*- -->
 
-# Editor Options {docsify-ignore}
-
 ## Global Options
 
 You can customize visual editing options within the **R Markdown -\> Visual** preferences:
