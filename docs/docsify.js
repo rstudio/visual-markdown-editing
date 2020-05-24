@@ -15,6 +15,7 @@ window.$docsify = {
    // navbar/sidebar/toc
    loadSidebar: '_sidebar.md',
    loadNavbar: '_sidebar.md',
+   mergeNavbar: true,
    maxLevel: 2,
    subMaxLevel: 2,
   
