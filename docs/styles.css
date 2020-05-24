@@ -1,6 +1,6 @@
-
-
 :root {
+  
+  --sidebar-name-text-align     : left;
   
   --code-inline-background      : rgba(0, 0, 0, 0.04);
   

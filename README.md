@@ -4,7 +4,11 @@
 
 Edit the docs at:
 
-    docs/index.md
+    docs/overview.md
+    docs/editing.md
+    docs/markdown.md
+    docs/shortcuts.md
+    docs/options.md
     docs/styles.css
 
 To preview locally:
@@ -14,5 +18,6 @@ $ npm install
 $ npm run serve
 ```
 
-Created with [docsify](https://docsify.js.org/#/?id=docsify). 
+Created with [docsify](https://docsify.js.org/) and [docsify-themeable](https://jhildenbiddle.github.io/). 
+
 

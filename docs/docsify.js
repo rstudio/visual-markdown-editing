@@ -2,16 +2,21 @@
 window.$docsify = {
       
    // site title
-   name: 'Visual R Markdown',
+   name: '<img src="images/rstudio-logo.png" width="50%"/>',
    
    // google analytics
    ga: 'UA-77306155-5',
    
    // core options
-   homepage: 'index.md',
+   homepage: 'overview.md',
    auto2top: true,
-   maxLevel: 4,
    topMargin: 15,
+   
+   // navbar/sidebar/toc
+   loadSidebar: '_sidebar.md',
+   loadNavbar: '_sidebar.md',
+   maxLevel: 2,
+   subMaxLevel: 2,
   
    // copy code (https://github.com/jperasmus/docsify-copy-code/blob/master/README.md#options)
    copyCode: {
@@ -26,11 +31,19 @@ window.$docsify = {
    
    // custom plugins
    plugins: [
+      introNavigatePlugin,
      cmdToCtrlPlugin
    ],
    
 };
 
+
+// naviate to #/overview on load
+function introNavigatePlugin(hook, vm) {
+  hook.ready(function() {
+    window.location.hash = "#/overview";
+  });
+}
 
 // convert Cmd keyboard shortcuts to Ctrl on non-mac systems
 function cmdToCtrlPlugin(hook, vm) {

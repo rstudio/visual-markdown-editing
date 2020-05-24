@@ -7,7 +7,7 @@
   },
   "author": "J.J. Allaire <jj@rstudio.com>",
   "scripts": {
-    "serve": "./node_modules/docsify-cli/bin/docsify serve ./docs --open --port 4444"
+    "serve": "./node_modules/docsify-cli/bin/docsify serve ./docs --open"
   },
   "devDependencies": {
     "docsify-cli": "^4.4.0"
