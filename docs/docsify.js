@@ -8,13 +8,13 @@ window.$docsify = {
    ga: 'UA-77306155-5',
    
    // core options
-   homepage: 'overview.md',
+   homepage: 'intro.md',
    auto2top: true,
    topMargin: 15,
    
    // navbar/sidebar/toc
    loadSidebar: '_sidebar.md',
-   loadNavbar: '_sidebar.md',
+   loadNavbar: '_navbar.md',
    mergeNavbar: true,
    maxLevel: 2,
    subMaxLevel: 2,
@@ -50,7 +50,7 @@ window.$docsify = {
 function introNavigatePlugin(hook, vm) {
   hook.ready(function() {
     if (window.location.hash === "#/")
-      window.location.hash = "#/overview";
+      window.location.hash = "#/intro";
   });
 }
 

@@ -1,6 +1,6 @@
 <!-- -*- mode: gfm -*- -->
 
-# Options {docsify-ignore}
+# Editor Options {docsify-ignore}
 
 ## Global Options
 

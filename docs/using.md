@@ -1,6 +1,6 @@
 <!-- -*- mode: gfm -*- -->
 
-# Editing {docsify-ignore}
+# Using Visual Mode {docsify-ignore}
 
 Visual mode has direct editing support for all of Pandoc markdown. Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor. You can access editing commands using either the [toolbar](overview#editor-toolbar) or via [shortcuts](shortcuts).
 

@@ -1,6 +1,6 @@
 <!-- -*- mode: gfm -*- -->
 
-# Markdown {docsify-ignore}
+# Markdown Formats {docsify-ignore}
 
 Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc writes footnotes at the end of the document, inserts 3 spaces after list bullets, and automatically escapes characters that might be used for markdown syntax.
 

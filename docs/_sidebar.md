@@ -1,6 +1,6 @@
-- [Overview](overview)
-- [Editing](editing)
-- [Markdown](markdown)
-- [Shortcuts](shortcuts)
-- [Options](options)
+- [Introduction](intro)
+- [Using Visual Mode](using)
+- [Markdown Formats](markdown)
+- [Editing Shortcuts](shortcuts)
+- [Editor Options](options)
 
