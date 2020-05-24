@@ -32,7 +32,7 @@ window.$docsify = {
    
    // custom plugins
    plugins: [
-      introNavigatePlugin,
+     introNavigatePlugin,
      cmdToCtrlPlugin
    ],
    
@@ -42,7 +42,8 @@ window.$docsify = {
 // naviate to #/overview on load
 function introNavigatePlugin(hook, vm) {
   hook.ready(function() {
-    window.location.hash = "#/overview";
+    if (window.location.hash === "#/")
+      window.location.hash = "#/overview";
   });
 }
 
