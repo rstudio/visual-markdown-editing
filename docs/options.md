@@ -4,7 +4,7 @@
 
 ## Global Options
 
-You can customize visual editing options within the **R Markdown -\> Advanced** preferences:
+You can customize visual editing options within the **R Markdown -\> Visual** preferences:
 
 <img src="images/visual-editing-options.png" class="illustration" width="588"/>
 
