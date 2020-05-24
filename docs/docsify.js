@@ -18,6 +18,13 @@ window.$docsify = {
    mergeNavbar: true,
    maxLevel: 2,
    subMaxLevel: 2,
+   
+   // search (https://docsify.js.org/#/plugins?id=full-text-search)
+   search: {
+     maxAge: 0,
+     depth: 4,
+     namespace: 'visual-markdown-editing'
+   },
   
    // copy code (https://github.com/jperasmus/docsify-copy-code/blob/master/README.md#options)
    copyCode: {
