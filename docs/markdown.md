@@ -105,7 +105,7 @@ Markdown modes supported by the editor include:
 | `goldmark`          | Goldmark (default parser currently used by Hugo)    |
 | `blackfriday`       | Blackfriday (default parser formerly used by Hugo)  |
 
-### Pandoc Extensions
+### Extensions
 
 The `extensions` option allows you to enable or disable individual Pandoc extensions. For example, to specify GitHub Flavored Markdown with additional support for TeX math and raw Tex, you would use this comment:
 
