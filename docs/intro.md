@@ -50,6 +50,4 @@ Check out the following articles to learn more about visual markdown editing:
 
 -   [Editor Options](options) enumerates the various ways you can configure the behavior of the editor (font size, display width, markdown output, etc.).
 
--   [Advanced Topics](advanced) discusses various other features including [using CSS](advanced#using-css) witin HTML documents.
-
 Thanks for trying out the visual editor! If you encounter problems or want to suggest features, please let us know at <https://github.com/rstudio/rstudio/issues/new/choose>.
