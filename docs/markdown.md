@@ -194,7 +194,7 @@ editor_options:
 
 Valid values for the `references` option are `block`, `section`, and `document`.
 
-### Canonical Mode
+## Canonical Mode
 
 If you have a workflow that involves editing in both visual and source mode, you may want to ensure that the same markdown is written no matter which mode edits originate from. You can accomplish this using the `canonical` option. For example:
 
@@ -204,7 +204,7 @@ title: "My Document"
 editor_options:
   markdown:
     wrap_column: 72
-    refernces: section
+    references: block
     canonical: true
 ---
 ```
