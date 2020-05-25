@@ -2,50 +2,54 @@
 
 <h1>Visual R Markdown Editing</h1>
 
-RStudio v1.4 includes an experimental visual markdown editing mode. R Markdown users that write longer-form documents often use tools like Typora (or even Google Docs) for composition. Visual editing mode provides an alternative that is seamlessly integrated with RStudio. Features of visual mode include:
+RStudio v1.4 includes an experimental visual markdown editing mode. Highlights of visual mode include:
 
--   Support for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, equations, TeX, and HTML.
+-   Visual editing for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, equations, TeX, and HTML.
 
 -   Markdown expressions (e.g. `##`, `**bold**`, etc.) can be used within the visual editor for formatting.
 
--   Tight integration with source editing (when you switch between modes your editing location is preserved).
+-   Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).
 
-Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide R code intelligence (e.g. code completion) or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Additional code editing features will be added in subsequent releases.
+Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide R code intelligence (e.g. code completion) or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Code editing and execution features will be added in a subsequent release.
 
 ## Getting Started
 
-Visual markdown editing is currently only available in the daily build of RStudio (v1.4.377 or later). You can download the most recent daily build here: <https://dailies.rstudio.com>.
+Visual markdown editing is currently only available in the daily build of RStudio (v1.4.384 or later). You can download the most recent daily build here: <https://dailies.rstudio.com>.
 
 Visual markdown editing is not available by default. To enable it, use the **R Markdown** tab of RStudio Preferences:
 
 <img src="images/visual-editing-pref.png" class="illustration" width="588"/>
 
-Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (there is also a keyboard shortcut, <kbd>⌃⇧ F8</kbd>, that can be used to switch modes):
+Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (you can also switch using the <kbd>⌃⇧ F8</kbd> keyboard shortcut):
 
 <img src="images/visual-editing.png" width="700"/>
 
-### Editor Toolbar
+## Editor Commands
 
 The editor toolbar includes buttons for the most commonly used formatting commands:
 
 <img src="images/visual-editing-toolbar.png" width="700"/>
 
-Additional commands are available on the Format, Insert, and Table menus:
+Additional commands are available on the **Format**, **Insert**, and **Table** menus:
 
 | Format                                     | Insert                                     | Table                                     |
 |--------------------------------------------|--------------------------------------------|-------------------------------------------|
 | ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
 
+There are also [keyboard shortcuts](shortcuts) available for frequently used commands. You can also search and execute visual mode commands using the RStudio Command Palette <kbd>⌃⇧ P</kbd>.
+
 ## Learning More
 
 Check out the following articles to learn more about visual markdown editing:
 
--   [Editing](editing) goes into more depth on visual editor support for tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
+-   [Using Visual Mode](editing) goes into more depth on visual editor support for tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
 
--   [Markdown](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown and Hugo](markdown#bookdown-amp-hugo).
+-   [Markdown Formats](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown and Hugo](markdown#bookdown-amp-hugo).
 
--   [Shortcuts](shortcuts) documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts.
+-   [Edting Shortcuts](shortcuts) documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts.
 
--   [Options](options) enumerates the various ways you can configure the behavior of the editor (font size, display width, markdown writing, etc.).
+-   [Editor Options](options) enumerates the various ways you can configure the behavior of the editor (font size, display width, markdown output, etc.).
+
+-   [Advanced Topics](advanced) discusses various other features including [using CSS](advanced#using-css) witin HTML documents.
 
 Thanks for trying out the visual editor! If you encounter problems or want to suggest features, please let us know at <https://github.com/rstudio/rstudio/issues/new/choose>.
