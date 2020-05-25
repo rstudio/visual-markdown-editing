@@ -11,7 +11,9 @@
   --table-row-odd-background    : ;
 }
 
-a[data-id='introduction'] {
+a[data-id='introduction'],
+a[data-id='advanced-topics']
+{
   display: none;
 }
 
