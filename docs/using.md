@@ -28,9 +28,11 @@ You can also include raw LaTeX commands or HTML tags when authoring in visual mo
 
 <img src="images/visual-editing-raw.png" width="700"/>
 
-Note that Pandoc ignores LaTeX commands when not producing LaTeX based output, and ignores HTML tags when not producing HTML based output.
+The above examples utilize *inline* LaTex and HTML. You can also include blocks of raw content using the commands on the **Format -\> Raw** menu. For example, here is a document with a raw LaTeX block:
 
-You can also include inline and block raw content of any output format supported by Pandoc (e.g. rtf, odt, docx, etc.) using the commands on the **Format -\> Raw** menu
+<img src="images/visual-editing-latex-block.png" width="700"/>
+
+?\> Note that Pandoc ignores LaTeX commands when not producing LaTeX based output, and ignores HTML tags when not producing HTML based output.
 
 ## Editing Tables
 
