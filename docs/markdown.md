@@ -1,14 +1,14 @@
 <!-- -*- mode: gfm -*- -->
 
-Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax.
+R Markdown documents are normally authored using standard [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown). In addition, there are a number of extensions to Pandoc markdown commonly used (e.g. the [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html) feature of the **bookdown** package). In some cases, an entirely different markdown dialect is used (for example, when writing content to be published on [GitHub](https://github.github.com/gfm/) or with the [Hugo](https://gohugo.io/content-management/formats/) static site generator).
 
-While this might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. If any of Pandoc's idioms are particularly troublesome, [let us know](https://github.com/rstudio/rstudio/issues/new) and we'll see if we can add an option to override the default behavior.
+By default, visual mode detects the target markdown format for the current document, making the requisitite editor commands available and writing the expected flavor of markdown source code. This article describes the various available markdown extensions, how to override RStudio's automatic detetction, as well some options that control how markdown source code is written.
 
-## Bookdown & Hugo
-
-The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also supports cross-references as well as inline Hugo shortcodes. It's also possible to use blogdown with an [alternate](https://bookdown.org/yihui/blogdown/output-format.html) markdown engine (as opposed to using Pandoc). All of these extensions and alternate configurations are supported by visual mode.
+## Bookdown Extensions
 
 ### Cross References
+
+The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also supports bookdown style cross-references as does the [distill](https://rstudio.github.io/distill/) package.
 
 Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document. In raw markdown, you would for example write a cross-reference to a figure like this: `\@ref(fig:label)`. Cross-references are largely the same in visual mode, but you don't need the leading `\` (which in raw markdown is used to escape the `@` character). For example:
 
@@ -24,11 +24,13 @@ Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (
 
 See the bookdown documentation for more information on [part headers](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#special-headers).
 
-### Hugo Markdown
+## Hugo Markdown
 
-Under the hood, Blogdown makes use of the [Hugo](https://gohugo.io/) static site generation framework. This introduces a couple of special considerations for visual mode described below.
+The [Hugo](https://gohugo.io/) static site generation framework is commonly used with R Markdown for creating blogs as well as larger websites (for example, the [tidyverse](https://tidyverse.org) and [tidymodels](https://tidymodels.org) websites use Hugo).
 
-#### Shortcodes
+The [blogdown](https://bookdown.org/yihui/blogdown/) and [hugodown](https://github.com/r-lib/hugodown) packages both support creating Hugo websites with R Markdown. This section describes visual mode features and considerations for Hugo documents.
+
+### Shortcodes
 
 Hugo includes support for [shortcodes](https://gohugo.io/content-management/shortcodes/), which are special macros generally used to render more complex objects (e.g. tweets or videos). You can include shortcodes in visual mode by just typing them with the normal Hugo syntax:
 
@@ -36,17 +38,39 @@ Hugo includes support for [shortcodes](https://gohugo.io/content-management/shor
 
 See the blogdown documentation for more information on [using shortcodes](https://bookdown.org/yihui/blogdown/content.html#shortcode).
 
-#### Markdown Engine
+### Markdown Engine
 
-If you use normal R Markdown files (`.Rmd`) within a blogdown website, their markdown is processed by Pandoc. However, if you use a plain markdown file (`.md`) or an R Markdown file with a special extension (`.Rmarkdown`), then markdown is processed by Hugo rather than pandoc.
+If you use normal R Markdown files (`.Rmd`) within a [blogdown](https://bookdown.org/yihui/blogdown/) website, their markdown is processed by Pandoc. However, if you use a plain markdown file (`.md`) or an R Markdown file with a special extension (`.Rmarkdown`), then markdown is processed by Hugo rather than pandoc. If you are using the [hugodown](https://github.com/r-lib/hugodown) package with Hugo, then markdown is also always processed using Hugo.
 
-In this case, RStudio will recognize that you aren't using Pandoc, and adapt the editor's markdown features accordingly (providing only the features supported by [goldmark](https://gohugo.io/getting-started/configuration-markup/#goldmark), the default Hugo markdown engine). The editor will also automatically enclose LaTeX math in backticks (required by blogdown when Pandoc isn't rendering markdown).
+In this case, RStudio will recognize that you aren't using Pandoc, and adapt the editor's markdown features accordingly (providing only the features supported by [goldmark](https://gohugo.io/getting-started/configuration-markup/#goldmark), the default Hugo markdown engine). The editor will also automatically enclose LaTeX math in backticks (required in order for Hugo to render equations).
 
-Note that if RStudio doesn't correctly detect the use of Hugo's markdown processor, you can explicitly enable this for an individual document using a special format comment. For example:
+## Document Types
 
-    <!-- -*- mode: goldmark; doctype: blogdown -*- -->
+The bookdown and Hugo features described above are enabled using automatic detection of document types by RStudio. Detection is done using a combination of the current project configuration and the output formats specified in YAML front-matter. If this automatic detection doesn't align with your configuration, you can specify a document type manually using the `editor_options:markdown` key in YAML front matter.
 
-You can learn more about format comments in the [Markdown Conversion](#markdown-conversion) section below.
+For example, to specify that your document is being published with blogdown, use:
+
+``` yaml
+---
+title: "My Document"
+editor_options:
+  markdown:
+    doctype: blogdown
+---
+```
+
+To specify that your document is being published with blogdown, use:
+
+``` yaml
+---
+title: "My Document"
+editor_options:
+  markdown:
+    doctype: hugo
+---
+```
+
+?\> Note that you typically don't need to use an explicit `doctype`, since RStudio can generally automatically detect this based on the type of your current project.
 
 ## Modes & Extensions
 
@@ -76,19 +100,11 @@ Alternatively, to specify standard Pandoc markdown *without* TeX math and raw Te
 
 You can read more about Pandoc variants and extensions in the [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) documentation.
 
-## Document Types
-
-The R Markdown ecosystem has a wide variety of document formats, most of which rely on the core set of Pandoc markdown extensions. However, there are a number of formats that include additional markdown extensions (for example, the cross-reference extension introduced by the [bookdown](https://bookdown.org) package is also supported by the [blogdown](https://bookdown.org/yihui/blogdown/) and [distll](https://rstudio.github.io/distill) packages).
-
-RStudio can generally detect which type of document is being edited and enable the requisite extensions. In the case that this doesn't work as expected, you can specify a `doctype` in the format comment to make it explicit. For example:
-
-    <!-- -*- doctype: blogdown -*- -->
-
-Available doctypes include `xref`, `bookdown`, `blogdown`, and `hugo` (you can specify more than one doctype by separating them with commas). The `xref` doctype specifies any document that supports bookdown cross-references (e.g. distill) and is implied by the `bookdown` and `blogdown` doctypes. The `hugo` doctype indicates a document that supports Hugo shortcodes, and is also implied by the `blogdown` doctype.
-
-Again, you typically don't need to use an explicit `doctype`, since RStudio can generally automatically detect this based on the type of your current project.
-
 ## Line Wrapping
+
+Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax.
+
+While this might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. If any of Pandoc's idioms are particularly troublesome, [let us know](https://github.com/rstudio/rstudio/issues/new) and we'll see if we can add an option to override the default behavior.
 
 By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.
 
