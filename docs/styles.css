@@ -9,6 +9,7 @@
   
   --table-row-even-background   : var(--mono-tint3);
   --table-row-odd-background    : ;
+  --table-cell-padding          : 0.4em 0.4em;
 }
 
 a[data-id='introduction'],
