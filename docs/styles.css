@@ -13,7 +13,7 @@
 }
 
 a[data-id='introduction'],
-a[data-id='advanced-topics']
+a[data-id='additional-topics']
 {
   display: none;
 }

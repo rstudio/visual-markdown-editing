@@ -1,8 +1,9 @@
 <!-- -*- mode: gfm -*- -->
 
-## Using CSS
+## CSS Styles
 
 ## Centering Images
+
 
 
 ## Using Emjois
