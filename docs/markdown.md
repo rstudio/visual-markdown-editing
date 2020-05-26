@@ -133,6 +133,17 @@ editor_options:
 
 You can read more about Pandoc variants and extensions in the [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown) documentation.
 
+Many R Markdown formats include an `md_extensions` option used to specify which Pandoc markdown extensions are active. The visual editor will also inspect this option. For example, emojis will be enabled for this configuration:
+
+``` yaml
+---
+title: "My Document"
+output:
+  html_document:
+    md_extensions: +emoji
+---
+```
+
 You can also explicitly enable R Markdown specific extensions using the `rmd_extensions` option. For example, to enable bookdown cross references you would use this configuration:
 
 ``` yaml
