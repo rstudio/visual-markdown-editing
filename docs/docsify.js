@@ -2,7 +2,7 @@
 window.$docsify = {
       
    // site title
-   name: '<img src="images/rstudio-logo.png" width="50%"/><br/>Rmd Visual Mode',
+   name: '<img src="images/rstudio-logo.png" width="50%"/><br/>Visual R Markdown',
    
    // google analytics
    ga: 'UA-77306155-5',
