@@ -24,20 +24,6 @@ Once you've enabled visual editing, you can switch between source and visual mod
 
 <img src="images/visual-editing.png" width="700"/>
 
-## Editor Commands
-
-The editor toolbar includes buttons for the most commonly used formatting commands:
-
-<img src="images/visual-editing-toolbar.png" width="700"/>
-
-Additional commands are available on the **Format**, **Insert**, and **Table** menus:
-
-| Format                                     | Insert                                     | Table                                     |
-|--------------------------------------------|--------------------------------------------|-------------------------------------------|
-| ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
-
-There are also [keyboard shortcuts](shortcuts) available for frequently used commands. You can also search and execute visual mode commands using the RStudio Command Palette <kbd>⌃⇧ P</kbd>.
-
 ## Learning More
 
 Check out the following articles to learn more about visual markdown editing:
