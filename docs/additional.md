@@ -27,3 +27,15 @@ You can also use CSS classes or inline styles to center an image (note again tha
 ?\> As described in the [CSS Styles](#css-styles) section above, you can also create a CSS class that encompasses these styles (e.g. `.image-centered`) and provide that class name rather than inline styles as illustrated above.
 
 ## HTML Embeds
+
+When authoring web pages you sometimes need to embed a snippet of HTML from an external source (e.g. an `<iframe>` tag to display a YouTube video). To embed HTML snippets in visual mode:
+
+1.  Use the **Format -\> Raw -\> HTML Block** command change the current block to HTML format.
+
+2.  Paste the HTML snippet into the HTML block.
+
+For example, here's what a YouTube snippet looks like within an HTML block:
+
+<img src="images/visual-editing-html-embed.png" width="700"/>
+
+?\> Note that you can also create an HTML block with a markdown shortcut. Just type ```` ```{=html} ```` and press **Enter** to create the block.
