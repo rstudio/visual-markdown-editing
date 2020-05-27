@@ -42,7 +42,7 @@ There are also [keyboard shortcuts](shortcuts) available for frequently used com
 
 Check out the following articles to learn more about visual markdown editing:
 
--   [Using Visual Mode](editing) goes into more depth on visual editor support for tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
+-   [Using Visual Mode](using) goes into more depth on visual editor support for tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
 
 -   [Markdown Formats](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown and Hugo](markdown#bookdown-amp-hugo).
 
