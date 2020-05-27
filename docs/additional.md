@@ -25,5 +25,3 @@ You can also use CSS classes or inline styles to center an image (note again tha
 <img src="images/visual-editing-image-center-css.png" width="700"/>
 
 ?\> As described in the [CSS Styles](#css-styles) section above, you can also create a CSS class that encompasses these styles (e.g. `.image-centered`) and provide that class name rather than inline styles as illustrated above.
-
-## Using Emjois
