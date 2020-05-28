@@ -32,7 +32,7 @@ You can include footnotes using the **Insert -\> Footnote** command. Footnote ed
 
 ## Equations
 
-LaTeX equestions are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and highlight the equations as math). For example, here's some inline and display math:
+LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and highlight the equations as math). For example, here's some inline and display math:
 
 <img src="images/visual-editing-math.png" width="700"/>
 
