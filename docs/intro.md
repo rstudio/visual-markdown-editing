@@ -10,7 +10,7 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Highlights o
 
 -   Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).
 
-Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide R code intelligence (e.g. code completion) or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Code editing and execution features will be added in a subsequent release.
+Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide R code intelligence (e.g. code completion), RStudio keyboard shortcuts, or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Code editing and execution features will be added in a subsequent release.
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ Check out the following articles to learn more about visual markdown editing:
 
 -   [Markdown Formats](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown](markdown#bookdown-extensions) and [Hugo](markdown#hugo-markdown).
 
--   [Edting Shortcuts](shortcuts) documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts.
+-   [Editing Shortcuts](shortcuts) documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts.
 
 -   [Editor Options](options) enumerates the various ways you can configure the behavior of the editor (font size, display width, markdown output, etc.).
 
