@@ -28,7 +28,7 @@ Once you've enabled visual editing, you can switch between source and visual mod
 
 Check out the following articles to learn more about visual markdown editing:
 
--   [Using Visual Mode](using) goes into more depth on visual editor support for tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
+-   [Using Visual Mode](using) goes into more depth on visual editor support for text formatting, tables, images, footnotes, citations, embedded code, equations, HTML & Tex, and more.
 
 -   [Markdown Formats](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown](markdown#bookdown-extensions) and [Hugo](markdown#hugo-markdown).
 
