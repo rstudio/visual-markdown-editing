@@ -16,6 +16,7 @@ Visual markdown editing is currently only available in the daily build of RStudi
 library(plyr)
 library(jsonlite)
 library(urltools)
+library(parsedate)
 
 base_url <- "https://s3.amazonaws.com/rstudio-ide-build/desktop"
 
@@ -58,6 +59,8 @@ download_info <- lapply(platforms, function(platform) {
       urltools::url_encode(platform$url)
    )
    md5_info <- jsonlite::fromJSON(aws_md5_url)
+   date <- parse_date(md5_info$last_modified)
+   md5_info$date <- format.Date(date, format = "%m/%d/%y %H:%M %Z")
    c(platform, md5_info) 
 })
 
