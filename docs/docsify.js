@@ -39,7 +39,8 @@ window.$docsify = {
    // custom plugins
    plugins: [
      introNavigatePlugin,
-     cmdToCtrlPlugin
+     cmdToCtrlPlugin,
+     fixScrollingPlugin
    ],
    
 };
@@ -52,6 +53,38 @@ function introNavigatePlugin(hook, vm) {
     if (window.location.hash === "#/")
       window.location.hash = "#/intro";
   });
+}
+
+// fix scrolling for hash links
+// https://github.com/docsifyjs/docsify/issues/351
+function fixScrollingPlugin(hook, vm) {
+   hook.ready(function () {
+      // true = show debug log
+      let dd = false 
+      let TARGET_QUERY = 'id'
+      let SCROLL_DELAY = 2000 // in miliseconds
+      let location = window.location
+      
+      dd&&console.log('custom scroll plugin called!')
+      let currentUrlWithoutHash = new URL(
+        location.origin+location.pathname+
+        location.search+location.hash.substring(1)
+      )
+      let urlQueryParam = currentUrlWithoutHash.searchParams
+      let isUrlHasIdQuery = urlQueryParam.has(TARGET_QUERY)
+      if(isUrlHasIdQuery){
+         dd&&console.log('url has id, will scroll to element')
+         let urlId = urlQueryParam.get(TARGET_QUERY)
+         // run delayed, to make sure everything loaded
+         setTimeout(function() {
+             dd&&console.log('will scroll now!')
+             try{
+                 document.querySelector('#'+urlId)
+                     .scrollIntoView()
+             } catch(e){ dd&&console.log('custom scroll failed',e) }
+         }, SCROLL_DELAY);
+      }
+})
 }
 
 // convert Cmd keyboard shortcuts to Ctrl on non-mac systems
