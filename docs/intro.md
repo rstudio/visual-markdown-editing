@@ -1,6 +1,6 @@
 <!-- -*- mode: gfm -*- -->
 
-<h1>Visual R Markdown Editing</h1>
+<h1>Visual R Markdown</h1>
 
 RStudio v1.4 includes an experimental visual markdown editing mode. Highlights of visual mode include:
 
