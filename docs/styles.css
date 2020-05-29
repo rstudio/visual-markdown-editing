@@ -41,4 +41,10 @@ a[data-id='additional-topics']
   margin-right: 30px;
 }
 
+.markdown-section .fa-download {
+  margin-right: 8px;
+  font-size: 0.9em;
+}
+
+
 
