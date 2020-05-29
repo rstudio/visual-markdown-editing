@@ -70,6 +70,12 @@ While this covers many simple list editing talks, there are a variety of other a
 
 You can also use **Shift+Tab** to lift a list item into the previous level.
 
+### Tight Lists
+
+Markdown distinguishes between normal and *tight* lists, where tight lists have less vertical spacing between items. In markdown source code, you designate a tight list by having no empty line between your list items.
+
+Visual mode creates normal lists by default, but you can toggle between normal and tight lists using the <kbd>⌥⌘ 9</kbd> keyboard shortcut. You can also change the list type using the **Format -\> Edit Attributes** dialog (also accessible via the <kbd>F4</kbd> shortcut). If you have existing tight lists in your markdown source files they will remain so within the visual editor.
+
 ## Embedded Code
 
 Source code which you include in an R Markdown document can either by for display only or can be executed by knitr as part of rendering. Code can furthermore be either inline or block (e.g. an Rmd code chunk).
