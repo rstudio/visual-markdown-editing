@@ -49,7 +49,7 @@ window.$docsify = {
 
 // initialize tippy popovers
 function tippyPlugin(hook, vm) {
-  hook.ready(function() {
+  hook.doneEach(function() {
     let tips = window.document.getElementsByClassName('sha256');
     for (let i = 0; i<tips.length; i++) {
       let sha256 = tips[i].getAttribute('data-sha256');
@@ -108,13 +108,10 @@ function fixScrollingPlugin(hook, vm) {
 // convert Cmd keyboard shortcuts to Ctrl on non-mac systems
 function cmdToCtrlPlugin(hook, vm) {
   const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
-  hook.ready(function() {
+  hook.afterEach(function(html, next) {
     if (!kPlatformMac) {
-      const kbdTags = window.document.getElementsByTagName('kbd');
-      for (let i = 0; i<kbdTags.length; i++) {
-        const kbd = kbdTags.item(i);
-        kbd.innerText = kbd.innerText.replace('⌘', '⌃');
-      }
+      html = html.replace(/⌘/g, '⌃');
     }
+    next(html);
   });
 }
