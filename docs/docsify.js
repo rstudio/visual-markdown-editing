@@ -39,7 +39,6 @@ window.$docsify = {
    // custom plugins
    plugins: [
      tippyPlugin,
-     introNavigatePlugin,
      cmdToCtrlPlugin,
      fixScrollingPlugin
    ],
@@ -62,14 +61,6 @@ function tippyPlugin(hook, vm) {
         placement: 'left'
       });
     }
-  });
-}
-
-// expand intro section on navigation to home
-function introNavigatePlugin(hook, vm) {
-  hook.ready(function() {
-    if (window.location.hash === "#/")
-      window.location.hash = "#/intro";
   });
 }
 
