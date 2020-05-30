@@ -63,7 +63,7 @@ You can apply CSS classes to images (for example, to give them a special border)
 
 Note again that the visual editor won't display your image with the applied CSS classes while editing, however when actually rendering the document to HTML you'll see the styles reflected.
 
-### Divs 
+### Divs
 
 Divs are special entities that allow you to apply identifiers and/or styles to a region of a document. Divs are blocks elements (like paragraphs).
 
