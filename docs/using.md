@@ -4,7 +4,7 @@ Visual mode has direct editing support for all of Pandoc markdown. Standard form
 
 Visual mode also supports editing more advanced Pandoc constructs frequently used in technical writing (footnotes, citations, embedded code, equations, HTML & Tex, etc.). This article describes these features, as well as provides more detail on editing more complex content like images, tables, and lists.
 
-## Commands
+## Editing Basics
 
 The editor toolbar includes buttons for the most commonly used formatting commands:
 
@@ -89,7 +89,7 @@ To display but not execute code, either use the **Insert -\> Code Block** menu i
 
 Then press the **Enter** key. To display code inline, simply surround text with backticks (`` `code` ``), or use the **Format -\> Code** menu item.
 
-### Executing Code
+### Code Chunks
 
 To insert an executable code chunk, use the **Insert -\> Rmd Chunk** menu item, or start a new line and type:
 
