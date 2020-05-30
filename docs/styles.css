@@ -46,5 +46,16 @@ a[data-id='additional-topics']
   font-size: 0.9em;
 }
 
+.markdown-section .tippy-content {
+  overflow-wrap: anywhere;
+  padding: 10px;
+}
+
+.markdown-section .sha-title {
+  color: rgb(195, 195, 195);
+  margin-bottom: 10px;
+}
+
+
 
 

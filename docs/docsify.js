@@ -38,6 +38,7 @@ window.$docsify = {
    
    // custom plugins
    plugins: [
+     tippyPlugin,
      introNavigatePlugin,
      cmdToCtrlPlugin,
      fixScrollingPlugin
@@ -46,10 +47,27 @@ window.$docsify = {
 };
 
 
-// fixups to navigation
+// initialize tippy popovers
+function tippyPlugin(hook, vm) {
+  hook.ready(function() {
+    let tips = window.document.getElementsByClassName('sha256');
+    for (let i = 0; i<tips.length; i++) {
+       let sha256 = tips[i].getAttribute('data-sha256');
+       tippy(tips[i], {
+         allowHTML: true,
+         content: '<div><div class="sha-title">SHA-256</div><div>' + sha256 + '</div></div>',
+         maxWidth: 240,
+         interactive: true,
+         interactiveBorder: 10,
+         placement: 'left'
+       });
+    }
+  });
+}
+
+// expand intro section on navigation to home
 function introNavigatePlugin(hook, vm) {
   hook.ready(function() {
-    // expand intro on navigation to route
     if (window.location.hash === "#/")
       window.location.hash = "#/intro";
   });

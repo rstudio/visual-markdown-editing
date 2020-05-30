@@ -63,14 +63,21 @@ download_info <- lapply(platforms, function(platform) {
    md5_info <- jsonlite::fromJSON(aws_md5_url)
    date <- parse_date(md5_info$last_modified)
    md5_info$date <- format.Date(date, format = "%m/%d/%y %H:%M %Z")
+   md5_info$sha256_link <-  paste0(
+      "<span class=\"sha256\" data-sha256=\"", md5_info$sha256, "\">", 
+         paste0(substr(md5_info$sha256, 1, 8), "..."),
+      "</span>"
+   )
    c(platform, md5_info) 
 })
 
 downloads <- ldply(download_info, data.frame, stringsAsFactors = FALSE)
 
 knitr::kable(
-   downloads[,c("platform", "link", "md5")], 
-   col.names = c("Platform", "Download", "MD5")
+   downloads[,c("platform", "link", "sha256_link")], 
+   col.names = c("Platform", "Download", "SHA-256")
 )
 ```
+
+
 
