@@ -13,8 +13,6 @@ knit: (function(input, ...) {
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Visual markdown editing is currently only available in the daily build of RStudio. You can download the desktop version of the daily build here:
-
 ```{r}
 library(plyr)
 library(jsonlite)
@@ -75,7 +73,4 @@ knitr::kable(
    col.names = c("Platform", "Download", "MD5")
 )
 ```
-
-For other platforms or RStudio Server, please visit <https://dailies.rstudio.com>.
-
 

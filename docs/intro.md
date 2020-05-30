@@ -10,13 +10,21 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Highlights o
 
 -   Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).
 
-Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide code completion, code-editing keyboard shortcuts, or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Code editing and execution features will be added in a subsequent release.
+Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide code completion, code-editing keyboard shortcuts, or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Additional code editing and execution features will be added in a subsequent release.
 
 ## Getting Started
 
-[download](_download.md ':include')
+Visual markdown editing is currently only available in the [daily build](https://dailies.rstudio.com) of RStudio. You can download the desktop version of the daily build here:
 
-Visual markdown editing is not available by default. To enable it, use **Preferences -> R Markdown**:
+[downloads](_download.md ':include')
+
+For other desktop platforms or RStudio Server, please visit <https://dailies.rstudio.com>.
+
+?\> Daily builds are intended for testing purposes, and are not recommended for general use.
+
+### Enabling Visual Mode
+
+Visual markdown editing is not available by default. To enable it, use **Preferences -\> R Markdown**:
 
 <img src="images/visual-editing-pref.png" class="illustration" width="588"/>
 
