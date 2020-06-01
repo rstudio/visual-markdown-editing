@@ -21,6 +21,7 @@ Here are the available keyboard and markdown shortcuts:
 | Raw Block           |                     | ```` ```{=html} ```` |
 | Bullet List         |                     |          `-`         |
 | Ordered List        |                     |         `1.`         |
+| Tight List          |   <kbd>⌥⌘ 9</kbd>   |                      |
 | List Check          |                     |         `[x]`        |
 | Link                |    <kbd>⌘ K</kbd>   |       `<href>`       |
 | Emoji               |                     |       `:smile:`      |
