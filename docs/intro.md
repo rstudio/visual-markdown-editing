@@ -10,7 +10,8 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Highlights o
 
 -   Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).
 
-Visual mode currently supports executing R and Python code chunks in the console, but does not yet provide code completion, code-editing keyboard shortcuts, or inline chunk output. As such, the feature is aimed mostly at savvy/experienced markdown users that want more productive editing of long-form documents and less so at newer users and/or users that are primarily executing code. Additional code editing and execution features will be added in a subsequent release.
+?> Visual mode does not yet incorporate R code editing intelligence (e.g. code completion, auto-indent, keyboard shortcuts etc.) or inline chunk output. As a result, it is currently aimed at composition of longer-form documents rather than interactive data analysis. Additional code editing and execution features will be added in subsequent releases.
+
 
 ## Getting Started
 
