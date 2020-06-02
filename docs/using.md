@@ -36,6 +36,8 @@ LaTeX equations are authored using standard Pandoc markdown syntax (the editor w
 
 <img src="images/visual-editing-math.png" width="700"/>
 
+As you edit a LaTeX equation, you'll see a fully rendered preview of it below.
+
 ## LaTeX and HTML
 
 You can also include raw LaTeX commands or HTML tags when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:
