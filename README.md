@@ -5,7 +5,7 @@
 Edit the docs at:
 
     docs/intro.md
-    docs/editing.md
+    docs/using.md
     docs/markdown.md
     docs/shortcuts.md
     docs/options.md
