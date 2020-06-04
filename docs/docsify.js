@@ -40,7 +40,8 @@ window.$docsify = {
    plugins: [
      tippyPlugin,
      cmdToCtrlPlugin,
-     fixScrollingPlugin
+     fixScrollingPlugin,
+     fixIncludePlugin
    ],
    
 };
@@ -106,3 +107,11 @@ function cmdToCtrlPlugin(hook, vm) {
     next(html);
   });
 }
+
+function fixIncludePlugin(hook, vm) {
+  hook.beforeEach(function(content) {
+   content = content.replace(/ ":include"\)/g, " ':include')");
+   return content;
+ }); 
+}
+
