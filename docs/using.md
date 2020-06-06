@@ -129,6 +129,16 @@ Note that the \# prefix used in the comment is what triggers the special backgro
 
 You can insert an HTML comment using the Comment button on the toolbar or via the <kbd>⇧⌘ C</kbd> keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
 
-## Typography
+## Symbols
 
-Most markdown formats support smart typography, which causes straight quotes to be interpreted as curly quotes, `--` as en-dashes, `---` as em-dashes, and `...` as ellipses. Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
+#### Smart Punctuation
+
+Most markdown formats support smart punctuation symbols, which causes straight quotes to be interpreted as curly quotes, `--` as en-dashes, `---` as em-dashes, and `...` as ellipses. Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
+
+#### Unicode Characters
+
+To insert an arbitrary Unicode character, use the **Insert -\> Symbol...** command:
+
+<img src="images/visual-editing-unicode.png" width="700"/>
+
+You can search for characters either by name or by entering an explicit Unicode code point (e.g. "U+0420").
