@@ -25,8 +25,8 @@ Here's an example of a `_bookdown.yml` file that includes this option:
 ``` yaml
 ---
 book_filename: "bookdown-footnotes"
-pandoc_file_scope: true
 delete_merged_file: true
+pandoc_file_scope: true
 language:
   ui:
     chapter_name: "Chapter "
