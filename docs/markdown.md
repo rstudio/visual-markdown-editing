@@ -16,6 +16,34 @@ Bookdown cross-references enable you to easily link to figures, equations, and e
 
 The leading `\` will be automatically written into the markdown source by the visual editor. See the bookdown documentation for more information on [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html).
 
+### Footnotes
+
+Visual mode writes markdown footnotes using numeric identifiers (as opposed to inline or using labels). For [bookdown](https://bookdown.org) projects, you'll want to make sure that Pandoc knows that repeated numeric identifiers across chapters aren't duplicates. To do this, you'll need to add the `pandoc_file_scope` option to your `_bookdown.yml` file (this in turn ensures that pandoc is called with the [`--file-scope`](https://pandoc.org/MANUAL.html#option--file-scope) command line argument).
+
+Here's an example of a `_bookdown.yml` file that includes this option:
+
+``` yaml
+---
+book_filename: "bookdown-footnotes"
+pandoc_file_scope: true
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+---
+```
+
+This option is currently only available using development branches of the rmarkdown and bookdown packages, which you can install as follows:
+
+``` r
+devtools::install_github(
+  c("rstudio/rmarkdown", "rstudio/bookdown"), 
+  ref="feature/pandoc-file-scope"
+)
+```
+
+It's strongly recommended that you install these branches if you plan on using visual mode with bookdown projects.
+
 ### Part Headers
 
 Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX `\part{}` command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as `(PART\*)`, you don't need to include the escape character for the asterisk. You also should use the explicit `{.unnumbered}` class as opposed to the shorthand `{-}`. For example:

@@ -28,7 +28,7 @@ You can include footnotes using the **Insert -\> Footnote** command. Footnote ed
 
 <img src="images/visual-editing-footnote.png" class="illustration" width="700"/>
 
-?\> By default footnotes will be written in markdown immediately below the block in which they appear. You can customize this behavior via [editor options](options).
+?\> By default footnotes will be written in markdown immediately below the block in which they appear. You can customize this behavior via [editor options](options). Note also that if you are using visual mode with a [bookdown](https://bookdown.org) project, please see the discussion on [footnote handling](markdown#footnotes) for bookdown.
 
 ## Equations
 
