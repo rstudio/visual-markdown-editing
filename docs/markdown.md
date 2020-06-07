@@ -18,7 +18,7 @@ The leading `\` will be automatically written into the markdown source by the vi
 
 ### Footnotes
 
-Visual mode writes markdown footnotes using numeric identifiers (as opposed to inline or using labels). For [bookdown](https://bookdown.org) projects, you'll want to make sure that Pandoc knows that repeated numeric identifiers across chapters aren't duplicates. To do this, you'll need to add the `pandoc_file_scope` option to your `_bookdown.yml` file (this in turn ensures that pandoc is called with the [`--file-scope`](https://pandoc.org/MANUAL.html#option--file-scope) command line argument).
+Visual mode writes markdown footnotes using numeric identifiers (as opposed to inline or using labels). As a result, bookdown projects should add the `pandoc_file_scope` option to their `_bookdown.yml` config file (this in turn ensures that pandoc correctly handles duplciate footnote identifiers [across files](https://pandoc.org/MANUAL.html#option--file-scope)).
 
 Here's an example of a `_bookdown.yml` file that includes this option:
 
