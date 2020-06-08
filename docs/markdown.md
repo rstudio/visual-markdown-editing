@@ -37,8 +37,9 @@ This option is currently only available using development branches of the rmarkd
 
 ``` r
 devtools::install_github(
-  c("rstudio/rmarkdown", "rstudio/bookdown"), 
-  ref="feature/pandoc-file-scope"
+  "rstudio/bookdown", 
+  ref="feature/pandoc-file-scope",
+  upgrade="always"
 )
 ```
 
