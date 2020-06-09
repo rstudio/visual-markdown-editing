@@ -43,7 +43,7 @@ devtools::install_github(
 )
 ```
 
-It's strongly recommended that you install these branches if you plan on using visual mode with bookdown projects.
+It's strongly recommended that you install these branches if you plan on using visual mode with bookdown projects. Note that when this option is enabled, footnotes and reference links will not work across files. So for example a link of the form `[Introduction](#introduction)` would work fine, but the shorthand reference link `[Introduction]` would not work.
 
 ### Part Headers
 
