@@ -147,8 +147,8 @@ You can search for characters either by name or by entering an explicit Unicode 
 
 To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus autocomplete:
 
-| **Insert -\> Emoji & Symbol -\> Emoji...**  | Markdown Shortcut                                                            |
-|---------------------------------------------|------------------------------------------------------------------------------|
-| ![](images/visual-editing-emoji-dialog.png) | <img src="images/visual-editing-emoji-completion.png" /> |
+| **Insert -\> Emoji & Symbol -\> Emoji...**  | Markdown Shortcut                               |
+|---------------------------------------------|-------------------------------------------------|
+| ![](images/visual-editing-emoji-dialog.png) | ![](images/visual-editing-emoji-completion.png) |
 
 For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written. For other formats the literal emjoi character will be written. Currently, GitHub Flavored Markdown and Hugo (with `enableEmjoi = true` in the site config) both support text representation of emjois.
