@@ -131,14 +131,24 @@ You can insert an HTML comment using the Comment button on the toolbar or via th
 
 ## Symbols
 
-#### Smart Punctuation
+### Smart Punctuation
 
 Most markdown formats support smart punctuation symbols, which causes straight quotes to be interpreted as curly quotes, `--` as en-dashes, `---` as em-dashes, and `...` as ellipses. Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
 
-#### Unicode Characters
+### Unicode Characters
 
-To insert an arbitrary Unicode character, use the **Insert -\> Symbol...** command:
+To insert an arbitrary Unicode character, use **Insert -\> Emoji & Symbol -\> Symbol...**:
 
 <img src="images/visual-editing-unicode.png" width="700"/>
 
 You can search for characters either by name or by entering an explicit Unicode code point (e.g. "U+0420").
+
+## Emojis
+
+To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus autocomplete:
+
+| **Insert -\> Emoji & Symbol -\> Emoji...**  | Markdown Shortcut                                                            |
+|---------------------------------------------|------------------------------------------------------------------------------|
+| ![](images/visual-editing-emoji-dialog.png) | <img src="images/visual-editing-emoji-completion.png" /> |
+
+For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written. For other formats the literal emjoi character will be written. Currently, GitHub Flavored Markdown and Hugo (with `enableEmjoi = true` in the site config) both support text representation of emjois.
