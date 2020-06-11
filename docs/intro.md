@@ -64,7 +64,7 @@ You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just about an
 
 <img src="images/visual-editing-omni-list.png" style="display: inline-block" width="350"/>
 
-<img src="images/visual-editing-omni-math.png" style="display: inline-block" width="350"/>
+<img src="images/visual-editing-omni-math.png" style="display: inline-block; margin-bottom: 2px;" width="350"/>
 
 If you are at the beginning of a line (as displayed above) you can also enter plain `/` to invoke the shortcut.
 
