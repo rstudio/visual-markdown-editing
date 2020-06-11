@@ -6,7 +6,7 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Highlights o
 
 -   Visual editing for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, equations, TeX, and HTML.
 
--   Tight integration with source editingu (editing location and undo/redo state are preserved when switching between modes).
+-   Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).
 
 -   Rich keyboard support. In addition to traditional shortcuts, you can use markdown expressions (e.g. `##`, `**bold**`, etc.) for formatting. If you don't remember all of the keybaord shortcuts, you can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert anything.
 
