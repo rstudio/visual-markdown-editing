@@ -58,7 +58,7 @@ There are keyboard shortcuts for all basic editing tasks. Visual mode supports b
 
 See the [keyboard shortcuts](shortcuts) article for a complete list of all shortcuts.
 
-### Insert Anything <kbd>⌘ /</kbd>
+### Insert Anything
 
 You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just about anything. Just execute the shortcut then type what you want to insert. For example:
 

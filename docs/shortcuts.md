@@ -39,7 +39,7 @@ Here are the available keyboard and markdown shortcuts:
 
 ?\> For markdown shortcuts, if you didn’t intend to use a shortcut and want to reverse it's effect, just press the backspace key.
 
-### Insert Anything <kbd>⌘ /</kbd>
+### Insert Anything
 
 You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just about anything. Just execute the shortcut then type what you want to insert. For example:
 
