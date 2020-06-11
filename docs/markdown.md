@@ -75,6 +75,23 @@ In this case, RStudio will recognize that you aren't using Pandoc, and adapt the
 
 ?\> If are using an older version of Hugo that uses [blackfriday](https://github.com/russross/blackfriday) rather than goldmark (or have blackfriday explicitly configured as your default renderer), then this should be automatically detected by RStudio.
 
+#### Math
+
+Embedding LaTeX math using `$...$` or `$$...$$` is not supported out of the box by [goldmark](https://gohugo.io/getting-started/configuration-markup/#goldmark). However, many commonly used Hugo themes (e.g [Academic](https://themes.gohugo.io/academic/)) do provide rendering of LaTeX math.
+
+Another method for embedding LaTeX math in Hugo webistes is to embed math expressions within backticks (e.g. `` `$\sqrt{x}=25$` ``). This method is described in more detail at <https://yihui.org/en/2018/07/latex-math-markdown/.> Typically this code is included in a Hugo page footer as described [here](https://bookdown.org/yihui/blogdown/templates.html#how-to).
+
+If you are using this method, you can arrange for the visual editor to read and write equations from within code backticks using the following editor options:
+
+``` yaml
+---
+title: "My Document"
+editor_options:
+  markdown:
+    rmd_extensions: +tex_math_dollars_in_code
+---
+```
+
 ## Document Types
 
 The bookdown and Hugo features described above are enabled using automatic detection of document types by RStudio. Detection is done using a combination of the current project configuration and the output formats specified in YAML front-matter. If this automatic detection doesn't align with your configuration, you can specify a document type manually using the `editor_options:markdown` key in YAML front matter.
