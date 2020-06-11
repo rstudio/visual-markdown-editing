@@ -6,9 +6,9 @@ RStudio v1.4 includes an experimental visual markdown editing mode. Highlights o
 
 -   Visual editing for all of Pandoc markdown, including tables, footnotes, citations, divs/spans, definition lists, id/class attributes, equations, TeX, and HTML.
 
--   Markdown expressions (e.g. `##`, `**bold**`, etc.) can be used within the visual editor for formatting.
+-   Tight integration with source editingu (editing location and undo/redo state are preserved when switching between modes).
 
--   Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).
+-   Rich keyboard support. In addition to traditional shortcuts, you can use markdown expressions (e.g. `##`, `**bold**`, etc.) for formatting. If you don't remember all of the keybaord shortcuts, you can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert anything.
 
 ?\> Visual mode does not yet incorporate R code editing intelligence (e.g. code completion, auto-indent, keyboard shortcuts etc.) or inline chunk output. As a result, it is currently aimed at composition of longer-form documents rather than interactive data analysis. Additional code editing and execution features will be added in subsequent releases.
 
@@ -31,6 +31,8 @@ Visual markdown editing is not available by default. To enable it, use **Prefere
 Once you've enabled visual editing, you can switch between source and visual mode using the button at the top-right of the document toolbar (you can also switch using the <kbd>⌃⇧ F8</kbd> keyboard shortcut):
 
 <img src="images/visual-editing.png" width="700"/>
+
+[Editing Basics](_basics.md ":include")
 
 ## Learning More
 

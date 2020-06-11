@@ -4,19 +4,7 @@ Visual mode has direct editing support for all of Pandoc markdown. Standard form
 
 Visual mode also supports editing more advanced Pandoc constructs frequently used in technical writing (footnotes, citations, embedded code, equations, HTML & Tex, etc.). This article describes these features, as well as provides more detail on editing more complex content like images, tables, and lists.
 
-## Editing Basics
-
-The editor toolbar includes buttons for the most commonly used formatting commands:
-
-<img src="images/visual-editing-toolbar.png" width="700"/>
-
-Additional commands are available on the **Format**, **Insert**, and **Table** menus:
-
-| Format                                     | Insert                                     | Table                                     |
-|--------------------------------------------|--------------------------------------------|-------------------------------------------|
-| ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
-
-There are also [keyboard shortcuts](shortcuts) available for frequently used commands. You can also search and execute visual mode commands using the RStudio Command Palette <kbd>⌃⇧ P</kbd>.
+[Editing Basics](_basics.md ":include")
 
 ## References
 

@@ -38,3 +38,13 @@ Here are the available keyboard and markdown shortcuts:
 | Run Previous Chunks |   <kbd>⌥⌘ P</kbd>   |                      |
 
 ?\> For markdown shortcuts, if you didn’t intend to use a shortcut and want to reverse it's effect, just press the backspace key.
+
+### Insert Anything <kbd>⌘ /</kbd>
+
+You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just about anything. Just execute the shortcut then type what you want to insert. For example:
+
+<img src="images/visual-editing-omni-list.png" style="display: inline-block" width="350"/>
+
+<img src="images/visual-editing-omni-math.png" style="display: inline-block" width="350"/>
+
+If you are at the beginning of a line (as displayed above) you can also enter plain `/` to invoke the shortcut.
