@@ -18,7 +18,7 @@ The leading `\` will be automatically written into the markdown source by the vi
 
 ### Footnotes
 
-Visual mode writes markdown footnotes using numeric identifiers (as opposed to inline or using labels). As a result, bookdown projects should add the `pandoc_file_scope` option to their `_bookdown.yml` config file (this in turn ensures that pandoc correctly handles duplciate footnote identifiers [across files](https://pandoc.org/MANUAL.html#option--file-scope)).
+Visual mode writes markdown footnotes using numeric identifiers (as opposed to inline or using labels). As a result, bookdown projects should add the `pandoc_file_scope` option to their `_bookdown.yml` config file (this in turn ensures that pandoc correctly handles duplicate footnote identifiers [across files](https://pandoc.org/MANUAL.html#option--file-scope)).
 
 Here's an example of a `_bookdown.yml` file that includes this option:
 
@@ -79,18 +79,9 @@ In this case, RStudio will recognize that you aren't using Pandoc, and adapt the
 
 Embedding LaTeX math using `$...$` or `$$...$$` is not supported out of the box by [goldmark](https://gohugo.io/getting-started/configuration-markup/#goldmark). However, many commonly used Hugo themes (e.g [Academic](https://themes.gohugo.io/academic/)) do provide rendering of LaTeX math.
 
-Another method for embedding LaTeX math in Hugo webistes is to embed math expressions within backticks (e.g. `` `$\sqrt{x}=25$` ``). This method is described in more detail at <https://yihui.org/en/2018/07/latex-math-markdown/.> Typically this code is included in a Hugo page footer as described [here](https://bookdown.org/yihui/blogdown/templates.html#how-to).
+Another method for embedding LaTeX math in Hugo websites is to embed math expressions within code marks (e.g. `` `$\sqrt{x}=25$` ``). This method is described in more detail at <https://yihui.org/en/2018/07/latex-math-markdown/.> Typically this code is included in a Hugo page footer as described [here](https://bookdown.org/yihui/blogdown/templates.html#how-to).
 
-If you are using this method, you can arrange for the visual editor to read and write equations from within code backticks using the following editor options:
-
-``` yaml
----
-title: "My Document"
-editor_options:
-  markdown:
-    rmd_extensions: +tex_math_dollars_in_code
----
-```
+Visual mode will detect the use of math-in-code via the presence of the `layouts/partials/footer_mathjax.html` file in the theme directory and automatically read and write math with backtick delimiters.
 
 ## Document Types
 
