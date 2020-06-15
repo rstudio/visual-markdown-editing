@@ -4,7 +4,7 @@ R Markdown documents are normally authored using standard [Pandoc markdown](http
 
 By default, visual mode detects the target markdown format for the current document, making the requisite editor commands available and writing the expected flavor of markdown source code. This article describes the various available markdown extensions, how to override RStudio's automatic detection, as well some options that control how [markdown output](markdown?id=markdown-output) is written.
 
-## Bookdown Extensions
+## Bookdown
 
 ### Footnotes
 
