@@ -6,6 +6,24 @@ By default, visual mode detects the target markdown format for the current docum
 
 ## Bookdown Extensions
 
+### Footnotes
+
+Visual mode writes markdown footnotes using numeric identifiers. This can pose problems for bookdown projects, which require that footnotes are unique across all chapters (this is normally accomplished using either inline or labeled footnotes).
+
+This issue has been resolved in a [pull request](https://github.com/rstudio/bookdown/pull/897) to bookdown, which you can install as follows::
+
+``` r
+devtools::install_github(
+  "rstudio/bookdown", 
+  ref="feature/pandoc-file-scope",
+  upgrade="always"
+)
+```
+
+Note that the resolution of this issue requires that pandoc be invoked using the [`--file-scope`](https://pandoc.org/MANUAL.html#option--file-scope) option, which in turn introduces the constaint that footnotes and reference links will not work across files.
+
+So for example a link of the form `[Introduction](#introduction)` would work fine, but the shorthand reference link `[Introduction]` would not work when referencing a section in another chapter. Note that shorthand reference links are already generally advised against in the bookdown manual (as they often break when section titles change).
+
 ### Cross References
 
 The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also supports bookdown style cross-references as does the [distill](https://rstudio.github.io/distill/) package.
@@ -16,34 +34,7 @@ Bookdown cross-references enable you to easily link to figures, equations, and e
 
 The leading `\` will be automatically written into the markdown source by the visual editor. See the bookdown documentation for more information on [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html).
 
-### Footnotes
-
-Visual mode writes markdown footnotes using numeric identifiers (as opposed to inline or using labels). As a result, bookdown projects should add the `pandoc_file_scope` option to their `_bookdown.yml` config file (this in turn ensures that pandoc correctly handles duplicate footnote identifiers [across files](https://pandoc.org/MANUAL.html#option--file-scope)).
-
-Here's an example of a `_bookdown.yml` file that includes this option:
-
-``` yaml
----
-book_filename: "bookdown-footnotes"
-delete_merged_file: true
-pandoc_file_scope: true
-language:
-  ui:
-    chapter_name: "Chapter "
----
-```
-
-This option is currently only available using development branches of the rmarkdown and bookdown packages, which you can install as follows:
-
-``` r
-devtools::install_github(
-  "rstudio/bookdown", 
-  ref="feature/pandoc-file-scope",
-  upgrade="always"
-)
-```
-
-It's strongly recommended that you install these branches if you plan on using visual mode with bookdown projects. Note that when this option is enabled, footnotes and reference links will not work across files. So for example a link of the form `[Introduction](#introduction)` would work fine, but the shorthand reference link `[Introduction]` would not work.
+### 
 
 ### Part Headers
 
