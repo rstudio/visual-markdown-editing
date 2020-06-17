@@ -10,14 +10,10 @@ By default, visual mode detects the target markdown format for the current docum
 
 Visual mode writes markdown footnotes using numeric identifiers. This can pose problems for bookdown projects, which require that footnotes are unique across all chapters (this is normally accomplished using either inline or labeled footnotes).
 
-This issue has been resolved in a [pull request](https://github.com/rstudio/bookdown/pull/897) to bookdown, which you can install as follows::
+This issue has been resolved in the development version of bookdown, which you can install as follows:
 
 ``` r
-devtools::install_github(
-  "rstudio/bookdown", 
-  ref="feature/pandoc-file-scope",
-  upgrade="always"
-)
+devtools::install_github("rstudio/bookdown", upgrade="always")
 ```
 
 Note that the resolution of this issue requires that pandoc be invoked using the [`--file-scope`](https://pandoc.org/MANUAL.html#option--file-scope) option, which in turn introduces the constaint that footnotes and reference links will not work across files.
