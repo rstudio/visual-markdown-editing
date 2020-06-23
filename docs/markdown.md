@@ -16,7 +16,7 @@ This issue has been resolved in the development version of bookdown, which you c
 devtools::install_github("rstudio/bookdown", upgrade="always")
 ```
 
-Note that the resolution of this issue requires that pandoc be invoked using the [`--file-scope`](https://pandoc.org/MANUAL.html#option--file-scope) option, which in turn introduces the constaint that footnotes and reference links will not work across files.
+Note that the resolution of this issue requires that pandoc be invoked using the [`--file-scope`](https://pandoc.org/MANUAL.html#option--file-scope) option, which in turn introduces the constraint that footnotes and reference links will not work across files.
 
 So for example a link of the form `[Introduction](#introduction)` would work fine, but the shorthand reference link `[Introduction]` would not work when referencing a section in another chapter. Note that shorthand reference links are already generally advised against in the bookdown manual (as they often break when section titles change).
 
@@ -28,9 +28,9 @@ Bookdown cross-references enable you to easily link to figures, equations, and e
 
 <img src="images/visual-editing-xref.png" width="700"/>
 
-The leading `\` will be automatically written into the markdown source by the visual editor. See the bookdown documentation for more information on [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html).
+As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.
 
-### 
+See the bookdown documentation for more information on [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html).
 
 ### Part Headers
 

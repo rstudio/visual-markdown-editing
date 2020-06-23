@@ -45,11 +45,19 @@ Additional commands are available on the **Format**, **Insert**, and **Table** m
 |--------------------------------------------|--------------------------------------------|-------------------------------------------|
 | ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
 
-## References
+## Citations
 
-You can include citations using the standard Pandoc syntax for citations:
+R Markdown supports bibliographies in a wide variety of formats including BibLaTeX, EndNote, and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field.
+
+You can include citations in visual mode using the standard Pandoc `[@citation]` syntax for citations:
 
 <img src="images/visual-editing-citations.png" width="700"/>
+
+As illustrated above, when entering a citation you can search your bibliography to make it easier to locate a citation even if you don't remember it's specific ID.
+
+See the documentation on [R Markdown Bibliographies and Citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html) for additional details.
+
+## Footnotes
 
 You can include footnotes using the **Insert -\> Footnote** command. Footnote editing occurs in a pane immediately below the main document:
 
