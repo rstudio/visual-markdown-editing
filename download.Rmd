@@ -2,9 +2,9 @@
 output: 
   github_document: default
 params:
-   version: "1.4.500"
-   osx_version: "1.4.500"
-   win_version: "1.4.499"
+   version: "1.4.501"
+   #osx_version: "1.4.500"
+   #win_version: "1.4.499"
 knit: (function(input, ...) {
     rmarkdown::render(input); file.rename("download.md", "docs/_download.md")
   })
@@ -54,8 +54,8 @@ redhat <- list(
 platforms <- list(windows, mac, ubuntu, redhat)
 
 download_info <- lapply(platforms, function(platform) {
-   version <- ifelse(platform$dir == "windows", params$win_version, params$version)
-   version <- ifelse(platform$dir == "macos", params$osx_version, version)
+   version <- ifelse(platform$dir == "windows" && !is.null(params$win_version), params$win_version, params$version)
+   version <- ifelse(platform$dir == "macos" && !is.null(params$osx_version), params$osx_version, version)
    platform$file <- sprintf(platform$file, version)
    platform$url <- paste(base_url, platform$dir, platform$file, sep = "/")
    platform$link <- paste0(
