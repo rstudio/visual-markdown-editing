@@ -2,7 +2,7 @@
 output: 
   github_document: default
 params:
-   version: "1.4.532"
+   version: "1.4.534"
    #osx_version: "1.4.518"
    #win_version: "1.4.526"
 knit: (function(input, ...) {
