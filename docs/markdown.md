@@ -20,18 +20,6 @@ Note that the resolution of this issue requires that pandoc be invoked using the
 
 So for example a link of the form `[Introduction](#introduction)` would work fine, but the shorthand reference link `[Introduction]` would not work when referencing a section in another chapter. Note that shorthand reference links are already generally advised against in the bookdown manual (as they often break when section titles change).
 
-### Cross References
-
-The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. The [blogdown](https://bookdown.org/yihui/blogdown/) package also supports bookdown style cross-references as does the [distill](https://rstudio.github.io/distill/) package.
-
-Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document. In raw markdown, you would for example write a cross-reference to a figure like this: `\@ref(fig:label)`. Cross-references are largely the same in visual mode, but you don't need the leading `\` (which in raw markdown is used to escape the `@` character). For example:
-
-<img src="images/visual-editing-xref.png" width="700"/>
-
-As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.
-
-See the bookdown documentation for more information on [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html).
-
 ### Part Headers
 
 Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX `\part{}` command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as `(PART\*)`, you don't need to include the escape character for the asterisk. You also should use the explicit `{.unnumbered}` class as opposed to the shorthand `{-}`. For example:

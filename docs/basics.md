@@ -1,10 +1,10 @@
 <!-- -*- mode: gfm -*- -->
 
-Visual mode has direct editing support for all of Pandoc markdown. Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor. You can access editing commands using either the toolbar or via [shortcuts](shortcuts).
+Visual mode supports editing all of Pandoc markdown. Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor. Editing of links, images, blockquotes, lists, tables, etc. is also available. You can access editing commands using either the toolbar or via [shortcuts](shortcuts).
 
-Visual mode also supports editing more advanced Pandoc constructs frequently used in technical writing (footnotes, citations, embedded code, equations, HTML & Tex, etc.). This article describes these features, as well as provides more detail on editing more complex content like images, tables, and lists.
+Visual mode also supports editing more advanced Pandoc constructs frequently used in technical writing such as citations, cross-references, footnotes, equations, embedded code, and LaTeX. See the [Technical Writing](technical) article for additional details on using these features.
 
-## Editing Basics
+## Commands
 
 ### Keyboard Shortcuts
 
@@ -45,46 +45,6 @@ Additional commands are available on the **Format**, **Insert**, and **Table** m
 |--------------------------------------------|--------------------------------------------|-------------------------------------------|
 | ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
 
-## Citations
-
-R Markdown supports bibliographies in a wide variety of formats including BibLaTeX, EndNote, and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field.
-
-You can include citations in visual mode using the standard Pandoc `[@citation]` syntax for citations:
-
-<img src="images/visual-editing-citations.png" width="700"/>
-
-As illustrated above, when entering a citation you can search your bibliography to make it easier to locate a citation even if you don't remember it's specific ID.
-
-See the documentation on [R Markdown Bibliographies and Citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html) for additional details.
-
-## Footnotes
-
-You can include footnotes using the **Insert -\> Footnote** command. Footnote editing occurs in a pane immediately below the main document:
-
-<img src="images/visual-editing-footnote.png" class="illustration" width="700"/>
-
-?\> By default footnotes will be written in markdown immediately below the block in which they appear. You can customize this behavior via [editor options](options). Note also that if you are using visual mode with a [bookdown](https://bookdown.org) project, please see the discussion on [footnote handling](markdown#footnotes) for bookdown.
-
-## Equations
-
-LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and highlight the equations as math). For example, here's some inline and display math:
-
-<img src="images/visual-editing-math.png" width="700"/>
-
-As you edit a LaTeX equation, you'll see a fully rendered preview of it below.
-
-## LaTeX and HTML
-
-You can also include raw LaTeX commands or HTML tags when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted For example:
-
-<img src="images/visual-editing-raw.png" width="700"/>
-
-The above examples utilize *inline* LaTex and HTML. You can also include blocks of raw content using the commands on the **Format -\> Raw** menu. For example, here is a document with a raw LaTeX block:
-
-<img src="images/visual-editing-latex-block.png" width="700"/>
-
-?\> Note that Pandoc ignores LaTeX commands when not producing LaTeX based output, and ignores HTML tags when not producing HTML based output.
-
 ## Editing Tables
 
 You can insert a table using the **Table** menu. You can then use the either the main menu or a context menu to insert and delete table rows and columns:
@@ -112,39 +72,6 @@ You can also use **Shift+Tab** to lift a list item into the previous level.
 Markdown distinguishes between normal and *tight* lists, where tight lists have less vertical spacing between items. In markdown source code, you designate a tight list by having no empty line between your list items.
 
 Visual mode creates normal lists by default, but you can toggle between normal and tight lists using the <kbd>⌥⌘ 9</kbd> keyboard shortcut. You can also change the list type using the **Format -\> Edit Attributes** dialog (also accessible via the <kbd>F4</kbd> shortcut). If you have existing tight lists in your markdown source files they will remain so within the visual editor.
-
-## Embedded Code
-
-Source code which you include in an R Markdown document can either by for display only or can be executed by knitr as part of rendering. Code can furthermore be either inline or block (e.g. an Rmd code chunk).
-
-### Displaying Code
-
-To display but not execute code, either use the **Insert -\> Code Block** menu item, or start a new line and type either:
-
-1.  ```` ``` ```` (for a plain code block); or
-2.  ```` ```<lang> ```` (where \<lang\> is a language) for a code block with syntax highlighting.
-
-Then press the **Enter** key. To display code inline, simply surround text with backticks (`` `code` ``), or use the **Format -\> Code** menu item.
-
-### Code Chunks
-
-To insert an executable code chunk, use the **Insert -\> Rmd Chunk** menu item, or start a new line and type:
-
-```` ```{r} ````
-
-Then press the **Enter** key. Note that `r` could be another language supported by knitr (e.g. `python` or `sql`) and you can also include a chunk label and other chunk options.
-
-To include inline R code, you just create normal inline code (as described above) but preface it with `r`. For example, this inline code will be executed by knitr: [r Sys.Date()]{.fake-code}. Note that when the code displays in the visual editor it won't have the backticks (but they will still appear in source mode).
-
-### Running Chunks
-
-You can execute the currently selected R or Python code chunk using either the run button at the top right of the code chunk or using the <kbd>⇧⌘ Enter</kbd> keyboard shortcut:
-
-<img src="images/visual-editing-execute-code.png" width="700"/>
-
-You can execute code chunks up to the current one using the toolbar button or using the <kbd>⌥⌘ P</kbd> keyboard shortcut.
-
-?\> You may note that code chunk editing and execution in visual mode is not as full featured as in source mode (e.g. syntax highlighting but no code completion, executing entire chunks but not individual lines, etc.). Additional code chunk features are under development and will be added in subsequent releases.
 
 ## Pandoc Attributes
 
@@ -186,4 +113,4 @@ To insert an emoji, you can use either the **Insert** menu or use the requisite 
 |---------------------------------------------|-------------------------------------------------|
 | ![](images/visual-editing-emoji-dialog.png) | ![](images/visual-editing-emoji-completion.png) |
 
-For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written. For other formats the literal emjoi character will be written. Currently, GitHub Flavored Markdown and Hugo (with `enableEmjoi = true` in the site config) both support text representation of emjois.
+For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written. For other formats the literal emoji character will be written. Currently, GitHub Flavored Markdown and Hugo (with `enableEmjoi = true` in the site config) both support text representation of emojis.

@@ -1,5 +1,6 @@
 - [Introduction](intro)
-- [Using Visual Mode](using)
+- [Editing Basics](basics)
+- [Technical Writing](technical)
 - [Markdown Formats](markdown)
 - [Editing Shortcuts](shortcuts)
 - [Editor Options](options)
