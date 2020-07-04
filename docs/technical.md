@@ -30,6 +30,10 @@ Bookdown cross-references enable you to easily link to figures, equations, and e
 
 As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.
 
+Similar to hyperlinks, you can also navigate to the location of a cross-reference by clicking the popup link that appears when it's selected:
+
+<img src="images/visual-editing-xref-navigate.png" width="700"/>
+
 See the bookdown documentation for more information on [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html).
 
 ## Footnotes
