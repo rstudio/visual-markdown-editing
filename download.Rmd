@@ -2,7 +2,7 @@
 output: 
   github_document: default
 params:
-   version: "1.4.538"
+   version: "1.4.539"
    #osx_version: "1.4.518"
    #win_version: "1.4.535"
 knit: (function(input, ...) {
@@ -87,6 +87,3 @@ knitr::kable(
    align = c('l', 'l', 'l', 'l')
 )
 ```
-
-
-
