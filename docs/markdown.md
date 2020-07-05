@@ -179,9 +179,22 @@ Note the semicolon (`;`) used to delimit the `mode` and `extensions` options.
 
 ## Markdown Output
 
-Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax.
+Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax. Here is a list of conventions for Pandoc generated markdown that might differ from your own markdown writing style:
 
-While this might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. If any of Pandoc's idioms are particularly troublesome, [let us know](https://github.com/rstudio/rstudio/issues/new) and we'll see if we can add an option to override the default behavior.
+-   `*text*` is used in preference to `_text_`
+-   Backtick code blocks are written as ```` ``` {.md} ```` rather than ```` ```md ````
+-   Backtick code blocks w/ no attributes are rendered as 4-space indented code blocks
+-   Plain links are written as `<https://yihui.org>` rather than `https://yihui.org`
+-   Numbered and ordered lists use 3 leading spaces before list item content
+-   The blockquote character (`>`) is included on each new line of a blockquote
+-   Table captions are written below rather than above tables
+-   Multiline HTML and TeX blocks use the explicit raw attribute (e.g. ```` ```{=tex} ````)
+-   Inline footnotes are replaced with footnotes immediately below the paragraph
+-   Nested divs use `:::` at all levels so long as their attributes are distinct
+-   Unnumbered sections are designated with `{.unnumered}` rather than `{-}`
+-   Characters used for markdown syntax (e.g. `*`, `_`, or `#`) are always escaped
+
+While some of this behavior might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. Note that you can also [configure source mode](markdown#canonical-mode) to write markdown using these conventions, ensuring that the same markdown is written no matter which mode edits originate from
 
 ### Line Wrapping
 
