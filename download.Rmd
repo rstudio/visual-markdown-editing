@@ -2,9 +2,9 @@
 output: 
   github_document: default
 params:
-   version: "1.4.546"
+   version: "1.4.553"
    #osx_version: "1.4.518"
-   #win_version: "1.4.535"
+   win_version: "1.4.551"
 knit: (function(input, ...) {
     rmarkdown::render(input); file.rename("download.md", "docs/_download.md")
   })
