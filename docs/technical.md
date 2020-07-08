@@ -10,15 +10,28 @@ devtools::install_github("rstudio/bookdown", upgrade="always")
 
 ## Citations
 
-R Markdown supports bibliographies in a wide variety of formats including BibLaTeX, EndNote, and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field.
+R Markdown supports bibliographies in a wide variety of formats including BibTeX, EndNote, and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field. For example:
 
-You can include citations in visual mode using the standard Pandoc `[@citation]` syntax for citations:
+``` yaml
+---
+title: "My Document"
+bibliography: references.bib
+---
+```
+
+Once you have a bibliography, you can include citations in visual mode using the standard Pandoc `[@citation]` syntax for citations (where "citation" is replaced by the ID of a citation within your bibliography):
 
 <img src="images/visual-editing-citations.png" width="700"/>
 
 As illustrated above, when entering a citation you can search your bibliography to make it easier to locate a citation even if you don't remember it's specific ID.
 
-See the documentation on [R Markdown Bibliographies and Citations](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html) for additional details.
+### Citations from DOIs
+
+If you are using a BibTeX bibliography (.bib extension) you can also insert citations for works not currently in your bibliography by providing a [DOI](https://www.doi.org/) (Document Object Identifier). For example:
+
+<img src="images/visual-editing-citations-doi.png" width="700"/>
+
+Once you've confirmed that it's the correct work (and possibly modified the suggested ID), the citation will be inserted into the document and an entry for the work added to your BibTeX file.
 
 ## Cross References
 
