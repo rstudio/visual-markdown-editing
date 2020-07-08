@@ -27,7 +27,7 @@ As illustrated above, when entering a citation you can search your bibliography 
 
 ### Citations from DOIs
 
-If you are using a BibTeX bibliography (.bib extension) you can also insert citations for works not currently in your bibliography by providing a [DOI](https://www.doi.org/) (Document Object Identifier). For example:
+If you are using a BibTeX bibliography (.bib extension) you can also insert citations for works not currently in your bibliography by providing a [DOI](https://www.doi.org/) (Document Object Identifier). Just paste the DOI after the `@` and it will be automatically looked up. For example:
 
 <img src="images/visual-editing-citations-doi.png" width="700"/>
 
