@@ -25,6 +25,10 @@ Once you have a bibliography, you can include citations in visual mode using the
 
 As illustrated above, when entering a citation you can search your bibliography to make it easier to locate a citation even if you don't remember it's specific ID.
 
+Once you've inserted a citation, place the cursor over it to see a preview of it along with a link to the source if one is available:
+
+<img src="images/visual-editing-cite-popup.png" width="700"/>
+
 ### Citations from DOIs
 
 If you are using a BibTeX bibliography (.bib extension) you can also insert citations for works not currently in your bibliography by providing a [DOI](https://www.doi.org/) (Document Object Identifier). Just paste the DOI after the `@` and it will be automatically looked up. For example:
