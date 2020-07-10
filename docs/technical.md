@@ -59,11 +59,11 @@ You can include footnotes using the **Insert -\> Footnote** command. Footnote ed
 
 ## Equations
 
-LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and highlight the equations as math). For example, here's some inline and display math:
+LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and treat the equation as math). When you aren't directly editing an equation it will appear as rendered math:
 
 <img src="images/visual-editing-math.png" width="700"/>
 
-As you edit a LaTeX equation, you'll see a fully rendered preview of it below.
+As shown above, when you select an equation with the keyboard or mouse you can edit the equation's LaTeX. A preview of the equation will be shown below it as you type.
 
 ## Embedded Code
 
