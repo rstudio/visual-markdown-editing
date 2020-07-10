@@ -100,7 +100,7 @@ You can execute the currently selected R or Python code chunk using either the r
 
 You can execute code chunks up to the current one using the toolbar button or using the <kbd>⌥⌘ P</kbd> keyboard shortcut.
 
-?\> You may note that code chunk editing and execution in visual mode is not as full featured as in source mode (e.g. syntax highlighting but no code completion, executing entire chunks but not individual lines, etc.). Additional code chunk features are under development and will be added in subsequent releases.
+?\> You may note that code chunk execution in visual mode is not as full featured as in source mode (e.g. chunk output goes to the console rather than inline, you can execute entire chunks but not individual lines, etc.). Additional chunk execution features are under development and will be added soon.
 
 ## LaTeX and HTML
 
