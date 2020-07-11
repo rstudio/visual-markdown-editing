@@ -86,9 +86,9 @@ Additional commands are available on the **Format**, **Insert**, and **Table** m
 
 Check out the following articles to learn more about visual markdown editing:
 
--   [Editing Basics](basics) describes the core editing UI and provides more depth on visual editor support for tables, lists, pandoc attributes, comments, symbols/emojis, etc.
-
 -   [Technical Writing](technical) covers features commonly used in scientific and technical writing, including citations, cross-references, footnotes, equations, embedded code, and LaTeX.
+
+-   [Content Editing](content) provides more depth on visual editor support for tables, lists, pandoc attributes, comments, symbols/emojis, etc.
 
 -   [Markdown Formats](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown](markdown#bookdown-extensions) and [Hugo](markdown#hugo-markdown).
 

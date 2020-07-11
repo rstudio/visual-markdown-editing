@@ -1,6 +1,6 @@
 - [Introduction](intro)
-- [Editing Basics](basics)
 - [Technical Writing](technical)
+- [Content Editing](content)
 - [Markdown Formats](markdown)
 - [Editing Shortcuts](shortcuts)
 - [Editor Options](options)
