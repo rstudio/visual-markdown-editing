@@ -8,6 +8,7 @@ You can customize visual editing options within the **R Markdown -\> Visual** pr
 
 | Option                           | Description                                                                                                                                                                              |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use visual editing by default    | Switch to visual mode immediately when creating new R Markdown documents.                                                                                                                |
 | Show document outline by default | Show the navigational outline when opening documents in visual mode (default: show the outline).                                                                                         |
 | Editor content width             | Maximum width for editing content. This is intended to keep editing similar to the width that users will see (default: 700px).                                                           |
 | Editor font size                 | Base font size for editor content (default: inherit from IDE settings).                                                                                                                  |
