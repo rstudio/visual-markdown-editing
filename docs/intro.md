@@ -2,7 +2,7 @@
 
 <h1>Visual R Markdown</h1>
 
-RStudio v1.4 includes an experimental visual markdown editing mode. Highlights of visual mode include:
+RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual mode include:
 
 -   Visual editing for all of Pandoc markdown, including tables, divs/spans, definition lists, attributes, etc.
 
