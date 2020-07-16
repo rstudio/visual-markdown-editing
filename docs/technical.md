@@ -10,7 +10,7 @@ devtools::install_github("rstudio/bookdown", upgrade="always")
 
 ## Citations
 
-Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation])`. Citations can be drawn from several sources:
+Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation])`. Citations can be drawn from a variety of sources:
 
 1.  Document or project level bibliographies.
 2.  [DOI](https://www.doi.org/) (Document Object Identifier) references.
