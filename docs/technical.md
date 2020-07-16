@@ -18,7 +18,7 @@ Visual mode uses the standard Pandoc markdown representation for citations (e.g.
 
 When inserting a citation you can search across all of these sources:
 
-<img src="images/visual-editing-citation-search.png" class="illustration"/>
+<img src="images/visual-editing-citation-search.png" width="426" class="illustration"/>
 
 If you insert a citation from a DOI or Zotero library that isn't already in your bibliography then it will be automatically added to the bibliography.
 
