@@ -10,6 +10,20 @@ devtools::install_github("rstudio/bookdown", upgrade="always")
 
 ## Citations
 
+Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation])`. Citations can be drawn from several sources:
+
+1.  Document or project level bibliographies.
+2.  [DOI](https://www.doi.org/) (Document Object Identifier) references.
+3.  [Zotero](https://www.zotero.org/) libraries.
+
+When inserting a citation you can search across all of these sources:
+
+<img src="images/visual-editing-citation-search.png" class="illustration"/>
+
+If you insert a citation from a DOI or Zotero library that isn't already in your bibliography then it will be automatically added to the bibliography.
+
+### Specifying a Bibliography
+
 R Markdown supports bibliographies in a wide variety of formats including BibTeX, EndNote, and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field. For example:
 
 ``` yaml
@@ -19,11 +33,15 @@ bibliography: references.bib
 ---
 ```
 
-Once you have a bibliography, you can include citations in visual mode using the standard Pandoc `[@citation]` syntax for citations (where "citation" is replaced by the ID of a citation within your bibliography):
+BibTeX is the recommended format for bibliographies (as that's the format required for inserting new sources from DOIs and Zotero).
+
+### Inserting Citations
+
+Once you have a bibliography, you can include citations in visual mode by either using the markdown syntax directly (e.g. `[@cite]`), via the **Insert -\> Citation** command, or with the <kbd>⇧⌘ F8</kbd> keyboard shortcut:
 
 <img src="images/visual-editing-citations.png" width="700"/>
 
-As illustrated above, when entering a citation you can search your bibliography to make it easier to locate a citation even if you don't remember it's specific ID.
+As illustrated above, when entering a citation you can search your bibliography and available Zotero collections to make it easier to locate a citation even if you don't remember it's specific ID.
 
 Once you've inserted a citation, place the cursor over it to see a preview of it along with a link to the source if one is available:
 
@@ -36,6 +54,30 @@ If you are using a BibTeX bibliography (.bib extension) you can also insert cita
 <img src="images/visual-editing-citations-doi.png" width="700"/>
 
 Once you've confirmed that it's the correct work (and possibly modified the suggested ID), the citation will be inserted into the document and an entry for the work added to your BibTeX file.
+
+### Citations from Zotero
+
+If you are using a BibTeX bibliography (.bib extension) you can also insert citations directly from [Zotero](https://zotero.org) libraries. To set this up, add a `zotero` YAML metadata field to your document (or to your `index.Rmd` for bookdown projects). For example:
+
+``` yaml
+---
+title: "My Document"
+bibliography: references.bib
+zotero: true
+---
+```
+
+The above configuration will search your entire Zotero library. If you organize your Zotero library into collections then its highly recommended that you specify a subset of your collections to narrow search results to only items relevant to your current document. For example:
+
+``` yaml
+---
+title: "My Document"
+bibliography: references.bib
+zotero: "Thesis"
+---
+```
+
+To use Zotero you need to sync your Zotero library to the web and setup a connection between Zotero and RStudio. See the [Using Zotero](additional#using-zotero) article for additional details on how to do this.
 
 ## Cross References
 
@@ -55,7 +97,7 @@ See the bookdown documentation for more information on [cross-references](https:
 
 ## Footnotes
 
-You can include footnotes using the **Insert -\> Footnote** command. Footnote editing occurs in a pane immediately below the main document:
+You can include footnotes using the **Insert -\> Footnote** command (or the <kbd>⇧⌘ F7</kbd> keyboard shortcut). Footnote editing occurs in a pane immediately below the main document:
 
 <img src="images/visual-editing-footnote.png" class="illustration" width="700"/>
 

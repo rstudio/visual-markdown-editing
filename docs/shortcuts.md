@@ -29,6 +29,7 @@ Here are the available keyboard and markdown shortcuts:
 | Paragraph           |   <kbd>⌥⌘ 0</kbd>   |                      |
 | Image               |   <kbd>⇧⌘ I</kbd>   |                      |
 | Footnote            |   <kbd>⇧⌘ F7</kbd>  |                      |
+| Citation            |   <kbd>⇧⌘ F8</kbd>  |         `[@`         |
 | Table               |   <kbd>⌥⌘ T</kbd>   |                      |
 | Editing Comment     |   <kbd>⇧⌘ C</kbd>   |                      |
 | Select All          |    <kbd>⌘ A</kbd>   |                      |

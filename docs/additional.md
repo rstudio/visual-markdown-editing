@@ -120,3 +120,55 @@ For example, here's what a YouTube snippet looks like within an HTML block:
 <img src="images/visual-editing-html-embed.png" width="700"/>
 
 ?\> Note that you can also create an HTML block with a markdown shortcut. Just type ```` ```{=html} ```` and press **Enter** to create the block.
+
+## Using Zotero
+
+The [Citations](technical#citations-from-zotero) article covers how to include citations from [Zotero](https://zotero.org) libraries in your documents. However, before doing this some setup and configuration is required.
+
+### API Access Key
+
+RStudio accesses Zotero libraries using the Zotero API, so the first step is to [create a Zotero account](https://www.zotero.org/user/register) and then configure Zotero to sync it's data to your account. You can do this using the **Sync** tab of the Zotero preferences:
+
+<img src="images/visual-editing-citations-zotero-sync.png" width="700"/>
+
+Once you've configured your library to sync, you need to [create a Zotero API Key](https://www.zotero.org/settings/keys/new) to use with RStudio:
+
+<img src="images/visual-editing-citations-zotero-keygen.png" class="illustration" width="700"/>
+
+Follow the instructions to create a key (the defaults which provide read-only access are fine), and then be sure to **record your key** after generating it (i.e. copy it to the clipboard and/or save it somewhere more permanent) as you won't be able to view it again after you navigate away.
+
+Finally, go to the **R Markdown -\> Visual** preferences to connect Zotero to RStudio using your key:
+
+<img src="images/visual-editing-citations-zotero-options.png" class="illustration" width="585"/>
+
+You can use **Verify Connection...** button to confirm that your Zotero API key is working correctly.
+
+### Zotero YAML
+
+Once you've setup the connection, add the `zotero` YAML metadata field to your document (or to your `index.Rmd` for bookdown projects) to enable inerting citations from Zotero. For example:
+
+``` yaml
+---
+title: "My Document"
+bibliography: references.bib
+zotero: true
+---
+```
+
+The above configuration will search your entire Zotero library. If you organize your Zotero library into collections then its highly recommended that you specify a subset of your collections to narrow search results to only items relevant to your current document. For example:
+
+``` yaml
+---
+title: "My Document"
+bibliography: references.bib
+zotero: "Thesis"
+---
+```
+
+### Inserting Citations
+
+Now, when you insert a citation you'll be able to search and insert items from the specified Zotero collection(s):
+
+![](images/visual-editing-citation-search.png)
+
+Items in Zotero collections will appear alongside items from your bibliography with a small "Z" logo juxtoposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
