@@ -171,4 +171,4 @@ Now, when you insert a citation you'll be able to search and insert items from t
 
 ![](images/visual-editing-citation-search.png)
 
-Items in Zotero collections will appear alongside items from your bibliography with a small "Z" logo juxtoposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
+Items from Zotero will appear alongside items from your bibliography with a small "Z" logo juxtoposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
