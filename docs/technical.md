@@ -2,12 +2,6 @@
 
 Visual mode included extensive support for Pandoc features frequently used in technical writing including [citations](#citations), [cross-references](#cross-references), [footnotes](#footnotes), [equations](#equations), [embedded code](#embedded-code), and [LaTeX](#latex-and-html). This articles describes using these features in more depth.
 
-Note that if you are using visual mode with [bookdown](https://bookdown.org), it's strongly recommended that you upgrade to the development version, as it includes important changes required for compatibility with visual mode. You can install the development version as follows:
-
-``` r
-devtools::install_github("rstudio/bookdown", upgrade="always")
-```
-
 ## Citations
 
 Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation])`. Citations can be drawn from a variety of sources:
@@ -18,7 +12,7 @@ Visual mode uses the standard Pandoc markdown representation for citations (e.g.
 
 When inserting a citation you can search across all of these sources:
 
-<img src="images/visual-editing-citation-search.png" class="illustration" width="426"/>
+<img src="images/visual-editing-citation-search.png" width="426"/>
 
 If you insert a citation from a DOI or Zotero library that isn't already in your bibliography then it will be automatically added to the bibliography.
 
@@ -81,7 +75,7 @@ zotero: "Thesis"
 
 Now, when you insert a citation you'll be able to search and insert items from the specified Zotero collection(s):
 
-![](images/visual-editing-citation-search.png)
+<img src="images/visual-editing-citation-search.png" width="426"/>
 
 Items from Zotero will appear alongside items from your bibliography with a small "Z" logo juxtoposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
 
@@ -109,7 +103,7 @@ You can include footnotes using the **Insert -\> Footnote** command (or the <kbd
 
 <img src="images/visual-editing-footnote.png" class="illustration" width="700"/>
 
-?\> By default footnotes will be written in markdown immediately below the block in which they appear. You can customize this behavior via [editor options](options). Note also that if you are using visual mode with a [bookdown](https://bookdown.org) project, please see the discussion on [footnote handling](markdown#footnotes) for bookdown.
+?\> By default footnotes will be written in markdown immediately below the block in which they appear. You can customize this behavior via [editor options](options).
 
 ## Equations
 

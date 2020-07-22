@@ -26,7 +26,6 @@ author: "Jane Doe"
 editor_options:
   markdown:
     wrap_column: 80
-    references: block
 ---
 ```
 
@@ -39,9 +38,10 @@ You can also instruct RStudio to use these same options when saving files from s
 editor_options:
   markdown:
     wrap_column: 80
-    references: block
     canonical: true
 ---
 ```
 
 With `canonical: true`, edits in visual mode and source mode will result in identical markdown output. This is especially useful if you have multiple authors collaborating using version control, with a mixture of source and visual mode editing among the authors.
+
+See the documentation on [Markdown Output](markdown#markdown-output) for details on available markdown writing options.

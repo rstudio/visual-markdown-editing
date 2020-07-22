@@ -224,11 +224,29 @@ By default, references are written at the end of the block where their correspon
 title: "My Document"
 editor_options:
   markdown:
-    references: section
+    references: 
+      location: block
 ---
 ```
 
 Valid values for the `references` option are `block`, `section`, and `document`.
+
+If you are aggregating a set of markdown documents into a larger work, you may want to make sure that reference identifiers are unique across all of your documents (e.g. you don't want to have `[^1]` appear multiple times). You can ensure uniqueness via the `prefix` option. For example:
+
+``` yaml
+---
+title: "My Document"
+editor_options:
+  markdown:
+    references: 
+      location: block
+      prefix: "mydoc"
+---
+```
+
+This will result in footnotes in this document using the specified prefix (e.g. `[^mydoc-1]`), ensuring they are globally unique across the manuscript.
+
+?\> Note that if you are within a [bookdown](https://bookdown.org) project then a references `prefix` is applied automatically so no changes to `editor_options` are required.
 
 ## Canonical Mode
 
@@ -240,7 +258,8 @@ title: "My Document"
 editor_options:
   markdown:
     wrap_column: 72
-    references: block
+    references: 
+      location: block
     canonical: true
 ---
 ```
