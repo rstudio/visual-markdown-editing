@@ -121,13 +121,15 @@ For example, here's what a YouTube snippet looks like within an HTML block:
 
 ?\> Note that you can also create an HTML block with a markdown shortcut. Just type ```` ```{=html} ```` and press **Enter** to create the block.
 
-## Using Zotero
+## Zotero Web API
 
-The [Citations](technical#citations-from-zotero) article covers how to include citations from [Zotero](https://zotero.org) libraries in your documents. However, before doing this some setup and configuration is required.
+If you are using RStudio Server and/or don't have Zotero installed locally, you can still access your Zotero library using the Zotero Web API (assuming you have a Zotero web account and have synced your libraries to your account).
+
+?\> If you are running RStudio Desktop, it's generally easier to also run Zotero on your desktop and access your library locally. That said, it is possible to access Zotero web libraries from RStudio Desktop if you prefer that configuration.
 
 ### API Access Key
 
-RStudio accesses Zotero libraries using the Zotero API, so the first step is to [create a Zotero account](https://www.zotero.org/user/register) and then configure Zotero to sync it's data to your account. You can do this using the **Sync** tab of the Zotero preferences:
+RStudio accesses Zotero web libraries using the Zotero Web API, so the first step is to [create a Zotero account](https://www.zotero.org/user/register) and then configure Zotero to sync it's data to your account. You can do this using the **Sync** tab of the Zotero preferences:
 
 <img src="images/visual-editing-citations-zotero-sync.png" width="700"/>
 
@@ -141,34 +143,6 @@ Finally, go to the **R Markdown -\> Visual** preferences to connect Zotero to RS
 
 <img src="images/visual-editing-citations-zotero-options.png" class="illustration" width="585"/>
 
-You can use **Verify Connection...** button to confirm that your Zotero API key is working correctly.
+Set the Zotero Library option to "Web", then paste in your Zotero Web API Key. You can use **Verify Key...** button to confirm that your Zotero API key is working correctly.
 
-### Zotero YAML
-
-Once you've setup the connection, add the `zotero` YAML metadata field to your document (or to your `index.Rmd` for bookdown projects) to enable inerting citations from Zotero. For example:
-
-``` yaml
----
-title: "My Document"
-bibliography: references.bib
-zotero: true
----
-```
-
-The above configuration will search your entire Zotero library. If you organize your Zotero library into collections then its highly recommended that you specify a subset of your collections to narrow search results to only items relevant to your current document. For example:
-
-``` yaml
----
-title: "My Document"
-bibliography: references.bib
-zotero: "Thesis"
----
-```
-
-### Inserting Citations
-
-Now, when you insert a citation you'll be able to search and insert items from the specified Zotero collection(s):
-
-![](images/visual-editing-citation-search.png)
-
-Items from Zotero will appear alongside items from your bibliography with a small "Z" logo juxtoposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
+Once you've confirmed your connection you are ready to start inserting citations from Zotero. See the [Citations from Zotero](technical#citations-from-zotero) article for additional detals.

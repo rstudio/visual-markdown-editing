@@ -51,9 +51,7 @@ Once you've confirmed that it's the correct work (and possibly modified the sugg
 
 ### Citations from Zotero
 
-If you are using a BibTeX bibliography (.bib extension) you can also insert citations directly from [Zotero](https://zotero.org) libraries. See the [Using Zotero](additional#using-zotero) article for in depth details on connecting RStudio to your Zotero library.
-
-Once you've done the required setup, add the `zotero` YAML metadata field to your documents (or to your `index.Rmd` for bookdown projects). For example:
+You can also insert citations directly from [Zotero](https://zotero.org) libraries. To do this, add the `zotero` YAML metadata field to your documents (or to your `index.Rmd` for bookdown projects). For example:
 
 ``` yaml
 ---
@@ -79,7 +77,9 @@ Now, when you insert a citation you'll be able to search and insert items from t
 
 Items from Zotero will appear alongside items from your bibliography with a small "Z" logo juxtoposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
 
-?\>To use Zotero you need to sync your Zotero library to the web and setup a connection between Zotero and RStudio. See the [Using Zotero](additional#using-zotero) article for additional details on how to do this.
+#### Desktop vs. Web
+
+If you are running both RStudio and Zotero on your desktop, then no special configuration is required for connecting to your Zotero library. If however you using RStudio Server and/or want to access your Zotero library over the web, then a few more steps are required. See the [Zotero Web API](additional#zotero-web-api) article for additonal details.
 
 ## Cross References
 
