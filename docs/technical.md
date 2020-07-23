@@ -95,6 +95,10 @@ Similar to hyperlinks, you can also navigate to the location of a cross-referenc
 
 <img src="images/visual-editing-xref-navigate.png" width="700"/>
 
+You can also navigate directly to any cross-reference using IDE global search:
+
+<img src="images/visual-editing-xref-search.png" class="illustration" width="700"/>
+
 See the bookdown documentation for more information on [cross-references](https://bookdown.org/yihui/bookdown/cross-references.html).
 
 ## Footnotes
