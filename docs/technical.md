@@ -43,15 +43,15 @@ Once you've inserted a citation, place the cursor over it to see a preview of it
 
 ### Citations from DOIs
 
-If you are using a BibTeX bibliography (.bib extension) you can also insert citations for works not currently in your bibliography by providing a [DOI](https://www.doi.org/) (Document Object Identifier). Just paste the DOI after the `@` and it will be automatically looked up. For example:
+You can insert citations for works not currently in your bibliography by providing a [DOI](https://www.doi.org/) (Document Object Identifier). Just paste the DOI after the `@` and it will be automatically looked up. For example:
 
 <img src="images/visual-editing-citations-doi.png" width="700"/>
 
-Once you've confirmed that it's the correct work (and possibly modified the suggested ID), the citation will be inserted into the document and an entry for the work added to your BibTeX file.
+Once you've confirmed that it's the correct work (and possibly modified the suggested ID), the citation will be inserted into the document and an entry for the work added to your bibliography.
 
 ### Citations from Zotero
 
-You can also insert citations directly from [Zotero](https://zotero.org) libraries. To do this, add the `zotero` YAML metadata field to your documents (or to your `index.Rmd` for bookdown projects). For example:
+If you use [Zotero](https://zotero.org) to manage citations, you can also insert citations directly from your Zotero library. To do this, add the `zotero` YAML metadata field to your documents (or to your `index.Rmd` for bookdown projects). For example:
 
 ``` yaml
 ---
