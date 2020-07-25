@@ -1,6 +1,14 @@
 <!-- -*- mode: gfm -*- -->
 
-Visual mode included extensive support for Pandoc features frequently used in technical writing including [citations](#citations), [cross-references](#cross-references), [footnotes](#footnotes), [equations](#equations), [embedded code](#embedded-code), and [LaTeX](#latex-and-html). This articles describes using these features in more depth.
+Visual mode included extensive support for Pandoc features frequently used in technical writing including [equations](#equations), [citations](#citations), [cross-references](#cross-references), [footnotes](#footnotes), [embedded code](#embedded-code), and [LaTeX](#latex-and-html). This articles describes using these features in more depth.
+
+## Equations
+
+LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and treat the equation as math). When you aren't directly editing an equation it will appear as rendered math:
+
+<img src="images/visual-editing-math.png" width="700"/>
+
+As shown above, when you select an equation with the keyboard or mouse you can edit the equation's LaTeX. A preview of the equation will be shown below it as you type.
 
 ## Citations
 
@@ -108,14 +116,6 @@ You can include footnotes using the **Insert -\> Footnote** command (or the <kbd
 <img src="images/visual-editing-footnote.png" class="illustration" width="700"/>
 
 ?\> By default footnotes will be written in markdown immediately below the block in which they appear. You can customize this behavior via [editor options](options).
-
-## Equations
-
-LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and treat the equation as math). When you aren't directly editing an equation it will appear as rendered math:
-
-<img src="images/visual-editing-math.png" width="700"/>
-
-As shown above, when you select an equation with the keyboard or mouse you can edit the equation's LaTeX. A preview of the equation will be shown below it as you type.
 
 ## Embedded Code
 

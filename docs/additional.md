@@ -123,7 +123,7 @@ For example, here's what a YouTube snippet looks like within an HTML block:
 
 ## Zotero Web API
 
-If you are using RStudio Server and/or don't have Zotero installed locally, you can still access your Zotero library using the Zotero Web API (assuming you have a Zotero web account and have synced your libraries to your account).
+The [Citations from Zotero](technical#citations-from-zotero) article describes how to make use of Zotero libraries on your desktop when inserting citations. If you are however using RStudio Server and/or don't have Zotero installed locally, you can still access your Zotero library using the Zotero Web API (assuming you have a Zotero web account and have synced your libraries to your account).
 
 ?\> If you are running RStudio Desktop, it's generally easier to also run Zotero on your desktop and access your library locally. That said, it is possible to access Zotero web libraries from RStudio Desktop if you prefer that configuration.
 
