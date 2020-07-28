@@ -35,7 +35,7 @@ bibliography: references.bib
 ---
 ```
 
-See the [Pandoc citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
+See the [pandoc citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
 
 ### Inserting Citations
 

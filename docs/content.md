@@ -52,26 +52,32 @@ Note that the \# prefix used in the comment is what triggers the special backgro
 
 You can insert an HTML comment using the Comment button on the toolbar or via the <kbd>⇧⌘ C</kbd> keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
 
-## Symbols
+## Special Characters
 
-### Smart Punctuation
+### Non-Breaking Spaces
 
-Most markdown formats support smart punctuation symbols, which causes straight quotes to be interpreted as curly quotes, `--` as en-dashes, `---` as em-dashes, and `...` as ellipses. Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
+You can insert a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) using the **Insert -\> Special Characters -\> Non-Breaking Space** command or via the <kbd>⌃+Space</kbd> keyboard shortcut. Non-breaking spaces are displayed with an alternate background color to distinguish them from normal spaces.
 
-### Unicode Characters
+A markdown non-breaking space will result in the `&nbsp;` character within HTML output and a `~` character within LaTeX output.
 
-To insert an arbitrary Unicode character, use **Insert -\> Emoji & Symbol -\> Symbol...**:
+### Emojis
+
+To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus autocomplete:
+
+| **Insert -\> Special Characters -\> Emoji...** | Markdown Shortcut                               |
+|------------------------------------------------|-------------------------------------------------|
+| ![](images/visual-editing-emoji-dialog.png)    | ![](images/visual-editing-emoji-completion.png) |
+
+For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written. For other formats the literal emoji character will be written. Currently, GitHub Flavored Markdown and Hugo (with `enableEmjoi = true` in the site config) both support text representation of emojis.
+
+### Unicode Symbols
+
+To insert an arbitrary Unicode character, use **Insert -\> Special Characters -\> Unicode...**:
 
 <img src="images/visual-editing-unicode.png" width="700"/>
 
 You can search for characters either by name or by entering an explicit Unicode code point (e.g. "U+0420").
 
-## Emojis
+### Smart Punctuation
 
-To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus autocomplete:
-
-| **Insert -\> Emoji & Symbol -\> Emoji...**  | Markdown Shortcut                               |
-|---------------------------------------------|-------------------------------------------------|
-| ![](images/visual-editing-emoji-dialog.png) | ![](images/visual-editing-emoji-completion.png) |
-
-For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written. For other formats the literal emoji character will be written. Currently, GitHub Flavored Markdown and Hugo (with `enableEmjoi = true` in the site config) both support text representation of emojis.
+Most markdown formats support smart punctuation symbols, which causes straight quotes to be interpreted as curly quotes, `--` as en-dashes, `---` as em-dashes, and `...` as ellipses. Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.

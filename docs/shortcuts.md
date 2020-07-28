@@ -26,6 +26,7 @@ Here are the available keyboard and markdown shortcuts:
 | Link                |    <kbd>⌘ K</kbd>   |       `<href>`       |
 | Emoji               |                     |       `:smile:`      |
 | Definition          |                     |          `:`         |
+| Non-Breaking Space  |  <kbd>⌃+Space</kbd> |                      |
 | Paragraph           |   <kbd>⌥⌘ 0</kbd>   |                      |
 | Image               |   <kbd>⇧⌘ I</kbd>   |                      |
 | Footnote            |   <kbd>⇧⌘ F7</kbd>  |                      |
