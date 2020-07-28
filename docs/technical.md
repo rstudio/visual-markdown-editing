@@ -26,7 +26,7 @@ If you insert a citation from a DOI or Zotero library that isn't already in your
 
 ### Specifying a Bibliography
 
-R Markdown supports bibliographies in a wide variety of formats including BibTeX, EndNote, and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field. For example:
+R Markdown supports bibliographies in a wide variety of formats including BibTeX and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field. For example:
 
 ``` yaml
 ---
@@ -35,7 +35,7 @@ bibliography: references.bib
 ---
 ```
 
-BibTeX is the recommended format for bibliographies (as that's the format required for inserting new sources from DOIs and Zotero).
+See the [Pandoc citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
 
 ### Inserting Citations
 
