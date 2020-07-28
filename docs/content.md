@@ -56,7 +56,7 @@ You can insert an HTML comment using the Comment button on the toolbar or via th
 
 ### Non-Breaking Spaces
 
-You can insert a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) using the **Insert -\> Special Characters -\> Non-Breaking Space** command or via the <kbd>⌃+Space</kbd> keyboard shortcut. Non-breaking spaces are displayed with an alternate background color to distinguish them from normal spaces.
+You can insert a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) using the **Insert -\> Special Characters -\> Non-Breaking Space** command or via the <kbd>⌃ Space</kbd> keyboard shortcut. Non-breaking spaces are displayed with an alternate background color to distinguish them from normal spaces.
 
 A markdown non-breaking space will result in the `&nbsp;` character within HTML output and a `~` character within LaTeX output.
 
