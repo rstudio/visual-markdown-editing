@@ -193,6 +193,7 @@ Visual editing mode generates markdown using Pandoc. This means that in some cas
 -   Nested divs use `:::` at all levels so long as their attributes are distinct
 -   Unnumbered sections are designated with `{.unnumered}` rather than `{-}`
 -   Characters used for markdown syntax (e.g. `*`, `_`, or `#`) are always escaped
+-   Non-breaking spaces are inserted after certain abbreviations (e.g. "Mr.").
 
 While some of this behavior might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. Note that you can also [configure source mode](markdown#canonical-mode) to write markdown using these conventions, ensuring that the same markdown is written no matter which mode edits originate from
 
