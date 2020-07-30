@@ -6,15 +6,15 @@ You can customize visual editing options within the **R Markdown -\> Visual** pr
 
 <img src="images/visual-editing-options.png" class="illustration" width="588"/>
 
-| Option                           | Description                                                                                                                                                                              |
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Use visual editing by default    | Switch to visual mode immediately when creating new R Markdown documents.                                                                                                                |
-| Show document outline by default | Show the navigational outline when opening documents in visual mode (default: show the outline).                                                                                         |
-| Editor content width             | Maximum width for editing content. This is intended to keep editing similar to the width that users will see (default: 700px).                                                           |
-| Editor font size                 | Base font size for editor content (default: inherit from IDE settings).                                                                                                                  |
-| Auto-wrap text                   | When writing markdown paragraphs, automatically break lines at a specified column (default: flow text; no auto-wrapping). See [Line Wrapping](markdown?id=line-wrapping) for details.    |
-| Write references at end of       | Write references (footnotes) at the end of the block or section where they appear, or at the end of the document (default: block). See [References](markdown?id=references) for details. |
-| Zotero Library                   | Location of [Zotero](technical#citations-from-zotero) citation library (Local or Web).                                                                                                   |
+| Option                           | Description                                                                                                                                                                                          |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use visual editing by default    | Switch to visual mode immediately when creating new R Markdown documents.                                                                                                                            |
+| Show document outline by default | Show the navigational outline when opening documents in visual mode (default: show the outline).                                                                                                     |
+| Editor content width             | Maximum width for editing content. This is intended to keep editing similar to the width that users will see (default: 700px).                                                                       |
+| Editor font size                 | Base font size for editor content (default: inherit from IDE settings).                                                                                                                              |
+| Automatic text wrapping          | When writing markdown, automatically insert line breaks after sentences or at a specified column (default: flow text; no auto-wrapping). See [Line Wrapping](markdown?id=line-wrapping) for details. |
+| Write references at end of       | Write references (footnotes) at the end of the block or section where they appear, or at the end of the document (default: block). See [References](markdown?id=references) for details.             |
+| Zotero Library                   | Location of [Zotero](technical#citations-from-zotero) citation library (Local or Web).                                                                                                               |
 
 ## File Options
 
@@ -26,7 +26,7 @@ title: "My Document"
 author: "Jane Doe"
 editor_options:
   markdown:
-    wrap_column: 80
+    wrap: 72
 ---
 ```
 
@@ -38,7 +38,7 @@ You can also instruct RStudio to use these same options when saving files from s
 ---
 editor_options:
   markdown:
-    wrap_column: 80
+    wrap: 72
     canonical: true
 ---
 ```

@@ -201,20 +201,31 @@ While some of this behavior might be bothersome at first, if you decide that vis
 
 By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.
 
-If however you prefer to have paragraphs wrapped at a particular column (e.g. 72 or 80). You can set an [editor option](options) to this effect within the **R Markdown** preferences pane where visual mode is enabled.
+However, if you prefer to insert line breaks at a particular column (e.g. 72 or 80), or to insert a line break after each sentence, you can set an [editor option](options) to this effect within **R Markdown** preferences.
 
-You can also set this behavior on a per-document basis via the `wrap_column` option.
+You can also set this behavior on a per-document basis via the `wrap` option. For example, to wrap lines after 72 characters you would use this:
 
 ``` yaml
 ---
-title: "My Document"
 editor_options:
   markdown:
-    wrap_column: 72
+    wrap: 72
 ---
 ```
 
-!\> Note that if you specify a `wrap_column`, tables with many explicitly sized columns may be written by Pandoc as HTML rather than markdown. This is because Pandoc wants to accurately reflect the relative column sizes, which might not be possible with a smaller number of columns.
+To insert a line break after each sentence, use `wrap: sentence`. For example:
+
+``` yaml
+---
+editor_options:
+  markdown:
+    wrap: sentence
+---
+```
+
+?\> The algorithm used for sentence wrapping will handle English and Japanese text well, but may not detect the end of sentences accurately for other languages.
+
+If you have enabled a global line wrapping option and want to turn off wrapping for a given document, use `wrap: none`.
 
 ### References
 
@@ -258,7 +269,7 @@ If you have a workflow that involves editing in both visual and source mode, you
 title: "My Document"
 editor_options:
   markdown:
-    wrap_column: 72
+    wrap: 72
     references: 
       location: block
     canonical: true
