@@ -280,4 +280,6 @@ There are a handful of Pandoc markdown extensions not currently supported by vis
 | Reference links      | This is a [link]    | Converted to ordinary links.             |
 | Pandoc title block   | % My Title          | Ignored (and dropped from document).     |
 
+YAML metadata blocks can technically appear anywhere in a Pandoc markdown document (e.g. inside a blockquote or bullet list). However, visual mode only recognizes YAML metadata at the top level of the file (metadata in other contexts is ignored and dropped).
+
 In addition, the various MultiMarkdown extensions to Pandoc are not supported (note that these extensions are disabled by default in Pandoc markdown). MultiMarkdown title blocks are ignored and dropped, and MultiMarkdown link attributes and header identifiers are read and converted to Pandoc markdown equivalents.
