@@ -6,19 +6,15 @@ By default, visual mode detects the target markdown format for the current docum
 
 ## Bookdown
 
-### Footnotes
+### Cross References
 
-Visual mode writes markdown footnotes using numeric identifiers. This can pose problems for bookdown projects, which require that footnotes are unique across all chapters (this is normally accomplished using either inline or labeled footnotes).
+The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document.
 
-This issue has been resolved in the development version of bookdown, which you can install as follows:
+In raw markdown, you would for example write a cross-reference to a figure like this: `\@ref(fig:label)`. Cross-references are largely the same in visual mode, but you don't need the leading `\` (which in raw markdown is used to escape the `@` character). For example:
 
-``` r
-devtools::install_github("rstudio/bookdown", upgrade="always")
-```
+<img src="images/visual-editing-xref.png" width="700"/>
 
-Note that the resolution of this issue requires that pandoc be invoked using the [`--file-scope`](https://pandoc.org/MANUAL.html#option--file-scope) option, which in turn introduces the constraint that footnotes and reference links will not work across files.
-
-So for example a link of the form `[Introduction](#introduction)` would work fine, but the shorthand reference link `[Introduction]` would not work when referencing a section in another chapter. Note that shorthand reference links are already generally advised against in the bookdown manual (as they often break when section titles change).
+As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.
 
 ### Part Headers
 
