@@ -5,10 +5,12 @@
 Edit the docs at:
 
     docs/intro.md
-    docs/using.md
+    docs/technical.md
+    docs/content.md
     docs/markdown.md
     docs/shortcuts.md
     docs/options.md
+    docs/additional.md
     docs/styles.css
 
 To preview locally:
