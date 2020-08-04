@@ -278,15 +278,13 @@ With `canonical: true`, edits in visual mode and source mode will result in iden
 
 There are a handful of Pandoc markdown extensions not currently supported by visual editing. These are infrequently used extensions so in all likelihood won't affect documents you edit, but are still worth noting.
 
-| Extension            | Example             | Behavior                                 |
-|----------------------|---------------------|------------------------------------------|
-| Inline footnotes     | ^[inline footnote]  | Converted to numeric footnote.           |
-| Footnote identifiers | [^longnote]         | Converted to numeric footnote.           |
-| Example lists        | \(@\) First example | Read/written as ordinary numbered lists. |
-| Auto-list numbers    | #\. First item      | Read/written as ordinary numbered lists. |
-| Reference links      | This is a [link]    | Converted to ordinary links.             |
-| Pandoc title block   | % My Title          | Ignored (and dropped from document).     |
+| Extension(s)             | Example             | Behavior                                 |
+|--------------------------|---------------------|------------------------------------------|
+| Inline footnotes         | ^[inline footnote]  | Converted to numeric footnote.           |
+| Footnote identifiers     | [^longnote]         | Converted to numeric footnote.           |
+| Example lists            | \(@\) First example | Read/written as ordinary numbered lists. |
+| Auto-list numbers        | #\. First item      | Read/written as ordinary numbered lists. |
+| Reference links          | This is a [link]    | Converted to ordinary links.             |
+| MultiMarkdown attributes | \# Heading [id]     | Converted to Pandoc attributes.          |
 
-YAML metadata blocks can technically appear anywhere in a Pandoc markdown document (e.g. inside a blockquote or bullet list). However, visual mode only recognizes YAML metadata at the top level of the file (metadata in other contexts is ignored and dropped).
-
-In addition, the various MultiMarkdown extensions to Pandoc are not supported (note that these extensions are disabled by default in Pandoc markdown). MultiMarkdown title blocks are ignored and dropped, and MultiMarkdown link attributes and header identifiers are read and converted to Pandoc markdown equivalents.
+The visual editor is unable to parse non-YAML title blocks (e.g. old-style % titles or MultiMarkdown titles) and also unable to parse non top-level YAML metadata blocks. If these forms of metadata are encountered visual mode will fail to load with a warning.
