@@ -16,14 +16,12 @@ RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual m
 
 Visual markdown editing is currently only available in the [daily build](https://dailies.rstudio.com) of RStudio. You can download the desktop version of the daily build here:
 
-
 | Platform            | Download                                                                                                                                                              | Size | SHA-256                                                                                                              |
 | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--- | :------------------------------------------------------------------------------------------------------------------- |
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.677.exe"><i class="fa fa-download"></i> RStudio-1.4.677.exe</a>                       | 156M | <span class="sha256" data-sha256="81dc88dd754330974c9dc1f21dfc50a849078668add649a797222c810112dde9">81dc88dd…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.677.dmg"><i class="fa fa-download"></i> RStudio-1.4.677.dmg</a>                         | 153M | <span class="sha256" data-sha256="0104da9a7e7ff44c0158c2325405341d8711206d8b4df092a6deca7b847c6d23">0104da9a…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.677-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.677-amd64.deb</a>      | 114M | <span class="sha256" data-sha256="05371a7c3f3dbebdfd3cfe4d7ab75d1e60f568347e9cf61a3d4060b07f608fda">05371a7c…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.677-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.677-x86\_64.rpm</a> | 131M | <span class="sha256" data-sha256="0e87236bd983ebcac106e88eb7098e85911143b1b482f785c3dffa264cf8e326">0e87236b…</span> |
-
+| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.680.exe"><i class="fa fa-download"></i> RStudio-1.4.680.exe</a>                       | 156M | <span class="sha256" data-sha256="96a5fd703a65230d75bf97850508bedbcd8686cd9a4cef15c3afe3b9a0d37783">96a5fd70…</span> |
+| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.680.dmg"><i class="fa fa-download"></i> RStudio-1.4.680.dmg</a>                         | 153M | <span class="sha256" data-sha256="7610ee81e058caeb8b2157e4bf00ec5bc5399dc5d20991a735749dd4142919db">7610ee81…</span> |
+| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.680-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.680-amd64.deb</a>      | 114M | <span class="sha256" data-sha256="71329ca395a8f5adbfa65f0dfc5d33a5ccdffd419fcdf5b12d03c412a7c29fac">71329ca3…</span> |
+| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.680-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.680-x86\_64.rpm</a> | 131M | <span class="sha256" data-sha256="2910677823ee55bd54eda867cd4ec1c6c93e152294ea3bf6a1c8cdef6ae6d867">29106778…</span> |
 
 For other desktop platforms or RStudio Server, please visit <https://dailies.rstudio.com>.
 
