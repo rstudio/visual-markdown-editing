@@ -80,6 +80,6 @@ You can search for characters either by name or by entering an explicit Unicode 
 
 ### Smart Punctuation
 
-When the pandoc [`smart`](https://pandoc.org/MANUAL.html#typography) extension is enabled (which it is by default), straight quotes are interpreted as curly quotes, `---` as em-dashes, `--` as en-dashes, and `...` as ellipses. In addition, nonbreaking spaces are inserted after certain abbreviations, such as "Mr."
+When the pandoc [`smart`](https://pandoc.org/MANUAL.html#typography) extension is enabled (which it is by default), straight quotes are interpreted as curly quotes, `---` as em-dashes, `--` as en-dashes, and `...` as ellipses. In addition, non-breaking spaces are inserted after certain abbreviations, such as "Mr."
 
 Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.

@@ -145,4 +145,4 @@ Finally, go to the **R Markdown -\> Visual** preferences to connect Zotero to RS
 
 Set the Zotero Library option to "Web", then paste in your Zotero Web API Key. You can use **Verify Key...** button to confirm that your Zotero API key is working correctly.
 
-Once you've confirmed your connection you are ready to start inserting citations from Zotero. See the [Citations from Zotero](technical#citations-from-zotero) article for additional detals.
+Once you've confirmed your connection you are ready to start inserting citations from Zotero. See the [Citations from Zotero](technical#citations-from-zotero) article for additional details.

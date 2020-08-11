@@ -83,11 +83,11 @@ Now, when you insert a citation you'll be able to search and insert items from t
 
 <img src="images/visual-editing-citation-search.png" width="426"/>
 
-Items from Zotero will appear alongside items from your bibliography with a small "Z" logo juxtoposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
+Items from Zotero will appear alongside items from your bibliography with a small "Z" logo juxtaposed over them. If you insert a citation from Zotero that isn’t already in your bibliography then it will be automatically added to the bibliography.
 
 #### Desktop vs. Web
 
-If you are running both RStudio and Zotero on your desktop, then no special configuration is required for connecting to your Zotero library. If however you using RStudio Server and/or want to access your Zotero library over the web, then a few more steps are required. See the [Zotero Web API](additional#zotero-web-api) article for additonal details.
+If you are running both RStudio and Zotero on your desktop, then no special configuration is required for connecting to your Zotero library. If however you using RStudio Server and/or want to access your Zotero library over the web, then a few more steps are required. See the [Zotero Web API](additional#zotero-web-api) article for additional details.
 
 ## Cross References
 
