@@ -16,9 +16,8 @@ RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual m
 
 Visual markdown editing is currently only available in the [daily build](https://dailies.rstudio.com) of RStudio. You can download the desktop version of the daily build here:
 
-
 | Platform            | Download                                                                                                                                                              | Size | SHA-256                                                                                                              |
-| :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--- | :------------------------------------------------------------------------------------------------------------------- |
+|:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
 | Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.703.exe"><i class="fa fa-download"></i> RStudio-1.4.703.exe</a>                       | 156M | <span class="sha256" data-sha256="c6d180c53d1f83ab7de8f8f2418f68602eadaaffd644b6dc3227ba02bb319d57">c6d180c5…</span> |
 | MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.703.dmg"><i class="fa fa-download"></i> RStudio-1.4.703.dmg</a>                         | 153M | <span class="sha256" data-sha256="f6035737b302d696e335cc050f21a1adaba6fa375314ba4d3abcc48067a12f7d">f6035737…</span> |
 | Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.703-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.703-amd64.deb</a>      | 115M | <span class="sha256" data-sha256="513a1bd405a2f83050a0ef9162e39308f91693b1b7765e1be1993afe1054cbb6">513a1bd4…</span> |
