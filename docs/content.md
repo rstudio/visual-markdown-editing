@@ -42,16 +42,6 @@ Several of Pandoc's block types (e.g. headings, code blocks, and divs) enable yo
 
 Note that any ID as well as the first class specified within the attributes are also displayed. Click the edit button or use the <kbd>F4</kbd> keyboard shortcut to edit the attributes.
 
-## Commenting
-
-When reviewing an R Markdown document you often want to provide inline comments with suggested revisions. This is possible in R Markdown using HTML comments (which are ignored by all output formats). Visual mode includes a command for inserting HTML comments as well as special highlighting treatment to easily parse out editing comments from surrounding text.
-
-<img src="images/visual-editing-comment.png" width="700"/>
-
-Note that the \# prefix used in the comment is what triggers the special background highlighting. If you remove the `#` it will still be a valid HTML comment, but just won't be highlighted as shown above.
-
-You can insert an HTML comment using the Comment button on the toolbar or via the <kbd>⇧⌘ C</kbd> keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.
-
 ## Special Characters
 
 ### Non-Breaking Spaces
@@ -83,3 +73,23 @@ You can search for characters either by name or by entering an explicit Unicode 
 When the pandoc [`smart`](https://pandoc.org/MANUAL.html#typography) extension is enabled (which it is by default), straight quotes are interpreted as curly quotes, `---` as em-dashes, `--` as en-dashes, and `...` as ellipses. In addition, non-breaking spaces are inserted after certain abbreviations, such as "Mr."
 
 Visual mode supports these same transformations (so when you type `---` it becomes an em-dash). If you didn't intend for this transformation to occur just hit backspace and it will be reverted.
+
+## Spell-Checking
+
+When RStudio real time spell-checking is enabled (you can do this using **Spelling** preferences), misspelled words will be underlined as you type:
+
+<img src="images/visual-editing-spelling.png" width="700"/>
+
+To resolve a spelling error, right-click on the misspelled word, then either choose an alternate spelling, ignore the word (which applies to the current document only), or add the word to your user dictionary (which applies to all documents).
+
+If you ignore a word by mistake, right-click it again to unignore it. If you want to edit your personal dictionary, use the **Edit User Dictionary...** button located within **Spelling** preferences.
+
+## Commenting
+
+When reviewing an R Markdown document you often want to provide inline comments with suggested revisions. This is possible in R Markdown using HTML comments (which are ignored by all output formats). Visual mode includes a command for inserting HTML comments as well as special highlighting treatment to easily parse out editing comments from surrounding text.
+
+<img src="images/visual-editing-comment.png" width="700"/>
+
+Note that the \# prefix used in the comment is what triggers the special background highlighting. If you remove the `#` it will still be a valid HTML comment, but just won't be highlighted as shown above.
+
+You can insert an HTML comment using the Comment button on the toolbar or via the <kbd>⇧⌘ C</kbd> keyboard shortcut. Remember, HTML comments won't show up in rendered output so they are ideal both for review but also for leaving yourself to-do notes within a document.

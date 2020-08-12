@@ -8,6 +8,8 @@ RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual m
 
 -   Extensive support for scientific and technical writing, including citations, cross-references, footnotes, equations, embedded code, and LaTeX.
 
+-   Writing productivity features, including real time spell-checking and outline navigation.
+
 -   Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).
 
 -   Rich keyboard support. In addition to traditional shortcuts, you can use markdown expressions (e.g. `##`, `**bold**`, etc.) for formatting. If you don't remember all of the keyboard shortcuts, you can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert anything.
