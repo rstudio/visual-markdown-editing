@@ -91,7 +91,7 @@ Pandoc Markdown doesn't include a formatting directive for centering block level
 
 2.  You can add CSS styles that center the image (note that this technique works only for HTML output).
 
-### Knitr include\_graphics
+### Knitr include_graphics
 
 To center an image using the `knitr::include_graphics()` function, include it within an R code chunk that has the `fig.align='center'` option (and perhaps other options to control width, etc.). For example:
 
