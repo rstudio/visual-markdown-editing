@@ -20,9 +20,17 @@ You can customize visual editing options within the **R Markdown -\> Visual** pr
 | Zotero Data Directory                                  | Location of Zotero local data directory.                                                                                                                                                             |
 | Use Better BibTeX for citation keys and BibTeX export. | Optionally use [Better BibTeX](https://retorque.re/zotero-better-bibtex/) to generate citation keys and export BibTeX from Zotero (this option appears only if Better BibTeX is installed).          |
 
+## Project Options
+
+Global options that affect the way markdown is written can also be customized on a per-project basis. You can do this using the **R Markdown** pane of the **Project Options** dialog:
+
+<img src="images/visual-editing-project-options.png" class="illustration" width="541"/>
+
+By default projects inherit the current global settings for markdown writing.
+
 ## File Options
 
-Global options that affect the way markdown is written can also be customized on a per-file basis . You can do this by including an `editor_options: markdown` key in the YAML front matter of your document. For example:
+Global and project options that affect the way markdown is written can also be customized on a per-file basis . You can do this by including an `editor_options: markdown` key in the YAML front matter of your document. For example:
 
 ``` yaml
 ---

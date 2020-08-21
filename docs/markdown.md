@@ -177,13 +177,6 @@ Note the semicolon (`;`) used to delimit the `mode` and `extensions` options.
 
 Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax.
 
-Some aspects of markdown output can be customized via global, project, and file-level options, including:
-
--   How to wrap / break lines (fixed column, sentence-per-line, etc.)
--   Where to write footnotes (below the current paragraph or section, or at the end of the document).
-
-Using these options is covered below in [Writer Options](markdown#writer-options).
-
 Here is a list of conventions for Pandoc generated markdown that might differ from your own markdown writing style:
 
 -   `*text*` is used in preference to `_text_`
@@ -203,11 +196,19 @@ While some of this behavior might be bothersome at first, if you decide that vis
 
 ## Writer Options
 
+Some aspects of markdown output can be customized via global, project, or file-level options, including:
+
+-   How to wrap / break lines (fixed column, sentence-per-line, etc.)
+-   Where to write footnotes (below the current paragraph or section, or at the end of the document).
+-   Whether to use the visual mode markdown writer when saving markdown from source mode (to ensure consistency between documents saved from either mode).
+
+You can set these options within the **R Markdown** [Global Options](options#global-options) or [Project Options](options#project-options), or can alternatively set them on a per-file basis using YAML (as described below).
+
 ### Line Wrapping
 
 By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.
 
-However, if you prefer to insert line breaks at a particular column (e.g. 72 or 80), or to insert a line break after each sentence, you can set an [editor option](options) to this effect within **R Markdown** preferences.
+However, if you prefer to insert line breaks at a particular column (e.g. 72 or 80), or to insert a line break after each sentence, you can set a global or per-project [editor option](options) to this effect.
 
 You can also set this behavior on a per-document basis via the `wrap` option. For example, to wrap lines after 72 characters you would use this:
 
@@ -235,7 +236,9 @@ If you have enabled a global line wrapping option and want to turn off wrapping 
 
 ### References
 
-By default, references are written at the end of the block where their corresponding footnote appears. You can override this behavior using the `references` option. For example, to write references at the end of sections rather than blocks you would use:
+By default, references are written at the end of the block where their corresponding footnote appears. You can override this behavior using the `references` option.
+
+For example, to write references at the end of sections rather than blocks you would use:
 
 ``` yaml
 ---
@@ -248,6 +251,8 @@ editor_options:
 ```
 
 Valid values for the `references` option are `block`, `section`, and `document`.
+
+Note that you can also set a global or per-project [editor option](options) to control reference writing behavior.
 
 If you are aggregating a set of markdown documents into a larger work, you may want to make sure that reference identifiers are unique across all of your documents (e.g. you don't want to have `[^1]` appear multiple times). You can ensure uniqueness via the `prefix` option. For example:
 
