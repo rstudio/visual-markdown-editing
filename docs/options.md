@@ -45,4 +45,4 @@ editor_options:
 
 With `canonical: true`, edits in visual mode and source mode will result in identical markdown output. This is especially useful if you have multiple authors collaborating using version control, with a mixture of source and visual mode editing among the authors.
 
-See the documentation on [Markdown Output](markdown#markdown-output) for details on available markdown writing options.
+See the documentation on [Writer Options](markdown#writer-options) for additional details on markdown writing options.
