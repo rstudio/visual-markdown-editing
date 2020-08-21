@@ -182,7 +182,7 @@ Some aspects of markdown output can be customized via global, project, and file-
 -   How to wrap / break lines (fixed column, sentence-per-line, etc.)
 -   Where to write footnotes (below the current paragraph or section, or at the end of the document).
 
-Using these options is covered in [Markdown Writer Options](markdown#markdown-writer-options) below.
+Using these options is covered in [Markdown Writer Options](markdown#writer-options) below.
 
 Here is a list of conventions for Pandoc generated markdown that might differ from your own markdown writing style:
 
@@ -201,9 +201,9 @@ Here is a list of conventions for Pandoc generated markdown that might differ fr
 
 While some of this behavior might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. Note that you can also [configure source mode](markdown#canonical-mode) to write markdown using these conventions, ensuring that the same markdown is written no matter which mode edits originate from
 
-### Markdown Writer Options
+## Writer Options
 
-#### Line Wrapping
+### Line Wrapping
 
 By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.
 
@@ -233,7 +233,7 @@ editor_options:
 
 If you have enabled a global line wrapping option and want to turn off wrapping for a given document, use `wrap: none`.
 
-#### References
+### References
 
 By default, references are written at the end of the block where their corresponding footnote appears. You can override this behavior using the `references` option. For example, to write references at the end of sections rather than blocks you would use:
 
@@ -266,7 +266,7 @@ This will result in footnotes in this document using the specified prefix (e.g. 
 
 ?\> Note that if you are within a [bookdown](https://bookdown.org) project then a references `prefix` is applied automatically so no changes to `editor_options` are required.
 
-#### Canonical Mode
+### Canonical Mode
 
 If you have a workflow that involves editing in both visual and source mode, you may want to ensure that the same markdown is written no matter which mode edits originate from. You can accomplish this using the `canonical` option. For example:
 
