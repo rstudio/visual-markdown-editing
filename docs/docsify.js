@@ -72,7 +72,7 @@ function fixScrollingPlugin(hook, vm) {
       // true = show debug log
       let dd = false 
       let TARGET_QUERY = 'id'
-      let SCROLL_DELAY = 2000 // in miliseconds
+      let SCROLL_DELAY = 1000 // in miliseconds
       let location = window.location
       
       dd&&console.log('custom scroll plugin called!')
