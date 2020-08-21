@@ -175,7 +175,16 @@ Note the semicolon (`;`) used to delimit the `mode` and `extensions` options.
 
 ## Markdown Output
 
-Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax. Here is a list of conventions for Pandoc generated markdown that might differ from your own markdown writing style:
+Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be *rewritten* to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax.
+
+Some aspects of markdown output can be customized via global, project, and file-level options, including:
+
+-   How to wrap / break lines (fixed column, sentence-per-line, etc.)
+-   Where to write footnotes (below the current paragraph or section, or at the end of the document).
+
+Using these options is covered in [Markdown Writer Options](markdown#markdown-writer-options) below.
+
+Here is a list of conventions for Pandoc generated markdown that might differ from your own markdown writing style:
 
 -   `*text*` is used in preference to `_text_`
 -   Backtick code blocks are written as ```` ``` {.md} ```` rather than ```` ```md ````
@@ -189,11 +198,12 @@ Visual editing mode generates markdown using Pandoc. This means that in some cas
 -   Nested divs use `:::` at all levels so long as their attributes are distinct
 -   Unnumbered sections are designated with `{.unnumered}` rather than `{-}`
 -   Characters used for markdown syntax (e.g. `*`, `_`, or `#`) are always escaped
--   Non-breaking spaces are inserted after certain abbreviations (e.g. "Mr.").
 
 While some of this behavior might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does. Note that you can also [configure source mode](markdown#canonical-mode) to write markdown using these conventions, ensuring that the same markdown is written no matter which mode edits originate from
 
-### Line Wrapping
+### Markdown Writer Options
+
+#### Line Wrapping
 
 By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.
 
@@ -223,7 +233,7 @@ editor_options:
 
 If you have enabled a global line wrapping option and want to turn off wrapping for a given document, use `wrap: none`.
 
-### References
+#### References
 
 By default, references are written at the end of the block where their corresponding footnote appears. You can override this behavior using the `references` option. For example, to write references at the end of sections rather than blocks you would use:
 
@@ -256,7 +266,7 @@ This will result in footnotes in this document using the specified prefix (e.g. 
 
 ?\> Note that if you are within a [bookdown](https://bookdown.org) project then a references `prefix` is applied automatically so no changes to `editor_options` are required.
 
-## Canonical Mode
+#### Canonical Mode
 
 If you have a workflow that involves editing in both visual and source mode, you may want to ensure that the same markdown is written no matter which mode edits originate from. You can accomplish this using the `canonical` option. For example:
 
