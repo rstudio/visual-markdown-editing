@@ -182,7 +182,7 @@ Some aspects of markdown output can be customized via global, project, and file-
 -   How to wrap / break lines (fixed column, sentence-per-line, etc.)
 -   Where to write footnotes (below the current paragraph or section, or at the end of the document).
 
-Using these options is covered in [Markdown Writer Options](markdown#writer-options) below.
+Using these options is covered below in [Writer Options](markdown#writer-options).
 
 Here is a list of conventions for Pandoc generated markdown that might differ from your own markdown writing style:
 
