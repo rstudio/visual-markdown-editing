@@ -93,7 +93,7 @@ Once you've configured your library to sync, you need to [create a Zotero API Ke
 
 Follow the instructions to create a key (the defaults which provide read-only access are fine), and then be sure to **record your key** after generating it (i.e. copy it to the clipboard and/or save it somewhere more permanent) as you won't be able to view it again after you navigate away.
 
-Finally, go to the **R Markdown -\> Visual** preferences to connect Zotero to RStudio using your key:
+Finally, go to the **R Markdown -\> Citations** preferences to connect Zotero to RStudio using your key:
 
 <img src="images/visual-editing-citations-zotero-options.png" class="illustration" width="585"/>
 
