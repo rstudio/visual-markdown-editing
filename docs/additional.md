@@ -121,28 +121,3 @@ For example, here's what a YouTube snippet looks like within an HTML block:
 
 ?\> Note that you can also create an HTML block with a markdown shortcut. Just type ```` ```{=html} ```` and press **Enter** to create the block.
 
-## Zotero Web API
-
-The [Citations from Zotero](technical#citations-from-zotero) article describes how to make use of Zotero libraries on your desktop when inserting citations. If you are however using RStudio Server and/or don't have Zotero installed locally, you can still access your Zotero library using the Zotero Web API (assuming you have a Zotero web account and have synced your libraries to your account).
-
-?\> If you are running RStudio Desktop, it's generally easier to also run Zotero on your desktop and access your library locally. That said, it is possible to access Zotero web libraries from RStudio Desktop if you prefer that configuration.
-
-### API Access Key
-
-RStudio accesses Zotero web libraries using the Zotero Web API, so the first step is to [create a Zotero account](https://www.zotero.org/user/register) and then configure Zotero to sync it's data to your account. You can do this using the **Sync** tab of the Zotero preferences:
-
-<img src="images/visual-editing-citations-zotero-sync.png" width="700"/>
-
-Once you've configured your library to sync, you need to [create a Zotero API Key](https://www.zotero.org/settings/keys/new) to use with RStudio:
-
-<img src="images/visual-editing-citations-zotero-keygen.png" class="illustration" width="700"/>
-
-Follow the instructions to create a key (the defaults which provide read-only access are fine), and then be sure to **record your key** after generating it (i.e. copy it to the clipboard and/or save it somewhere more permanent) as you won't be able to view it again after you navigate away.
-
-Finally, go to the **R Markdown -\> Visual** preferences to connect Zotero to RStudio using your key:
-
-<img src="images/visual-editing-citations-zotero-options.png" class="illustration" width="585"/>
-
-Set the Zotero Library option to "Web", then paste in your Zotero Web API Key. You can use **Verify Key...** button to confirm that your Zotero API key is working correctly.
-
-Once you've confirmed your connection you are ready to start inserting citations from Zotero. See the [Citations from Zotero](technical#citations-from-zotero) article for additional details.

@@ -18,14 +18,12 @@ RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual m
 
 Visual markdown editing is currently only available in the [daily build](https://dailies.rstudio.com) of RStudio. You can download the desktop version of the daily build here:
 
-
 | Platform            | Download                                                                                                                                                              | Size | SHA-256                                                                                                              |
 |:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
 | Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.750.exe"><i class="fa fa-download"></i> RStudio-1.4.750.exe</a>                       | 156M | <span class="sha256" data-sha256="ad87566a93305cd1d2e2c8889cfc48ab2454bc2f89d111d7d56315e8683e1b2b">ad87566a…</span> |
 | MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.750.dmg"><i class="fa fa-download"></i> RStudio-1.4.750.dmg</a>                         | 153M | <span class="sha256" data-sha256="0977cd91aac8a5aee040c03f04ec0eec95f8f61eea8309e8be03c251ce5ca342">0977cd91…</span> |
 | Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.750-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.750-amd64.deb</a>      | 114M | <span class="sha256" data-sha256="d4a0ea65f022c50d82054ccd36ba8c81f64733138b3932aca1dda3b650bc1560">d4a0ea65…</span> |
 | Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.750-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.750-x86\_64.rpm</a> | 131M | <span class="sha256" data-sha256="99d880e49864c3174647e7247bd4b3b98aedaa266c1982748cdd0e3a0faebd89">99d880e4…</span> |
-
 
 For other desktop platforms or RStudio Server, please visit <https://dailies.rstudio.com>.
 
@@ -47,14 +45,14 @@ There are keyboard shortcuts for all basic editing tasks. Visual mode supports b
 
 | Command      | Keyboard Shortcut | Markdown Shortcut |
 |--------------|:-----------------:|:-----------------:|
-| Bold         |  <kbd>⌘ B</kbd>   |    `**bold**`     |
-| Italic       |  <kbd>⌘ I</kbd>   |    `*italic*`     |
-| Code         |  <kbd>⌘ D</kbd>   |   `` `code` ``    |
-| Link         |  <kbd>⌘ K</kbd>   |     `<href>`      |
+| Bold         |   <kbd>⌘ B</kbd>  |     `**bold**`    |
+| Italic       |   <kbd>⌘ I</kbd>  |     `*italic*`    |
+| Code         |   <kbd>⌘ D</kbd>  |    `` `code` ``   |
+| Link         |   <kbd>⌘ K</kbd>  |      `<href>`     |
 | Heading 1    |  <kbd>⌥⌘ 1</kbd>  |        `#`        |
-| Heading 2    |  <kbd>⌥⌘ 2</kbd>  |       `##`        |
+| Heading 2    |  <kbd>⌥⌘ 2</kbd>  |        `##`       |
 | Heading 3    |  <kbd>⌥⌘ 3</kbd>  |       `###`       |
-| R Code Chunk |  <kbd>⌥⌘ I</kbd>  | ```` ```{r} ````  |
+| R Code Chunk |  <kbd>⌥⌘ I</kbd>  |  ```` ```{r} ```` |
 
 See the [keyboard shortcuts](shortcuts) article for a complete list of all shortcuts.
 
@@ -84,7 +82,9 @@ Additional commands are available on the **Format**, **Insert**, and **Table** m
 
 Check out the following articles to learn more about visual markdown editing:
 
--   [Technical Writing](technical) covers features commonly used in scientific and technical writing, including citations, cross-references, footnotes, equations, embedded code, and LaTeX.
+-   [Citations](citations) covers citing other works and managing bibliographies, as well as integration with [Zotero](https://www.zotero.org/) (an open source reference management tool).
+
+-   [Technical Writing](technical) covers features commonly used in scientific and technical writing, including cross-references, footnotes, equations, embedded code, and LaTeX.
 
 -   [Content Editing](content) provides more depth on visual editor support for tables, lists, pandoc attributes, comments, symbols/emojis, etc.
 

@@ -1,4 +1,5 @@
 - [Introduction](intro)
+- [Citations](citations)
 - [Technical Writing](technical)
 - [Content Editing](content)
 - [Markdown Formats](markdown)
