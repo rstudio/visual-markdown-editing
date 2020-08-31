@@ -31,7 +31,7 @@ For other desktop platforms or RStudio Server, please visit <https://dailies.rst
 
 ### Enabling Visual Mode
 
-Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the <kbd><img src="images/visual_mode_2x.png" width="15" height="13"/></kbd> button at the top-right of the document toolbar (or alternatively the <kbd>⌃⇧ F8</kbd> keyboard shortcut):
+Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the <kbd><img src="images/visual_mode_2x.png" width="15" height="13"/></kbd> button at the top-right of the document toolbar (or alternatively the <kbd>⌘⇧ F12</kbd> keyboard shortcut):
 
 <img src="images/visual-editing.png" width="700"/>
 
