@@ -183,7 +183,7 @@ Here is a list of conventions for Pandoc generated markdown that might differ fr
 -   Backtick code blocks are written as ```` ``` {.md} ```` rather than ```` ```md ````
 -   Backtick code blocks w/ no attributes are rendered as 4-space indented code blocks
 -   Plain links are written as `<https://yihui.org>` rather than `https://yihui.org`
--   Numbered and ordered lists use 3 leading spaces before list item content
+-   Bullet and numbered lists use additional leading spaces before list item content
 -   The blockquote character (`>`) is included on each new line of a blockquote
 -   Table captions are written below rather than above tables
 -   Multiline HTML and TeX blocks use the explicit raw attribute (e.g. ```` ```{=tex} ````)
