@@ -5,12 +5,8 @@ editor_options:
     mode: gfm
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-	echo = FALSE,
-	message = FALSE,
-	warning = FALSE
-)
+```{r setup, include=FALSE}  
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 <h1>Visual R Markdown</h1>
@@ -38,7 +34,7 @@ library(urltools)
 library(parsedate)
 library(fs)
 
-version <- "1.4.766"
+version <- "1.4.771"
 osx_version <- NULL # "1.4.518"
 win_version <- NULL # "1.4.708"
 
