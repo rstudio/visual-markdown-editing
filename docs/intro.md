@@ -34,10 +34,10 @@ desktop version of the daily build here:
 
 | Platform            | Download                                                                                                                                                              | Size | SHA-256                                                                                                              |
 |:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.771.exe"><i class="fa fa-download"></i> RStudio-1.4.771.exe</a>                       | 156M | <span class="sha256" data-sha256="1a55ad07f212072062348577c8bfc3d49c21f2d4e17f9ae58871d1229d363e44">1a55ad07…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.771.dmg"><i class="fa fa-download"></i> RStudio-1.4.771.dmg</a>                         | 154M | <span class="sha256" data-sha256="0a6d5d5ad996ccb1b0f49e7ee0d16d04b940a44e31f5d6ab58f06e59d8e22ed8">0a6d5d5a…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.771-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.771-amd64.deb</a>      | 116M | <span class="sha256" data-sha256="30425a8d65827aea809f35feea19f502063b3955dca3b9e6fef89616690d25b1">30425a8d…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.771-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.771-x86\_64.rpm</a> | 131M | <span class="sha256" data-sha256="690d70d84a89ea0fd6102b89187883694a34f340f52fbe3b83b79ee9ffb04e4a">690d70d8…</span> |
+| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.775.exe"><i class="fa fa-download"></i> RStudio-1.4.775.exe</a>                       | 156M | <span class="sha256" data-sha256="676d4752c2238bc739d8130ce2dada497c7b8178ee4db0ca63d7409a6154f53f">676d4752…</span> |
+| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.775.dmg"><i class="fa fa-download"></i> RStudio-1.4.775.dmg</a>                         | 154M | <span class="sha256" data-sha256="f51823481e8d651f88952e35f8be0f09046ecb42fa69a76635353d58e643d6ca">f5182348…</span> |
+| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.775-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.775-amd64.deb</a>      | 115M | <span class="sha256" data-sha256="c739827459b0942e4cc0f5ef49ed23fa5b9b053ca7e77b75e9841012acf53f20">c7398274…</span> |
+| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.775-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.775-x86\_64.rpm</a> | 131M | <span class="sha256" data-sha256="1bbb94a67d9683309e62a6f1366331c0067d9a2ddac1048183b7bf46e2000d82">1bbb94a6…</span> |
 
 For other desktop platforms or RStudio Server, please visit
 <a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.
@@ -49,11 +49,11 @@ recommended for general use.
 
 Markdown documents can be edited in either source or visual mode. To
 switch into visual mode for a given document, use the
-<kbd><img src="images/visual_mode_2x.png" width="15" height="13"/></kbd>
+<kbd><img src="images/visual_mode_2x.png" width="15" height="13" /></kbd>
 button at the top-right of the document toolbar (or alternatively the
 <kbd>⌘⇧ F12</kbd> keyboard shortcut):
 
-<img src="images/visual-editing.png" width="700"/>
+<img src="images/visual-editing.png" width="700" />
 
 Note that you can switch between source and visual mode at any time
 (editing location and undo/redo state will be preserved when you
@@ -91,9 +91,9 @@ You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just
 about anything. Just execute the shortcut then type what you want to
 insert. For example:
 
-<img src="images/visual-editing-omni-list.png" style="display: inline-block" width="350"/>
+<img src="images/visual-editing-omni-list.png" style="display: inline-block" width="350" />
 
-<img src="images/visual-editing-omni-math.png" style="display: inline-block; margin-bottom: 2px;" width="350"/>
+<img src="images/visual-editing-omni-math.png" style="display: inline-block; margin-bottom: 2px;" width="350" />
 
 If you are at the beginning of a line (as displayed above) you can also
 enter plain `/` to invoke the shortcut.
@@ -103,7 +103,7 @@ enter plain `/` to invoke the shortcut.
 The editor toolbar includes buttons for the most commonly used
 formatting commands:
 
-<img src="images/visual-editing-toolbar.png" width="700"/>
+<img src="images/visual-editing-toolbar.png" width="700" />
 
 Additional commands are available on the **Format**, **Insert**, and
 **Table** menus:

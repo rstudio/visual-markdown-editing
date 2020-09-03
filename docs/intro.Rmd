@@ -1,11 +1,11 @@
 ---
 output: github_document
-editor_options: 
-  markdown:
-    mode: gfm
+editor_options:
+   markdown:
+      mode: gfm
 ---
 
-```{r setup, include=FALSE}  
+```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
@@ -34,7 +34,7 @@ library(urltools)
 library(parsedate)
 library(fs)
 
-version <- "1.4.771"
+version <- "1.4.775"
 osx_version <- NULL # "1.4.518"
 win_version <- NULL # "1.4.708"
 
@@ -107,9 +107,9 @@ For other desktop platforms or RStudio Server, please visit <https://dailies.rst
 
 ### Enabling Visual Mode
 
-Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the <kbd><img src="images/visual_mode_2x.png" width="15" height="13"/></kbd> button at the top-right of the document toolbar (or alternatively the <kbd>⌘⇧ F12</kbd> keyboard shortcut):
+Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the <kbd>![](images/visual_mode_2x.png){width="15" height="13"}</kbd> button at the top-right of the document toolbar (or alternatively the <kbd>⌘⇧ F12</kbd> keyboard shortcut):
 
-<img src="images/visual-editing.png" width="700"/>
+![](images/visual-editing.png){width="700"}
 
 Note that you can switch between source and visual mode at any time (editing location and undo/redo state will be preserved when you switch).
 
@@ -136,9 +136,9 @@ See the [keyboard shortcuts](shortcuts) article for a complete list of all short
 
 You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just about anything. Just execute the shortcut then type what you want to insert. For example:
 
-<img src="images/visual-editing-omni-list.png" style="display: inline-block" width="350"/>
+![](images/visual-editing-omni-list.png){style="display: inline-block" width="350"}
 
-<img src="images/visual-editing-omni-math.png" style="display: inline-block; margin-bottom: 2px;" width="350"/>
+![](images/visual-editing-omni-math.png){style="display: inline-block; margin-bottom: 2px;" width="350"}
 
 If you are at the beginning of a line (as displayed above) you can also enter plain `/` to invoke the shortcut.
 
@@ -146,7 +146,7 @@ If you are at the beginning of a line (as displayed above) you can also enter pl
 
 The editor toolbar includes buttons for the most commonly used formatting commands:
 
-<img src="images/visual-editing-toolbar.png" width="700"/>
+![](images/visual-editing-toolbar.png){width="700"}
 
 Additional commands are available on the **Format**, **Insert**, and **Table** menus:
 
