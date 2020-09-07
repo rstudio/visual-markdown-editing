@@ -293,13 +293,13 @@ With `canonical: true`, edits in visual mode and source mode will result in iden
 
 There are a handful of Pandoc markdown extensions not currently supported by visual editing. These are infrequently used extensions so in all likelihood won't affect documents you edit, but are still worth noting.
 
-| Extension(s)             | Example             | Behavior                                 |
-|--------------------------|---------------------|------------------------------------------|
-| Inline footnotes         | ^[inline footnote]  | Converted to numeric footnote.           |
-| Footnote identifiers     | [^longnote]         | Converted to numeric footnote.           |
-| Example lists            | \(@\) First example | Read/written as ordinary numbered lists. |
-| Auto-list numbers        | #\. First item      | Read/written as ordinary numbered lists. |
-| Reference links          | This is a [link]    | Converted to ordinary links.             |
-| MultiMarkdown attributes | \# Heading [id]     | Converted to Pandoc attributes.          |
+| Extension(s)             | Example            | Behavior                                 |
+|--------------------------|--------------------|------------------------------------------|
+| Inline footnotes         | ^[inline footnote] | Converted to numeric footnote.           |
+| Footnote identifiers     | [^longnote]        | Converted to numeric footnote.           |
+| Example lists            | (\@) First example | Read/written as ordinary numbered lists. |
+| Auto-list numbers        | #\. First item     | Read/written as ordinary numbered lists. |
+| Reference links          | This is a [link]   | Converted to ordinary links.             |
+| MultiMarkdown attributes | \# Heading [id]    | Converted to Pandoc attributes.          |
 
 The visual editor is unable to parse non-YAML title blocks (e.g. old-style % titles or MultiMarkdown titles) and also unable to parse non top-level YAML metadata blocks. If these forms of metadata are encountered visual mode will fail to load with a warning.
