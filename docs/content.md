@@ -44,6 +44,10 @@ Note that any ID as well as the first class specified within the attributes are 
 
 ## Special Characters
 
+### Hard Line Breaks
+
+You can insert a [hard line break](https://practicaltypography.com/hard-line-breaks.html) using the **Insert -\> Special Characters -\> Hard Line Break** command or via the <kbd>⇧ Enter</kbd> keyboard shortcut.
+
 ### Non-Breaking Spaces
 
 You can insert a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) using the **Insert -\> Special Characters -\> Non-Breaking Space** command or via the <kbd>⌃ Space</kbd> keyboard shortcut. Non-breaking spaces are displayed with an alternate background color to distinguish them from normal spaces.
@@ -52,7 +56,7 @@ A markdown non-breaking space will result in the `&nbsp;` character within HTML 
 
 ### Emojis
 
-To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus autocomplete:
+To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus auto-complete:
 
 | **Insert -\> Special Characters -\> Emoji...** | Markdown Shortcut                               |
 |------------------------------------------------|-------------------------------------------------|

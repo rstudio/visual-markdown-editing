@@ -28,7 +28,7 @@ Here are the available keyboard and markdown shortcuts:
 | Emoji               |                     |       `:smile:`      |
 | Definition          |                     |          `:`         |
 | Non-Breaking Space  |  <kbd>⌃ Space</kbd> |                      |
-| Line Break          |  <kbd>⇧ Enter</kbd> |                      |
+| Hard Line Break     |  <kbd>⇧ Enter</kbd> |                      |
 | Paragraph           |   <kbd>⌥⌘ 0</kbd>   |                      |
 | Image               |   <kbd>⇧⌘ I</kbd>   |                      |
 | Footnote            |   <kbd>⇧⌘ F7</kbd>  |                      |
