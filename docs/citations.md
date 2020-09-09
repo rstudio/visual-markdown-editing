@@ -14,7 +14,7 @@ If you insert a citation from a DOI or Zotero library that isn't already in your
 
 ## Bibliographies
 
-R Markdown supports bibliographies in a wide variety of formats including BibLaTeX and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field. For example:
+R Markdown supports bibliographies in a wide variety of formats including BibTeX and CSL. Add a bibliography to your document using the `bibliography` YAML metadata field. For example:
 
 ``` yaml
 ---
