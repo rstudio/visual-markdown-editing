@@ -1,16 +1,13 @@
 <!-- -*- mode: gfm -*- -->
 
-Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation]`). Citations can be drawn from a variety of sources:
+Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation]`). Citations can be inserted from a variety of sources:
 
-1.  Document or project level bibliographies.
-2.  [DOI](#citations-from-dois) (Document Object Identifier) references.
-3.  [Zotero](#citations-from-zotero) libraries.
+1.  Your bibliography.
+2.  [Zotero](#citations-from-zotero) libraries.
+3.  [DOI](#citations-from-dois) references.
+4.  [Crossref](https://www.crossref.org/) searches.
 
-When inserting a citation you can search across all of these sources:
-
-<img src="images/visual-editing-citation-search.png" class="illustration" width="918"/>
-
-If you insert a citation from a DOI or Zotero library that isn't already in your bibliography then it will be automatically added to the bibliography.
+If you insert a citation from a Zotero library, DOI, or Crossref search then it will be automatically added to your bibliography.
 
 ## Bibliographies
 
@@ -27,29 +24,21 @@ See the [pandoc citations](https://pandoc.org/MANUAL.html#citations) documentati
 
 ## Inserting Citations
 
-Once you have a bibliography, you can include citations in visual mode by either:
+You insert citations by either using the **Insert -\> Citation** command (or the <kbd>⇧⌘ F8</kbd> keyboard shortcut or by using markdown syntax directly (e.g. `[@cite]`).
 
-1.  Using the **Insert -\> Citation** command (or the <kbd>⇧⌘ F8</kbd> keyboard shortcut)
+If you use the command or keyboard shortcut you'll see the **Insert Citation** dialog:
 
-2.  Using markdown syntax directly (e.g. `[@cite]`).
-
-If you use the command or keyboard shortcut you'll see the **Insert Citation** dialog pictured above, which enables you to browse your various citation sources or do searches for citations you don't currently have (e.g. search by DOI).
+<img src="images/visual-editing-citation-search.png" class="illustration" width="918"/>
 
 If you use markdown syntax you'll see completions for citations in your bibliography and/or your Zotero libraries to make it easier to locate a citation even if you don't remember it's specific ID:
 
 <img src="images/visual-editing-citations.png" width="700"/>
 
-Note that you can also paste a [DOI](https://www.doi.org/) after the `@` and it will be automatically looked up:
-
-<img src="images/visual-editing-citations-doi.png" width="700"/>
-
-Once you've confirmed that it's the correct work (and possibly modified the suggested ID), the citation will be inserted into the document and an entry for the work added to your bibliography.
-
 Once you've inserted a citation, place the cursor over it to see a preview of it along with a link to the source if one is available:
 
 <img src="images/visual-editing-cite-popup.png" width="700"/>
 
-## Using Zotero
+## Citations from Zotero
 
 [Zotero](https://zotero.org) is a popular free and open source reference manager. If you use Zotero, you can also insert citations directly from your Zotero libraries. If you have Zotero installed locally it's location will be detected automatically and citations from your main library (**My Library**) will be available:
 
@@ -89,13 +78,33 @@ zotero: false
 ---
 ```
 
-### Zotero Web API
+## Citations from DOIs
+
+Use the **From DOI** pane of the **Insert Citation** dialog to insert a citation based on a DOI (e.g that you have retrieved from a PubMed or other search):
+
+<img src="images/visual-editing-citation-insert-doi.png" width="918"/>
+
+If you are using markdown syntax, you can also paste a [DOI](https://www.doi.org/) after the `[@` and it will be looked up:
+
+<img src="images/visual-editing-citations-doi.png" width="700"/>
+
+Once you've confirmed that it's the correct work (and possibly modified the suggested ID), the citation will be inserted into the document and an entry for the work added to your bibliography.
+
+## Citations from Crossref
+
+Use the **Crossref** pane of the **Insert Citation** dialog to search using the [Crossref Metadata API](https://www.crossref.org/services/metadata-retrieval/):
+
+<img src="images/visual-editing-citations-crossref.png" class="illustration" width="918"/>
+
+Items inserted from a Crossref search will automatically be added to your bibliography.
+
+## Zotero Web API
 
 If you are using RStudio Server and/or don't have Zotero installed locally, you can still access your Zotero library using the Zotero Web API (assuming you have a Zotero web account and have synced your libraries to your account).
 
 ?\> If you are running RStudio Desktop, it's generally easier to also run Zotero on your desktop and access your library locally. That said, it is possible to access Zotero web libraries from RStudio Desktop if you prefer that configuration.
 
-#### API Access Key
+### API Access Key
 
 RStudio accesses Zotero web libraries using the Zotero Web API, so the first step is to [create a Zotero account](https://www.zotero.org/user/register) and then configure Zotero to sync it's data to your account. You can do this using the **Sync** tab of the Zotero preferences:
 
@@ -105,7 +114,9 @@ Once you've configured your library to sync, you need to [create a Zotero API Ke
 
 <img src="images/visual-editing-citations-zotero-keygen.png" class="illustration" width="700"/>
 
-Follow the instructions to create a key (the defaults which provide read-only access are fine), and then be sure to **record your key** after generating it (i.e. copy it to the clipboard and/or save it somewhere more permanent) as you won't be able to view it again after you navigate away.
+Follow the instructions to create a new access key. Note that if you want to use [Group Libraries](#group-libraries) with RStudio that you should change the default to provide read-only access to groups (as illustrated above).
+
+Be sure to **record your key** after generating it (i.e. copy it to the clipboard and/or save it somewhere more permanent) as you won't be able to view it again after you navigate away.
 
 Finally, go to the **R Markdown -\> Citations** preferences to connect Zotero to RStudio using your key:
 
