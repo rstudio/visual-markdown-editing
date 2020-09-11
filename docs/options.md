@@ -17,6 +17,8 @@ You can customize visual editing options within **R Markdown -\> Visual**:
 | Write references at end of current                  | Write references (footnotes) at the end of the block or section where they appear, or at the end of the document. See [References](markdown?id=references) for details.                              |
 | Write canonical visual mode markdown in source mode | Use the visual mode markdown writer when saving markdown from source mode (ensure consistency between documents saved from either mode).                                                             |
 
+## Citation Options
+
 You can customize visual editor citation options within **R Markdown -\> Citations**:
 
 <img src="images/visual-editing-options-citations.png" class="illustration" width="585"/>

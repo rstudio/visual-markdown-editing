@@ -20,19 +20,35 @@ bibliography: references.bib
 ---
 ```
 
-See the [pandoc citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
+See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
 
 ## Inserting Citations
 
-You insert citations by either using the **Insert -\> Citation** command (or the <kbd>⇧⌘ F8</kbd> keyboard shortcut or by using markdown syntax directly (e.g. `[@cite]`).
+You insert citations by either using the **Insert -\> Citation** command (accessible via menu or the <kbd>⇧⌘ F8</kbd> keyboard shortcut) or by using markdown syntax directly (e.g. `[@cite]`).
 
-If you use the command or keyboard shortcut you'll see the **Insert Citation** dialog:
+If you use the menu or keyboard shortcut you'll see the **Insert Citation** dialog:
 
 <img src="images/visual-editing-citation-search.png" class="illustration" width="918"/>
 
-If you use markdown syntax you'll see completions for citations in your bibliography and/or your Zotero libraries to make it easier to locate a citation even if you don't remember it's specific ID:
+Note that you can insert multiple citations by using the add button on the right side of the item display.
+
+### Markdown Syntax
+
+You can also insert citations directly using markdown syntax (e.g. `[@cite]`). When you do this a completion interface is provided for searching citations in your bibliography and/or your Zotero libraries:
 
 <img src="images/visual-editing-citations.png" width="700"/>
+
+### Citation IDs
+
+Before inserting a citation from an external source you will may wish to customize it's ID. Within the **Insert Citation** dialog, click the edit button on the right side of citations to change their ID:
+
+<img src="images/visual-editing-citations-id.png" class="illustration"/>
+
+If you insert a new citation via code completion, you will also be provided with the opportunity to change its default citation ID.
+
+For citations inserted from Zotero, you can also use the [Better BibTeX](https://retorque.re/zotero-better-bibtex/) plugin to generate citation IDs (this can be enabled via [Citation Options](options#citation-options) if you have Better BibTeX installed).
+
+### Citation Preview
 
 Once you've inserted a citation, place the cursor over it to see a preview of it along with a link to the source if one is available:
 
