@@ -24,9 +24,9 @@ See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentati
 
 ## Inserting Citations
 
-You insert citations by either using the **Insert -\> Citation** command (accessible via menu or the <kbd>⇧⌘ F8</kbd> keyboard shortcut) or by using markdown syntax directly (e.g. `[@cite]`).
+You insert citations by either using the **Insert -\> Citation** command or by using markdown syntax directly (e.g. `[@cite]`).
 
-If you use the menu or keyboard shortcut you'll see the **Insert Citation** dialog:
+Use the <kbd><img src="images/citation_2x.png" width="15" height="14"/></kbd> toolbar button or the <kbd>⇧⌘ F8</kbd> keyboard shortcut to show the **Insert Citation** dialog:
 
 <img src="images/visual-editing-citation-search.png" class="illustration" width="918"/>
 
@@ -34,7 +34,7 @@ Note that you can insert multiple citations by using the add button on the right
 
 ### Markdown Syntax
 
-You can also insert citations directly using markdown syntax (e.g. `[@cite]`). When you do this a completion interface is provided for searching citations in your bibliography and/or your Zotero libraries:
+You can also insert citations directly using markdown syntax (e.g. `[@cite]`). When you do this a completion interface is provided for searching available citations:
 
 <img src="images/visual-editing-citations.png" width="700"/>
 
