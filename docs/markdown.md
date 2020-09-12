@@ -182,6 +182,7 @@ Here is a list of conventions for Pandoc generated markdown that might differ fr
 -   `*text*` is used in preference to `_text_`
 -   Backtick code blocks are written as ```` ``` {.md} ```` rather than ```` ```md ````
 -   Backtick code blocks w/ no attributes are rendered as 4-space indented code blocks
+-   Horizontal rules are written as dashes spanning the full width of the document
 -   Plain links are written as `<https://yihui.org>` rather than `https://yihui.org`
 -   Bullet and numbered lists use additional leading spaces before list item content
 -   The blockquote character (`>`) is included on each new line of a blockquote
