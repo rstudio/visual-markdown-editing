@@ -69,7 +69,7 @@ editor_options:
 ---
 ```
 
-To specify that your document is being published with blogdown, use:
+To specify that your document is being published with hugo, use:
 
 ``` yaml
 ---
