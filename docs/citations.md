@@ -2,12 +2,12 @@
 
 Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation]`). Citations can be inserted from a variety of sources:
 
-1.  Your bibliography.
-2.  [Zotero](#citations-from-zotero) libraries.
-3.  [DOI](#citations-from-dois) references.
-4.  [Crossref](https://www.crossref.org/) searches.
+1.  Your document bibliography.
+2.  [Zotero](#citations-from-zotero) personal or group libraries.
+3.  [DOI](#citations-from-dois) (Document Object Identifier) references.
+4.  Searches of [Crossref](https://www.crossref.org/), [DataCite](https://datacite.org/), or [PubMed](https://pubmed.ncbi.nlm.nih.gov/).
 
-If you insert a citation from a Zotero library, DOI, or Crossref search then it will be automatically added to your bibliography.
+If you insert citations from Zotero, DOI look-up, or a search then they are automatically added to your document bibliography.
 
 ## Bibliographies
 
@@ -17,14 +17,23 @@ R Markdown supports bibliographies in a wide variety of formats including BibTeX
 ---
 title: "My Document"
 bibliography: references.bib
+link-citations: true
 ---
 ```
+
+Note that we've also specified the `link-citations` option, which will make your citations hyperlinks to the corresponding bibliography entries.
 
 See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
 
 ## Inserting Citations
 
 You insert citations by either using the **Insert -\> Citation** command or by using markdown syntax directly (e.g. `[@cite]`).
+
+Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of '\@' + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. The citation key must begin with a letter, digit, or `_`, and may contain alphanumerics, `_`, and internal punctuation characters (`:.#$%&-+?<>~/`). Here are some examples:
+
+<img src="images/visual-editing-citations-inline.png" class="illustration" width="918"/>
+
+See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on citation syntax.
 
 Use the <kbd><img src="images/citation_2x.png" width="15" height="14"/></kbd> toolbar button or the <kbd>⇧⌘ F8</kbd> keyboard shortcut to show the **Insert Citation** dialog:
 
@@ -106,13 +115,15 @@ If you are using markdown syntax, you can also paste a [DOI](https://www.doi.org
 
 Once you've confirmed that it's the correct work (and possibly modified the suggested ID), the citation will be inserted into the document and an entry for the work added to your bibliography.
 
-## Citations from Crossref
+## Citations from Search
 
-Use the **Crossref** pane of the **Insert Citation** dialog to search using the [Crossref Metadata API](https://www.crossref.org/services/metadata-retrieval/):
+Use the **Crossref**, **DataCite**, and **PubMed** panes of the **Insert Citation** dialog to search one of those services for a citation:
 
 <img src="images/visual-editing-citations-crossref.png" class="illustration" width="918"/>
 
-Items inserted from a Crossref search will automatically be added to your bibliography.
+Items inserted from a search will automatically be added to your bibliography.
+
+Note that for PubMed queries you can use the full supported query syntax. For example, this query searches on the author and title fields: `Peterson[Author] AND Embolism[Title]`. You can learn more about building PubMed queries here: <https://pubmed.ncbi.nlm.nih.gov/advanced/>.
 
 ## Zotero Web API
 

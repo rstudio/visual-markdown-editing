@@ -9,9 +9,13 @@ visual mode include:
 -   Visual editing for all of Pandoc markdown, including tables,
     divs/spans, definition lists, attributes, etc.
 
--   Extensive support for scientific and technical writing, including
-    citations, cross-references, footnotes, equations, embedded code,
-    and LaTeX.
+-   Extensive support for citations, including integration with Zotero
+    and the ability to insert citations from DOIs or searches of PubMed,
+    Crossref, and DataCite.
+
+-   Scientific and technical writing features, including
+    cross-references, footnotes, equations, code execution, and embedded
+    LaTeX.
 
 -   Writing productivity features, including real time spell-checking
     and outline navigation.
