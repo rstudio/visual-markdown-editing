@@ -133,5 +133,7 @@ These pre-existing APIs were designed for use with a traditional line-based edit
 
 Together, these APIs make it possible to mutate the cursor's current selection, regardless of whether the current document is open in source or visual mode.
 
+?\> You can browse additional `rstudioapi` documentation online, at https://rstudio.github.io/rstudioapi/.
+
 ?\> If you are an addin author and would like to see additional functions added to the `rstudioapi` package for interacting with visual mode documents, please file an issue at https://github.com/rstudio/rstudioapi/issues.
 
