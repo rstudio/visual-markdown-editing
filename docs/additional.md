@@ -121,3 +121,17 @@ For example, here's what a YouTube snippet looks like within an HTML block:
 
 ?\> Note that you can also create an HTML block with a markdown shortcut. Just type ```` ```{=html} ```` and press **Enter** to create the block.
 
+## Using rstudioapi
+
+Many [RStudio Addins](https://rstudio.github.io/rstudioaddins/) use the `rstudioapi` package to interact with documents and scripts open within the RStudio IDE. For example, the [styler](https://CRAN.R-project.org/package=styler) package provides a set of RStudio Addins that can be used to reformat R code  within the IDE.
+
+These pre-existing APIs were designed for use with a traditional line-based editor, and do not map well to RStudio's visual mode. To that end, we have implemented a couple more APIs which are able to function both in RStudio's source mode and visual mode:
+
+- `rstudioapi::selectionGet()`: Get the text contents of the user's current selection.
+- `rstudioapi::selectionSet()`: Set the text contents of the user's current selection.
+- `rstudioapi::insertText()`: Insert text at the cursor position.
+
+Together, these APIs make it possible to mutate the cursor's current selection, regardless of whether the current document is open in source or visual mode.
+
+?\> If you are an addin author and would like to see additional functions added to the `rstudioapi` package for interacting with visual mode documents, please file an issue at https://github.com/rstudio/rstudioapi/issues.
+
