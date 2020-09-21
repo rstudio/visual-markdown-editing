@@ -1,15 +1,16 @@
 ---
 output: github_document
-editor_options:
-   markdown:
-      mode: gfm
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
-<h1>Visual R Markdown</h1>
+<h1>
+
+Visual R Markdown
+
+</h1>
 
 RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual mode include:
 

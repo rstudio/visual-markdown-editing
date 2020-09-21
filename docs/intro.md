@@ -1,6 +1,8 @@
 
 <h1>
+
 Visual R Markdown
+
 </h1>
 
 RStudio v1.4 includes a new visual markdown editing mode. Highlights of
