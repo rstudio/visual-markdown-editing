@@ -15,6 +15,7 @@ Here are the available keyboard and markdown shortcuts:
 | Heading 1           |   <kbd>⌥⌘ 1</kbd>   |          `#`         |
 | Heading 2           |   <kbd>⌥⌘ 2</kbd>   |         `##`         |
 | Heading 3           |   <kbd>⌥⌘ 3</kbd>   |         `###`        |
+| Heading Attributes  |                     |    `{#id .class}`    |
 | Blockquote          |                     |          `>`         |
 | Code Block          |   <kbd>⇧⌘ \\</kbd>  |     ```` ``` ````    |
 | R Code Chunk        |   <kbd>⌥⌘ I</kbd>   |   ```` ```{r} ````   |
