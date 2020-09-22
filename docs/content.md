@@ -8,7 +8,7 @@ Editing of links, images, blockquotes, lists, tables, etc. is also available, as
 
 ## Editing Tables
 
-You can insert a table using the **Table** menu. You can then use the either the main menu or a context menu to insert and delete table rows and columns:
+You can insert a table using the **Table** menu. You can then use either the main menu or a context menu to insert and delete table rows and columns:
 
 <img src="images/visual-editing-table-context.png" width="700"/>
 
