@@ -37,7 +37,7 @@ library(urltools)
 library(parsedate)
 library(fs)
 
-version <- "1.4.860"
+version <- "1.4.861"
 osx_version <- NULL # "1.4.518"
 win_version <- NULL # "1.4.708"
 
