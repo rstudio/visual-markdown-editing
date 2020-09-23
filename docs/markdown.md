@@ -4,25 +4,22 @@ R Markdown documents are normally authored using standard [Pandoc markdown](http
 
 By default, visual mode detects the target markdown format for the current document, making the requisite editor commands available and writing the expected flavor of markdown source code. This article describes the various available markdown extensions, how to override RStudio's automatic detection, as well some options that control how [markdown output](markdown?id=markdown-output) is written.
 
-## Bookdown
+## GitHub Markdown
 
-### Cross References
+When markdown is published on GitHub, it is rendered using a markdown variant called [GitHub Flavored Markdown](https://github.github.com/gfm/) (or GFM). GFM supports most of the markdown constructs you are familiar with from Pandoc markdown, but doesn't have support for more advanced technical writing features like citations, footnotes, and definition lists.
 
-The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document.
+If you are authoring an R Markdown document that targets the [github\_markdown](https://rmarkdown.rstudio.com/docs/reference/github_document.html) output format (for example, a README.Rmd file in a git repo). then visual mode will automatically use GFM mode for authoring.
 
-In raw markdown, you would for example write a cross-reference to a figure like this: `\@ref(fig:label)`. Cross-references are largely the same in visual mode, but you don't need the leading `\` (which in raw markdown is used to escape the `@` character). For example:
+If you are authoring a plain .`md` file intended for viewing on GitHub, then you can use the `mode` markdown editor option to put the editor in GFM mode. For example:
 
-<img src="images/visual-editing-xref.png" width="700"/>
-
-As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.
-
-### Part Headers
-
-Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX `\part{}` command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as `(PART\*)`, you don't need to include the escape character for the asterisk. You also should use the explicit `{.unnumbered}` class as opposed to the shorthand `{-}`. For example:
-
-<img src="images/visual-editing-part.png" width="700"/>
-
-See the bookdown documentation for more information on [part headers](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#special-headers).
+``` yaml
+---
+title: "My Document"
+editor_options:
+  markdown:
+    mode: gfm
+---
+```
 
 ## Hugo Markdown
 
@@ -53,6 +50,26 @@ Embedding LaTeX math using `$...$` or `$$...$$` is not supported out of the box 
 Another method for embedding LaTeX math in Hugo websites is to embed math expressions within code marks (e.g. `` `$\sqrt{x}=25$` ``). This method is described in more detail at <https://yihui.org/en/2018/07/latex-math-markdown/.> Typically this code is included in a Hugo page footer as described [here](https://bookdown.org/yihui/blogdown/templates.html#how-to).
 
 Visual mode will detect the use of math-in-code via the presence of the `layouts/partials/footer_mathjax.html` file in the theme directory and automatically read and write math with backtick delimiters.
+
+## Bookdown
+
+### Cross References
+
+The [bookdown](https://bookdown.org) package includes markdown extensions for cross-references and part headers. Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document.
+
+In raw markdown, you would for example write a cross-reference to a figure like this: `\@ref(fig:label)`. Cross-references are largely the same in visual mode, but you don't need the leading `\` (which in raw markdown is used to escape the `@` character). For example:
+
+<img src="images/visual-editing-xref.png" width="700"/>
+
+As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.
+
+### Part Headers
+
+Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX `\part{}` command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as `(PART\*)`, you don't need to include the escape character for the asterisk. You also should use the explicit `{.unnumbered}` class as opposed to the shorthand `{-}`. For example:
+
+<img src="images/visual-editing-part.png" width="700"/>
+
+See the bookdown documentation for more information on [part headers](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#special-headers).
 
 ## Document Types
 
