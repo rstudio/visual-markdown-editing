@@ -37,8 +37,8 @@ library(urltools)
 library(parsedate)
 library(fs)
 
-version <- "1.4.866"
-osx_version <- "1.4.867"
+version <- "1.4.869"
+osx_version <- NULL # "1.4.867"
 win_version <- NULL # "1.4.708"
 
 base_url <- "https://s3.amazonaws.com/rstudio-ide-build/desktop"
