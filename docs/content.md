@@ -32,7 +32,7 @@ You can also use **Shift+Tab** to lift a list item into the previous level.
 
 Markdown distinguishes between normal and *tight* lists, where tight lists have less vertical spacing between items. In markdown source code, you designate a tight list by having no empty line between your list items.
 
-Visual mode creates normal lists by default, but you can toggle between normal and tight lists using the <kbd>⌥⌘ 9</kbd> keyboard shortcut. You can also change the list type using the **Format -\> Edit Attributes** dialog (also accessible via the <kbd>F4</kbd> shortcut). If you have existing tight lists in your markdown source files they will remain so within the visual editor.
+Visual mode creates normal lists by default (you can change this behavior via [Editor Options](options.md)). You can toggle between normal and tight lists using the <kbd>⌥⌘ 9</kbd> keyboard shortcut. You can also change the list type using the **Format -\> Edit Attributes** dialog (also accessible via the <kbd>F4</kbd> shortcut). If you have existing tight lists in your markdown source files they will remain so within the visual editor.
 
 ## Pandoc Attributes
 
