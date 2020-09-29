@@ -34,22 +34,20 @@ visual mode include:
 Getting Started
 ---------------
 
-Visual markdown editing is currently only available in the [daily
-build](https://dailies.rstudio.com) of RStudio. You can download the
-desktop version of the daily build here:
+Visual markdown editing is currently only available in the [preview
+release](https://rstudio.com/products/rstudio/download/preview/) of
+RStudio. You can download the desktop version of the preview release
+here:
 
 | Platform            | Download                                                                                                                                                              | Size | SHA-256                                                                                                              |
 |:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.876.exe"><i class="fa fa-download"></i> RStudio-1.4.876.exe</a>                       | 157M | <span class="sha256" data-sha256="2093cb4d25cf95842e621f50a0140a1827a5c4a5bb9b6d01f0f986608f2af540">2093cb4d…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.876.dmg"><i class="fa fa-download"></i> RStudio-1.4.876.dmg</a>                         | 154M | <span class="sha256" data-sha256="2f455dce9d58fadada04fb9d3d27dec16964e5d35506294a2f69b958d6dc22c8">2f455dce…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.876-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.876-amd64.deb</a>      | 115M | <span class="sha256" data-sha256="a7fa7486c11e1c7a8581d7ec00ab41b74bbdb50240d8f52e807127eba662f81b">a7fa7486…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.876-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.876-x86\_64.rpm</a> | 132M | <span class="sha256" data-sha256="3783ca8cbbfe8157df7fc51032e2e9a58f2bc81b28cb8d76e4034dcb4b5b3602">3783ca8c…</span> |
+| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.880.exe"><i class="fa fa-download"></i> RStudio-1.4.880.exe</a>                       | 157M | <span class="sha256" data-sha256="92db73e1fb9481f818837a5aff29c2a4f469571d66b0594520da969ce232a5c3">92db73e1…</span> |
+| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.880.dmg"><i class="fa fa-download"></i> RStudio-1.4.880.dmg</a>                         | 154M | <span class="sha256" data-sha256="38b5f31c7cf4013b5ac9fee300a47731ed6716d25fe758820dde88817d12cadc">38b5f31c…</span> |
+| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.880-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.880-amd64.deb</a>      | 116M | <span class="sha256" data-sha256="af610e919cd4e46d6972cf8a55ddba9c93519f21f087c5548629d28dacbc8689">af610e91…</span> |
+| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.880-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.880-x86\_64.rpm</a> | 132M | <span class="sha256" data-sha256="d99a350357677ff4ead6f12dd320a29aaa6483df97b80c828562a4d0d47e3767">d99a3503…</span> |
 
-For other desktop platforms or RStudio Server, please visit
-<a href="https://dailies.rstudio.com" class="uri">https://dailies.rstudio.com</a>.
-
-?&gt; Daily builds are intended for testing purposes, and are not
-recommended for general use.
+For other platforms or RStudio Server, please visit
+<a href="https://rstudio.com/products/rstudio/download/preview/" class="uri">https://rstudio.com/products/rstudio/download/preview/</a>.
 
 ### Enabling Visual Mode
 

@@ -28,7 +28,7 @@ RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual m
 
 ## Getting Started
 
-Visual markdown editing is currently only available in the [daily build](https://dailies.rstudio.com) of RStudio. You can download the desktop version of the daily build here:
+Visual markdown editing is currently only available in the [preview release](https://rstudio.com/products/rstudio/download/preview/) of RStudio. You can download the desktop version of the preview release here:
 
 ```{r, cache=TRUE}
 library(plyr)
@@ -37,7 +37,7 @@ library(urltools)
 library(parsedate)
 library(fs)
 
-version <- "1.4.876"
+version <- "1.4.880"
 osx_version <- NULL # "1.4.867"
 win_version <- NULL # "1.4.708"
 
@@ -104,9 +104,7 @@ knitr::kable(
 )
 ```
 
-For other desktop platforms or RStudio Server, please visit <https://dailies.rstudio.com>.
-
-?\> Daily builds are intended for testing purposes, and are not recommended for general use.
+For other platforms or RStudio Server, please visit <https://rstudio.com/products/rstudio/download/preview/>.
 
 ### Enabling Visual Mode
 
