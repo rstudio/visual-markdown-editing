@@ -63,6 +63,8 @@ In raw markdown, you would for example write a cross-reference to a figure like 
 
 As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.
 
+Note that to create a table cross-reference you similarly omit the leading `\` when defining the reference. For example: `(#tab:mytable) This is my table.` In source mode you would have needed to escape the `#` so it would have been written as `(\#tab:mytable)`.
+
 ### Part Headers
 
 Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX `\part{}` command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as `(PART\*)`, you don't need to include the escape character for the asterisk. You also should use the explicit `{.unnumbered}` class as opposed to the shorthand `{-}`. For example:
