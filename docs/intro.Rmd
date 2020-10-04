@@ -39,7 +39,7 @@ library(fs)
 
 version <- "1.4.900"
 osx_version <- NULL # "1.4.867"
-win_version <- "1.4.894"
+win_version <- NULL # "1.4.894"
 
 base_url <- "https://s3.amazonaws.com/rstudio-ide-build/desktop"
 
