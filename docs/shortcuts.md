@@ -4,39 +4,39 @@ Visual mode supports both traditional keyboard shortcuts (e.g. <kbd>⌘ B</kbd> 
 
 Here are the available keyboard and markdown shortcuts:
 
-| Command             |  Keyboard Shortcut  |   Markdown Shortcut  |
+| Command             |  Keyboard Shortcut  |  Markdown Shortcut   |
 |---------------------|:-------------------:|:--------------------:|
-| Bold                |    <kbd>⌘ B</kbd>   |      `**bold**`      |
-| Italic              |    <kbd>⌘ I</kbd>   |      `*italic*`      |
-| Code                |    <kbd>⌘ D</kbd>   |     `` `code` ``     |
+| Bold                |   <kbd>⌘ B</kbd>    |      `**bold**`      |
+| Italic              |   <kbd>⌘ I</kbd>    |      `*italic*`      |
+| Code                |   <kbd>⌘ D</kbd>    |     `` `code` ``     |
 | Strikeout           |                     |     `~~strike~~`     |
-| Subscript           |                     |        `~sub~`       |
-| Superscript         |                     |       `^super^`      |
-| Heading 1           |   <kbd>⌥⌘ 1</kbd>   |          `#`         |
+| Subscript           |                     |       `~sub~`        |
+| Superscript         |                     |      `^super^`       |
+| Heading 1           |   <kbd>⌥⌘ 1</kbd>   |         `#`          |
 | Heading 2           |   <kbd>⌥⌘ 2</kbd>   |         `##`         |
-| Heading 3           |   <kbd>⌥⌘ 3</kbd>   |         `###`        |
+| Heading 3           |   <kbd>⌥⌘ 3</kbd>   |        `###`         |
 | Heading Attributes  |                     |    `{#id .class}`    |
-| Blockquote          |                     |          `>`         |
-| Code Block          |   <kbd>⇧⌘ \\</kbd>  |     ```` ``` ````    |
+| Blockquote          |                     |         `>`          |
+| Code Block          |  <kbd>⇧⌘ \\</kbd>   |    ```` ``` ````     |
 | R Code Chunk        |   <kbd>⌥⌘ I</kbd>   |   ```` ```{r} ````   |
 | Raw Block           |                     | ```` ```{=html} ```` |
-| Div                 |                     |         `:::`        |
-| Bullet List         |                     |          `-`         |
+| Div                 |                     |        `:::`         |
+| Bullet List         |                     |         `-`          |
 | Ordered List        |                     |         `1.`         |
 | Tight List          |   <kbd>⌥⌘ 9</kbd>   |                      |
-| List Check          |                     |         `[x]`        |
-| Link                |    <kbd>⌘ K</kbd>   |       `<href>`       |
-| Emoji               |                     |       `:smile:`      |
-| Definition          |                     |          `:`         |
-| Non-Breaking Space  |  <kbd>⌃ Space</kbd> |                      |
-| Hard Line Break     |  <kbd>⇧ Enter</kbd> |                      |
+| List Check          |                     |        `[x]`         |
+| Link                |   <kbd>⌘ K</kbd>    |       `<href>`       |
+| Emoji               |                     |      `:smile:`       |
+| Definition          |                     |         `:`          |
+| Non-Breaking Space  | <kbd>⌃ Space</kbd>  |                      |
+| Hard Line Break     | <kbd>⇧ Enter</kbd>  |                      |
 | Paragraph           |   <kbd>⌥⌘ 0</kbd>   |                      |
 | Image               |   <kbd>⇧⌘ I</kbd>   |                      |
-| Footnote            |   <kbd>⇧⌘ F7</kbd>  |                      |
-| Citation            |   <kbd>⇧⌘ F8</kbd>  |         `[@`         |
+| Footnote            |  <kbd>⇧⌘ F7</kbd>   |                      |
+| Citation            |  <kbd>⇧⌘ F8</kbd>   |         `[@`         |
 | Table               |   <kbd>⌥⌘ T</kbd>   |                      |
 | Editing Comment     |   <kbd>⇧⌘ C</kbd>   |                      |
-| Select All          |    <kbd>⌘ A</kbd>   |                      |
+| Select All          |   <kbd>⌘ A</kbd>    |                      |
 | Clear Formatting    |   <kbd>⌘ \\</kbd>   |                      |
 | Edit Attributes     |    <kbd>F4</kbd>    |                      |
 | Run Code Chunk      | <kbd>⇧⌘ Enter</kbd> |                      |

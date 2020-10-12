@@ -120,4 +120,3 @@ For example, here's what a YouTube snippet looks like within an HTML block:
 <img src="images/visual-editing-html-embed.png" width="700"/>
 
 ?\> Note that you can also create an HTML block with a markdown shortcut. Just type ```` ```{=html} ```` and press **Enter** to create the block.
-

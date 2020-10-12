@@ -8,7 +8,7 @@ By default, visual mode detects the target markdown format for the current docum
 
 When markdown is published on GitHub, it is rendered using a markdown variant called [GitHub Flavored Markdown](https://github.github.com/gfm/) (or GFM). GFM supports most of the markdown constructs you are familiar with from Pandoc markdown, but doesn't have support for more advanced technical writing features like citations, footnotes, and definition lists.
 
-If you are authoring an R Markdown document that targets the [github\_markdown](https://rmarkdown.rstudio.com/docs/reference/github_document.html) output format (for example, a README.Rmd file in a git repo). then visual mode will automatically use GFM mode for authoring.
+If you are authoring an R Markdown document that targets the [github_markdown](https://rmarkdown.rstudio.com/docs/reference/github_document.html) output format (for example, a README.Rmd file in a git repo). then visual mode will automatically use GFM mode for authoring.
 
 If you are authoring a plain .`md` file intended for viewing on GitHub, then you can use the `mode` markdown editor option to put the editor in GFM mode. For example:
 
