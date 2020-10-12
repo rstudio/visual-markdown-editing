@@ -8,31 +8,30 @@ Visual R Markdown
 RStudio v1.4 includes a new visual markdown editing mode. Highlights of
 visual mode include:
 
--   Visual editing for all of Pandoc markdown, including tables,
+  - Visual editing for all of Pandoc markdown, including tables,
     divs/spans, definition lists, attributes, etc.
 
--   Extensive support for citations, including integration with Zotero
+  - Extensive support for citations, including integration with Zotero
     and the ability to insert citations from DOIs or searches of PubMed,
     Crossref, and DataCite.
 
--   Scientific and technical writing features, including
+  - Scientific and technical writing features, including
     cross-references, footnotes, equations, code execution, and embedded
     LaTeX.
 
--   Writing productivity features, including real time spell-checking
+  - Writing productivity features, including real time spell-checking
     and outline navigation.
 
--   Tight integration with source editing (editing location and
+  - Tight integration with source editing (editing location and
     undo/redo state are preserved when switching between modes).
 
--   Rich keyboard support. In addition to traditional shortcuts, you can
+  - Rich keyboard support. In addition to traditional shortcuts, you can
     use markdown expressions (e.g. `##`, `**bold**`, etc.) for
     formatting. If you don’t remember all of the keyboard shortcuts, you
     can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert
     anything.
 
-Getting Started
----------------
+## Getting Started
 
 Visual markdown editing is currently only available in the [preview
 release](https://rstudio.com/products/rstudio/download/preview/) of
@@ -40,31 +39,30 @@ RStudio. You can download the desktop version of the preview release
 here:
 
 | Platform            | Download                                                                                                                                                              | Size | SHA-256                                                                                                              |
-|:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.924.exe"><i class="fa fa-download"></i> RStudio-1.4.924.exe</a>                       | 157M | <span class="sha256" data-sha256="2c32e22a68c8445e7df910e9b2350f53636e97d1681b2b6ff11aa3bea473fd36">2c32e22a…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.924.dmg"><i class="fa fa-download"></i> RStudio-1.4.924.dmg</a>                         | 154M | <span class="sha256" data-sha256="0f11410ca7b10cc2d57ced645da3bfe4a661b1ef36b3b51f057e49af836129f1">0f11410c…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.924-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.924-amd64.deb</a>      | 117M | <span class="sha256" data-sha256="5152090b54fae6898e5fe42c20e0a90896a5c543d9de098b4ff9138758c3da02">5152090b…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.924-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.924-x86\_64.rpm</a> | 132M | <span class="sha256" data-sha256="de431b0589c2090491775270484b28430847cb224ad464efbf9583d3a13b01d9">de431b05…</span> |
+| :------------------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--- | :------------------------------------------------------------------------------------------------------------------- |
+| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.926.exe"><i class="fa fa-download"></i> RStudio-1.4.926.exe</a>                       | 157M | <span class="sha256" data-sha256="38b2445481ac6f0001097b43bf67bf47ac7f7a15c065b0f91b025b07d326f601">38b24454…</span> |
+| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.926.dmg"><i class="fa fa-download"></i> RStudio-1.4.926.dmg</a>                         | 154M | <span class="sha256" data-sha256="0d40049d99aa6590dbe0d888e54e33753ad4eabadc8c96a63746174ae0d0a0f1">0d40049d…</span> |
+| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.926-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.926-amd64.deb</a>      | 117M | <span class="sha256" data-sha256="add6c48cd04973afe0b861057272d8234843cfba11a9772119e2acca195a4e83">add6c48c…</span> |
+| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.926-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.926-x86\_64.rpm</a> | 132M | <span class="sha256" data-sha256="74074eaad4758e1d0741932fb92fc82587c3f09b1286045b39206b37c51cbb10">74074eaa…</span> |
 
 For other platforms or RStudio Server, please visit
-<a href="https://rstudio.com/products/rstudio/download/preview/" class="uri">https://rstudio.com/products/rstudio/download/preview/</a>.
+<https://rstudio.com/products/rstudio/download/preview/>.
 
 ### Enabling Visual Mode
 
 Markdown documents can be edited in either source or visual mode. To
 switch into visual mode for a given document, use the
-<kbd><img src="images/visual_mode_2x.png" width="15" height="13" /></kbd>
-button at the top-right of the document toolbar (or alternatively the
-<kbd>⌘⇧ F12</kbd> keyboard shortcut):
+<kbd>![](images/visual_mode_2x.png)</kbd> button at the top-right of the
+document toolbar (or alternatively the <kbd>⌘⇧ F12</kbd> keyboard
+shortcut):
 
-<img src="images/visual-editing.png" width="700" />
+![](images/visual-editing.png)
 
 Note that you can switch between source and visual mode at any time
 (editing location and undo/redo state will be preserved when you
 switch).
 
-Using the Editor
-----------------
+## Using the Editor
 
 ### Keyboard Shortcuts
 
@@ -76,7 +74,7 @@ space to create a second level heading. Here are some of the most
 commonly used shortcuts:
 
 | Command      | Keyboard Shortcut | Markdown Shortcut |
-|--------------|:-----------------:|:-----------------:|
+| ------------ | :---------------: | :---------------: |
 | Bold         |  <kbd>⌘ B</kbd>   |    `**bold**`     |
 | Italic       |  <kbd>⌘ I</kbd>   |    `*italic*`     |
 | Code         |  <kbd>⌘ D</kbd>   |   `` `code` ``    |
@@ -84,7 +82,7 @@ commonly used shortcuts:
 | Heading 1    |  <kbd>⌥⌘ 1</kbd>  |        `#`        |
 | Heading 2    |  <kbd>⌥⌘ 2</kbd>  |       `##`        |
 | Heading 3    |  <kbd>⌥⌘ 3</kbd>  |       `###`       |
-| R Code Chunk |  <kbd>⌥⌘ I</kbd>  | ```` ```{r} ````  |
+| R Code Chunk |  <kbd>⌥⌘ I</kbd>  |    ` ```{r} `     |
 
 See the [keyboard shortcuts](shortcuts) article for a complete list of
 all shortcuts.
@@ -95,9 +93,9 @@ You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just
 about anything. Just execute the shortcut then type what you want to
 insert. For example:
 
-<img src="images/visual-editing-omni-list.png" style="display: inline-block" width="350" />
+![](images/visual-editing-omni-list.png)
 
-<img src="images/visual-editing-omni-math.png" style="display: inline-block; margin-bottom: 2px;" width="350" />
+![](images/visual-editing-omni-math.png)
 
 If you are at the beginning of a line (as displayed above) you can also
 enter plain `/` to invoke the shortcut.
@@ -107,50 +105,49 @@ enter plain `/` to invoke the shortcut.
 The editor toolbar includes buttons for the most commonly used
 formatting commands:
 
-<img src="images/visual-editing-toolbar.png" width="700" />
+![](images/visual-editing-toolbar.png)
 
 Additional commands are available on the **Format**, **Insert**, and
 **Table** menus:
 
 | Format                                     | Insert                                     | Table                                     |
-|--------------------------------------------|--------------------------------------------|-------------------------------------------|
+| ------------------------------------------ | ------------------------------------------ | ----------------------------------------- |
 | ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
 
-Learning More
--------------
+## Learning More
 
 Check out the following articles to learn more about visual markdown
 editing:
 
--   [Citations](citations) covers citing other works and managing
+  - [Citations](citations) covers citing other works and managing
     bibliographies, as well as integration with
     [Zotero](https://www.zotero.org/) (an open source reference
     management tool).
 
--   [Technical Writing](technical) covers features commonly used in
+  - [Technical Writing](technical) covers features commonly used in
     scientific and technical writing, including cross-references,
     footnotes, equations, embedded code, and LaTeX.
 
--   [Content Editing](content) provides more depth on visual editor
+  - [Content Editing](content) provides more depth on visual editor
     support for tables, lists, pandoc attributes, comments,
     symbols/emojis, etc.
 
--   [Markdown Formats](markdown) describes how the visual editor parses
+  - [Markdown Formats](markdown) describes how the visual editor parses
     and writes markdown, and also includes some tips for usage with
     [Bookdown](markdown#bookdown-extensions) and
     [Hugo](markdown#hugo-markdown).
 
--   [Editing Shortcuts](shortcuts) documents the two types of shortcuts
+  - [Editing Shortcuts](shortcuts) documents the two types of shortcuts
     you can use with the editor: standard keyboard shortcuts and
     markdown shortcuts.
 
--   [Editor Options](options) enumerates the various ways you can
+  - [Editor Options](options) enumerates the various ways you can
     configure the behavior of the editor (font size, display width,
     markdown output, etc.).
 
--   [Additional Topics](additional) discusses various other features
+  - [Additional Topics](additional) discusses various other features
     including [using CSS](advanced#using-css) within HTML documents.
 
-Thanks for trying out the visual editor! If you encounter problems or
+Thanks for trying out the visual editor\! If you encounter problems or
 want to suggest features, please let us know at
-<a href="https://github.com/rstudio/rstudio/issues/new/choose" class="uri">https://github.com/rstudio/rstudio/issues/new/choose</a>.
+<https://github.com/rstudio/rstudio/issues/new/choose>.
