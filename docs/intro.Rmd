@@ -1,5 +1,8 @@
 ---
 output: github_document
+editor_options:
+  markdown:
+    mode: gfm
 ---
 
 ```{r setup, include=FALSE}
@@ -37,7 +40,7 @@ library(urltools)
 library(parsedate)
 library(fs)
 
-version <- "1.4.926"
+version <- "1.4.928"
 osx_version <- NULL # "1.4.867"
 win_version <- NULL # "1.4.894"
 
