@@ -56,6 +56,16 @@ a[data-id='additional-topics']
   margin-bottom: 10px;
 }
 
+.markdown-section .document-example {
+  opacity: 0.9;
+  padding: 6px; 
+  font-weight: 500;
+}
 
+.markdown-section .document-example div {
+  padding: 5px;
+}
 
-
+.markdown-section .citation {
+  color: blue;
+}

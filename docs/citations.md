@@ -27,11 +27,38 @@ See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentati
 
 ## Inserting Citations
 
-You insert citations by either using the **Insert -\> Citation** command or by using markdown syntax directly (e.g. `[@cite]`).
+You insert citations by either using the **Insert -\> Citation** command or by using markdown syntax directly (e.g. `[@cite]` or `@cite`) .
 
 Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of '\@' + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix. The citation key must begin with a letter, digit, or `_`, and may contain alphanumerics, `_`, and internal punctuation characters (`:.#$%&-+?<>~/`). Here are some examples:
 
-<img src="images/visual-editing-citations-inline.png" class="illustration" width="918"/>
+<div class="illustration document-example">
+  <div>
+    Blah Blah <span class="citation">[</span>see <span class="citation">@doe99</span>, pp. 33-35; also <span class="citation">@smith04</span>, chap. 1<span class="citation">]</span>.
+  </div>
+
+<div>
+  Blah Blah <span class="citation">[</span><span class="citation">@doe99</span>, pp. 33-35, 38-39 and <em>passim</em><span class="citation">]</span>.
+  </div>
+
+<div>
+  Blah Blah <span class="citation">[</span><span
+    class="citation">@smith04</span>;
+  <span class="citation">@doe99</span><span class="citation">]</span>.
+</div>
+  <div>Smith says blah <span class="citation">[</span><span class="citation">-@smith04</span><span class="citation">]</span>.
+  </div>
+</div>
+
+You can also write in-text citations, as follows:
+
+<div class="illustration document-example">
+  <div>
+    <span class="citation">@smith04</span> says blah.
+  </div>
+  <div>
+    <span class="citation">@smith04</span> <span class="citation">[</span>p. 33<span class="citation">]</span> says blah.
+  </div>
+</div>
 
 See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on citation syntax.
 
