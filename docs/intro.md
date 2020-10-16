@@ -40,13 +40,13 @@ here:
 
 | Platform            | Download                                                                                                                                                              | Size | SHA-256                                                                                                              |
 |:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.938.exe"><i class="fa fa-download"></i> RStudio-1.4.938.exe</a>                       | 152M | <span class="sha256" data-sha256="7d4bdcb90aa69e0f27376aeace18d8447aaba59322ec357236158c2e41ba819c">7d4bdcb9…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.938.dmg"><i class="fa fa-download"></i> RStudio-1.4.938.dmg</a>                         | 149M | <span class="sha256" data-sha256="dd7cd123bc1c4a1d3f6b9f0a40412c6fbb961fad38ce6bfa18606b50bf79bc22">dd7cd123…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.938-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.938-amd64.deb</a>      | 114M | <span class="sha256" data-sha256="03ac9404435ce5bb74a000a5fbb324ab2aecd7ad80917bcaa00b0177bc65ed79">03ac9404…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.938-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.938-x86\_64.rpm</a> | 130M | <span class="sha256" data-sha256="0ccd59fe82cc5fb9fc121873fd49f3741a1d95ee978c0860462296d6790e7ac6">0ccd59fe…</span> |
+| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.943.exe"><i class="fa fa-download"></i> RStudio-1.4.943.exe</a>                       | 152M | <span class="sha256" data-sha256="d1a27a5833d92423302ebb2a9bba35fd86dfee98a6a03181489c430321be20f2">d1a27a58…</span> |
+| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.943.dmg"><i class="fa fa-download"></i> RStudio-1.4.943.dmg</a>                         | 149M | <span class="sha256" data-sha256="cc547284a28d7c42ad38cb43518d802ed256a5b909ac6bf7cb60bc385d66e888">cc547284…</span> |
+| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.943-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.943-amd64.deb</a>      | 115M | <span class="sha256" data-sha256="e0e246657222c0f5b0d78005d676a805d5f6d17f838676096e95a2f22248c394">e0e24665…</span> |
+| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.943-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.943-x86\_64.rpm</a> | 130M | <span class="sha256" data-sha256="4e4705277f6ee7a936acd7bdd44cd8e601e6965414ac3a42ecdcc185d1b00b52">4e470527…</span> |
 
 For other platforms or RStudio Server, please visit
-<a href="https://rstudio.com/products/rstudio/download/preview/" class="uri">https://rstudio.com/products/rstudio/download/preview/</a>.
+<https://rstudio.com/products/rstudio/download/preview/>.
 
 ### Enabling Visual Mode
 
@@ -150,4 +150,4 @@ editing:
 
 Thanks for trying out the visual editor! If you encounter problems or
 want to suggest features, please let us know at
-<a href="https://github.com/rstudio/rstudio/issues/new/choose" class="uri">https://github.com/rstudio/rstudio/issues/new/choose</a>.
+<https://github.com/rstudio/rstudio/issues/new/choose>.
