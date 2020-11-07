@@ -23,7 +23,7 @@ link-citations: true
 
 Note that we've also specified the `link-citations` option, which will make your citations hyperlinks to the corresponding bibliography entries.
 
-See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citations) documentation for additional information on bibliography formats.
+See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citation-syntax) documentation for additional information on bibliography formats.
 
 ## Inserting Citations
 
