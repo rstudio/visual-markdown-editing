@@ -111,7 +111,7 @@ For other platforms or RStudio Server, please visit <https://rstudio.com/product
 
 ### Enabling Visual Mode
 
-Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the <kbd>![](images/visual_mode_2x.png){width="15" height="13"}</kbd> button at the top-right of the document toolbar (or alternatively the <kbd>⌘⇧ F12</kbd> keyboard shortcut):
+Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the <kbd>![](images/visual_mode_2x.png){width="15" height="13"}</kbd> button at the top-right of the document toolbar (or alternatively the <kbd>⌘⇧ F4</kbd> keyboard shortcut):
 
 ![](images/visual-editing.png){width="700"}
 
