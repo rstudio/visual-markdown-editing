@@ -40,10 +40,10 @@ here:
 
 | Platform            | Download                                                                                                                                                                | Size | SHA-256                                                                                                              |
 |:--------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.1032.exe"><i class="fa fa-download"></i> RStudio-1.4.1032.exe</a>                       | 150M | <span class="sha256" data-sha256="80ee5f69cfb45688d3b5652c02e96a9d82c67358557265f8f8c5f0b46a78e78d">80ee5f69…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.1032.dmg"><i class="fa fa-download"></i> RStudio-1.4.1032.dmg</a>                         | 146M | <span class="sha256" data-sha256="22fdb49f2b8541bdf3e45f6df230fc036752c1ffd2f984490b34a03b0a97f8b2">22fdb49f…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.1032-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.1032-amd64.deb</a>      | 111M | <span class="sha256" data-sha256="7f6d099107d80c2da18c60197323887d2d5b033ac032e605d31c4960c19089b0">7f6d0991…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.1032-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.1032-x86\_64.rpm</a> | 127M | <span class="sha256" data-sha256="eb6e673fdc29a2abc01012c6a23bc01e86db31f5dabac605a874ac7c7367749d">eb6e673f…</span> |
+| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.1052.exe"><i class="fa fa-download"></i> RStudio-1.4.1052.exe</a>                       | 149M | <span class="sha256" data-sha256="27c17e518809b440c761653e887b4006f7cf3c3f3645f503ff28db96c0d288e2">27c17e51…</span> |
+| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.1052.dmg"><i class="fa fa-download"></i> RStudio-1.4.1052.dmg</a>                         | 146M | <span class="sha256" data-sha256="278110b39f19f1bfdbb02e4b9419c9db1b3fd25b8b71de0060b1802e2dc02778">278110b3…</span> |
+| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.1052-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.1052-amd64.deb</a>      | 112M | <span class="sha256" data-sha256="76d87b86409e2dca79b7ec8661b8ffe657efac949e04cda1de4084e7ba3f5161">76d87b86…</span> |
+| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.1052-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.1052-x86\_64.rpm</a> | 127M | <span class="sha256" data-sha256="93de296c01ff6ff40414cbf9ed7a53f9f11fe8054fc181a2778044640f15ce89">93de296c…</span> |
 
 For other platforms or RStudio Server, please visit
 <https://rstudio.com/products/rstudio/download/preview/>.
@@ -73,16 +73,163 @@ For example, enclose `**bold**` text in asterisks or type `##` and press
 space to create a second level heading. Here are some of the most
 commonly used shortcuts:
 
-| Command      | Keyboard Shortcut | Markdown Shortcut |
-|--------------|:-----------------:|:-----------------:|
-| Bold         |  <kbd>⌘ B</kbd>   |    `**bold**`     |
-| Italic       |  <kbd>⌘ I</kbd>   |    `*italic*`     |
-| Code         |  <kbd>⌘ D</kbd>   |   `` `code` ``    |
-| Link         |  <kbd>⌘ K</kbd>   |     `<href>`      |
-| Heading 1    |  <kbd>⌥⌘ 1</kbd>  |        `#`        |
-| Heading 2    |  <kbd>⌥⌘ 2</kbd>  |       `##`        |
-| Heading 3    |  <kbd>⌥⌘ 3</kbd>  |       `###`       |
-| R Code Chunk |  <kbd>⌥⌘ I</kbd>  | ```` ```{r} ````  |
+<table>
+<thead>
+<tr class="header">
+<th>
+<p>
+Command
+</p>
+<p>
+</p>
+</th>
+<th style="text-align: center;">
+<p>
+Keyboard Shortcut
+</p>
+<p>
+</p>
+</th>
+<th style="text-align: center;">
+<p>
+Markdown Shortcut
+</p>
+<p>
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p>
+Bold
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌘ B
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+Italic
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌘ I
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<p>
+Code
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌘ D
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+Link
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌘ K
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<p>
+Heading 1
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌥⌘ 1
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+Heading 2
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌥⌘ 2
+</p>
+</td>
+</tr>
+<tr class="odd">
+<td>
+<p>
+Heading 3
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌥⌘ 3
+</p>
+</td>
+</tr>
+<tr class="even">
+<td>
+<p>
+R Code Chunk
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+</p>
+</td>
+<td style="text-align: center;">
+<p>
+⌥⌘ I
+</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 See the [keyboard shortcuts](shortcuts) article for a complete list of
 all shortcuts.
@@ -110,9 +257,52 @@ formatting commands:
 Additional commands are available on the **Format**, **Insert**, and
 **Table** menus:
 
-| Format                                     | Insert                                     | Table                                     |
-|--------------------------------------------|--------------------------------------------|-------------------------------------------|
-| ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
+<table>
+<thead>
+<tr class="header">
+<th>
+<p>
+Format
+</p>
+<p>
+</p>
+</th>
+<th>
+<p>
+Insert
+</p>
+<p>
+</p>
+</th>
+<th>
+<p>
+Table
+</p>
+<p>
+</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>
+<p>
+<img src="images/visual-editing-format-menu.png" />
+</p>
+</td>
+<td>
+<p>
+<img src="images/visual-editing-insert-menu.png" />
+</p>
+</td>
+<td>
+<p>
+<img src="images/visual-editing-table-menu.png" />
+</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Learning More
 
