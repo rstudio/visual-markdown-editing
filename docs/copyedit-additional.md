@@ -46,7 +46,7 @@ The `styles.css` file might look something like this:
 Note that it's also possible to define styles inline with a [CSS code chunk](https://bookdown.org/yihui/rmarkdown/language-engines.html#javascript-and-css), but we recommend using an external file for easier manageability.
 
 Within a markdown document you can apply one or more CSS classes to various document entities including headings, images, divs, and spans.
-CSS classes are applied using [pandoc attributes](using#pandoc-attributes).
+CSS classes are applied using [pandoc attributes](content#pandoc-attributes).
 Once you've applied a class to an entity, it will derive its formatting from the CSS properties of the specified class.
 
 ### Headings
