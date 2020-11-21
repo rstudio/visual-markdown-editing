@@ -7,7 +7,6 @@ See the [Using the Editor](intro#using-the-editor) section for more details on h
 Note also that you can access all editing commands via [keyboard shortcuts](shortcuts).
 
 Editing of links, images, blockquotes, lists, tables, etc. is also available, as is the ability to specify Pandoc attributes and insert special characters and emojis.
-[This article](content) describes how to use these features.
 
 ## Editing Tables
 
