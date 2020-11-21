@@ -149,9 +149,15 @@ editor_options:
 
 Markdown modes supported by the editor include:
 
-<table><thead><tr class="header"><th><p>Mode</p><p>
-</p></th><th><p>Description</p><p>
-</p></th></tr></thead><tbody><tr class="odd"><td><p><code>markdown</code></p></td><td><p>Pandoc markdown w/ all standard extensions enabled.</p></td></tr><tr class="even"><td><p><code>markdown_strict</code></p></td><td><p>Original markdown behavior (from Markdown.pl)</p></td></tr><tr class="odd"><td><p><code>markdown_phpextra</code></p></td><td><p>PHP Markdown Extra</p></td></tr><tr class="even"><td><p><code>commonmark</code></p></td><td><p>Standard specification of core markdown features.</p></td></tr><tr class="odd"><td><p><code>gfm</code></p></td><td><p>GitHub Flavored Markdown</p></td></tr><tr class="even"><td><p><code>goldmark</code></p></td><td><p>Goldmark (default parser currently used by Hugo)</p></td></tr><tr class="odd"><td><p><code>blackfriday</code></p></td><td><p>Blackfriday (default parser formerly used by Hugo)</p></td></tr></tbody></table>
+| Mode                | Description                                         |
+|---------------------|-----------------------------------------------------|
+| `markdown`          | Pandoc markdown w/ all standard extensions enabled. |
+| `markdown_strict`   | Original markdown behavior (from Markdown.pl)       |
+| `markdown_phpextra` | PHP Markdown Extra                                  |
+| `commonmark`        | Standard specification of core markdown features.   |
+| `gfm`               | GitHub Flavored Markdown                            |
+| `goldmark`          | Goldmark (default parser currently used by Hugo)    |
+| `blackfriday`       | Blackfriday (default parser formerly used by Hugo)  |
 
 ### Extensions
 
@@ -352,17 +358,14 @@ This is especially useful if you have multiple authors collaborating using versi
 There are a handful of Pandoc markdown extensions not currently supported by visual editing.
 These are infrequently used extensions so in all likelihood won't affect documents you edit, but are still worth noting.
 
-<table><thead><tr class="header"><th><p>Extension(s)</p><p>
-</p></th><th><p>Example</p><p>
-</p></th><th><p>Behavior</p><p>
-</p></th></tr></thead><tbody><tr class="odd"><td><p>Inline footnotes</p></td><td><p>
-</p></td><td><p>^inline footnote</p></td></tr><tr class="even"><td><p>Footnote identifiers</p></td><td><p>
-</p></td><td><p>^longnote</p></td></tr><tr class="odd"><td><p>Example lists</p></td><td><p>
-</p></td><td><p>() First example</p></td></tr><tr class="even"><td><p>Auto-list numbers</p></td><td><p>
-</p></td><td><p>#. 
-First item</p></td></tr><tr class="odd"><td><p>Reference links</p></td><td><p>
-</p></td><td><p>This is a link</p></td></tr><tr class="even"><td><p>MultiMarkdown attributes</p></td><td><p>
-</p></td><td><p># Heading id</p></td></tr></tbody></table>
+| Extension(s)             | Example            | Behavior                                 |
+|--------------------------|--------------------|------------------------------------------|
+| Inline footnotes         | ^[inline footnote] | Converted to numeric footnote.           |
+| Footnote identifiers     | [^longnote]        | Converted to numeric footnote.           |
+| Example lists            | (\@) First example | Read/written as ordinary numbered lists. |
+| Auto-list numbers        | #\. First item     | Read/written as ordinary numbered lists. |
+| Reference links          | This is a [link]   | Converted to ordinary links.             |
+| MultiMarkdown attributes | \# Heading [id]    | Converted to Pandoc attributes.          |
 
 The visual editor is unable to parse non-YAML title blocks (e.g. old-style % titles or MultiMarkdown titles) and also unable to parse non top-level YAML metadata blocks.
 If these forms of metadata are encountered visual mode will fail to load with a warning.
