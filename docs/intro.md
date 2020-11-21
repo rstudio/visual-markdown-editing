@@ -73,163 +73,16 @@ For example, enclose `**bold**` text in asterisks or type `##` and press
 space to create a second level heading. Here are some of the most
 commonly used shortcuts:
 
-<table>
-<thead>
-<tr class="header">
-<th>
-<p>
-Command
-</p>
-<p>
-</p>
-</th>
-<th style="text-align: center;">
-<p>
-Keyboard Shortcut
-</p>
-<p>
-</p>
-</th>
-<th style="text-align: center;">
-<p>
-Markdown Shortcut
-</p>
-<p>
-</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>
-<p>
-Bold
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌘ B
-</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>
-Italic
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌘ I
-</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>
-Code
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌘ D
-</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>
-Link
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌘ K
-</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>
-Heading 1
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌥⌘ 1
-</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>
-Heading 2
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌥⌘ 2
-</p>
-</td>
-</tr>
-<tr class="odd">
-<td>
-<p>
-Heading 3
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌥⌘ 3
-</p>
-</td>
-</tr>
-<tr class="even">
-<td>
-<p>
-R Code Chunk
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-</p>
-</td>
-<td style="text-align: center;">
-<p>
-⌥⌘ I
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Command      | Keyboard Shortcut | Markdown Shortcut |
+|--------------|:-----------------:|:-----------------:|
+| Bold         |  <kbd>⌘ B</kbd>   |    `**bold**`     |
+| Italic       |  <kbd>⌘ I</kbd>   |    `*italic*`     |
+| Code         |  <kbd>⌘ D</kbd>   |   `` `code` ``    |
+| Link         |  <kbd>⌘ K</kbd>   |     `<href>`      |
+| Heading 1    |  <kbd>⌥⌘ 1</kbd>  |        `#`        |
+| Heading 2    |  <kbd>⌥⌘ 2</kbd>  |       `##`        |
+| Heading 3    |  <kbd>⌥⌘ 3</kbd>  |       `###`       |
+| R Code Chunk |  <kbd>⌥⌘ I</kbd>  | ```` ```{r} ````  |
 
 See the [keyboard shortcuts](shortcuts) article for a complete list of
 all shortcuts.
@@ -257,52 +110,9 @@ formatting commands:
 Additional commands are available on the **Format**, **Insert**, and
 **Table** menus:
 
-<table>
-<thead>
-<tr class="header">
-<th>
-<p>
-Format
-</p>
-<p>
-</p>
-</th>
-<th>
-<p>
-Insert
-</p>
-<p>
-</p>
-</th>
-<th>
-<p>
-Table
-</p>
-<p>
-</p>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>
-<p>
-<img src="images/visual-editing-format-menu.png" />
-</p>
-</td>
-<td>
-<p>
-<img src="images/visual-editing-insert-menu.png" />
-</p>
-</td>
-<td>
-<p>
-<img src="images/visual-editing-table-menu.png" />
-</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Format                                     | Insert                                     | Table                                     |
+|--------------------------------------------|--------------------------------------------|-------------------------------------------|
+| ![](images/visual-editing-format-menu.png) | ![](images/visual-editing-insert-menu.png) | ![](images/visual-editing-table-menu.png) |
 
 ## Learning More
 
