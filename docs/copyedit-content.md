@@ -1,13 +1,13 @@
 <!-- -*- mode: gfm -*- -->
 
 Visual mode supports editing all of Pandoc markdown.
-Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word-processor.
+Standard formatting commands (headings, bold, italic, etc.) work just the way they do in a conventional word processor.
 
 See the [Using the Editor](intro#using-the-editor) section for more details on how to access core editing commands.
 Note also that you can access all editing commands via [keyboard shortcuts](shortcuts).
 
-Editing of links, images, blockquotes, lists, tables, etc. is also available, as is the ability to specify pandoc attributes and insert special characters and emojis.
-This article describes how to use these features.
+Editing of links, images, blockquotes, lists, tables, etc. is also available, as is the ability to specify Pandoc attributes and insert special characters and emojis.
+[This article](content) describes how to use these features.
 
 ## Editing Tables
 
@@ -17,7 +17,7 @@ You can then use either the main menu or a context menu to insert and delete tab
 <img src="images/visual-editing-table-context.png" width="700"/>
 
 Note that if you select multiple rows or columns the insert or delete command will behave accordingly.
-For example, to insert 2 rows first select 2 rows then use the insert command.
+For example, to insert 2 rows, first select 2 rows then use the insert command.
 
 When you make a selection of multiple rows and/or columns as illustrated above, you can also copy and paste groups of cells within the table.
 
@@ -27,7 +27,7 @@ As described above, you can create a new list by just typing `-` or `1.` at the 
 To add items to the list, just press **Enter** within a list item.
 To exit the list, press **Enter** within an empty list item.
 
-While this covers many simple list editing talks, there are a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item.
+While this covers many simple list editing tasks, there is a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item.
 From an empty list item (pictured at left), the following keyboard gestures can be used to do this:
 
 | **Empty Item** (*enter to exit list*)                                                               | **Tab** (*add sublist*)                                                                                | **Backspace** (*add block*)                                                                          |
@@ -39,17 +39,17 @@ You can also use **Shift+Tab** to lift a list item into the previous level.
 ### Tight Lists
 
 Markdown distinguishes between normal and *tight* lists, where tight lists have less vertical spacing between items.
-In markdown source code, you designate a tight list by having no empty line between your list items.
+In markdown source code, you designate a tight list by having no empty lines between your list items.
 
-Visual mode creates normal lists by default (you can change this behavior via [Editor Options](options.md)).
+Visual mode creates normal lists by default (you can change this behavior via [Editor Options](options)).
 You can toggle between normal and tight lists using the <kbd>⌥⌘ 9</kbd> keyboard shortcut.
 You can also change the list type using the **Format -\> Edit Attributes** dialog (also accessible via the <kbd>F4</kbd> shortcut).
-If you have existing tight lists in your markdown source files they will remain so within the visual editor.
+If you have existing tight lists in your markdown source files, they will remain so within the visual editor.
 
 ## Pandoc Attributes
 
 Several of Pandoc's block types (e.g. headings, code blocks, and divs) enable you to specify a set of [custom attributes](https://pandoc.org/MANUAL.html#heading-identifiers).
-Attributes include IDs, class names, as well as arbitrary key-value pairs that are passed through to output formats (e.g. as attributes for HTML tags).
+Attributes include IDs and class names, as well as arbitrary key-value pairs that are passed through to output formats (e.g. as attributes for HTML tags).
 For these block types, an edit button will appear at the the top right when your cursor is within the block:
 
 <img src="images/visual-editing-attributes.png" width="700"/>
@@ -72,7 +72,7 @@ A markdown non-breaking space will result in the `&nbsp;` character within HTML 
 
 ### Emojis
 
-To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus auto-complete:
+To insert an emoji, you can use either the **Insert** menu or the requisite markdown shortcut plus auto-complete:
 
 | **Insert -\> Special Characters -\> Emoji...** | Markdown Shortcut                               |
 |------------------------------------------------|-------------------------------------------------|
@@ -92,7 +92,7 @@ You can search for characters either by name or by entering an explicit Unicode 
 
 ### Smart Punctuation
 
-When the pandoc [`smart`](https://pandoc.org/MANUAL.html#typography) extension is enabled (which it is by default), straight quotes are interpreted as curly quotes, `---` as em-dashes, `--` as en-dashes, and `...` as ellipses.
+When the Pandoc [`smart`](https://pandoc.org/MANUAL.html#typography) extension is enabled (which it is by default), straight quotes are interpreted as curly quotes, `---` as em-dashes, `--` as en-dashes, and `...` as ellipses.
 In addition, non-breaking spaces are inserted after certain abbreviations, such as "Mr."
 
 Visual mode supports these same transformations (so when you type `---` it becomes an em-dash).

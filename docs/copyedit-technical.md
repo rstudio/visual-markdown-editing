@@ -49,7 +49,7 @@ You can customize this behavior via [editor options](options).
 
 ## Embedded Code
 
-Source code which you include in an R Markdown document can either by for display only or can be executed by knitr as part of rendering.
+Source code which you include in an R Markdown document can either be for display only or can be executed by knitr as part of rendering.
 Code can furthermore be either inline or block (e.g. an Rmd code chunk).
 
 ### Displaying Code
@@ -86,7 +86,8 @@ You can execute code chunks up to the current one using the toolbar button or us
 ## LaTeX and HTML
 
 You can also include raw LaTeX commands or HTML tags when authoring in visual mode.
-The raw markup will be automatically recognized and syntax highlighted For example:
+The raw markup will be automatically recognized and syntax highlighted.
+For example:
 
 <img src="images/visual-editing-raw.png" width="700"/>
 
