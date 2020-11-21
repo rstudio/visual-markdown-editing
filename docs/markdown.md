@@ -5,17 +5,16 @@ In addition, there are a number of extensions to Pandoc markdown commonly used (
 In some cases, an entirely different markdown dialect is used (for example, when writing content to be published on [GitHub](https://github.github.com/gfm/) or with the [Hugo](https://gohugo.io/content-management/formats/) static site generator).
 
 By default, visual mode detects the target markdown format for the current document, making the requisite editor commands available and writing the expected flavor of markdown source code.
-This article describes the various available markdown extensions, how to override RStudio's automatic detection, as well some options that control how [markdown output](markdown?id=markdown-output) is written.
+This article describes the various available markdown extensions and how to override RStudio's automatic detection, as well some options that control how [markdown output](markdown?id=markdown-output) is written.
 
 ## GitHub Markdown
 
 When markdown is published on GitHub, it is rendered using a markdown variant called [GitHub Flavored Markdown](https://github.github.com/gfm/) (or GFM).
-GFM supports most of the markdown constructs you are familiar with from Pandoc markdown, but doesn't have support for more advanced technical writing features like citations, footnotes, and definition lists.
+GFM supports most of the markdown constructs you are familiar with from Pandoc markdown, but it doesn't have support for more advanced technical writing features like citations, footnotes, and definition lists.
 
-If you are authoring an R Markdown document that targets the [github_markdown](https://rmarkdown.rstudio.com/docs/reference/github_document.html) output format (for example, a README.Rmd file in a git repo).
-then visual mode will automatically use GFM mode for authoring.
+If you are authoring an R Markdown document that targets the [github_markdown](https://rmarkdown.rstudio.com/docs/reference/github_document.html) output format (for example, a README.Rmd file in a git repo), then visual mode will automatically use GFM mode for authoring.
 
-If you are authoring a plain .`md` file intended for viewing on GitHub, then you can use the `mode` markdown editor option to put the editor in GFM mode.
+If you are authoring a plain `.md` file intended for viewing on GitHub, then you can use the `mode` markdown editor option to put the editor in GFM mode.
 For example:
 
 ``` yaml
@@ -46,7 +45,7 @@ See the blogdown documentation for more information on [using shortcodes](https:
 ### Markdown Engine
 
 If you use normal R Markdown files (`.Rmd`) within a [blogdown](https://bookdown.org/yihui/blogdown/) website, their markdown is processed by Pandoc.
-However, if you use a plain markdown file (`.md`) or an R Markdown file with a special extension (`.Rmarkdown`), then markdown is processed by Hugo rather than pandoc.
+However, if you use a plain markdown file (`.md`) or an R Markdown file with a special extension (`.Rmarkdown`), then markdown is processed by Hugo rather than Pandoc.
 If you are using the [hugodown](https://github.com/r-lib/hugodown) package with Hugo, then markdown is also always processed using Hugo.
 
 In this case, RStudio will recognize that you aren't using Pandoc, and adapt the editor's markdown features accordingly (providing only the features supported by [goldmark](https://gohugo.io/getting-started/configuration-markup/#goldmark), the default Hugo markdown engine).
@@ -54,7 +53,7 @@ The editor will also automatically enclose LaTeX math in backticks (required in 
 
 ?\> If are using an older version of Hugo that uses [blackfriday](https://github.com/russross/blackfriday) rather than goldmark (or have blackfriday explicitly configured as your default renderer), then this should be automatically detected by RStudio.
 
-#### Math
+### Math
 
 Embedding LaTeX math using `$...$` or `$$...$$` is not supported out of the box by [goldmark](https://gohugo.io/getting-started/configuration-markup/#goldmark).
 However, many commonly used Hugo themes (e.g [Academic](https://themes.gohugo.io/academic/)) do provide rendering of LaTeX math.
@@ -97,7 +96,7 @@ See the bookdown documentation for more information on [part headers](https://bo
 ## Document Types
 
 The bookdown and Hugo features described above are enabled using automatic detection of document types by RStudio.
-Detection is done using a combination of the current project configuration and the output formats specified in YAML front-matter.
+Detection is done using a combination of the current project configuration and the output formats specified in YAML front matter.
 If this automatic detection doesn't align with your configuration, you can specify a document type manually using the `editor_options:markdown` key in YAML front matter.
 
 For example, to specify that your document is being published with blogdown, use:
@@ -111,7 +110,7 @@ editor_options:
 ---
 ```
 
-To specify that your document is being published with hugo, use:
+To specify that your document is being published with Hugo, use:
 
 ``` yaml
 ---
@@ -131,7 +130,7 @@ You can also perform this configuration explicitly (specifying arbitrary combina
 
 Visual editing mode can author all of the markdown variants supported by Pandoc.
 By default, features associated with standard Pandoc markdown are enabled.
-You can change this behavior by adding an `editor_options:markdown` key a document's YAML front-matter.
+You can change this behavior by adding an `editor_options:markdown` key to a document's YAML front-matter.
 
 ### Mode
 
@@ -202,7 +201,7 @@ output:
 ```
 
 You can also explicitly enable R Markdown specific extensions using the `rmd_extensions` option.
-For example, to enable bookdown cross references you would use this configuration:
+For example, to enable bookdown cross-references you would use this configuration:
 
 ``` yaml
 ---
@@ -217,7 +216,7 @@ Similarly, you can include `+tex_math_dollars_in_code` to specify that LaTeX mat
 
 ### Magic Comment Syntax
 
-If you are using a markdown rendered that doesn't either process or ignore YAML metadata, you can also specify all of the above using an Emacs style magic comment.
+If you are using a markdown rendered document that doesn't either process or ignore YAML metadata, you can also specify all of the above using an Emacs style magic comment.
 Returning to our original example of adding Tex features to GitHub Flavored Markdown, the magic comment version would look like this:
 
     <!-- -*- mode: gfm; extensions: +tex_math_dollars+raw_tex -*- -->
@@ -234,7 +233,7 @@ Here is a list of conventions for Pandoc generated markdown that might differ fr
 
 -   `*text*` is used in preference to `_text_`
 -   Backtick code blocks are written as ```` ``` {.md} ```` rather than ```` ```md ````
--   Backtick code blocks w/ no attributes are rendered as 4-space indented code blocks
+-   Backtick code blocks with no attributes are rendered as 4-space indented code blocks
 -   Horizontal rules are written as dashes spanning the full width of the document
 -   Plain links are written as `<https://yihui.org>` rather than `https://yihui.org`
 -   Bullet and numbered lists use additional leading spaces before list item content
@@ -243,17 +242,17 @@ Here is a list of conventions for Pandoc generated markdown that might differ fr
 -   Multiline HTML and TeX blocks use the explicit raw attribute (e.g. ```` ```{=tex} ````)
 -   Inline footnotes are replaced with footnotes immediately below the paragraph
 -   Nested divs use `:::` at all levels so long as their attributes are distinct
--   Unnumbered sections are designated with `{.unnumered}` rather than `{-}`
+-   Unnumbered sections are designated with `{.unnumbered}` rather than `{-}`
 -   Characters used for markdown syntax (e.g. `*`, `_`, or `#`) are always escaped
 
 While some of this behavior might be bothersome at first, if you decide that visual editing mode is useful for your workflow it's probably best to just adapt to writing your own markdown the same way that Pandoc does.
-Note that you can also [configure source mode](markdown#canonical-mode) to write markdown using these conventions, ensuring that the same markdown is written no matter which mode edits originate from
+Note that you can also [configure source mode](markdown#canonical-mode) to write markdown using these conventions, ensuring that the same markdown is written no matter which mode edits originate from.
 
 ## Writer Options
 
 Some aspects of markdown output can be customized via global, project, or file-level options, including:
 
--   How to wrap / break lines (fixed column, sentence-per-line, etc.)
+-   How to wrap / break lines (fixed column, sentence-per-line, etc.).
 -   Where to write footnotes (below the current paragraph or section, or at the end of the document).
 -   Whether to use the visual mode markdown writer when saving markdown from source mode (to ensure consistency between documents saved from either mode).
 
@@ -356,7 +355,7 @@ This is especially useful if you have multiple authors collaborating using versi
 ## Known Limitations
 
 There are a handful of Pandoc markdown extensions not currently supported by visual editing.
-These are infrequently used extensions so in all likelihood won't affect documents you edit, but are still worth noting.
+These are infrequently used extensions, so in all likelihood they won't affect documents you edit, but are still worth noting.
 
 | Extension(s)             | Example            | Behavior                                 |
 |--------------------------|--------------------|------------------------------------------|
@@ -368,4 +367,4 @@ These are infrequently used extensions so in all likelihood won't affect documen
 | MultiMarkdown attributes | \# Heading [id]    | Converted to Pandoc attributes.          |
 
 The visual editor is unable to parse non-YAML title blocks (e.g. old-style % titles or MultiMarkdown titles) and also unable to parse non top-level YAML metadata blocks.
-If these forms of metadata are encountered visual mode will fail to load with a warning.
+If these forms of metadata are encountered, visual mode will fail to load with a warning.

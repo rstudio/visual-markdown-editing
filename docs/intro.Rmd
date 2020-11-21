@@ -154,7 +154,7 @@ For example:
 
 ![](images/visual-editing-omni-math.png){style="display: inline-block; margin-bottom: 2px;" width="350"}
 
-If you are at the beginning of a line (as displayed above) you can also enter plain `/` to invoke the shortcut.
+If you are at the beginning of a line (as displayed above), you can also enter plain `/` to invoke the shortcut.
 
 ### Editor Toolbar
 
@@ -178,13 +178,13 @@ Check out the following articles to learn more about visual markdown editing:
 
 -   [Content Editing](content) provides more depth on visual editor support for tables, lists, pandoc attributes, comments, symbols/emojis, etc.
 
--   [Markdown Formats](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown](markdown#bookdown-extensions) and [Hugo](markdown#hugo-markdown).
+-   [Markdown Formats](markdown) describes how the visual editor parses and writes markdown, and also includes some tips for usage with [Bookdown](markdown#bookdown) and [Hugo](markdown#hugo-markdown).
 
 -   [Editing Shortcuts](shortcuts) documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts.
 
 -   [Editor Options](options) enumerates the various ways you can configure the behavior of the editor (font size, display width, markdown output, etc.).
 
--   [Additional Topics](additional) discusses various other features including [using CSS](advanced#using-css) within HTML documents.
+-   [Additional Topics](additional) discusses various other features including [using CSS](additional#css-styles) within HTML documents.
 
 Thanks for trying out the visual editor!
 If you encounter problems or want to suggest features, please let us know at <https://github.com/rstudio/rstudio/issues/new/choose>.

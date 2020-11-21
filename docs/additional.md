@@ -46,8 +46,8 @@ The `styles.css` file might look something like this:
 Note that it's also possible to define styles inline with a [CSS code chunk](https://bookdown.org/yihui/rmarkdown/language-engines.html#javascript-and-css), but we recommend using an external file for easier manageability.
 
 Within a markdown document you can apply one or more CSS classes to various document entities including headings, images, divs, and spans.
-CSS classes are applied using [pandoc attributes](using#pandoc-attributes).
-Once you've applied a class to an entity, it will derive it's formatting from the CSS properties of the specified class.
+CSS classes are applied using [pandoc attributes](content#pandoc-attributes).
+Once you've applied a class to an entity, it will derive its formatting from the CSS properties of the specified class.
 
 ### Headings
 
@@ -74,7 +74,7 @@ Note again that the visual editor won't display your image with the applied CSS 
 ### Divs
 
 Divs are special entities that allow you to apply identifiers and/or styles to a region of a document.
-Divs are blocks elements (like paragraphs).
+Divs are block elements (like paragraphs).
 
 You can create divs using the **Insert -\> Div** command, and you can apply attributes (including CSS classes) to divs the same way as you apply attributes to headings (clicking the edit button or using the <kbd>F4</kbd> keyboard shortcut when you are within a div):
 
@@ -96,7 +96,7 @@ Note that as with headings and images the formatting is not displayed in the vis
 
 ## Centering Images
 
-Pandoc Markdown doesn't include a formatting directive for centering block level images.
+Pandoc markdown doesn't include a formatting directive for centering block level images.
 Nevertheless, there are a couple of ways to accomplish this:
 
 1.  You can use the [knitr](https://yihui.name/knitr) `include_graphics()` function along with the `fig.align='center'` chunk option.
@@ -127,7 +127,7 @@ To do this, double-click the image (or use the <kbd>F4</kbd> shortcut with the i
 When authoring web pages you sometimes need to embed a snippet of HTML from an external source (e.g. an `<iframe>` tag to display a YouTube video).
 To embed HTML snippets in visual mode:
 
-1.  Use the **Format -\> Raw -\> HTML Block** command change the current block to HTML format.
+1.  Use the **Format -\> Raw -\> HTML Block** command to change the current block to HTML format.
 
 2.  Paste the HTML snippet into the HTML block.
 

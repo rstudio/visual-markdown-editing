@@ -8,7 +8,7 @@ Citations can be inserted from a variety of sources:
 3.  [DOI](#citations-from-dois) (Document Object Identifier) references.
 4.  Searches of [Crossref](https://www.crossref.org/), [DataCite](https://datacite.org/), or [PubMed](https://pubmed.ncbi.nlm.nih.gov/).
 
-If you insert citations from Zotero, DOI look-up, or a search then they are automatically added to your document bibliography.
+If you insert citations from Zotero, DOI lookup, or a search then they are automatically added to your document bibliography.
 
 ## Bibliographies
 
@@ -30,7 +30,7 @@ See the [Pandoc Citations](https://pandoc.org/MANUAL.html#citation-syntax) docum
 
 ## Inserting Citations
 
-You insert citations by either using the **Insert -\> Citation** command or by using markdown syntax directly (e.g. `[@cite]` or `@cite`) .
+You insert citations by either using the **Insert -\> Citation** command or by using markdown syntax directly (e.g. `[@cite]` or `@cite`).
 
 Citations go inside square brackets and are separated by semicolons.
 Each citation must have a key, composed of '\@' + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix.
@@ -83,7 +83,7 @@ When you do this a completion interface is provided for searching available cita
 
 ### Citation IDs
 
-Before inserting a citation from an external source you will may wish to customize it's ID.
+Before inserting a citation from an external source you may wish to customize its ID.
 Within the **Insert Citation** dialog, click the edit button on the right side of citations to change their ID:
 
 <img src="images/visual-editing-citations-id.png" class="illustration"/>
@@ -102,7 +102,7 @@ Once you've inserted a citation, place the cursor over it to see a preview of it
 
 [Zotero](https://zotero.org) is a popular free and open source reference manager.
 If you use Zotero, you can also insert citations directly from your Zotero libraries.
-If you have Zotero installed locally it's location will be detected automatically and citations from your main library (**My Library**) will be available:
+If you have Zotero installed locally, its location will be detected automatically and citations from your main library (**My Library**) will be available:
 
 <img src="images/visual-editing-citations-zotero-browse.png" class="illustration" width="918"/>
 
@@ -111,10 +111,10 @@ Zotero references will also show up automatically in completions:
 <img src="images/visual-editing-citation-completions.png" width="426"/>
 
 Items from Zotero will appear alongside items from your bibliography with a small "Z" logo juxtaposed over them.
-If you insert a citation from Zotero that isn't already in your bibliography then it will be automatically added to the bibliography.
+If you insert a citation from Zotero that isn't already in your bibliography, then it will be automatically added to the bibliography.
 
 If you are running both RStudio and Zotero on your desktop, then no additional configuration is required for connecting to your Zotero library.
-If however you using RStudio Server and/or want to access your Zotero library over the web, then a few more steps are required (see the [Zotero Web API](#zotero-web-api) section for details).
+If however you are using RStudio Server and/or want to access your Zotero library over the web, then a few more steps are required (see the [Zotero Web API](#zotero-web-api) section for details).
 
 ### Group Libraries
 
@@ -147,7 +147,7 @@ zotero: false
 
 ## Citations from DOIs
 
-Use the **From DOI** pane of the **Insert Citation** dialog to insert a citation based on a DOI (e.g that you have retrieved from a PubMed or other search):
+Use the **From DOI** pane of the **Insert Citation** dialog to insert a citation based on a DOI (e.g. that you have retrieved from a PubMed or other search):
 
 <img src="images/visual-editing-citation-insert-doi.png" width="918"/>
 
@@ -178,7 +178,7 @@ That said, it is possible to access Zotero web libraries from RStudio Desktop if
 
 ### API Access Key
 
-RStudio accesses Zotero web libraries using the Zotero Web API, so the first step is to [create a Zotero account](https://www.zotero.org/user/register) and then configure Zotero to sync it's data to your account.
+RStudio accesses Zotero web libraries using the Zotero Web API, so the first step is to [create a Zotero account](https://www.zotero.org/user/register) and then configure Zotero to sync its data to your account.
 You can do this using the **Sync** tab of the Zotero preferences:
 
 <img src="images/visual-editing-citations-zotero-sync.png" width="700"/>
@@ -199,4 +199,4 @@ Finally, go to the **R Markdown -\> Citations** preferences to connect Zotero to
 Set the Zotero Library option to "Web", then paste in your Zotero Web API Key.
 You can use **Verify Key...** button to confirm that your Zotero API key is working correctly.
 
-Once you've confirmed your connection you are ready to start inserting citations from Zotero.
+Once you've confirmed your connection, you are ready to start inserting citations from Zotero.
