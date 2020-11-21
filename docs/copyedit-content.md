@@ -30,10 +30,9 @@ To exit the list, press **Enter** within an empty list item.
 While this covers many simple list editing talks, there are a variety of other actions you may want to take within lists, including creating nested lists and adding paragraphs or code blocks to an exiting list item.
 From an empty list item (pictured at left), the following keyboard gestures can be used to do this:
 
-<table><thead><tr class="header"><th><p><strong>Empty Item</strong> (<em>enter to exit list</em>)</p><p>
-</p></th><th><p><strong>Tab</strong> (<em>add sublist</em>)</p><p>
-</p></th><th><p><strong>Backspace</strong> (<em>add block</em>)</p><p>
-</p></th></tr></thead><tbody><tr class="odd"><td><p></p></td><td><p></p></td><td><p></p></td></tr></tbody></table>
+| **Empty Item** (*enter to exit list*)                                                               | **Tab** (*add sublist*)                                                                                | **Backspace** (*add block*)                                                                          |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| <img src="images/visual-editing-list-item.png" class="illustration list-illustration" width="217"/> | <img src="images/visual-editing-list-sublist.png" class="illustration list-illustration" width="217"/> | <img src="images/visual-editing-list-block.png" class="illustration list-illustration" width="217"/> |
 
 You can also use **Shift+Tab** to lift a list item into the previous level.
 
@@ -75,8 +74,9 @@ A markdown non-breaking space will result in the `&nbsp;` character within HTML 
 
 To insert an emoji, you can use either the **Insert** menu or use the requisite markdown shortcut plus auto-complete:
 
-<table><thead><tr class="header"><th><p><strong>Insert -&gt; Special Characters -&gt; Emoji...</strong></p></th><th><p>Markdown Shortcut</p><p>
-</p></th></tr></thead><tbody><tr class="odd"><td><p><img src="images/visual-editing-emoji-dialog.png" /></p></td><td><p><img src="images/visual-editing-emoji-completion.png" /></p></td></tr></tbody></table>
+| **Insert -\> Special Characters -\> Emoji...** | Markdown Shortcut                               |
+|------------------------------------------------|-------------------------------------------------|
+| ![](images/visual-editing-emoji-dialog.png)    | ![](images/visual-editing-emoji-completion.png) |
 
 For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written.
 For other formats the literal emoji character will be written.
