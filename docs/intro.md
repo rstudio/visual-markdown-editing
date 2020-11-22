@@ -40,10 +40,10 @@ here:
 
 | Platform            | Download                                                                                                                                                                | Size | SHA-256                                                                                                              |
 |:--------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.1052.exe"><i class="fa fa-download"></i> RStudio-1.4.1052.exe</a>                       | 149M | <span class="sha256" data-sha256="27c17e518809b440c761653e887b4006f7cf3c3f3645f503ff28db96c0d288e2">27c17e51…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.1052.dmg"><i class="fa fa-download"></i> RStudio-1.4.1052.dmg</a>                         | 146M | <span class="sha256" data-sha256="278110b39f19f1bfdbb02e4b9419c9db1b3fd25b8b71de0060b1802e2dc02778">278110b3…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.1052-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.1052-amd64.deb</a>      | 112M | <span class="sha256" data-sha256="76d87b86409e2dca79b7ec8661b8ffe657efac949e04cda1de4084e7ba3f5161">76d87b86…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.1052-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.1052-x86\_64.rpm</a> | 127M | <span class="sha256" data-sha256="93de296c01ff6ff40414cbf9ed7a53f9f11fe8054fc181a2778044640f15ce89">93de296c…</span> |
+| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.1060.exe"><i class="fa fa-download"></i> RStudio-1.4.1060.exe</a>                       | 149M | <span class="sha256" data-sha256="482968fea91f1c2e92a86b9cc156fb760f7ba29c09e137dab6da332fb00ec8ce">482968fe…</span> |
+| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.1060.dmg"><i class="fa fa-download"></i> RStudio-1.4.1060.dmg</a>                         | 146M | <span class="sha256" data-sha256="1fd35fe1b6de6ef5e7d03d0122cbf141530a3cc9e357934309960368700ba267">1fd35fe1…</span> |
+| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.1060-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.1060-amd64.deb</a>      | 114M | <span class="sha256" data-sha256="fc6fa4a9014ac544e6e7a7904b2b10d2f529b111fb6e38ca59530d22de19eaae">fc6fa4a9…</span> |
+| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.1060-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.1060-x86\_64.rpm</a> | 132M | <span class="sha256" data-sha256="d48757b539d642090aa5b4dc1b895f8b2248bace22f2dd80297b5db1b321d7e2">d48757b5…</span> |
 
 For other platforms or RStudio Server, please visit
 <https://rstudio.com/products/rstudio/download/preview/>.
@@ -97,7 +97,7 @@ insert. For example:
 
 <img src="images/visual-editing-omni-math.png" style="display: inline-block; margin-bottom: 2px;" width="350" />
 
-If you are at the beginning of a line (as displayed above) you can also
+If you are at the beginning of a line (as displayed above), you can also
 enter plain `/` to invoke the shortcut.
 
 ### Editor Toolbar
@@ -134,8 +134,7 @@ editing:
 
 -   [Markdown Formats](markdown) describes how the visual editor parses
     and writes markdown, and also includes some tips for usage with
-    [Bookdown](markdown#bookdown-extensions) and
-    [Hugo](markdown#hugo-markdown).
+    [Bookdown](markdown#bookdown) and [Hugo](markdown#hugo-markdown).
 
 -   [Editing Shortcuts](shortcuts) documents the two types of shortcuts
     you can use with the editor: standard keyboard shortcuts and
@@ -146,7 +145,7 @@ editing:
     markdown output, etc.).
 
 -   [Additional Topics](additional) discusses various other features
-    including [using CSS](advanced#using-css) within HTML documents.
+    including [using CSS](additional#css-styles) within HTML documents.
 
 Thanks for trying out the visual editor! If you encounter problems or
 want to suggest features, please let us know at
