@@ -33,22 +33,9 @@ visual mode include:
 
 ## Getting Started
 
-Visual markdown editing is currently only available in the [preview
-release](https://rstudio.com/products/rstudio/download/preview/) of
-RStudio. You can download the desktop version of the preview release
-here:
-
-| Platform            | Download                                                                                                                                                                | Size | SHA-256                                                                                                              |
-|:--------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----|:---------------------------------------------------------------------------------------------------------------------|
-| Windows 10/8/7      | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/windows/RStudio-1.4.1098.exe"><i class="fa fa-download"></i> RStudio-1.4.1098.exe</a>                       | 150M | <span class="sha256" data-sha256="54490b34f8972a53d1b8e1a5ea1b445add53e9931514fa1aa3269ce137dd5a42">54490b34…</span> |
-| MacOS 10.13+        | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/macos/RStudio-1.4.1098.dmg"><i class="fa fa-download"></i> RStudio-1.4.1098.dmg</a>                         | 146M | <span class="sha256" data-sha256="fd44c15955dd820049bcc541c27be93be1baf355daf1932443508541629e3090">fd44c159…</span> |
-| Ubuntu 18/Debian 10 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/bionic/amd64/rstudio-1.4.1098-amd64.deb"><i class="fa fa-download"></i> rstudio-1.4.1098-amd64.deb</a>      | 116M | <span class="sha256" data-sha256="0eb1c160177c163aebf56e15e334995f80a82761b25962426c31d2415e9ee199">0eb1c160…</span> |
-| Fedora 28/Red Hat 8 | <a href="https://s3.amazonaws.com/rstudio-ide-build/desktop/centos8/x86_64/rstudio-1.4.1098-x86_64.rpm"><i class="fa fa-download"></i> rstudio-1.4.1098-x86\_64.rpm</a> | 132M | <span class="sha256" data-sha256="51e830b8d7ff044a25ac641a296f2550e87ebe801ac402ff75403f4b3fb5850f">51e830b8…</span> |
-
-For other platforms or RStudio Server, please visit
-<https://rstudio.com/products/rstudio/download/preview/>.
-
-### Enabling Visual Mode
+Visual markdown editing is available in RStudio v1.4 or higher. You can
+download the latest version of RStudio here:
+<https://rstudio.com/products/rstudio/download/>.
 
 Markdown documents can be edited in either source or visual mode. To
 switch into visual mode for a given document, use the
