@@ -1,0 +1,37 @@
+:root {
+  
+  --sidebar-name-text-align     : left;
+  
+  --code-inline-background      : rgba(0, 0, 0, 0.04);
+  
+  --kbd-margin                  : 0 0;
+  --kbd-padding                 : 0.3em 0.3em;
+  
+  --table-row-even-background   : var(--mono-tint3);
+  --table-row-odd-background    : ;
+  --table-cell-padding          : 0.4em 0.4em;
+}
+
+a[data-id='introduction'],
+a[data-id='additional-topics']
+{
+  display: none;
+}
+
+.markdown-section td > kbd {
+  min-width: 60px;
+}
+
+.markdown-section td {
+  vertical-align: top;
+}
+
+.markdown-section p > img:only-child {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+.markdown-section .citation {
+  color: blue;
+}

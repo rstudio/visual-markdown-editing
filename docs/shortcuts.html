@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-(Local Development)">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Visual R Markdown</title>
+  <title>Visual R Markdown – Editing Shortcuts</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,8 @@
   <script src="site_libs/quarto-search/autocomplete.min.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
-  <link href="./citations.html" rel="next">
+  <link href="./options.html" rel="next">
+  <link href="./markdown.html" rel="prev">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -48,9 +49,9 @@
     'anonymizeIp': true,
   });
   </script>
-<meta name="og:title" content="Visual R Markdown">
+<meta name="og:title" content="Visual R Markdown - Editing Shortcuts">
 <meta name="og:site-name" content="Visual R Markdown">
-<meta name="twitter:title" content="Visual R Markdown">
+<meta name="twitter:title" content="Visual R Markdown - Editing Shortcuts">
 <meta name="twitter:card" content="summary">
 </head>
 <body>
@@ -58,7 +59,7 @@
 <header id="quarto-header" class="headroom fixed-top">
 <nav class="quarto-secondary-nav py-2 d-lg-none d-md-block " data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <div class="container-fluid d-flex justify-content-between">
-    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Visual R Markdown</h1>
+    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Editing Shortcuts</h1>
     <button type="button" class="quarto-btn-toggle btn d-lg-none py-0 px-1 d-inline-block border-0 ">
       <i class="bi bi-chevron-right"></i>
     </button>
@@ -88,7 +89,7 @@
   <div class="sidebar-menu-container"> 
   <ul class="list-unstyled mt-3 px-3">
       <li class="sidebar-item">
-  <a href="./index.html" class="active">Getting Started</a>
+  <a href="./index.html" class="">Getting Started</a>
 </li>
       <li class="sidebar-item">
   <a href="./citations.html" class="">Citations</a>
@@ -103,7 +104,7 @@
   <a href="./markdown.html" class="">Markdown Formats</a>
 </li>
       <li class="sidebar-item">
-  <a href="./shortcuts.html" class="">Editing Shortcuts</a>
+  <a href="./shortcuts.html" class="active">Editing Shortcuts</a>
 </li>
       <li class="sidebar-item">
   <a href="./options.html" class="">Editor Options</a>
@@ -118,47 +119,20 @@
   <div id="quarto-toc-sidebar" class="col col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-toc order-last"><nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
-<li><a href="#overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
-<li><a href="#getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
-<li><a href="#using-the-editor" class="nav-link" data-scroll-target="#using-the-editor">Using the Editor</a>
-<ul class="collapse">
-<li><a href="#keyboard-shortcuts" class="nav-link" data-scroll-target="#keyboard-shortcuts">Keyboard Shortcuts</a></li>
+<li><a href="#shortcuts" class="nav-link active" data-scroll-target="#shortcuts">Shortcuts</a></li>
 <li><a href="#insert-anything" class="nav-link" data-scroll-target="#insert-anything">Insert Anything</a></li>
-<li><a href="#editor-toolbar" class="nav-link" data-scroll-target="#editor-toolbar">Editor Toolbar</a></li>
-</ul></li>
-<li><a href="#learning-more" class="nav-link" data-scroll-target="#learning-more">Learning More</a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rstudio/visual-markdown-editing/edit/main/index.qmd">Edit this page</a></p><p><a href="https://github.com/rstudio/visual-markdown-editing/issues/new">Report an issue</a></p></div></div></nav></div>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rstudio/visual-markdown-editing/edit/main/shortcuts.qmd">Edit this page</a></p><p><a href="https://github.com/rstudio/visual-markdown-editing/issues/new">Report an issue</a></p></div></div></nav></div>
   <div class="col mx-auto col-sm-12 col-md-9 col-lg-7 px-lg-4 pe-xxl-4 ps-xxl-0">
 <main>
 <header id="title-block-header">
-<h1 class="title d-none d-lg-block display-7">Visual R Markdown</h1>
+<h1 class="title d-none d-lg-block display-7">Editing Shortcuts</h1>
 </header>
 
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>RStudio v1.4 includes a new visual markdown editing mode. Highlights of visual mode include:</p>
-<ul>
-<li><p>Visual editing for all of Pandoc markdown, including tables, divs/spans, definition lists, attributes, etc.</p></li>
-<li><p>Extensive support for citations, including integration with Zotero and the ability to insert citations from DOIs or searches of PubMed, Crossref, and DataCite.</p></li>
-<li><p>Scientific and technical writing features, including cross-references, footnotes, equations, code execution, and embedded LaTeX.</p></li>
-<li><p>Writing productivity features, including real time spell-checking and outline navigation.</p></li>
-<li><p>Tight integration with source editing (editing location and undo/redo state are preserved when switching between modes).</p></li>
-<li><p>Rich keyboard support. In addition to traditional shortcuts, you can use markdown expressions (e.g.&nbsp;<code>##</code>, <code>**bold**</code>, etc.) for formatting. If you don’t remember all of the keyboard shortcuts, you can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert anything.</p></li>
-</ul>
-</section>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p>Visual markdown editing is available in RStudio v1.4 or higher. You can download the latest version of RStudio here: <a href="https://rstudio.com/products/rstudio/download/" class="uri">https://rstudio.com/products/rstudio/download/</a>.</p>
-<p>Markdown documents can be edited in either source or visual mode. To switch into visual mode for a given document, use the <kbd><img src="images/visual_mode_2x.png" width="15" height="13"></kbd> button at the top-right of the document toolbar (or alternatively the <kbd>⌘⇧ F4</kbd> keyboard shortcut):</p>
-<p><img src="images/visual-editing.png" class="img-fluid"></p>
-<p>Note that you can switch between source and visual mode at any time (editing location and undo/redo state will be preserved when you switch).</p>
-</section>
-<section id="using-the-editor" class="level2">
-<h2 class="anchored" data-anchor-id="using-the-editor">Using the Editor</h2>
-<section id="keyboard-shortcuts" class="level3">
-<h3 class="anchored" data-anchor-id="keyboard-shortcuts">Keyboard Shortcuts</h3>
-<p>There are keyboard shortcuts for all basic editing tasks. Visual mode supports both traditional keyboard shortcuts (e.g.&nbsp;<kbd>⌘ B</kbd> for bold) as well as markdown shortcuts (using markdown syntax directly). For example, enclose <code>**bold**</code> text in asterisks or type <code>##</code> and press space to create a second level heading. Here are some of the most commonly used shortcuts:</p>
+<p>Visual mode supports both traditional keyboard shortcuts (e.g.&nbsp;<kbd>⌘ B</kbd> for bold) as well as markdown shortcuts (using markdown syntax directly). For example, enclose <code>**bold**</code> text in asterisks or type <code>##</code> and press space to create a second level heading.</p>
+<section id="shortcuts" class="level2">
+<h2 class="anchored" data-anchor-id="shortcuts">Shortcuts</h2>
+<p>Here are the available keyboard and markdown shortcuts:</p>
 <table class="table">
 <thead>
 <tr class="header">
@@ -184,9 +158,19 @@
 <td style="text-align: center;"><code>`code`</code></td>
 </tr>
 <tr class="even">
-<td>Link</td>
-<td style="text-align: center;"><kbd>⌘ K</kbd></td>
-<td style="text-align: center;"><code>&lt;href&gt;</code></td>
+<td>Strikeout</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>~~strike~~</code></td>
+</tr>
+<tr class="odd">
+<td>Subscript</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>~sub~</code></td>
+</tr>
+<tr class="even">
+<td>Superscript</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>^super^</code></td>
 </tr>
 <tr class="odd">
 <td>Heading 1</td>
@@ -204,16 +188,150 @@
 <td style="text-align: center;"><code>###</code></td>
 </tr>
 <tr class="even">
+<td>Heading Attributes</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>{#id .class}</code></td>
+</tr>
+<tr class="odd">
+<td>Blockquote</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>&gt;</code></td>
+</tr>
+<tr class="even">
+<td>Code Block</td>
+<td style="text-align: center;"><kbd>⇧⌘ \</kbd></td>
+<td style="text-align: center;"><code>```</code></td>
+</tr>
+<tr class="odd">
 <td>R Code Chunk</td>
 <td style="text-align: center;"><kbd>⌥⌘ I</kbd></td>
 <td style="text-align: center;"><code>```{r}</code></td>
 </tr>
+<tr class="even">
+<td>Raw Block</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>```{=html}</code></td>
+</tr>
+<tr class="odd">
+<td>Div</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>:::</code></td>
+</tr>
+<tr class="even">
+<td>Bullet List</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>-</code></td>
+</tr>
+<tr class="odd">
+<td>Ordered List</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>1.</code></td>
+</tr>
+<tr class="even">
+<td>Tight List</td>
+<td style="text-align: center;"><kbd>⌥⌘ 9</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>List Check</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>[x]</code></td>
+</tr>
+<tr class="even">
+<td>Link</td>
+<td style="text-align: center;"><kbd>⌘ K</kbd></td>
+<td style="text-align: center;"><code>&lt;href&gt;</code></td>
+</tr>
+<tr class="odd">
+<td>Emoji</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>:smile:</code></td>
+</tr>
+<tr class="even">
+<td>Definition</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><code>:</code></td>
+</tr>
+<tr class="odd">
+<td>Non-Breaking Space</td>
+<td style="text-align: center;"><kbd>⌃ Space</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Hard Line Break</td>
+<td style="text-align: center;"><kbd>⇧ Enter</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Paragraph</td>
+<td style="text-align: center;"><kbd>⌥⌘ 0</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Image</td>
+<td style="text-align: center;"><kbd>⇧⌘ I</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Footnote</td>
+<td style="text-align: center;"><kbd>⇧⌘ F7</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Citation</td>
+<td style="text-align: center;"><kbd>⇧⌘ F8</kbd></td>
+<td style="text-align: center;"><code>[@</code></td>
+</tr>
+<tr class="odd">
+<td>Table</td>
+<td style="text-align: center;"><kbd>⌥⌘ T</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Editing Comment</td>
+<td style="text-align: center;"><kbd>⇧⌘ C</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Select All</td>
+<td style="text-align: center;"><kbd>⌘ A</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Clear Formatting</td>
+<td style="text-align: center;"><kbd>⌘ \</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Edit Attributes</td>
+<td style="text-align: center;"><kbd>F4</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td>Run Code Chunk</td>
+<td style="text-align: center;"><kbd>⇧⌘ Enter</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td>Run Previous Chunks</td>
+<td style="text-align: center;"><kbd>⇧⌥⌘ P</kbd></td>
+<td style="text-align: center;"></td>
+</tr>
 </tbody>
 </table>
-<p>See the <a href="./shortcuts.html">editing shortcuts</a> article for a complete list of all shortcuts.</p>
+<div class="callout-tip callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>For markdown shortcuts, if you didn’t intend to use a shortcut and want to reverse its effect, just press the backspace key.</p>
+</div>
+</div>
+</div>
 </section>
-<section id="insert-anything" class="level3">
-<h3 class="anchored" data-anchor-id="insert-anything">Insert Anything</h3>
+<section id="insert-anything" class="level2">
+<h2 class="anchored" data-anchor-id="insert-anything">Insert Anything</h2>
 <p>You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just about anything. Just execute the shortcut then type what you want to insert. For example:</p>
 <div class="quarto-layout-panel">
 <div class="quarto-layout-row quarto-layout-valign-top">
@@ -225,53 +343,19 @@
 </div>
 </div>
 </div>
-<p>If you are at the beginning of a line (as displayed above), you can also enter plain <code>/</code> to invoke the shortcut.</p>
-</section>
-<section id="editor-toolbar" class="level3">
-<h3 class="anchored" data-anchor-id="editor-toolbar">Editor Toolbar</h3>
-<p>The editor toolbar includes buttons for the most commonly used formatting commands:</p>
-<p><img src="images/visual-editing-toolbar.png" class="img-fluid"></p>
-<p>Additional commands are available on the <strong>Format</strong>, <strong>Insert</strong>, and <strong>Table</strong> menus:</p>
-<table class="table">
-<thead>
-<tr class="header">
-<th>Format</th>
-<th>Insert</th>
-<th>Table</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><img src="images/visual-editing-format-menu.png" class="img-fluid"></td>
-<td><img src="images/visual-editing-insert-menu.png" class="img-fluid"></td>
-<td><img src="images/visual-editing-table-menu.png" class="img-fluid"></td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="learning-more" class="level2">
-<h2 class="anchored" data-anchor-id="learning-more">Learning More</h2>
-<p>Check out the following articles to learn more about visual markdown editing:</p>
-<ul>
-<li><p><a href="./citations.html">Citations</a> covers citing other works and managing bibliographies, as well as integration with <a href="https://www.zotero.org/">Zotero</a> (an open source reference management tool).</p></li>
-<li><p><a href="./technical.html">Technical Writing</a> covers features commonly used in scientific and technical writing, including cross-references, footnotes, equations, embedded code, and LaTeX.</p></li>
-<li><p><a href="./content.html">Content Editing</a> provides more depth on visual editor support for tables, lists, pandoc attributes, comments, symbols/emojis, etc.</p></li>
-<li><p><a href="./markdown.html">Markdown Formats</a> describes how the visual editor parses and writes markdown, and also includes some tips for usage with <a href="./markdown.html#bookdown">Bookdown</a> and <a href="./markdown.html#hugo-markdown">Hugo</a>.</p></li>
-<li><p><a href="./shortcuts.html">Editing Shortcuts</a> documents the two types of shortcuts you can use with the editor: standard keyboard shortcuts and markdown shortcuts.</p></li>
-<li><p><a href="./options.html">Editor Options</a> enumerates the various ways you can configure the behavior of the editor (font size, display width, markdown output, etc.).</p></li>
-<li><p><a href="./additional.html">Additional Topics</a> discusses various other features including <a href="./additional.html#css-styles">using CSS</a> within HTML documents.</p></li>
-</ul>
-<p>Thanks for trying out the visual editor! If you encounter problems or want to suggest features, please let us know at <a href="https://github.com/rstudio/rstudio/issues/new/choose" class="uri">https://github.com/rstudio/rstudio/issues/new/choose</a>.</p>
+<p>If you are at the beginning of a line (as displayed above) you can also enter plain <code>/</code> to invoke the shortcut.</p>
 <!-- -->
 </section>
 </main>
 <div class="page-navigation page-navigation-docked">
   <div class="nav-page nav-page-previous">
+      <a href="./markdown.html">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Markdown Formats</span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./citations.html">
-        <span class="nav-page-text">Citations</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./options.html">
+        <span class="nav-page-text">Editor Options</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </div>

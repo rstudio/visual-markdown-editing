@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-(Local Development)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Visual R Markdown – Markdown Formats</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.min.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <link href="./shortcuts.html" rel="next">
+  <link href="./content.html" rel="prev">
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/clipboard.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <script src="site_libs/quarto-html/quarto-html.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  
+  <script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-77306155-5', 'auto');
+
+  ga('send', {
+    hitType: 'pageview',
+    'anonymizeIp': true,
+  });
+  </script>
+<meta name="og:title" content="Visual R Markdown - Markdown Formats">
+<meta name="og:site-name" content="Visual R Markdown">
+<meta name="twitter:title" content="Visual R Markdown - Markdown Formats">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+<div id="quarto-search-results"></div>
+<header id="quarto-header" class="headroom fixed-top">
+<nav class="quarto-secondary-nav py-2 d-lg-none d-md-block " data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <div class="container-fluid d-flex justify-content-between">
+    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Markdown Formats</h1>
+    <button type="button" class="quarto-btn-toggle btn d-lg-none py-0 px-1 d-inline-block border-0 ">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+</nav>
+</header>
+ <!-- /navbar/sidebar -->
+<div class="container-fluid quarto-container d-flex flex-column page-layout-article">
+<div class="row flex-fill" id="quarto-content">
+  <div id="quarto-sidebar" class="col col-12 col-lg-3 d-lg-flex px-0 pt-0 sidebar collapse sidebar-navigation">
+    <nav class="me-lg-auto py-2 docked  overflow-scroll">
+  <div class="px-3 pt-lg-2 mt-1 text-left sidebar-header sidebar-header-stacked">
+    <img src="./images/rstudio-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">
+      Visual R Markdown
+      </a> 
+    </div>
+  </div>
+    <div class="d-flex px-3 mt-2 flex-shrink-0 align-items-center">
+      <div class="sidebar-search">
+      <form class="d-flex mb-0">
+  <input id="quarto-search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+      </div>
+    </div>
+  <div class="sidebar-menu-container"> 
+  <ul class="list-unstyled mt-3 px-3">
+      <li class="sidebar-item">
+  <a href="./index.html" class="">Getting Started</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./citations.html" class="">Citations</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./technical.html" class="">Technical Writing</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./content.html" class="">Content Editing</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./markdown.html" class="active">Markdown Formats</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./shortcuts.html" class="">Editing Shortcuts</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./options.html" class="">Editor Options</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./additional.html" class="">Additional Topics</a>
+</li>
+  </ul>
+  </div>
+</nav>
+  </div>
+  <div id="quarto-toc-sidebar" class="col col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-toc order-last"><nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#github-markdown" class="nav-link active" data-scroll-target="#github-markdown">GitHub Markdown</a></li>
+<li><a href="#hugo-markdown" class="nav-link" data-scroll-target="#hugo-markdown">Hugo Markdown</a>
+<ul class="collapse">
+<li><a href="#shortcodes" class="nav-link" data-scroll-target="#shortcodes">Shortcodes</a></li>
+<li><a href="#markdown-engine" class="nav-link" data-scroll-target="#markdown-engine">Markdown Engine</a></li>
+<li><a href="#math" class="nav-link" data-scroll-target="#math">Math</a></li>
+</ul></li>
+<li><a href="#bookdown" class="nav-link" data-scroll-target="#bookdown">Bookdown</a>
+<ul class="collapse">
+<li><a href="#cross-references" class="nav-link" data-scroll-target="#cross-references">Cross References</a></li>
+<li><a href="#part-headers" class="nav-link" data-scroll-target="#part-headers">Part Headers</a></li>
+</ul></li>
+<li><a href="#document-types" class="nav-link" data-scroll-target="#document-types">Document Types</a></li>
+<li><a href="#modes-extensions" class="nav-link" data-scroll-target="#modes-extensions">Modes &amp; Extensions</a>
+<ul class="collapse">
+<li><a href="#mode" class="nav-link" data-scroll-target="#mode">Mode</a></li>
+<li><a href="#extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a></li>
+<li><a href="#magic-comment-syntax" class="nav-link" data-scroll-target="#magic-comment-syntax">Magic Comment Syntax</a></li>
+</ul></li>
+<li><a href="#markdown-output" class="nav-link" data-scroll-target="#markdown-output">Markdown Output</a></li>
+<li><a href="#writer-options" class="nav-link" data-scroll-target="#writer-options">Writer Options</a>
+<ul class="collapse">
+<li><a href="#line-wrapping" class="nav-link" data-scroll-target="#line-wrapping">Line Wrapping</a></li>
+<li><a href="#references" class="nav-link" data-scroll-target="#references">References</a></li>
+<li><a href="#canonical-mode" class="nav-link" data-scroll-target="#canonical-mode">Canonical Mode</a></li>
+</ul></li>
+<li><a href="#known-limitations" class="nav-link" data-scroll-target="#known-limitations">Known Limitations</a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rstudio/visual-markdown-editing/edit/main/markdown.qmd">Edit this page</a></p><p><a href="https://github.com/rstudio/visual-markdown-editing/issues/new">Report an issue</a></p></div></div></nav></div>
+  <div class="col mx-auto col-sm-12 col-md-9 col-lg-7 px-lg-4 pe-xxl-4 ps-xxl-0">
+<main>
+<header id="title-block-header">
+<h1 class="title d-none d-lg-block display-7">Markdown Formats</h1>
+</header>
+
+<p>R Markdown documents are normally authored using standard <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc markdown</a>. In addition, there are a number of extensions to Pandoc markdown commonly used (e.g.&nbsp;the <a href="https://bookdown.org/yihui/bookdown/cross-references.html">cross-references</a> feature of the <strong>bookdown</strong> package). In some cases, an entirely different markdown dialect is used (for example, when writing content to be published on <a href="https://github.github.com/gfm/">GitHub</a> or with the <a href="https://gohugo.io/content-management/formats/">Hugo</a> static site generator).</p>
+<p>By default, visual mode detects the target markdown format for the current document, making the requisite editor commands available and writing the expected flavor of markdown source code. This article describes the various available markdown extensions and how to override RStudio’s automatic detection, as well some options that control how <a href="#markdown-output">markdown output</a> is written.</p>
+<section id="github-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="github-markdown">GitHub Markdown</h2>
+<p>When markdown is published on GitHub, it is rendered using a markdown variant called <a href="https://github.github.com/gfm/">GitHub Flavored Markdown</a> (or GFM). GFM supports most of the markdown constructs you are familiar with from Pandoc markdown, but it doesn’t have support for more advanced technical writing features like citations, footnotes, and definition lists.</p>
+<p>If you are authoring an R Markdown document that targets the <a href="https://rmarkdown.rstudio.com/docs/reference/github_document.html">github_markdown</a> output format (for example, a README.Rmd file in a git repo), then visual mode will automatically use GFM mode for authoring.</p>
+<p>If you are authoring a plain <code>.md</code> file intended for viewing on GitHub, then you can use the <code>mode</code> markdown editor option to put the editor in GFM mode. For example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">mode</span><span class="kw">:</span><span class="at"> gfm</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="hugo-markdown" class="level2">
+<h2 class="anchored" data-anchor-id="hugo-markdown">Hugo Markdown</h2>
+<p>The <a href="https://gohugo.io/">Hugo</a> static site generation framework is commonly used with R Markdown for creating blogs as well as larger websites (for example, the <a href="https://tidyverse.org">tidyverse</a> and <a href="https://tidymodels.org">tidymodels</a> websites use Hugo).</p>
+<p>The <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> and <a href="https://github.com/r-lib/hugodown">hugodown</a> packages both support creating Hugo websites with R Markdown. This section describes visual mode features and considerations for Hugo documents.</p>
+<section id="shortcodes" class="level3">
+<h3 class="anchored" data-anchor-id="shortcodes">Shortcodes</h3>
+<p>Hugo includes support for <a href="https://gohugo.io/content-management/shortcodes/">shortcodes</a>, which are special macros generally used to render more complex objects (e.g.&nbsp;tweets or videos). You can include shortcodes in visual mode by just typing them with the normal Hugo syntax:</p>
+<p><img src="images/visual-editing-shortcodes.png" class="img-fluid"></p>
+<p>See the blogdown documentation for more information on <a href="https://bookdown.org/yihui/blogdown/content.html#shortcode">using shortcodes</a>.</p>
+</section>
+<section id="markdown-engine" class="level3">
+<h3 class="anchored" data-anchor-id="markdown-engine">Markdown Engine</h3>
+<p>If you use normal R Markdown files (<code>.Rmd</code>) within a <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> website, their markdown is processed by Pandoc. However, if you use a plain markdown file (<code>.md</code>) or an R Markdown file with a special extension (<code>.Rmarkdown</code>), then markdown is processed by Hugo rather than Pandoc. If you are using the <a href="https://github.com/r-lib/hugodown">hugodown</a> package with Hugo, then markdown is also always processed using Hugo.</p>
+<p>In this case, RStudio will recognize that you aren’t using Pandoc, and adapt the editor’s markdown features accordingly (providing only the features supported by <a href="https://gohugo.io/getting-started/configuration-markup/#goldmark">goldmark</a>, the default Hugo markdown engine). The editor will also automatically enclose LaTeX math in backticks (required in order for Hugo to render equations).</p>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>If are using an older version of Hugo that uses <a href="https://github.com/russross/blackfriday">blackfriday</a> rather than goldmark (or have blackfriday explicitly configured as your default renderer), then this should be automatically detected by RStudio.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="math" class="level3">
+<h3 class="anchored" data-anchor-id="math">Math</h3>
+<p>Embedding LaTeX math using <code>$...$</code> or <code>$$...$$</code> is not supported out of the box by <a href="https://gohugo.io/getting-started/configuration-markup/#goldmark">goldmark</a>. However, many commonly used Hugo themes (e.g <a href="https://themes.gohugo.io/academic/">Academic</a>) do provide rendering of LaTeX math.</p>
+<p>Another method for embedding LaTeX math in Hugo websites is to embed math expressions within code marks (e.g.&nbsp;<code>`$\sqrt{x}=25$`</code>). This method is described in more detail at <a href="https://yihui.org/en/2018/07/latex-math-markdown/." class="uri">https://yihui.org/en/2018/07/latex-math-markdown/.</a> Typically this code is included in a Hugo page footer as described <a href="https://bookdown.org/yihui/blogdown/templates.html#how-to">here</a>.</p>
+<p>Visual mode will detect the use of math-in-code via the presence of the <code>layouts/partials/footer_mathjax.html</code> file in the theme directory and automatically read and write math with backtick delimiters.</p>
+</section>
+</section>
+<section id="bookdown" class="level2">
+<h2 class="anchored" data-anchor-id="bookdown">Bookdown</h2>
+<section id="cross-references" class="level3">
+<h3 class="anchored" data-anchor-id="cross-references">Cross References</h3>
+<p>The <a href="https://bookdown.org">bookdown</a> package includes markdown extensions for cross-references and part headers. Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document.</p>
+<p>In raw markdown, you would for example write a cross-reference to a figure like this: <code>\@ref(fig:label)</code>. Cross-references are largely the same in visual mode, but you don’t need the leading <code>\</code> (which in raw markdown is used to escape the <code>@</code> character). For example:</p>
+<p><img src="images/visual-editing-xref.png" class="border-right img-fluid"></p>
+<p>As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.</p>
+<p>Note that to create a table cross-reference you similarly omit the leading <code>\</code> when defining the reference. For example: <code>(#tab:mytable) This is my table.</code> In source mode you would have needed to escape the <code>#</code> so it would have been written as <code>(\#tab:mytable)</code>.</p>
+</section>
+<section id="part-headers" class="level3">
+<h3 class="anchored" data-anchor-id="part-headers">Part Headers</h3>
+<p>Bookdown recognizes level 1 headers written with a (PART) prefix as book parts (analogous to the LaTeX <code>\part{}</code> command). These work the same in visual mode, but if you use the special extension for unnumbered part headers (written in raw markdown as <code>(PART\*)</code>, you don’t need to include the escape character for the asterisk. You also should use the explicit <code>{.unnumbered}</code> class as opposed to the shorthand <code>{-}</code>. For example:</p>
+<p><img src="images/visual-editing-part.png" class="img-fluid"></p>
+<p>See the bookdown documentation for more information on <a href="https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html#special-headers">part headers</a>.</p>
+</section>
+</section>
+<section id="document-types" class="level2">
+<h2 class="anchored" data-anchor-id="document-types">Document Types</h2>
+<p>The bookdown and Hugo features described above are enabled using automatic detection of document types by RStudio. Detection is done using a combination of the current project configuration and the output formats specified in YAML front matter. If this automatic detection doesn’t align with your configuration, you can specify a document type manually using the <code>editor_options:markdown</code> key in YAML front matter.</p>
+<p>For example, to specify that your document is being published with blogdown, use:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">doctype</span><span class="kw">:</span><span class="at"> blogdown</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To specify that your document is being published with Hugo, use:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">doctype</span><span class="kw">:</span><span class="at"> hugo</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Document types are a high level way of expressing a core markdown mode (e.g.&nbsp;<code>markdown</code> or <code>gfm</code>) and a set of markdown extensions. You can also perform this configuration explicitly (specifying arbitrary combinations of extensions), as described in the section below on <a href="#modes-extensions">Modes &amp; Extensions</a></p>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Note that you typically don’t need to use an explicit <code>doctype</code> or otherwise do any configuration of modes or extensions, since RStudio can almost always correctly detect this based on the current project and document.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="modes-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="modes-extensions">Modes &amp; Extensions</h2>
+<p>Visual editing mode can author all of the markdown variants supported by Pandoc. By default, features associated with standard Pandoc markdown are enabled. You can change this behavior by adding an <code>editor_options:markdown</code> key to a document’s YAML front-matter.</p>
+<section id="mode" class="level3">
+<h3 class="anchored" data-anchor-id="mode">Mode</h3>
+<p>The <code>mode</code> option specifies the base flavor of markdown you are editing. For example, to edit GitHub Flavored Markdown, you would use the following:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">mode</span><span class="kw">:</span><span class="at"> gfm</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Markdown modes supported by the editor include:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Mode</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>markdown</code></td>
+<td>Pandoc markdown w/ all standard extensions enabled.</td>
+</tr>
+<tr class="even">
+<td><code>markdown_strict</code></td>
+<td>Original markdown behavior (from Markdown.pl)</td>
+</tr>
+<tr class="odd">
+<td><code>markdown_phpextra</code></td>
+<td>PHP Markdown Extra</td>
+</tr>
+<tr class="even">
+<td><code>commonmark</code></td>
+<td>Standard specification of core markdown features.</td>
+</tr>
+<tr class="odd">
+<td><code>gfm</code></td>
+<td>GitHub Flavored Markdown</td>
+</tr>
+<tr class="even">
+<td><code>goldmark</code></td>
+<td>Goldmark (default parser currently used by Hugo)</td>
+</tr>
+<tr class="odd">
+<td><code>blackfriday</code></td>
+<td>Blackfriday (default parser formerly used by Hugo)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="extensions" class="level3">
+<h3 class="anchored" data-anchor-id="extensions">Extensions</h3>
+<p>The <code>extensions</code> option allows you to enable or disable individual Pandoc extensions. For example, to specify GitHub Flavored Markdown with additional support for TeX math and raw Tex, you would use this comment:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">mode</span><span class="kw">:</span><span class="at"> gfm</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">extensions</span><span class="kw">:</span><span class="at"> +tex_math_dollars+raw_tex</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Alternatively, to specify standard Pandoc markdown <em>without</em> TeX math and raw TeX, you would use this configuration (note the minus sign before the disabled extensions):</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">mode</span><span class="kw">:</span><span class="at"> markdown</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">extensions</span><span class="kw">:</span><span class="at"> -tex_math_dollars-raw_tex</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can read more about Pandoc variants and extensions in the <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc Markdown</a> documentation.</p>
+<p>Many R Markdown formats include an <code>md_extensions</code> option used to specify which Pandoc markdown extensions are active. The visual editor will also inspect this option. For example, emojis will be enabled for this configuration:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html_document</span><span class="kw">:</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">md_extensions</span><span class="kw">:</span><span class="at"> +emoji</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can also explicitly enable R Markdown specific extensions using the <code>rmd_extensions</code> option. For example, to enable bookdown cross-references you would use this configuration:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rmd_extensions</span><span class="kw">:</span><span class="at"> +bookdown_cross_references</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Similarly, you can include <code>+tex_math_dollars_in_code</code> to specify that LaTeX math should be enclosed in code backticks.</p>
+</section>
+<section id="magic-comment-syntax" class="level3">
+<h3 class="anchored" data-anchor-id="magic-comment-syntax">Magic Comment Syntax</h3>
+<p>If you are using a markdown rendered document that doesn’t either process or ignore YAML metadata, you can also specify all of the above using an Emacs style magic comment. Returning to our original example of adding Tex features to GitHub Flavored Markdown, the magic comment version would look like this:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>&lt;!-- -*- mode: gfm; extensions: +raw_tex -*- --&gt;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Note the semicolon (<code>;</code>) used to delimit the <code>mode</code> and <code>extensions</code> options.</p>
+</section>
+</section>
+<section id="markdown-output" class="level2">
+<h2 class="anchored" data-anchor-id="markdown-output">Markdown Output</h2>
+<p>Visual editing mode generates markdown using Pandoc. This means that in some cases your markdown will be <em>rewritten</em> to conform to standard Pandoc idioms. For example, Pandoc inserts 3 spaces after list bullets and automatically escapes characters that might be used for markdown syntax.</p>
+<p>Here is a list of conventions for Pandoc generated markdown that might differ from your own markdown writing style:</p>
+<ul>
+<li><code>*text*</code> is used in preference to <code>_text_</code></li>
+<li>Backtick code blocks are written as <code>``` {.md}</code> rather than <code>```md</code></li>
+<li>Backtick code blocks with no attributes are rendered as 4-space indented code blocks</li>
+<li>Horizontal rules are written as dashes spanning the full width of the document</li>
+<li>Plain links are written as <code>&lt;https://yihui.org&gt;</code> rather than <code>https://yihui.org</code></li>
+<li>Bullet and numbered lists use additional leading spaces before list item content</li>
+<li>The blockquote character (<code>&gt;</code>) is included on each new line of a blockquote</li>
+<li>Table captions are written below rather than above tables</li>
+<li>Multiline HTML and TeX blocks use the explicit raw attribute (e.g.&nbsp;<code>```{=tex}</code>)</li>
+<li>Inline footnotes are replaced with footnotes immediately below the paragraph</li>
+<li>Nested divs use <code>:::</code> at all levels so long as their attributes are distinct</li>
+<li>Unnumbered sections are designated with <code>{.unnumbered}</code> rather than <code>{-}</code></li>
+<li>Characters used for markdown syntax (e.g.&nbsp;<code>*</code>, <code>_</code>, or <code>#</code>) are always escaped</li>
+</ul>
+<p>While some of this behavior might be bothersome at first, if you decide that visual editing mode is useful for your workflow it’s probably best to just adapt to writing your own markdown the same way that Pandoc does. Note that you can also <a href="#canonical-mode">configure source mode</a> to write markdown using these conventions, ensuring that the same markdown is written no matter which mode edits originate from.</p>
+</section>
+<section id="writer-options" class="level2">
+<h2 class="anchored" data-anchor-id="writer-options">Writer Options</h2>
+<p>Some aspects of markdown output can be customized via global, project, or file-level options, including:</p>
+<ul>
+<li>How to wrap / break lines (fixed column, sentence-per-line, etc.).</li>
+<li>Where to write footnotes (below the current paragraph or section, or at the end of the document).</li>
+<li>Whether to use the visual mode markdown writer when saving markdown from source mode (to ensure consistency between documents saved from either mode).</li>
+</ul>
+<p>You can set these options within the <strong>R Markdown</strong> <a href="./options.html#global-options">Global Options</a> or <a href="./options.html#project-options">Project Options</a>, or can alternatively set them on a per-file basis using YAML (as described below).</p>
+<section id="line-wrapping" class="level3">
+<h3 class="anchored" data-anchor-id="line-wrapping">Line Wrapping</h3>
+<p>By default, the visual editor writes Markdown with no line wrapping (paragraphs all occupy a single line). This matches the behavior of markdown source editing mode within RStudio.</p>
+<p>However, if you prefer to insert line breaks at a particular column (e.g.&nbsp;72 or 80), or to insert a line break after each sentence, you can set a global or per-project <a href="./options.html">editor option</a> to this effect.</p>
+<p>You can also set this behavior on a per-document basis via the <code>wrap</code> option. For example, to wrap lines after 72 characters you would use this:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">wrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">72</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To insert a line break after each sentence, use <code>wrap: sentence</code>. For example:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">wrap</span><span class="kw">:</span><span class="at"> sentence</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>The algorithm used for sentence wrapping will handle English and Japanese text well, but may not detect the end of sentences accurately for other languages.</p>
+</div>
+</div>
+</div>
+<p>If you have enabled a global line wrapping option and want to turn off wrapping for a given document, use <code>wrap: none</code>.</p>
+</section>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>By default, references are written at the end of the block where their corresponding footnote appears. You can override this behavior using the <code>references</code> option.</p>
+<p>For example, to write references at the end of sections rather than blocks you would use:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">references</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">location</span><span class="kw">:</span><span class="at"> block</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Valid values for the <code>references</code> option are <code>block</code>, <code>section</code>, and <code>document</code>.</p>
+<p>Note that you can also set a global or per-project <a href="./options.html">editor option</a> to control reference writing behavior.</p>
+<p>If you are aggregating a set of markdown documents into a larger work, you may want to make sure that reference identifiers are unique across all of your documents (e.g.&nbsp;you don’t want to have <code>[^1]</code> appear multiple times). You can ensure uniqueness via the <code>prefix</code> option. For example:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">references</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">location</span><span class="kw">:</span><span class="at"> block</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">prefix</span><span class="kw">:</span><span class="at"> </span><span class="st">"mydoc"</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This will result in footnotes in this document using the specified prefix (e.g.&nbsp;<code>[^mydoc-1]</code>), ensuring they are globally unique across the manuscript.</p>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Note that if you are within a <a href="https://bookdown.org">bookdown</a> project then a references <code>prefix</code> is applied automatically so no changes to <code>editor_options</code> are required.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="canonical-mode" class="level3">
+<h3 class="anchored" data-anchor-id="canonical-mode">Canonical Mode</h3>
+<p>If you have a workflow that involves editing in both visual and source mode, you may want to ensure that the same markdown is written no matter which mode edits originate from. You can accomplish this using the <code>canonical</code> option. For example:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">wrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">72</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">references</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">location</span><span class="kw">:</span><span class="at"> block</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">canonical</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>With <code>canonical: true</code>, edits in visual mode and source mode will result in identical markdown output. This is especially useful if you have multiple authors collaborating using version control, with a mixture of source and visual mode editing among the authors.</p>
+</section>
+</section>
+<section id="known-limitations" class="level2">
+<h2 class="anchored" data-anchor-id="known-limitations">Known Limitations</h2>
+<p>There are a handful of Pandoc markdown extensions not currently supported by visual editing. These are infrequently used extensions, so in all likelihood they won’t affect documents you edit, but are still worth noting.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Extension(s)</th>
+<th>Example</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Inline footnotes</td>
+<td>[^1]</td>
+<td>Converted to numeric footnote.</td>
+</tr>
+<tr class="even">
+<td>Footnote identifiers</td>
+<td>[^longnote]</td>
+<td>Converted to numeric footnote.</td>
+</tr>
+<tr class="odd">
+<td>Example lists</td>
+<td>(@) First example</td>
+<td>Read/written as ordinary numbered lists.</td>
+</tr>
+<tr class="even">
+<td>Auto-list numbers</td>
+<td>#. First item</td>
+<td>Read/written as ordinary numbered lists.</td>
+</tr>
+<tr class="odd">
+<td>Reference links</td>
+<td>This is a [link]</td>
+<td>Converted to ordinary links.</td>
+</tr>
+<tr class="even">
+<td>MultiMarkdown attributes</td>
+<td># Heading [id]</td>
+<td>Converted to Pandoc attributes.</td>
+</tr>
+</tbody>
+</table>
+<p>The visual editor is unable to parse non-YAML title blocks (e.g.&nbsp;old-style % titles or MultiMarkdown titles) and also unable to parse non top-level YAML metadata blocks. If these forms of metadata are encountered, visual mode will fail to load with a warning.</p>
+<!-- -->
+</section>
+</main>
+<div class="page-navigation page-navigation-docked">
+  <div class="nav-page nav-page-previous">
+      <a href="./content.html">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Content Editing</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./shortcuts.html">
+        <span class="nav-page-text">Editing Shortcuts</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</div>
+</div> <!-- /main column -->
+</div> <!-- /row -->
+</div> <!-- /container fluid -->
+<script type="text/javascript">
+
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+</script>
+
+
+</body></html>

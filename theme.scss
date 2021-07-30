@@ -1,0 +1,37 @@
+/*-- scss:defaults --*/
+$code-color: $info;
+
+
+/*-- scss:rules --*/
+.sidebar-logo {
+   width: 140px;
+}
+
+
+.list-illustration {
+  margin-top: 10px;
+  margin-bottom: 1em;
+  margin-right: 30px;
+}
+
+
+.illustration {
+  border: 1px solid rgb(230, 230, 230);
+}
+
+.document-example {
+  opacity: 0.9;
+  padding: 6px; 
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.document-example div {
+  padding: 5px;
+}
+
+
+.document-example .citation {
+  color: blue;
+}
+

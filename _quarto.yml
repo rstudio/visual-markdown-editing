@@ -1,0 +1,40 @@
+project:
+  type: site
+  output-dir: docs
+  
+site:
+  title: "Visual R Markdown"
+  google-analytics: 'UA-77306155-5'
+  open-graph: true
+  twitter-card: true
+  site-url: https://rstudio.github.io/visual-markdown-editing/
+  repo-url: https://github.com/rstudio/visual-markdown-editing/
+  repo-actions: [edit, issue]
+  page-navigation: true
+  sidebar:
+    title: "Visual R Markdown"
+    logo: images/rstudio-logo.png
+    search: true
+    style: "docked"
+    background: light
+    align: left
+    contents:
+      - text: "Getting Started"
+        href: index.qmd
+      - citations.qmd
+      - technical.qmd
+      - content.qmd
+      - markdown.qmd
+      - shortcuts.qmd
+      - options.qmd
+      - additional.qmd
+    
+format:
+  html:
+    theme: [cosmo, theme.scss]
+    code-copy: true
+    toc: true
+    include-after-body: script.html
+
+engine: markdown
+

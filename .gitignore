@@ -3,6 +3,6 @@
 .RData
 .Ruserdata
 .DS_Store
-node_modules
-docs/*_cache
 
+
+/.quarto/

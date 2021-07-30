@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-(Local Development)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Visual R Markdown – Technical Writing</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.min.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <link href="./content.html" rel="next">
+  <link href="./citations.html" rel="prev">
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/clipboard.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <script src="site_libs/quarto-html/quarto-html.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  
+  <script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-77306155-5', 'auto');
+
+  ga('send', {
+    hitType: 'pageview',
+    'anonymizeIp': true,
+  });
+  </script>
+<meta name="og:title" content="Visual R Markdown - Technical Writing">
+<meta name="og:site-name" content="Visual R Markdown">
+<meta name="twitter:title" content="Visual R Markdown - Technical Writing">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+<div id="quarto-search-results"></div>
+<header id="quarto-header" class="headroom fixed-top">
+<nav class="quarto-secondary-nav py-2 d-lg-none d-md-block " data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <div class="container-fluid d-flex justify-content-between">
+    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Technical Writing</h1>
+    <button type="button" class="quarto-btn-toggle btn d-lg-none py-0 px-1 d-inline-block border-0 ">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+</nav>
+</header>
+ <!-- /navbar/sidebar -->
+<div class="container-fluid quarto-container d-flex flex-column page-layout-article">
+<div class="row flex-fill" id="quarto-content">
+  <div id="quarto-sidebar" class="col col-12 col-lg-3 d-lg-flex px-0 pt-0 sidebar collapse sidebar-navigation">
+    <nav class="me-lg-auto py-2 docked  overflow-scroll">
+  <div class="px-3 pt-lg-2 mt-1 text-left sidebar-header sidebar-header-stacked">
+    <img src="./images/rstudio-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">
+      Visual R Markdown
+      </a> 
+    </div>
+  </div>
+    <div class="d-flex px-3 mt-2 flex-shrink-0 align-items-center">
+      <div class="sidebar-search">
+      <form class="d-flex mb-0">
+  <input id="quarto-search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+      </div>
+    </div>
+  <div class="sidebar-menu-container"> 
+  <ul class="list-unstyled mt-3 px-3">
+      <li class="sidebar-item">
+  <a href="./index.html" class="">Getting Started</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./citations.html" class="">Citations</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./technical.html" class="active">Technical Writing</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./content.html" class="">Content Editing</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./markdown.html" class="">Markdown Formats</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./shortcuts.html" class="">Editing Shortcuts</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./options.html" class="">Editor Options</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./additional.html" class="">Additional Topics</a>
+</li>
+  </ul>
+  </div>
+</nav>
+  </div>
+  <div id="quarto-toc-sidebar" class="col col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-toc order-last"><nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#equations" class="nav-link active" data-scroll-target="#equations">Equations</a></li>
+<li><a href="#cross-references" class="nav-link" data-scroll-target="#cross-references">Cross References</a></li>
+<li><a href="#footnotes" class="nav-link" data-scroll-target="#footnotes">Footnotes</a></li>
+<li><a href="#embedded-code" class="nav-link" data-scroll-target="#embedded-code">Embedded Code</a>
+<ul class="collapse">
+<li><a href="#displaying-code" class="nav-link" data-scroll-target="#displaying-code">Displaying Code</a></li>
+<li><a href="#code-chunks" class="nav-link" data-scroll-target="#code-chunks">Code Chunks</a></li>
+<li><a href="#running-chunks" class="nav-link" data-scroll-target="#running-chunks">Running Chunks</a></li>
+</ul></li>
+<li><a href="#latex-and-html" class="nav-link" data-scroll-target="#latex-and-html">LaTeX and HTML</a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rstudio/visual-markdown-editing/edit/main/technical.qmd">Edit this page</a></p><p><a href="https://github.com/rstudio/visual-markdown-editing/issues/new">Report an issue</a></p></div></div></nav></div>
+  <div class="col mx-auto col-sm-12 col-md-9 col-lg-7 px-lg-4 pe-xxl-4 ps-xxl-0">
+<main>
+<header id="title-block-header">
+<h1 class="title d-none d-lg-block display-7">Technical Writing</h1>
+</header>
+
+<p>Visual mode included extensive support for Pandoc features frequently used in technical writing including <a href="#equations">equations</a>, <a href="./citations.html">citations</a>, <a href="#cross-references">cross-references</a>, <a href="#footnotes">footnotes</a>, <a href="#embedded-code">embedded code</a>, and <a href="#latex-and-html">LaTeX</a>. This articles describes using these features in more depth.</p>
+<section id="equations" class="level2">
+<h2 class="anchored" data-anchor-id="equations">Equations</h2>
+<p>LaTeX equations are authored using standard Pandoc markdown syntax (the editor will automatically recognize the syntax and treat the equation as math). When you aren’t directly editing an equation it will appear as rendered math:</p>
+<p><img src="images/visual-editing-math.png" class="img-fluid"></p>
+<p>As shown above, when you select an equation with the keyboard or mouse you can edit the equation’s LaTeX. A preview of the equation will be shown below it as you type.</p>
+</section>
+<section id="cross-references" class="level2">
+<h2 class="anchored" data-anchor-id="cross-references">Cross References</h2>
+<p>The <a href="https://bookdown.org">bookdown</a> package includes markdown extensions for cross-references and part headers. The <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> package also supports bookdown style cross-references as does the <a href="https://rstudio.github.io/distill/">distill</a> package.</p>
+<p>Bookdown cross-references enable you to easily link to figures, equations, and even arbitrary labels within a document. In raw markdown, you would for example write a cross-reference to a figure like this: <code>\@ref(fig:label)</code>. Cross-references are largely the same in visual mode, but you don’t need the leading <code>\</code> (which in raw markdown is used to escape the <code>@</code> character). For example:</p>
+<p><img src="images/visual-editing-xref.png" class="img-fluid"></p>
+<p>As shown above, when entering a cross-reference you can search across all cross-references in your project to easily find the right reference ID.</p>
+<p>Similar to hyperlinks, you can also navigate to the location of a cross-reference by clicking the popup link that appears when it’s selected:</p>
+<p><img src="images/visual-editing-xref-navigate.png" class="img-fluid"></p>
+<p>You can also navigate directly to any cross-reference using IDE global search:</p>
+<p><img src="images/visual-editing-xref-search.png" class="illustration img-fluid"></p>
+<p>See the bookdown documentation for more information on <a href="https://bookdown.org/yihui/bookdown/cross-references.html">cross-references</a>.</p>
+</section>
+<section id="footnotes" class="level2">
+<h2 class="anchored" data-anchor-id="footnotes">Footnotes</h2>
+<p>You can include footnotes using the <strong>Insert -&gt; Footnote</strong> command (or the <kbd>⇧⌘ F7</kbd> keyboard shortcut). Footnote editing occurs in a pane immediately below the main document:</p>
+<p><img src="images/visual-editing-footnote.png" class="illustration img-fluid"></p>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>By default footnotes will be written in markdown immediately below the block in which they appear. You can customize this behavior via <a href="options">editor options</a>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="embedded-code" class="level2">
+<h2 class="anchored" data-anchor-id="embedded-code">Embedded Code</h2>
+<p>Source code which you include in an R Markdown document can either be for display only or can be executed by knitr as part of rendering. Code can furthermore be either inline or block (e.g.&nbsp;an Rmd code chunk).</p>
+<section id="displaying-code" class="level3">
+<h3 class="anchored" data-anchor-id="displaying-code">Displaying Code</h3>
+<p>To display but not execute code, either use the <strong>Insert -&gt; Code Block</strong> menu item, or start a new line and type either:</p>
+<ol type="1">
+<li><code>```</code> (for a plain code block); or</li>
+<li><code>```&lt;lang&gt;</code> (where &lt;lang&gt; is a language) for a code block with syntax highlighting.</li>
+</ol>
+<p>Then press the <strong>Enter</strong> key. To display code inline, simply surround text with backticks (<code>`code`</code>), or use the <strong>Format -&gt; Code</strong> menu item.</p>
+</section>
+<section id="code-chunks" class="level3">
+<h3 class="anchored" data-anchor-id="code-chunks">Code Chunks</h3>
+<p>To insert an executable code chunk, use the <strong>Insert -&gt; Code Chunk</strong> menu item, or start a new line and type:</p>
+<p><code>```{r}</code></p>
+<p>Then press the <strong>Enter</strong> key. Note that <code>r</code> could be another language supported by knitr (e.g.&nbsp;<code>python</code> or <code>sql</code>) and you can also include a chunk label and other chunk options.</p>
+<p>To include inline R code, you just create normal inline code (e.g.&nbsp;by using backticks or the <kbd>⌘ D</kbd> shortcut) but preface it with <code>r</code>. For example, this inline code will be executed by knitr: <code>`r Sys.Date()`</code>. Note that when the code displays in visual mode it won’t have the backticks (but they will still appear in source mode).</p>
+</section>
+<section id="running-chunks" class="level3">
+<h3 class="anchored" data-anchor-id="running-chunks">Running Chunks</h3>
+<p>You can execute the currently selected R or Python code chunk using either the run button at the top right of the code chunk or using the <kbd>⇧⌘ Enter</kbd> keyboard shortcut:</p>
+<p><img src="images/visual-editing-execute-code.png" class="illustration img-fluid"></p>
+<p>You can execute code chunks up to the current one using the toolbar button or using the <kbd>⌥⌘ P</kbd> keyboard shortcut.</p>
+</section>
+</section>
+<section id="latex-and-html" class="level2">
+<h2 class="anchored" data-anchor-id="latex-and-html">LaTeX and HTML</h2>
+<p>You can also include raw LaTeX commands or HTML tags when authoring in visual mode. The raw markup will be automatically recognized and syntax highlighted. For example:</p>
+<p><img src="images/visual-editing-raw.png" class="img-fluid"></p>
+<p>The above examples utilize <em>inline</em> LaTex and HTML. You can also include blocks of raw content using the commands on the <strong>Format -&gt; Raw</strong> menu. For example, here is a document with a raw LaTeX block:</p>
+<p><img src="images/visual-editing-latex-block.png" class="img-fluid"></p>
+<div class="callout-note callout callout-style-simple">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Note that Pandoc ignores LaTeX commands when not producing LaTeX based output, and ignores HTML tags when not producing HTML based output.</p>
+</div>
+</div>
+</div>
+<!-- -->
+</section>
+</main>
+<div class="page-navigation page-navigation-docked">
+  <div class="nav-page nav-page-previous">
+      <a href="./citations.html">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Citations</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./content.html">
+        <span class="nav-page-text">Content Editing</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</div>
+</div> <!-- /main column -->
+</div> <!-- /row -->
+</div> <!-- /container fluid -->
+<script type="text/javascript">
+
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+</script>
+
+
+</body></html>

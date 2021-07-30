@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head>
+  <meta charset="utf-8">
+  <meta name="generator" content="quarto-(Local Development)">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Visual R Markdown – Editor Options</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <script src="site_libs/quarto-nav/quarto-nav.js"></script>
+  <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <meta name="quarto:offset" content="./">
+  <script src="site_libs/quarto-search/autocomplete.min.js"></script>
+  <script src="site_libs/quarto-search/fuse.min.js"></script>
+  <script src="site_libs/quarto-search/quarto-search.js"></script>
+  <link href="./additional.html" rel="next">
+  <link href="./shortcuts.html" rel="prev">
+  <script src="site_libs/quarto-html/quarto.js"></script>
+  <script src="site_libs/quarto-html/popper.min.js"></script>
+  <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+  <script src="site_libs/quarto-html/clipboard.min.js"></script>
+  <script src="site_libs/quarto-html/anchor.min.js"></script>
+  <script src="site_libs/quarto-html/quarto-html.js"></script>
+  <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <script src="site_libs/bootstrap/bootstrap.min.js"></script>
+  <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+  <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  
+  <script type="text/javascript">
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-77306155-5', 'auto');
+
+  ga('send', {
+    hitType: 'pageview',
+    'anonymizeIp': true,
+  });
+  </script>
+<meta name="og:title" content="Visual R Markdown - Editor Options">
+<meta name="og:site-name" content="Visual R Markdown">
+<meta name="twitter:title" content="Visual R Markdown - Editor Options">
+<meta name="twitter:card" content="summary">
+</head>
+<body>
+<div id="quarto-search-results"></div>
+<header id="quarto-header" class="headroom fixed-top">
+<nav class="quarto-secondary-nav py-2 d-lg-none d-md-block " data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <div class="container-fluid d-flex justify-content-between">
+    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Editor Options</h1>
+    <button type="button" class="quarto-btn-toggle btn d-lg-none py-0 px-1 d-inline-block border-0 ">
+      <i class="bi bi-chevron-right"></i>
+    </button>
+  </div>
+</nav>
+</header>
+ <!-- /navbar/sidebar -->
+<div class="container-fluid quarto-container d-flex flex-column page-layout-article">
+<div class="row flex-fill" id="quarto-content">
+  <div id="quarto-sidebar" class="col col-12 col-lg-3 d-lg-flex px-0 pt-0 sidebar collapse sidebar-navigation">
+    <nav class="me-lg-auto py-2 docked  overflow-scroll">
+  <div class="px-3 pt-lg-2 mt-1 text-left sidebar-header sidebar-header-stacked">
+    <img src="./images/rstudio-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">
+      Visual R Markdown
+      </a> 
+    </div>
+  </div>
+    <div class="d-flex px-3 mt-2 flex-shrink-0 align-items-center">
+      <div class="sidebar-search">
+      <form class="d-flex mb-0">
+  <input id="quarto-search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+      </div>
+    </div>
+  <div class="sidebar-menu-container"> 
+  <ul class="list-unstyled mt-3 px-3">
+      <li class="sidebar-item">
+  <a href="./index.html" class="">Getting Started</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./citations.html" class="">Citations</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./technical.html" class="">Technical Writing</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./content.html" class="">Content Editing</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./markdown.html" class="">Markdown Formats</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./shortcuts.html" class="">Editing Shortcuts</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./options.html" class="active">Editor Options</a>
+</li>
+      <li class="sidebar-item">
+  <a href="./additional.html" class="">Additional Topics</a>
+</li>
+  </ul>
+  </div>
+</nav>
+  </div>
+  <div id="quarto-toc-sidebar" class="col col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-toc order-last"><nav id="TOC" role="doc-toc">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#global-options" class="nav-link active" data-scroll-target="#global-options">Global Options</a></li>
+<li><a href="#citation-options" class="nav-link" data-scroll-target="#citation-options">Citation Options</a></li>
+<li><a href="#project-options" class="nav-link" data-scroll-target="#project-options">Project Options</a></li>
+<li><a href="#file-options" class="nav-link" data-scroll-target="#file-options">File Options</a></li>
+</ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rstudio/visual-markdown-editing/edit/main/options.qmd">Edit this page</a></p><p><a href="https://github.com/rstudio/visual-markdown-editing/issues/new">Report an issue</a></p></div></div></nav></div>
+  <div class="col mx-auto col-sm-12 col-md-9 col-lg-7 px-lg-4 pe-xxl-4 ps-xxl-0">
+<main>
+<header id="title-block-header">
+<h1 class="title d-none d-lg-block display-7">Editor Options</h1>
+</header>
+
+<section id="global-options" class="level2">
+<h2 class="anchored" data-anchor-id="global-options">Global Options</h2>
+<p>You can customize visual editing options within <strong>R Markdown -&gt; Visual</strong>:</p>
+<p><img src="images/visual-editing-options.png" class="illustration" width="585"></p>
+<table class="table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Use visual editing by default</td>
+<td>Switch to visual mode immediately when creating new R Markdown documents.</td>
+</tr>
+<tr class="even">
+<td>Show document outline by default</td>
+<td>Show the navigational outline when opening documents in visual mode.</td>
+</tr>
+<tr class="odd">
+<td>Editor content width</td>
+<td>Maximum width for editing content. This is intended to keep editing similar to the width that users will see.</td>
+</tr>
+<tr class="even">
+<td>Editor font size</td>
+<td>Base font size for editor content (default: inherit from IDE settings).</td>
+</tr>
+<tr class="odd">
+<td>Show margin column indicator in code blocks</td>
+<td>Show vertical line that indicates location of editing margin column (e.g.&nbsp;80).</td>
+</tr>
+<tr class="even">
+<td>Default spacing between list items</td>
+<td>Whether to use tight or normal spacing between list items by default. See <a href="./content.html#tight-lists">Tight Lists</a> for details.</td>
+</tr>
+<tr class="odd">
+<td>Automatic text wrapping (line breaks)</td>
+<td>When writing markdown, automatically insert line breaks after sentences or at a specified column (default: flow text; no auto-wrapping). See <a href="./markdown.html#line-wrapping">Line Wrapping</a> for details.</td>
+</tr>
+<tr class="even">
+<td>Write references at end of current</td>
+<td>Write references (footnotes) at the end of the block or section where they appear, or at the end of the document. See <a href="./markdown.html#references">References</a> for details.</td>
+</tr>
+<tr class="odd">
+<td>Write canonical visual mode markdown in source mode</td>
+<td>Use the visual mode markdown writer when saving markdown from source mode (ensure consistency between documents saved from either mode).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="citation-options" class="level2">
+<h2 class="anchored" data-anchor-id="citation-options">Citation Options</h2>
+<p>You can customize visual editor citation options within <strong>R Markdown -&gt; Citations</strong>:</p>
+<p><img src="images/visual-editing-options-citations.png" class="illustration" width="585"></p>
+<table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Zotero Library</td>
+<td>Location of <a href="citations#citations-from-zotero">Zotero</a> citation library (Local or Web).</td>
+</tr>
+<tr class="even">
+<td>Zotero Data Directory</td>
+<td>Location of Zotero local data directory.</td>
+</tr>
+<tr class="odd">
+<td>Use libraries</td>
+<td>Zotero libraries to use as reference sources.</td>
+</tr>
+<tr class="even">
+<td>Use Better BibTeX for citation keys and BibTeX export.</td>
+<td>Optionally use <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX</a> to generate citation keys and export BibTeX from Zotero (this option appears only if Better BibTeX is installed).</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="project-options" class="level2">
+<h2 class="anchored" data-anchor-id="project-options">Project Options</h2>
+<p>Global options that affect the way markdown is written can also be customized on a per-project basis. You can do this using the <strong>R Markdown</strong> pane of the <strong>Project Options</strong> dialog:</p>
+<p><img src="images/visual-editing-project-options.png" class="illustration" width="541"></p>
+<p>By default projects inherit the current global settings for markdown writing and Zotero libraries.</p>
+</section>
+<section id="file-options" class="level2">
+<h2 class="anchored" data-anchor-id="file-options">File Options</h2>
+<p>Global and project options that affect the way markdown is written can also be customized on a per-file basis . You can do this by including an <code>editor_options: markdown</code> key in the YAML front matter of your document. For example:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Document"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Jane Doe"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">wrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">72</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You might want to do this to ensure that multiple authors on different workstations use the same markdown writing options.</p>
+<p>You can also instruct RStudio to use these same options when saving files from source mode. To do this add the <code>canonical</code> option. For example:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">editor_options</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">markdown</span><span class="kw">:</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">wrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">72</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">canonical</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>With <code>canonical: true</code>, edits in visual mode and source mode will result in identical markdown output. This is especially useful if you have multiple authors collaborating using version control, with a mixture of source and visual mode editing among the authors.</p>
+<p>See the documentation on <a href="./markdown.html#writer-options">Writer Options</a> for additional details on markdown writing options.</p>
+<!-- -->
+</section>
+</main>
+<div class="page-navigation page-navigation-docked">
+  <div class="nav-page nav-page-previous">
+      <a href="./shortcuts.html">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Editing Shortcuts</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./additional.html">
+        <span class="nav-page-text">Additional Topics</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</div>
+</div> <!-- /main column -->
+</div> <!-- /row -->
+</div> <!-- /container fluid -->
+<script type="text/javascript">
+
+const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
+if (!kPlatformMac) {
+   var kbds = document.querySelectorAll("kbd")
+   kbds.forEach(function(kbd) {
+      kbd.innerHTML = kbd.innerHTML.replace(/⌘/g, '⌃');
+   });
+}
+
+</script>
+
+
+</body></html>
