@@ -9,6 +9,7 @@ site:
   twitter-card: true
   site-url: https://rstudio.github.io/visual-markdown-editing/
   repo-url: https://github.com/rstudio/visual-markdown-editing/
+  repo-branch: master
   repo-actions: [edit, issue]
   page-navigation: true
   sidebar:
