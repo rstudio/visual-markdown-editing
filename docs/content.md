@@ -42,7 +42,7 @@ In markdown source code, you designate a tight list by having no empty lines bet
 
 Visual mode creates normal lists by default (you can change this behavior via [Editor Options](options)).
 You can toggle between normal and tight lists using the <kbd>⌥⌘ 9</kbd> keyboard shortcut.
-You can also change the list type using the **Format -\> Edit Attributes** dialog (also accessible via the <kbd>F4</kbd> shortcut).
+You can also change the list type using the **Format -> Edit Attributes** dialog (also accessible via the <kbd>F4</kbd> shortcut).
 If you have existing tight lists in your markdown source files, they will remain so within the visual editor.
 
 ## Pandoc Attributes
@@ -60,11 +60,11 @@ Click the edit button or use the <kbd>F4</kbd> keyboard shortcut to edit the att
 
 ### Hard Line Breaks
 
-You can insert a [hard line break](https://practicaltypography.com/hard-line-breaks.html) using the **Insert -\> Special Characters -\> Hard Line Break** command or via the <kbd>⇧ Enter</kbd> keyboard shortcut.
+You can insert a [hard line break](https://practicaltypography.com/hard-line-breaks.html) using the **Insert -> Special Characters -> Hard Line Break** command or via the <kbd>⇧ Enter</kbd> keyboard shortcut.
 
 ### Non-Breaking Spaces
 
-You can insert a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) using the **Insert -\> Special Characters -\> Non-Breaking Space** command or via the <kbd>⌃ Space</kbd> keyboard shortcut.
+You can insert a [non-breaking space](https://en.wikipedia.org/wiki/Non-breaking_space) using the **Insert -> Special Characters -> Non-Breaking Space** command or via the <kbd>⌃ Space</kbd> keyboard shortcut.
 Non-breaking spaces are displayed with an alternate background color to distinguish them from normal spaces.
 
 A markdown non-breaking space will result in the `&nbsp;` character within HTML output and a `~` character within LaTeX output.
@@ -73,9 +73,9 @@ A markdown non-breaking space will result in the `&nbsp;` character within HTML 
 
 To insert an emoji, you can use either the **Insert** menu or the requisite markdown shortcut plus auto-complete:
 
-| **Insert -\> Special Characters -\> Emoji...** | Markdown Shortcut                               |
-|------------------------------------------------|-------------------------------------------------|
-| ![](images/visual-editing-emoji-dialog.png)    | ![](images/visual-editing-emoji-completion.png) |
+| **Insert -> Special Characters -> Emoji...** | Markdown Shortcut                               |
+|----------------------------------------------|-------------------------------------------------|
+| ![](images/visual-editing-emoji-dialog.png)  | ![](images/visual-editing-emoji-completion.png) |
 
 For markdown formats that support text representations of emojis (e.g. `:grinning:`), the text version will be written.
 For other formats the literal emoji character will be written.
@@ -83,7 +83,7 @@ Currently, GitHub Flavored Markdown and Hugo (with `enableEmjoi = true` in the s
 
 ### Unicode Symbols
 
-To insert an arbitrary Unicode character, use **Insert -\> Special Characters -\> Unicode...**:
+To insert an arbitrary Unicode character, use **Insert -> Special Characters -> Unicode...**:
 
 <img src="images/visual-editing-unicode.png" width="700"/>
 

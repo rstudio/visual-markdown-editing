@@ -43,7 +43,7 @@ Here are the available keyboard and markdown shortcuts:
 | Run Code Chunk      | <kbd>⇧⌘ Enter</kbd> |                      |
 | Run Previous Chunks |  <kbd>⇧⌥⌘ P</kbd>   |                      |
 
-?\> For markdown shortcuts, if you didn't intend to use a shortcut and want to reverse its effect, just press the backspace key.
+?> For markdown shortcuts, if you didn't intend to use a shortcut and want to reverse its effect, just press the backspace key.
 
 ### Insert Anything
 

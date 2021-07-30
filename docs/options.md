@@ -2,7 +2,7 @@
 
 ## Global Options
 
-You can customize visual editing options within **R Markdown -\> Visual**:
+You can customize visual editing options within **R Markdown -> Visual**:
 
 <img src="images/visual-editing-options.png" class="illustration" width="585"/>
 
@@ -20,7 +20,7 @@ You can customize visual editing options within **R Markdown -\> Visual**:
 
 ## Citation Options
 
-You can customize visual editor citation options within **R Markdown -\> Citations**:
+You can customize visual editor citation options within **R Markdown -> Citations**:
 
 <img src="images/visual-editing-options-citations.png" class="illustration" width="585"/>
 

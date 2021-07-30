@@ -51,7 +51,7 @@ If you are using the [hugodown](https://github.com/r-lib/hugodown) package with 
 In this case, RStudio will recognize that you aren't using Pandoc, and adapt the editor's markdown features accordingly (providing only the features supported by [goldmark](https://gohugo.io/getting-started/configuration-markup/#goldmark), the default Hugo markdown engine).
 The editor will also automatically enclose LaTeX math in backticks (required in order for Hugo to render equations).
 
-?\> If are using an older version of Hugo that uses [blackfriday](https://github.com/russross/blackfriday) rather than goldmark (or have blackfriday explicitly configured as your default renderer), then this should be automatically detected by RStudio.
+?> If are using an older version of Hugo that uses [blackfriday](https://github.com/russross/blackfriday) rather than goldmark (or have blackfriday explicitly configured as your default renderer), then this should be automatically detected by RStudio.
 
 ### Math
 
@@ -124,7 +124,7 @@ editor_options:
 Document types are a high level way of expressing a core markdown mode (e.g. `markdown` or `gfm`) and a set of markdown extensions.
 You can also perform this configuration explicitly (specifying arbitrary combinations of extensions), as described in the section below on [Modes & Extensions](#/markdown?id=modes-amp-extensions)
 
-?\> Note that you typically don't need to use an explicit `doctype` or otherwise do any configuration of modes or extensions, since RStudio can almost always correctly detect this based on the current project and document.
+?> Note that you typically don't need to use an explicit `doctype` or otherwise do any configuration of modes or extensions, since RStudio can almost always correctly detect this based on the current project and document.
 
 ## Modes & Extensions
 
@@ -287,7 +287,7 @@ editor_options:
 ---
 ```
 
-?\> The algorithm used for sentence wrapping will handle English and Japanese text well, but may not detect the end of sentences accurately for other languages.
+?> The algorithm used for sentence wrapping will handle English and Japanese text well, but may not detect the end of sentences accurately for other languages.
 
 If you have enabled a global line wrapping option and want to turn off wrapping for a given document, use `wrap: none`.
 
@@ -329,7 +329,7 @@ editor_options:
 
 This will result in footnotes in this document using the specified prefix (e.g. `[^mydoc-1]`), ensuring they are globally unique across the manuscript.
 
-?\> Note that if you are within a [bookdown](https://bookdown.org) project then a references `prefix` is applied automatically so no changes to `editor_options` are required.
+?> Note that if you are within a [bookdown](https://bookdown.org) project then a references `prefix` is applied automatically so no changes to `editor_options` are required.
 
 ### Canonical Mode
 

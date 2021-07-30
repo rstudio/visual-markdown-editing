@@ -15,7 +15,7 @@ This section covers how to:
 
 If you are new to CSS, you may want to [brush up on the basics](https://developer.mozilla.org/en-US/docs/Learn/CSS) before proceeding.
 
-?\> CSS styles apply **only** to HTML output, and will not have any impact on the formatting of other output types like PDF or MS Word.
+?> CSS styles apply **only** to HTML output, and will not have any impact on the formatting of other output types like PDF or MS Word.
 
 ### Defining Styles
 
@@ -59,7 +59,7 @@ Note the presence of the `.important` class within the **Edit Attributes** dialo
 
 In R Markdown, CSS classes applied to headings affect all content beneath the heading (an HTML `<section>` tag is wrapped around the content by Pandoc), so heading classes are a great way to provide custom styles for entire sections of your document.
 
-?\> Note that the visual editor doesn't currently render content using styles applied through CSS classes so you won't see the custom formatting while editing.
+?> Note that the visual editor doesn't currently render content using styles applied through CSS classes so you won't see the custom formatting while editing.
 You will however see it when rendering and previewing the HTML version of the document.
 
 ### Images
@@ -76,7 +76,7 @@ Note again that the visual editor won't display your image with the applied CSS 
 Divs are special entities that allow you to apply identifiers and/or styles to a region of a document.
 Divs are block elements (like paragraphs).
 
-You can create divs using the **Insert -\> Div** command, and you can apply attributes (including CSS classes) to divs the same way as you apply attributes to headings (clicking the edit button or using the <kbd>F4</kbd> keyboard shortcut when you are within a div):
+You can create divs using the **Insert -> Div** command, and you can apply attributes (including CSS classes) to divs the same way as you apply attributes to headings (clicking the edit button or using the <kbd>F4</kbd> keyboard shortcut when you are within a div):
 
 <img src="images/visual-editing-css-div.png" width="700"/>
 
@@ -87,7 +87,7 @@ Note the presence of the `.important` class within the **Div Attributes** dialog
 Span are special entities that allow you to apply identifiers and/or styles to a region of text.
 Spans are inline formatting marks (like bold or italic).
 
-Spans can be created by selecting text and using the **Format -\> Span** command:
+Spans can be created by selecting text and using the **Format -> Span** command:
 
 <img src="images/visual-editing-css-span.png" width="700"/>
 
@@ -120,14 +120,14 @@ To do this, double-click the image (or use the <kbd>F4</kbd> shortcut with the i
 
 <img src="images/visual-editing-image-center-css.png" width="700"/>
 
-?\> As described in the [CSS Styles](#css-styles) section above, you can also create a CSS class that encompasses these styles (e.g. `.image-centered`) and provide that class name rather than inline styles as illustrated above.
+?> As described in the [CSS Styles](#css-styles) section above, you can also create a CSS class that encompasses these styles (e.g. `.image-centered`) and provide that class name rather than inline styles as illustrated above.
 
 ## HTML Embeds
 
 When authoring web pages you sometimes need to embed a snippet of HTML from an external source (e.g. an `<iframe>` tag to display a YouTube video).
 To embed HTML snippets in visual mode:
 
-1.  Use the **Format -\> Raw -\> HTML Block** command to change the current block to HTML format.
+1.  Use the **Format -> Raw -> HTML Block** command to change the current block to HTML format.
 
 2.  Paste the HTML snippet into the HTML block.
 
@@ -135,5 +135,5 @@ For example, here's what a YouTube snippet looks like within an HTML block:
 
 <img src="images/visual-editing-html-embed.png" width="700"/>
 
-?\> Note that you can also create an HTML block with a markdown shortcut.
+?> Note that you can also create an HTML block with a markdown shortcut.
 Just type ```` ```{=html} ```` and press **Enter** to create the block.

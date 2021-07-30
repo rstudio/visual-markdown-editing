@@ -39,12 +39,12 @@ See the bookdown documentation for more information on [cross-references](https:
 
 ## Footnotes
 
-You can include footnotes using the **Insert -\> Footnote** command (or the <kbd>⇧⌘ F7</kbd> keyboard shortcut).
+You can include footnotes using the **Insert -> Footnote** command (or the <kbd>⇧⌘ F7</kbd> keyboard shortcut).
 Footnote editing occurs in a pane immediately below the main document:
 
 <img src="images/visual-editing-footnote.png" class="illustration" width="700"/>
 
-?\> By default footnotes will be written in markdown immediately below the block in which they appear.
+?> By default footnotes will be written in markdown immediately below the block in which they appear.
 You can customize this behavior via [editor options](options).
 
 ## Embedded Code
@@ -54,17 +54,17 @@ Code can furthermore be either inline or block (e.g. an Rmd code chunk).
 
 ### Displaying Code
 
-To display but not execute code, either use the **Insert -\> Code Block** menu item, or start a new line and type either:
+To display but not execute code, either use the **Insert -> Code Block** menu item, or start a new line and type either:
 
 1.  ```` ``` ```` (for a plain code block); or
-2.  ```` ```<lang> ```` (where \<lang\> is a language) for a code block with syntax highlighting.
+2.  ```` ```<lang> ```` (where \<lang> is a language) for a code block with syntax highlighting.
 
 Then press the **Enter** key.
-To display code inline, simply surround text with backticks (`` `code` ``), or use the **Format -\> Code** menu item.
+To display code inline, simply surround text with backticks (`` `code` ``), or use the **Format -> Code** menu item.
 
 ### Code Chunks
 
-To insert an executable code chunk, use the **Insert -\> Code Chunk** menu item, or start a new line and type:
+To insert an executable code chunk, use the **Insert -> Code Chunk** menu item, or start a new line and type:
 
 ```` ```{r} ````
 
@@ -92,9 +92,9 @@ For example:
 <img src="images/visual-editing-raw.png" width="700"/>
 
 The above examples utilize *inline* LaTex and HTML.
-You can also include blocks of raw content using the commands on the **Format -\> Raw** menu.
+You can also include blocks of raw content using the commands on the **Format -> Raw** menu.
 For example, here is a document with a raw LaTeX block:
 
 <img src="images/visual-editing-latex-block.png" width="700"/>
 
-?\> Note that Pandoc ignores LaTeX commands when not producing LaTeX based output, and ignores HTML tags when not producing HTML based output.
+?> Note that Pandoc ignores LaTeX commands when not producing LaTeX based output, and ignores HTML tags when not producing HTML based output.
