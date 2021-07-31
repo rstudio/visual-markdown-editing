@@ -1,6 +1,5 @@
 ---
 title: "Content Editing"
-engine: markdown
 ---
 
 Visual mode supports editing all of Pandoc markdown.

@@ -1,6 +1,5 @@
 ---
 title: "Markdown Formats"
-engine: markdown
 ---
 
 R Markdown documents are normally authored using standard [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown).

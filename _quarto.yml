@@ -37,5 +37,3 @@ format:
     toc: true
     include-after-body: script.html
 
-engine: markdown
-

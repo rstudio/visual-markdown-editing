@@ -1,6 +1,5 @@
 ---
 title: "Editor Options"
-engine: markdown
 ---
 
 ## Global Options

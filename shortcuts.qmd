@@ -1,6 +1,5 @@
 ---
 title: "Editing Shortcuts"
-engine: markdown
 ---
 
 Visual mode supports both traditional keyboard shortcuts (e.g. <kbd>⌘ B</kbd> for bold) as well as markdown shortcuts (using markdown syntax directly).

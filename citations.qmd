@@ -1,6 +1,5 @@
 ---
 title: "Citations"
-engine: markdown
 ---
 
 Visual mode uses the standard Pandoc markdown representation for citations (e.g. `[@citation]`).
