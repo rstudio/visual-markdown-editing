@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
   <meta charset="utf-8">
-  <meta name="generator" content="quarto-(Local Development)">
+  <meta name="generator" content="quarto-99.9.9">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Visual R Markdown</title>
   <style>
@@ -13,27 +13,42 @@
     ul.task-list{list-style: none;}
   </style>
 
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
   <script src="site_libs/quarto-nav/quarto-nav.js"></script>
   <script src="site_libs/quarto-nav/headroom.min.js"></script>
+  <script src="site_libs/clipboard/clipboard.min.js"></script>
   <meta name="quarto:offset" content="./">
-  <script src="site_libs/quarto-search/autocomplete.min.js"></script>
+  <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
   <script src="site_libs/quarto-search/fuse.min.js"></script>
   <script src="site_libs/quarto-search/quarto-search.js"></script>
   <link href="./citations.html" rel="next">
   <script src="site_libs/quarto-html/quarto.js"></script>
   <script src="site_libs/quarto-html/popper.min.js"></script>
   <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-  <script src="site_libs/quarto-html/clipboard.min.js"></script>
   <script src="site_libs/quarto-html/anchor.min.js"></script>
-  <script src="site_libs/quarto-html/quarto-html.js"></script>
   <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
   <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
   <script src="site_libs/bootstrap/bootstrap.min.js"></script>
   <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
   <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "sidebar",
+    "copy-button": false,
+    "collapse-after": 2,
+    "panel-placement": "start",
+    "type": "textbox",
+    "limit": 20,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit"
+    }
+  }</script>
   
   <script type="text/javascript">
 
@@ -48,74 +63,91 @@
     'anonymizeIp': true,
   });
   </script>
-<meta name="og:title" content="Visual R Markdown">
-<meta name="og:site-name" content="Visual R Markdown">
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<meta property="og:title" content="Visual R Markdown">
+<meta property="og:site-name" content="Visual R Markdown">
 <meta name="twitter:title" content="Visual R Markdown">
 <meta name="twitter:card" content="summary">
 </head>
-<body>
+<body class="docked">
 <div id="quarto-search-results"></div>
-<header id="quarto-header" class="headroom fixed-top">
-<nav class="quarto-secondary-nav py-2 d-lg-none d-md-block " data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <div class="container-fluid d-flex justify-content-between">
-    <h1 class="quarto-secondary-nav-title mb-0 fs-3 d-inline">Visual R Markdown</h1>
-    <button type="button" class="quarto-btn-toggle btn d-lg-none py-0 px-1 d-inline-block border-0 ">
-      <i class="bi bi-chevron-right"></i>
-    </button>
-  </div>
-</nav>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Visual R Markdown</h1>
+      <button type="button" class="quarto-btn-toggle btn">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
- <!-- /navbar/sidebar -->
-<div class="container-fluid quarto-container d-flex flex-column page-layout-article">
-<div class="row flex-fill" id="quarto-content">
-  <div id="quarto-sidebar" class="col col-12 col-lg-3 d-lg-flex px-0 pt-0 sidebar collapse sidebar-navigation">
-    <nav class="me-lg-auto py-2 docked  overflow-scroll">
-  <div class="px-3 pt-lg-2 mt-1 text-left sidebar-header sidebar-header-stacked">
-    <img src="./images/rstudio-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-    <div class="sidebar-title mb-0 py-0">
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./">
-      Visual R Markdown
-      </a> 
+      <img src="./images/rstudio-logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Visual R Markdown</a> 
     </div>
-  </div>
-    <div class="d-flex px-3 mt-2 flex-shrink-0 align-items-center">
-      <div class="sidebar-search">
-      <form class="d-flex mb-0">
-  <input id="quarto-search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
       </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text active">Getting Started</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./citations.html" class="sidebar-item-text ">Citations</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./technical.html" class="sidebar-item-text ">Technical Writing</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./content.html" class="sidebar-item-text ">Content Editing</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./markdown.html" class="sidebar-item-text ">Markdown Formats</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./shortcuts.html" class="sidebar-item-text ">Editing Shortcuts</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./options.html" class="sidebar-item-text ">Editor Options</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./additional.html" class="sidebar-item-text ">Additional Topics</a>
+  </div>
+</li>
+    </ul>
     </div>
-  <div class="sidebar-menu-container"> 
-  <ul class="list-unstyled mt-3 px-3">
-      <li class="sidebar-item">
-  <a href="./index.html" class="active">Getting Started</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./citations.html" class="">Citations</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./technical.html" class="">Technical Writing</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./content.html" class="">Content Editing</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./markdown.html" class="">Markdown Formats</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./shortcuts.html" class="">Editing Shortcuts</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./options.html" class="">Editor Options</a>
-</li>
-      <li class="sidebar-item">
-  <a href="./additional.html" class="">Additional Topics</a>
-</li>
-  </ul>
-  </div>
 </nav>
-  </div>
-  <div id="quarto-toc-sidebar" class="col col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-toc order-last"><nav id="TOC" role="doc-toc">
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc">
 <h2 id="toc-title">On this page</h2>
 <ul>
 <li><a href="#overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
@@ -128,9 +160,10 @@
 </ul></li>
 <li><a href="#learning-more" class="nav-link" data-scroll-target="#learning-more">Learning More</a></li>
 </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rstudio/visual-markdown-editing/edit/master/index.qmd">Edit this page</a></p><p><a href="https://github.com/rstudio/visual-markdown-editing/issues/new">Report an issue</a></p></div></div></nav></div>
-  <div class="col mx-auto col-sm-12 col-md-9 col-lg-7 px-lg-4 pe-xxl-4 ps-xxl-0">
-<main>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/rstudio/visual-markdown-editing/edit/master/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/rstudio/visual-markdown-editing/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content">
 <header id="title-block-header">
 <h1 class="title d-none d-lg-block display-7">Visual R Markdown</h1>
 </header>
@@ -215,15 +248,9 @@
 <section id="insert-anything" class="level3">
 <h3 class="anchored" data-anchor-id="insert-anything">Insert Anything</h3>
 <p>You can also use the catch-all <kbd>⌘ /</kbd> shortcut to insert just about anything. Just execute the shortcut then type what you want to insert. For example:</p>
-<div class="quarto-layout-panel">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<div data-layout.ncol="2">
 <p><img src="images/visual-editing-omni-list.png" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
 <p><img src="images/visual-editing-omni-math.png" class="img-fluid"></p>
-</div>
-</div>
 </div>
 <p>If you are at the beginning of a line (as displayed above), you can also enter plain <code>/</code> to invoke the shortcut.</p>
 </section>
@@ -233,6 +260,11 @@
 <p><img src="images/visual-editing-toolbar.png" class="img-fluid"></p>
 <p>Additional commands are available on the <strong>Format</strong>, <strong>Insert</strong>, and <strong>Table</strong> menus:</p>
 <table class="table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 32%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>Format</th>
@@ -263,21 +295,10 @@
 <li><p><a href="./additional.html">Additional Topics</a> discusses various other features including <a href="./additional.html#css-styles">using CSS</a> within HTML documents.</p></li>
 </ul>
 <p>Thanks for trying out the visual editor! If you encounter problems or want to suggest features, please let us know at <a href="https://github.com/rstudio/rstudio/issues/new/choose" class="uri">https://github.com/rstudio/rstudio/issues/new/choose</a>.</p>
-<!-- -->
+
+
 </section>
-</main>
-<div class="page-navigation page-navigation-docked">
-  <div class="nav-page nav-page-previous">
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="./citations.html">
-        <span class="nav-page-text">Citations</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</div>
-</div> <!-- /main column -->
-</div> <!-- /row -->
-</div> <!-- /container fluid -->
+</main> <!-- /main -->
 <script type="text/javascript">
 
 const kPlatformMac = typeof navigator !== 'undefined' ? /Mac/.test(navigator.platform) : false;
@@ -289,6 +310,92 @@ if (!kPlatformMac) {
 }
 
 </script>
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    setTimeout(function() {
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      let href = ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./citations.html">
+        <span class="nav-page-text">Citations</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
 
 
 </body></html>

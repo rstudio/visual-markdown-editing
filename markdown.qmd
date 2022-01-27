@@ -371,14 +371,13 @@ These are infrequently used extensions, so in all likelihood they won't affect d
 
 | Extension(s)             | Example            | Behavior                                 |
 |--------------------------|--------------------|------------------------------------------|
-| Inline footnotes         | \[^1\]             | Converted to numeric footnote.           |
+| Inline footnotes         | \^\[inline\]       | Converted to numeric footnote.           |
 | Footnote identifiers     | \[\^longnote\]     | Converted to numeric footnote.           |
 | Example lists            | (\@) First example | Read/written as ordinary numbered lists. |
 | Auto-list numbers        | #\. First item     | Read/written as ordinary numbered lists. |
 | Reference links          | This is a \[link\] | Converted to ordinary links.             |
 | MultiMarkdown attributes | \# Heading \[id\]  | Converted to Pandoc attributes.          |
 
-[^1]: inline footnote
 
 The visual editor is unable to parse non-YAML title blocks (e.g. old-style % titles or MultiMarkdown titles) and also unable to parse non top-level YAML metadata blocks.
 If these forms of metadata are encountered, visual mode will fail to load with a warning.
