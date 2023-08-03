@@ -314,7 +314,7 @@ title: "My Document"
 editor_options:
   markdown:
     references: 
-      location: block
+      location: section
 ---
 ```
 
